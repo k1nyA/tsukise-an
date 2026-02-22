@@ -18,12 +18,16 @@ const fetchPage = async (path) => {
   const response = await withTimeout((signal) =>
     fetch(url.toString(), { signal, redirect: "follow" }),
   );
+  const body = await response.text();
 
   if (!response.ok) {
-    throw new Error(`${path} returned HTTP ${response.status}`);
+    const responseSnippet = body.trim().slice(0, 200) || "(empty body)";
+    throw new Error(
+      `${path} returned HTTP ${response.status}. Response: ${responseSnippet}`,
+    );
   }
 
-  return response.text();
+  return body;
 };
 
 const assertIncludes = (html, text, path) => {
@@ -38,7 +42,7 @@ const assertIncludesAny = (html, texts, path) => {
 };
 
 const extractFirstNewsSlug = (html) => {
-  const matches = html.matchAll(/href="\/news\/([^"?#]+)"/g);
+  const matches = html.matchAll(/href="\/news\/([a-zA-Z0-9_-]+)"/g);
   for (const match of matches) {
     const slug = match[1];
     if (slug && slug !== "news") {
@@ -48,7 +52,21 @@ const extractFirstNewsSlug = (html) => {
   return null;
 };
 
+const ensureBaseUrlReachable = async () => {
+  try {
+    await fetchPage("/");
+  } catch (error) {
+    throw new Error(
+      `Base URL ${BASE_URL} is not reachable. ` +
+        "Ensure the app is running (e.g. npm run start -- --port 3000). " +
+        `Original error: ${error.message}`,
+    );
+  }
+};
+
 const run = async () => {
+  await ensureBaseUrlReachable();
+
   const reservationHtml = await fetchPage("/reservation");
   assertIncludes(reservationHtml, "ご宿泊日を選択", "/reservation");
   assertIncludesAny(

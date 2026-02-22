@@ -61,6 +61,12 @@ npm run test:backend:smoke
 - `BACKEND_E2E_BASE_URL`（デフォルト: `http://127.0.0.1:3000`）
 - `BACKEND_E2E_TIMEOUT_MS`（デフォルト: `12000`）
 
+別ポート例:
+```bash
+npm run start -- --port 8080
+BACKEND_E2E_BASE_URL=http://127.0.0.1:8080 npm run test:backend:smoke
+```
+
 ### 4.1 microCMS
 - `/` で最新5件のお知らせが表示される
 - `/news` で一覧取得できる
