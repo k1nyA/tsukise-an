@@ -1,13 +1,13 @@
-import CTASection from "@/components/CTASection";
-import ConceptSection from "@/components/ConceptSection";
-import CuisineSection from "@/components/CuisineSection";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import HeroSection from "@/components/HeroSection";
-import InfoSection from "@/components/InfoSection";
-import OnsenSection from "@/components/OnsenSection";
-import RoomSection from "@/components/RoomSection";
-import StaySection from "@/components/StaySection";
+import { Header } from '@/components/shared/Header'
+import { Footer } from '@/components/shared/Footer'
+import { CTASection } from '@/components/shared/CTASection'
+import { HeroSection } from '@/components/top/HeroSection'
+import { ConceptSection } from '@/components/top/ConceptSection'
+import { RoomSection } from '@/components/top/RoomSection'
+import { OnsenSection } from '@/components/top/OnsenSection'
+import { CuisineSection } from '@/components/top/CuisineSection'
+import { StaySection } from '@/components/top/StaySection'
+import { InfoSection } from '@/components/top/InfoSection'
 
 export default function Home() {
   return (
@@ -25,5 +25,5 @@ export default function Home() {
       </main>
       <Footer />
     </div>
-  );
+  )
 }
