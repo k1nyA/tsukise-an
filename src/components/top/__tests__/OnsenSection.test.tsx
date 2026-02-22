@@ -7,9 +7,11 @@ describe('OnsenSection', () => {
     expect(screen.getByText('ONSEN')).toBeInTheDocument()
   })
 
-  it('renders the section title about onsen', () => {
+  it('renders the section title with 湖を望む and 湯処', () => {
     render(<OnsenSection />)
-    expect(screen.getByRole('heading', { level: 2 })).toHaveTextContent(/湖を望む/)
+    const heading = screen.getByRole('heading', { level: 2 })
+    expect(heading).toHaveTextContent(/湖を望む/)
+    expect(heading).toHaveTextContent(/湯処/)
   })
 
   it('renders the description about the hot spring source', () => {
@@ -26,5 +28,27 @@ describe('OnsenSection', () => {
   it('renders with content area on the left and image on the right', () => {
     const { container } = render(<OnsenSection />)
     expect(container.querySelector('section')).toBeInTheDocument()
+  })
+
+  it('renders an onsen image with appropriate alt text', () => {
+    render(<OnsenSection />)
+    const img = screen.getByRole('img', { name: /露天風呂/ })
+    expect(img).toBeInTheDocument()
+  })
+
+  it('renders the onsen image with correct src', () => {
+    render(<OnsenSection />)
+    const img = screen.getByRole('img', { name: /露天風呂/ })
+    expect(img).toHaveAttribute('src', expect.stringContaining('onsen.png'))
+  })
+
+  it('renders content on the left and image on the right', () => {
+    const { container } = render(<OnsenSection />)
+    const section = container.querySelector('section')!
+    const children = Array.from(section.children) as HTMLElement[]
+    // First child should contain the text content, second child should contain the image
+    expect(children.length).toBe(2)
+    expect(children[0]).toHaveTextContent(/湖を望む/)
+    expect(children[1].querySelector('img')).toBeInTheDocument()
   })
 })

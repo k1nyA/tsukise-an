@@ -1,20 +1,28 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 export function RoomSection() {
   return (
     <section className="flex w-full" style={{ height: 560 }}>
-      {/* Image area */}
+      {/* Left: Room image (800px wide) */}
       <div
         className="relative overflow-hidden"
         style={{
           width: 800,
           height: 560,
-          backgroundColor: 'var(--ryokan-dark)',
           flexShrink: 0,
         }}
-      />
+      >
+        <Image
+          src="/images/room.png"
+          alt="月瀬庵の客室"
+          fill
+          className="object-cover"
+          sizes="800px"
+        />
+      </div>
 
-      {/* Content area */}
+      {/* Right: Content area (dark bg) */}
       <div
         className="flex flex-1 flex-col justify-center"
         style={{
