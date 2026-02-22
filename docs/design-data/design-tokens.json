@@ -3,7 +3,7 @@
     "background": {
       "primary": "#FAF8F3",
       "sectionAlt": "#EEEBE3",
-      "sectionAltDark": "#F0EBE0",
+      "sectionAltDark": "#F5F0E8",
       "dark": "#2C2418",
       "darkest": "#1A150E",
       "hero-overlay": "#1A150E55"
@@ -134,7 +134,7 @@
     "--ryokan-subtle": "#8B7D6B",
     "--ryokan-secondary": "#6B5D4F",
     "--ryokan-light-bg": "#EEEBE3",
-    "--ryokan-light-bg-alt": "#F0EBE0",
+    "--ryokan-light-bg-alt": "#F5F0E8",
     "--ryokan-darkest": "#1A150E",
     "--ryokan-soft-line": "#D4C5A055",
     "--ryokan-text-on-dark": "#FAF8F3",
