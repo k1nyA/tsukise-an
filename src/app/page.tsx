@@ -8,8 +8,17 @@ import { OnsenSection } from '@/components/top/OnsenSection'
 import { CuisineSection } from '@/components/top/CuisineSection'
 import { StaySection } from '@/components/top/StaySection'
 import { InfoSection } from '@/components/top/InfoSection'
+import { getTopNewsItems, type TopNewsItem } from '@/lib/top-news'
 
-export default function Home() {
+export default async function Home() {
+  let topNewsItems: TopNewsItem[] = []
+
+  try {
+    topNewsItems = await getTopNewsItems()
+  } catch (error) {
+    console.error('Failed to fetch top news items', error)
+  }
+
   return (
     <div className="ryokan-page">
       <Header />
@@ -20,7 +29,7 @@ export default function Home() {
         <OnsenSection />
         <CuisineSection />
         <StaySection />
-        <InfoSection />
+        <InfoSection newsItems={topNewsItems} />
         <CTASection />
       </main>
       <Footer />

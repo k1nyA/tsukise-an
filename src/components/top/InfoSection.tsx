@@ -1,14 +1,11 @@
 import Link from 'next/link'
+import type { TopNewsItem } from '@/lib/top-news'
 
-const newsItems = [
-  { date: '2025.02.15', title: '春の特別懐石「桜花」のご案内' },
-  { date: '2025.01.28', title: 'ミシュランガイド2025 二つ星を獲得いたしました' },
-  { date: '2025.01.10', title: '年末年始の営業について' },
-  { date: '2024.12.20', title: '冬の特別プラン「雪月花」のご案内' },
-  { date: '2024.11.15', title: '客室「月影」リニューアルのお知らせ' },
-]
+type InfoSectionProps = {
+  newsItems: TopNewsItem[]
+}
 
-export function InfoSection() {
+export function InfoSection({ newsItems }: InfoSectionProps) {
   return (
     <section
       className="flex w-full"
@@ -60,42 +57,57 @@ export function InfoSection() {
 
         {/* News list */}
         <ul className="flex flex-col" style={{ gap: 16, listStyle: 'none', padding: 0, margin: 0 }}>
-          {newsItems.map((item) => (
+          {newsItems.length > 0 ? (
+            newsItems.map((item) => (
+              <li
+                key={item.slug}
+                className="flex items-baseline"
+                style={{
+                  gap: 16,
+                  paddingBottom: 16,
+                  borderBottom: '1px solid var(--ryokan-soft-line)',
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: 'var(--font-accent)',
+                    fontSize: 13,
+                    fontWeight: 400,
+                    color: 'var(--ryokan-subtle)',
+                    letterSpacing: 1,
+                    flexShrink: 0,
+                  }}
+                >
+                  {item.date}
+                </span>
+                <p
+                  style={{
+                    fontFamily: 'var(--font-body)',
+                    fontSize: 14,
+                    fontWeight: 300,
+                    color: 'var(--ryokan-dark)',
+                    letterSpacing: 1,
+                    margin: 0,
+                  }}
+                >
+                  {item.title}
+                </p>
+              </li>
+            ))
+          ) : (
             <li
-              key={item.date + item.title}
-              className="flex items-baseline"
               style={{
-                gap: 16,
-                paddingBottom: 16,
-                borderBottom: '1px solid var(--ryokan-soft-line)',
+                fontFamily: 'var(--font-body)',
+                fontSize: 14,
+                fontWeight: 300,
+                color: 'var(--ryokan-subtle)',
+                letterSpacing: 1,
+                paddingBottom: 8,
               }}
             >
-              <span
-                style={{
-                  fontFamily: 'var(--font-accent)',
-                  fontSize: 13,
-                  fontWeight: 400,
-                  color: 'var(--ryokan-subtle)',
-                  letterSpacing: 1,
-                  flexShrink: 0,
-                }}
-              >
-                {item.date}
-              </span>
-              <p
-                style={{
-                  fontFamily: 'var(--font-body)',
-                  fontSize: 14,
-                  fontWeight: 300,
-                  color: 'var(--ryokan-dark)',
-                  letterSpacing: 1,
-                  margin: 0,
-                }}
-              >
-                {item.title}
-              </p>
+              お知らせは現在準備中です。
             </li>
-          ))}
+          )}
         </ul>
 
         {/* Link to all news */}
