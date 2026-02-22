@@ -261,7 +261,7 @@
                   "type": "text",
                   "id": "ifGw3",
                   "name": "heroHeadline",
-                  "fill": "#FAFAF3",
+                  "fill": "#faf8f3",
                   "textGrowth": "fixed-width",
                   "width": 600,
                   "content": "湖と月、\nそして静寂。",
@@ -302,7 +302,7 @@
                       "type": "text",
                       "id": "GbqVq",
                       "name": "heroBtnText",
-                      "fill": "#FAFAF3",
+                      "fill": "#faf8f3",
                       "content": "宿を知る",
                       "fontFamily": "Noto Sans JP",
                       "fontSize": 13,
@@ -1988,7 +1988,7 @@
                       "type": "text",
                       "id": "AcR8g",
                       "name": "ctaTitle",
-                      "fill": "#FAFAF3",
+                      "fill": "#faf8f3",
                       "textGrowth": "fixed-width",
                       "width": 700,
                       "content": "あなたの特別な一日を、\n月瀬庵でお過ごしください。",
@@ -2034,7 +2034,7 @@
                           "type": "text",
                           "id": "XdlqN",
                           "name": "ctaBtn1Text",
-                          "fill": "#FAFAF3",
+                          "fill": "#faf8f3",
                           "content": "オンライン予約",
                           "fontFamily": "Noto Sans JP",
                           "fontSize": 14,
@@ -2062,7 +2062,7 @@
                           "type": "text",
                           "id": "wztej",
                           "name": "ctaBtn2Text",
-                          "fill": "#FAFAF3",
+                          "fill": "#faf8f3",
                           "content": "0460-83-XXXX",
                           "fontFamily": "Cormorant Garamond",
                           "fontSize": 16,
@@ -2231,6 +2231,47 @@
                       "letterSpacing": 2
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Fd42W",
+              "name": "footerSecondaryNav",
+              "width": "fill_container",
+              "gap": 24,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "kVwBO",
+                  "fill": "#8B7D6B",
+                  "content": "お知らせ",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "yuV45",
+                  "fill": "#8B7D6B",
+                  "content": "よくあるご質問",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "t4tU1",
+                  "fill": "#8B7D6B",
+                  "content": "お問い合わせ",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
                 }
               ]
             },
@@ -2562,7 +2603,7 @@
               "id": "2LyHB",
               "name": "bcSep",
               "fill": "#D4C5A0",
-              "content": "/",
+              "content": ">",
               "fontFamily": "Noto Sans JP",
               "fontSize": 12,
               "fontWeight": "300"
@@ -2686,6 +2727,32 @@
                   "fontSize": 16,
                   "fontWeight": "300",
                   "letterSpacing": 2
+                },
+                {
+                  "type": "frame",
+                  "id": "xk7OA",
+                  "name": "heroBtn",
+                  "fill": "#8B6914",
+                  "cornerRadius": 2,
+                  "padding": [
+                    14,
+                    40
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mt22v",
+                      "name": "heroBtnText",
+                      "fill": "#FAF8F3",
+                      "content": "予約する",
+                      "fontFamily": "Noto Sans JP",
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "letterSpacing": 2
+                    }
+                  ]
                 }
               ]
             }
@@ -4451,7 +4518,7 @@
                       "type": "text",
                       "id": "KrVLx",
                       "name": "ctaTitle",
-                      "fill": "#FAFAF3",
+                      "fill": "#faf8f3",
                       "textGrowth": "fixed-width",
                       "width": 700,
                       "content": "あなたの特別な一日を、\n月瀬庵でお過ごしください。",
@@ -4497,7 +4564,7 @@
                           "type": "text",
                           "id": "3AXtT",
                           "name": "ctaBtn1Text",
-                          "fill": "#FAFAF3",
+                          "fill": "#faf8f3",
                           "content": "オンライン予約",
                           "fontFamily": "Noto Sans JP",
                           "fontSize": 14,
@@ -4525,7 +4592,7 @@
                           "type": "text",
                           "id": "g8z4Q",
                           "name": "ctaBtn2Text",
-                          "fill": "#FAFAF3",
+                          "fill": "#faf8f3",
                           "content": "0460-83-XXXX",
                           "fontFamily": "Cormorant Garamond",
                           "fontSize": 16,
@@ -4694,6 +4761,47 @@
                       "letterSpacing": 2
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "USBR2",
+              "name": "footerSecondaryNav",
+              "width": "fill_container",
+              "gap": 24,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ksbn3",
+                  "fill": "#8B7D6B",
+                  "content": "お知らせ",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "EodKw",
+                  "fill": "#8B7D6B",
+                  "content": "よくあるご質問",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "PbyVh",
+                  "fill": "#8B7D6B",
+                  "content": "お問い合わせ",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
                 }
               ]
             },
@@ -5025,7 +5133,7 @@
               "id": "sBZpE",
               "name": "bcSep",
               "fill": "#D4C5A0",
-              "content": "/",
+              "content": ">",
               "fontFamily": "Noto Sans JP",
               "fontSize": 12,
               "fontWeight": "300"
@@ -5149,6 +5257,32 @@
                   "fontSize": 16,
                   "fontWeight": "300",
                   "letterSpacing": 2
+                },
+                {
+                  "type": "frame",
+                  "id": "JlhUn",
+                  "name": "heroBtn",
+                  "fill": "#8B6914",
+                  "cornerRadius": 2,
+                  "padding": [
+                    14,
+                    40
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "qXD8G",
+                      "name": "heroBtnText",
+                      "fill": "#FAF8F3",
+                      "content": "予約する",
+                      "fontFamily": "Noto Sans JP",
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "letterSpacing": 2
+                    }
+                  ]
                 }
               ]
             }
@@ -5961,13 +6095,14 @@
                   "alignItems": "center",
                   "children": [
                     {
-                      "type": "text",
-                      "id": "mjUKk",
+                      "type": "icon_font",
+                      "id": "7Q2yb",
                       "name": "eti1Icon",
-                      "content": "💧",
-                      "fontFamily": "Inter",
-                      "fontSize": 24,
-                      "fontWeight": "normal"
+                      "width": 28,
+                      "height": 28,
+                      "iconFontName": "droplets",
+                      "iconFontFamily": "lucide",
+                      "fill": "#8B6914"
                     },
                     {
                       "type": "text",
@@ -6003,13 +6138,14 @@
                   "alignItems": "center",
                   "children": [
                     {
-                      "type": "text",
-                      "id": "IALxF",
+                      "type": "icon_font",
+                      "id": "NyYQL",
                       "name": "eti2Icon",
-                      "content": "🧴",
-                      "fontFamily": "Inter",
-                      "fontSize": 24,
-                      "fontWeight": "normal"
+                      "width": 28,
+                      "height": 28,
+                      "iconFontName": "hand",
+                      "iconFontFamily": "lucide",
+                      "fill": "#8B6914"
                     },
                     {
                       "type": "text",
@@ -6045,13 +6181,14 @@
                   "alignItems": "center",
                   "children": [
                     {
-                      "type": "text",
-                      "id": "v9knz",
+                      "type": "icon_font",
+                      "id": "3rlMx",
                       "name": "eti3Icon",
-                      "content": "🚫",
-                      "fontFamily": "Inter",
-                      "fontSize": 24,
-                      "fontWeight": "normal"
+                      "width": 28,
+                      "height": 28,
+                      "iconFontName": "ban",
+                      "iconFontFamily": "lucide",
+                      "fill": "#8B6914"
                     },
                     {
                       "type": "text",
@@ -6087,13 +6224,14 @@
                   "alignItems": "center",
                   "children": [
                     {
-                      "type": "text",
-                      "id": "XWP9r",
+                      "type": "icon_font",
+                      "id": "AqZIw",
                       "name": "eti4Icon",
-                      "content": "📷",
-                      "fontFamily": "Inter",
-                      "fontSize": 24,
-                      "fontWeight": "normal"
+                      "width": 28,
+                      "height": 28,
+                      "iconFontName": "camera-off",
+                      "iconFontFamily": "lucide",
+                      "fill": "#8B6914"
                     },
                     {
                       "type": "text",
@@ -6228,7 +6366,7 @@
                       "type": "text",
                       "id": "Qx0R4",
                       "name": "ctaTitle",
-                      "fill": "#FAFAF3",
+                      "fill": "#faf8f3",
                       "textGrowth": "fixed-width",
                       "width": 700,
                       "content": "あなたの特別な一日を、\n月瀬庵でお過ごしください。",
@@ -6274,7 +6412,7 @@
                           "type": "text",
                           "id": "aFXrg",
                           "name": "ctaBtn1Text",
-                          "fill": "#FAFAF3",
+                          "fill": "#faf8f3",
                           "content": "オンライン予約",
                           "fontFamily": "Noto Sans JP",
                           "fontSize": 14,
@@ -6302,7 +6440,7 @@
                           "type": "text",
                           "id": "677uL",
                           "name": "ctaBtn2Text",
-                          "fill": "#FAFAF3",
+                          "fill": "#faf8f3",
                           "content": "0460-83-XXXX",
                           "fontFamily": "Cormorant Garamond",
                           "fontSize": 16,
@@ -6471,6 +6609,47 @@
                       "letterSpacing": 2
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "CX7nX",
+              "name": "footerSecondaryNav",
+              "width": "fill_container",
+              "gap": 24,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "kp96M",
+                  "fill": "#8B7D6B",
+                  "content": "お知らせ",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "FLMPO",
+                  "fill": "#8B7D6B",
+                  "content": "よくあるご質問",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "oVae2",
+                  "fill": "#8B7D6B",
+                  "content": "お問い合わせ",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
                 }
               ]
             },
@@ -6802,7 +6981,7 @@
               "id": "1FWkC",
               "name": "bcSep",
               "fill": "#D4C5A0",
-              "content": "/",
+              "content": ">",
               "fontFamily": "Noto Sans JP",
               "fontSize": 12,
               "fontWeight": "300"
@@ -6926,6 +7105,32 @@
                   "fontSize": 16,
                   "fontWeight": "300",
                   "letterSpacing": 2
+                },
+                {
+                  "type": "frame",
+                  "id": "OPrVR",
+                  "name": "heroBtn",
+                  "fill": "#8B6914",
+                  "cornerRadius": 2,
+                  "padding": [
+                    14,
+                    40
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "w0aCy",
+                      "name": "heroBtnText",
+                      "fill": "#FAF8F3",
+                      "content": "予約する",
+                      "fontFamily": "Noto Sans JP",
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "letterSpacing": 2
+                    }
+                  ]
                 }
               ]
             }
@@ -7920,13 +8125,14 @@
                   "alignItems": "center",
                   "children": [
                     {
-                      "type": "text",
-                      "id": "TPfYA",
+                      "type": "icon_font",
+                      "id": "WJNPU",
                       "name": "allergy1Icon",
-                      "content": "🍽",
-                      "fontFamily": "Inter",
-                      "fontSize": 24,
-                      "fontWeight": "normal"
+                      "width": 28,
+                      "height": 28,
+                      "iconFontName": "utensils",
+                      "iconFontFamily": "lucide",
+                      "fill": "#8B6914"
                     },
                     {
                       "type": "text",
@@ -7963,13 +8169,14 @@
                   "alignItems": "center",
                   "children": [
                     {
-                      "type": "text",
-                      "id": "KWta0",
+                      "type": "icon_font",
+                      "id": "MiNGL",
                       "name": "allergy2Icon",
-                      "content": "🥬",
-                      "fontFamily": "Inter",
-                      "fontSize": 24,
-                      "fontWeight": "normal"
+                      "width": 28,
+                      "height": 28,
+                      "iconFontName": "leaf",
+                      "iconFontFamily": "lucide",
+                      "fill": "#8B6914"
                     },
                     {
                       "type": "text",
@@ -8006,13 +8213,14 @@
                   "alignItems": "center",
                   "children": [
                     {
-                      "type": "text",
-                      "id": "E87Cx",
+                      "type": "icon_font",
+                      "id": "NJiQN",
                       "name": "allergy3Icon",
-                      "content": "👶",
-                      "fontFamily": "Inter",
-                      "fontSize": 24,
-                      "fontWeight": "normal"
+                      "width": 28,
+                      "height": 28,
+                      "iconFontName": "baby",
+                      "iconFontFamily": "lucide",
+                      "fill": "#8B6914"
                     },
                     {
                       "type": "text",
@@ -8148,7 +8356,7 @@
                       "type": "text",
                       "id": "9tICC",
                       "name": "ctaTitle",
-                      "fill": "#FAFAF3",
+                      "fill": "#faf8f3",
                       "textGrowth": "fixed-width",
                       "width": 700,
                       "content": "あなたの特別な一日を、\n月瀬庵でお過ごしください。",
@@ -8194,7 +8402,7 @@
                           "type": "text",
                           "id": "cxXov",
                           "name": "ctaBtn1Text",
-                          "fill": "#FAFAF3",
+                          "fill": "#faf8f3",
                           "content": "オンライン予約",
                           "fontFamily": "Noto Sans JP",
                           "fontSize": 14,
@@ -8222,7 +8430,7 @@
                           "type": "text",
                           "id": "gIfxI",
                           "name": "ctaBtn2Text",
-                          "fill": "#FAFAF3",
+                          "fill": "#faf8f3",
                           "content": "0460-83-XXXX",
                           "fontFamily": "Cormorant Garamond",
                           "fontSize": 16,
@@ -8391,6 +8599,47 @@
                       "letterSpacing": 2
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "XjBBw",
+              "name": "footerSecondaryNav",
+              "width": "fill_container",
+              "gap": 24,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "FUrEG",
+                  "fill": "#8B7D6B",
+                  "content": "お知らせ",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "YzVcp",
+                  "fill": "#8B7D6B",
+                  "content": "よくあるご質問",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "8sEW2",
+                  "fill": "#8B7D6B",
+                  "content": "お問い合わせ",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
                 }
               ]
             },
@@ -8722,7 +8971,7 @@
               "id": "WQC3v",
               "name": "bcSep",
               "fill": "#D4C5A0",
-              "content": "/",
+              "content": ">",
               "fontFamily": "Noto Sans JP",
               "fontSize": 12,
               "fontWeight": "300"
@@ -8846,6 +9095,32 @@
                   "fontSize": 16,
                   "fontWeight": "300",
                   "letterSpacing": 2
+                },
+                {
+                  "type": "frame",
+                  "id": "C0mCg",
+                  "name": "heroBtn",
+                  "fill": "#8B6914",
+                  "cornerRadius": 2,
+                  "padding": [
+                    14,
+                    40
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "fViSs",
+                      "name": "heroBtnText",
+                      "fill": "#FAF8F3",
+                      "content": "予約する",
+                      "fontFamily": "Noto Sans JP",
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "letterSpacing": 2
+                    }
+                  ]
                 }
               ]
             }
@@ -9050,7 +9325,7 @@
                           "id": "rjrlD",
                           "name": "title1",
                           "fill": "#2C2418",
-                          "content": "チェックイン",
+                          "content": "チェックイン・お出迎え",
                           "fontFamily": "Noto Serif JP",
                           "fontSize": 18,
                           "fontWeight": "600"
@@ -9293,7 +9568,7 @@
                           "id": "Hx0bw",
                           "name": "tt4",
                           "fill": "#2C2418",
-                          "content": "大浴場・露天風呂",
+                          "content": "庭園散策",
                           "fontFamily": "Noto Serif JP",
                           "fontSize": 18,
                           "fontWeight": "600"
@@ -9303,7 +9578,7 @@
                           "id": "30TgR",
                           "name": "ds4",
                           "fill": "#8B7D6B",
-                          "content": "姥子温泉の源泉を心ゆくまで",
+                          "content": "四季折々の庭園をゆったりと散策",
                           "lineHeight": 1.8,
                           "fontFamily": "Noto Sans JP",
                           "fontSize": 14,
@@ -9329,7 +9604,7 @@
                       "id": "E1Iq4",
                       "name": "time5",
                       "fill": "#8B6914",
-                      "content": "18:00",
+                      "content": "18:30",
                       "textAlign": "right",
                       "fontFamily": "Cormorant Garamond",
                       "fontSize": 20,
@@ -9374,7 +9649,7 @@
                           "id": "D2vql",
                           "name": "tt5",
                           "fill": "#2C2418",
-                          "content": "夕食",
+                          "content": "夕食・懐石料理",
                           "fontFamily": "Noto Serif JP",
                           "fontSize": 18,
                           "fontWeight": "600"
@@ -9536,7 +9811,7 @@
                           "id": "gKUBQ",
                           "name": "tt7",
                           "fill": "#2C2418",
-                          "content": "夜の散策",
+                          "content": "月見の湯（大浴場）",
                           "fontFamily": "Noto Serif JP",
                           "fontSize": 18,
                           "fontWeight": "600"
@@ -9546,13 +9821,39 @@
                           "id": "mwid1",
                           "name": "ds7",
                           "fill": "#8B7D6B",
-                          "content": "芦ノ湖畔の月明かりを愉しむ",
+                          "content": "月明かりに照らされた露天風呂で至福のひととき",
                           "lineHeight": 1.8,
                           "fontFamily": "Noto Sans JP",
                           "fontSize": 14,
                           "fontWeight": "300"
                         }
                       ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "sPi3M",
+                  "name": "morningDivider",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "padding": [
+                    16,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "7828N",
+                      "name": "dividerText",
+                      "fill": "#D4C5A0",
+                      "content": "翌 朝",
+                      "textAlign": "center",
+                      "fontFamily": "Noto Sans JP",
+                      "fontSize": 13,
+                      "fontWeight": "500",
+                      "letterSpacing": 4
                     }
                   ]
                 },
@@ -9572,7 +9873,7 @@
                       "id": "1LGHe",
                       "name": "time8",
                       "fill": "#8B6914",
-                      "content": "07:30",
+                      "content": "08:00",
                       "textAlign": "right",
                       "fontFamily": "Cormorant Garamond",
                       "fontSize": 20,
@@ -9698,7 +9999,7 @@
                           "id": "FnTiM",
                           "name": "tt9",
                           "fill": "#2C2418",
-                          "content": "朝風呂・館内散策",
+                          "content": "チェックアウト準備",
                           "fontFamily": "Noto Serif JP",
                           "fontSize": 18,
                           "fontWeight": "600"
@@ -9708,7 +10009,7 @@
                           "id": "HvQdG",
                           "name": "ds9",
                           "fill": "#8B7D6B",
-                          "content": "チェックアウト前の最後のひととき",
+                          "content": "お荷物の準備とお土産選び",
                           "lineHeight": 1.8,
                           "fontFamily": "Noto Sans JP",
                           "fontSize": 14,
@@ -9771,7 +10072,7 @@
                           "id": "e1EpN",
                           "name": "tt10",
                           "fill": "#2C2418",
-                          "content": "チェックアウト",
+                          "content": "お見送り",
                           "fontFamily": "Noto Serif JP",
                           "fontSize": 18,
                           "fontWeight": "600"
@@ -9781,7 +10082,7 @@
                           "id": "XaZPd",
                           "name": "ds10",
                           "fill": "#8B7D6B",
-                          "content": "お見送り",
+                          "content": "またのお越しを心よりお待ちしております",
                           "lineHeight": 1.8,
                           "fontFamily": "Noto Sans JP",
                           "fontSize": 14,
@@ -10684,7 +10985,7 @@
                       "type": "text",
                       "id": "FqmAs",
                       "name": "ctaTitle",
-                      "fill": "#FAFAF3",
+                      "fill": "#faf8f3",
                       "textGrowth": "fixed-width",
                       "width": 700,
                       "content": "あなたの特別な一日を、\n月瀬庵でお過ごしください。",
@@ -10730,7 +11031,7 @@
                           "type": "text",
                           "id": "MlyVG",
                           "name": "ctaBtn1Text",
-                          "fill": "#FAFAF3",
+                          "fill": "#faf8f3",
                           "content": "オンライン予約",
                           "fontFamily": "Noto Sans JP",
                           "fontSize": 14,
@@ -10758,7 +11059,7 @@
                           "type": "text",
                           "id": "F3hwA",
                           "name": "ctaBtn2Text",
-                          "fill": "#FAFAF3",
+                          "fill": "#faf8f3",
                           "content": "0460-83-XXXX",
                           "fontFamily": "Cormorant Garamond",
                           "fontSize": 16,
@@ -10927,6 +11228,47 @@
                       "letterSpacing": 2
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "eQREz",
+              "name": "footerSecondaryNav",
+              "width": "fill_container",
+              "gap": 24,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "stSyM",
+                  "fill": "#8B7D6B",
+                  "content": "お知らせ",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "gw2K5",
+                  "fill": "#8B7D6B",
+                  "content": "よくあるご質問",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "NcLzr",
+                  "fill": "#8B7D6B",
+                  "content": "お問い合わせ",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
                 }
               ]
             },
@@ -11258,7 +11600,7 @@
               "id": "uj3mQ",
               "name": "bcSep",
               "fill": "#D4C5A0",
-              "content": "/",
+              "content": ">",
               "fontFamily": "Noto Sans JP",
               "fontSize": 12,
               "fontWeight": "300"
@@ -11382,6 +11724,32 @@
                   "fontSize": 16,
                   "fontWeight": "300",
                   "letterSpacing": 2
+                },
+                {
+                  "type": "frame",
+                  "id": "XYWVo",
+                  "name": "heroBtn",
+                  "fill": "#8B6914",
+                  "cornerRadius": 2,
+                  "padding": [
+                    14,
+                    40
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ilagv",
+                      "name": "heroBtnText",
+                      "fill": "#FAF8F3",
+                      "content": "予約する",
+                      "fontFamily": "Noto Sans JP",
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "letterSpacing": 2
+                    }
+                  ]
                 }
               ]
             }
@@ -11921,7 +12289,7 @@
                       "type": "text",
                       "id": "SJyUE",
                       "name": "ctaTitle",
-                      "fill": "#FAFAF3",
+                      "fill": "#faf8f3",
                       "textGrowth": "fixed-width",
                       "width": 700,
                       "content": "あなたの特別な一日を、\n月瀬庵でお過ごしください。",
@@ -11967,7 +12335,7 @@
                           "type": "text",
                           "id": "8aFgc",
                           "name": "ctaBtn1Text",
-                          "fill": "#FAFAF3",
+                          "fill": "#faf8f3",
                           "content": "オンライン予約",
                           "fontFamily": "Noto Sans JP",
                           "fontSize": 14,
@@ -11995,7 +12363,7 @@
                           "type": "text",
                           "id": "aDLDq",
                           "name": "ctaBtn2Text",
-                          "fill": "#FAFAF3",
+                          "fill": "#faf8f3",
                           "content": "0460-83-XXXX",
                           "fontFamily": "Cormorant Garamond",
                           "fontSize": 16,
@@ -12164,6 +12532,47 @@
                       "letterSpacing": 2
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "KdCRB",
+              "name": "footerSecondaryNav",
+              "width": "fill_container",
+              "gap": 24,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "6v8iO",
+                  "fill": "#8B7D6B",
+                  "content": "お知らせ",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "mB8K1",
+                  "fill": "#8B7D6B",
+                  "content": "よくあるご質問",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "O4rjv",
+                  "fill": "#8B7D6B",
+                  "content": "お問い合わせ",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
                 }
               ]
             },
@@ -13393,6 +13802,142 @@
               ]
             }
           ]
+        },
+        {
+          "type": "frame",
+          "id": "jdW4K",
+          "name": "Related Page Links",
+          "reusable": true,
+          "width": "fill_container",
+          "fill": "#FAF8F3",
+          "gap": 60,
+          "padding": [
+            40,
+            80
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "Kofjx",
+              "name": "link1",
+              "fill": "#8B6914",
+              "content": "リンク1 →",
+              "fontFamily": "Noto Sans JP",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "letterSpacing": 1
+            },
+            {
+              "type": "text",
+              "id": "QjsOP",
+              "name": "link2",
+              "fill": "#8B6914",
+              "content": "リンク2 →",
+              "fontFamily": "Noto Sans JP",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "letterSpacing": 1
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "25Yvd",
+          "name": "Icon Info Card",
+          "reusable": true,
+          "width": 280,
+          "fill": "#F0EBE0",
+          "cornerRadius": 4,
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            32,
+            28
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon_font",
+              "id": "gyawB",
+              "name": "cardIcon",
+              "width": 32,
+              "height": 32,
+              "iconFontName": "map-pin",
+              "iconFontFamily": "lucide",
+              "fill": "#8B6914"
+            },
+            {
+              "type": "text",
+              "id": "lJj3x",
+              "name": "cardTitle",
+              "fill": "#2C2418",
+              "content": "カードタイトル",
+              "textAlign": "center",
+              "fontFamily": "Noto Serif JP",
+              "fontSize": 15,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "QAFtU",
+              "name": "cardDesc",
+              "fill": "#8B7D6B",
+              "content": "カードの説明テキスト",
+              "lineHeight": 1.8,
+              "textAlign": "center",
+              "fontFamily": "Noto Sans JP",
+              "fontSize": 13,
+              "fontWeight": "300"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pYjGY",
+          "name": "Info Item",
+          "reusable": true,
+          "width": 240,
+          "layout": "vertical",
+          "gap": 12,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "0mt80",
+              "name": "itemEmoji",
+              "content": "🔵",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 24,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "DperZ",
+              "name": "itemTitle",
+              "fill": "#2C2418",
+              "content": "タイトル",
+              "textAlign": "center",
+              "fontFamily": "Noto Sans JP",
+              "fontSize": 14,
+              "fontWeight": "600",
+              "letterSpacing": 1
+            },
+            {
+              "type": "text",
+              "id": "bxhzK",
+              "name": "itemDesc",
+              "fill": "#8B7D6B",
+              "content": "説明テキスト",
+              "lineHeight": 1.8,
+              "textAlign": "center",
+              "fontFamily": "Noto Sans JP",
+              "fontSize": 13,
+              "fontWeight": "300"
+            }
+          ]
         }
       ]
     },
@@ -13610,7 +14155,7 @@
               "id": "DhcRa",
               "name": "bcSep",
               "fill": "#D4C5A0",
-              "content": "/",
+              "content": ">",
               "fontFamily": "Noto Sans JP",
               "fontSize": 12,
               "fontWeight": "300"
@@ -13734,6 +14279,32 @@
                   "fontSize": 16,
                   "fontWeight": "300",
                   "letterSpacing": 2
+                },
+                {
+                  "type": "frame",
+                  "id": "jy3xS",
+                  "name": "heroBtn",
+                  "fill": "#8B6914",
+                  "cornerRadius": 2,
+                  "padding": [
+                    14,
+                    40
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "2FOqo",
+                      "name": "heroBtnText",
+                      "fill": "#FAF8F3",
+                      "content": "予約する",
+                      "fontFamily": "Noto Sans JP",
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "letterSpacing": 2
+                    }
+                  ]
                 }
               ]
             }
@@ -14173,7 +14744,7 @@
           "layout": "vertical",
           "gap": 32,
           "padding": [
-            0,
+            60,
             80,
             80,
             80
@@ -15123,7 +15694,7 @@
                       "type": "text",
                       "id": "oD2MT",
                       "name": "ctaTitle",
-                      "fill": "#FAFAF3",
+                      "fill": "#faf8f3",
                       "textGrowth": "fixed-width",
                       "width": 700,
                       "content": "あなたの特別な一日を、\n月瀬庵でお過ごしください。",
@@ -15169,7 +15740,7 @@
                           "type": "text",
                           "id": "P1eIP",
                           "name": "ctaBtn1Text",
-                          "fill": "#FAFAF3",
+                          "fill": "#faf8f3",
                           "content": "オンライン予約",
                           "fontFamily": "Noto Sans JP",
                           "fontSize": 14,
@@ -15197,7 +15768,7 @@
                           "type": "text",
                           "id": "uVDb6",
                           "name": "ctaBtn2Text",
-                          "fill": "#FAFAF3",
+                          "fill": "#faf8f3",
                           "content": "0460-83-XXXX",
                           "fontFamily": "Cormorant Garamond",
                           "fontSize": 16,
@@ -15366,6 +15937,47 @@
                       "letterSpacing": 2
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "wuKOf",
+              "name": "footerSecondaryNav",
+              "width": "fill_container",
+              "gap": 24,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "iQh0l",
+                  "fill": "#8B7D6B",
+                  "content": "お知らせ",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "uqTdr",
+                  "fill": "#8B7D6B",
+                  "content": "よくあるご質問",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "OYi3f",
+                  "fill": "#8B7D6B",
+                  "content": "お問い合わせ",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
                 }
               ]
             },
@@ -15697,7 +16309,7 @@
               "id": "gscZI",
               "name": "bcSep",
               "fill": "#D4C5A0",
-              "content": "/",
+              "content": ">",
               "fontFamily": "Noto Sans JP",
               "fontSize": 12,
               "fontWeight": "300"
@@ -15821,6 +16433,32 @@
                   "fontSize": 16,
                   "fontWeight": "300",
                   "letterSpacing": 2
+                },
+                {
+                  "type": "frame",
+                  "id": "Hl6PP",
+                  "name": "heroBtn",
+                  "fill": "#8B6914",
+                  "cornerRadius": 2,
+                  "padding": [
+                    14,
+                    40
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "55Kcp",
+                      "name": "heroBtnText",
+                      "fill": "#FAF8F3",
+                      "content": "予約する",
+                      "fontFamily": "Noto Sans JP",
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "letterSpacing": 2
+                    }
+                  ]
                 }
               ]
             }
@@ -16369,17 +17007,19 @@
           "name": "Other Contact Section",
           "width": "fill_container",
           "fill": "#FAF8F3",
-          "gap": 48,
+          "gap": 40,
           "padding": [
             80,
             120
           ],
+          "justifyContent": "center",
+          "alignItems": "center",
           "children": [
             {
               "type": "frame",
               "id": "rFHjl",
               "name": "phoneCol",
-              "width": "fill_container",
+              "width": 400,
               "layout": "vertical",
               "gap": 20,
               "alignItems": "center",
@@ -16433,9 +17073,9 @@
               "type": "rectangle",
               "id": "ENVQl",
               "name": "dividerLine",
-              "fill": "#D4C5A033",
-              "width": "fill_container",
-              "height": 1
+              "fill": "#D4C5A0",
+              "width": 1,
+              "height": 80
             },
             {
               "type": "frame",
@@ -16443,12 +17083,13 @@
               "name": "infoRow",
               "width": "fill_container",
               "gap": 60,
+              "justifyContent": "center",
               "children": [
                 {
                   "type": "frame",
                   "id": "tSULz",
                   "name": "faxCol",
-                  "width": "fill_container",
+                  "width": 160,
                   "layout": "vertical",
                   "gap": 12,
                   "alignItems": "center",
@@ -16491,7 +17132,7 @@
                   "type": "frame",
                   "id": "Iu4Cw",
                   "name": "mailCol",
-                  "width": "fill_container",
+                  "width": 180,
                   "layout": "vertical",
                   "gap": 12,
                   "alignItems": "center",
@@ -16534,7 +17175,7 @@
                   "type": "frame",
                   "id": "gw5rM",
                   "name": "lineCol",
-                  "width": "fill_container",
+                  "width": 180,
                   "layout": "vertical",
                   "gap": 12,
                   "alignItems": "center",
@@ -16644,7 +17285,7 @@
                       "type": "text",
                       "id": "assWB",
                       "name": "ctaTitle",
-                      "fill": "#FAFAF3",
+                      "fill": "#faf8f3",
                       "textGrowth": "fixed-width",
                       "width": 700,
                       "content": "あなたの特別な一日を、\n月瀬庵でお過ごしください。",
@@ -16690,7 +17331,7 @@
                           "type": "text",
                           "id": "KXmFF",
                           "name": "ctaBtn1Text",
-                          "fill": "#FAFAF3",
+                          "fill": "#faf8f3",
                           "content": "オンライン予約",
                           "fontFamily": "Noto Sans JP",
                           "fontSize": 14,
@@ -16718,7 +17359,7 @@
                           "type": "text",
                           "id": "Lolm5",
                           "name": "ctaBtn2Text",
-                          "fill": "#FAFAF3",
+                          "fill": "#faf8f3",
                           "content": "0460-83-XXXX",
                           "fontFamily": "Cormorant Garamond",
                           "fontSize": 16,
@@ -16887,6 +17528,47 @@
                       "letterSpacing": 2
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "5l9Ny",
+              "name": "footerSecondaryNav",
+              "width": "fill_container",
+              "gap": 24,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "nI9ea",
+                  "fill": "#8B7D6B",
+                  "content": "お知らせ",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "Gnarj",
+                  "fill": "#8B7D6B",
+                  "content": "よくあるご質問",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "Vk3HV",
+                  "fill": "#8B7D6B",
+                  "content": "お問い合わせ",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
                 }
               ]
             },
@@ -17295,6 +17977,32 @@
                   "fontSize": 16,
                   "fontWeight": "300",
                   "letterSpacing": 2
+                },
+                {
+                  "type": "frame",
+                  "id": "qslYv",
+                  "name": "heroBtn",
+                  "fill": "#8B6914",
+                  "cornerRadius": 2,
+                  "padding": [
+                    14,
+                    40
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "AAmIR",
+                      "name": "heroBtnText",
+                      "fill": "#FAF8F3",
+                      "content": "予約する",
+                      "fontFamily": "Noto Sans JP",
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "letterSpacing": 2
+                    }
+                  ]
                 }
               ]
             }
@@ -17329,7 +18037,7 @@
               "id": "dPryU",
               "name": "bcSep",
               "fill": "#D4C5A0",
-              "content": "/",
+              "content": ">",
               "fontFamily": "Noto Sans JP",
               "fontSize": 12,
               "fontWeight": "300"
@@ -18343,7 +19051,7 @@
                       "type": "text",
                       "id": "42GJN",
                       "name": "ctaTitle",
-                      "fill": "#FAFAF3",
+                      "fill": "#faf8f3",
                       "textGrowth": "fixed-width",
                       "width": 700,
                       "content": "あなたの特別な一日を、\n月瀬庵でお過ごしください。",
@@ -18389,7 +19097,7 @@
                           "type": "text",
                           "id": "IHDQt",
                           "name": "ctaBtn1Text",
-                          "fill": "#FAFAF3",
+                          "fill": "#faf8f3",
                           "content": "オンライン予約",
                           "fontFamily": "Noto Sans JP",
                           "fontSize": 14,
@@ -18417,7 +19125,7 @@
                           "type": "text",
                           "id": "NZfQE",
                           "name": "ctaBtn2Text",
-                          "fill": "#FAFAF3",
+                          "fill": "#faf8f3",
                           "content": "0460-83-XXXX",
                           "fontFamily": "Cormorant Garamond",
                           "fontSize": 16,
@@ -18586,6 +19294,47 @@
                       "letterSpacing": 2
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "HNKS9",
+              "name": "footerSecondaryNav",
+              "width": "fill_container",
+              "gap": 24,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "tSpjv",
+                  "fill": "#8B7D6B",
+                  "content": "お知らせ",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "lGPcj",
+                  "fill": "#8B7D6B",
+                  "content": "よくあるご質問",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "ZQpVH",
+                  "fill": "#8B7D6B",
+                  "content": "お問い合わせ",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
                 }
               ]
             },
@@ -18917,7 +19666,7 @@
               "id": "Y0906",
               "name": "bcs1",
               "fill": "#D4C5A0",
-              "content": "/",
+              "content": ">",
               "fontFamily": "Noto Sans JP",
               "fontSize": 12,
               "fontWeight": "300"
@@ -18938,7 +19687,7 @@
               "id": "PZovS",
               "name": "bcs2",
               "fill": "#D4C5A0",
-              "content": "/",
+              "content": ">",
               "fontFamily": "Noto Sans JP",
               "fontSize": 12,
               "fontWeight": "300"
@@ -19258,7 +20007,7 @@
                       "id": "gP7hF",
                       "name": "ctaBoxBtnText",
                       "fill": "#FAF8F3",
-                      "content": "オンライン予約",
+                      "content": "ご予約はこちら →",
                       "fontFamily": "Noto Sans JP",
                       "fontSize": 14,
                       "fontWeight": "500",
@@ -19524,7 +20273,7 @@
                       "id": "GEyjk",
                       "name": "rel2Badge",
                       "fill": "#8B6914",
-                      "content": "お料理",
+                      "content": "施設情報",
                       "fontFamily": "Noto Sans JP",
                       "fontSize": 11,
                       "fontWeight": "500"
@@ -19718,7 +20467,7 @@
                       "type": "text",
                       "id": "zVSsd",
                       "name": "ctaTitle",
-                      "fill": "#FAFAF3",
+                      "fill": "#faf8f3",
                       "textGrowth": "fixed-width",
                       "width": 700,
                       "content": "あなたの特別な一日を、\n月瀬庵でお過ごしください。",
@@ -19764,7 +20513,7 @@
                           "type": "text",
                           "id": "MMkwO",
                           "name": "ctaBtn1Text",
-                          "fill": "#FAFAF3",
+                          "fill": "#faf8f3",
                           "content": "オンライン予約",
                           "fontFamily": "Noto Sans JP",
                           "fontSize": 14,
@@ -19792,7 +20541,7 @@
                           "type": "text",
                           "id": "PVIh4",
                           "name": "ctaBtn2Text",
-                          "fill": "#FAFAF3",
+                          "fill": "#faf8f3",
                           "content": "0460-83-XXXX",
                           "fontFamily": "Cormorant Garamond",
                           "fontSize": 16,
@@ -19961,6 +20710,47 @@
                       "letterSpacing": 2
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "GV5zM",
+              "name": "footerSecondaryNav",
+              "width": "fill_container",
+              "gap": 24,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "y7PJa",
+                  "fill": "#8B7D6B",
+                  "content": "お知らせ",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "EpnTP",
+                  "fill": "#8B7D6B",
+                  "content": "よくあるご質問",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "8mXTg",
+                  "fill": "#8B7D6B",
+                  "content": "お問い合わせ",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
                 }
               ]
             },
@@ -20369,6 +21159,32 @@
                   "fontSize": 16,
                   "fontWeight": "300",
                   "letterSpacing": 2
+                },
+                {
+                  "type": "frame",
+                  "id": "OnuS1",
+                  "name": "heroBtn",
+                  "fill": "#8B6914",
+                  "cornerRadius": 2,
+                  "padding": [
+                    14,
+                    40
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "0Nopp",
+                      "name": "heroBtnText",
+                      "fill": "#FAF8F3",
+                      "content": "予約する",
+                      "fontFamily": "Noto Sans JP",
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "letterSpacing": 2
+                    }
+                  ]
                 }
               ]
             }
@@ -20403,7 +21219,7 @@
               "id": "C2Ypz",
               "name": "bcSep",
               "fill": "#D4C5A0",
-              "content": "/",
+              "content": ">",
               "fontFamily": "Noto Sans JP",
               "fontSize": 12,
               "fontWeight": "300"
@@ -21554,7 +22370,7 @@
                       "type": "text",
                       "id": "sEho5",
                       "name": "ctaTitle",
-                      "fill": "#FAFAF3",
+                      "fill": "#faf8f3",
                       "textGrowth": "fixed-width",
                       "width": 700,
                       "content": "あなたの特別な一日を、\n月瀬庵でお過ごしください。",
@@ -21600,7 +22416,7 @@
                           "type": "text",
                           "id": "n9lrd",
                           "name": "ctaBtn1Text",
-                          "fill": "#FAFAF3",
+                          "fill": "#faf8f3",
                           "content": "オンライン予約",
                           "fontFamily": "Noto Sans JP",
                           "fontSize": 14,
@@ -21628,7 +22444,7 @@
                           "type": "text",
                           "id": "qdRUW",
                           "name": "ctaBtn2Text",
-                          "fill": "#FAFAF3",
+                          "fill": "#faf8f3",
                           "content": "0460-83-XXXX",
                           "fontFamily": "Cormorant Garamond",
                           "fontSize": 16,
@@ -21801,6 +22617,47 @@
               ]
             },
             {
+              "type": "frame",
+              "id": "QVY4B",
+              "name": "footerSecondaryNav",
+              "width": "fill_container",
+              "gap": 24,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "KYcx9",
+                  "fill": "#8B7D6B",
+                  "content": "お知らせ",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "gluuD",
+                  "fill": "#8B7D6B",
+                  "content": "よくあるご質問",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "HygMS",
+                  "fill": "#8B7D6B",
+                  "content": "お問い合わせ",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
               "type": "rectangle",
               "id": "4R6zo",
               "name": "footerDivider",
@@ -21902,6 +22759,1107 @@
             {
               "type": "text",
               "id": "GuJVs",
+              "name": "footerBottom",
+              "fill": "#6B5D4F55",
+              "content": "© 2026 月瀬庵 TSUKISE-AN. All Rights Reserved.",
+              "fontFamily": "Cormorant Garamond",
+              "fontSize": 11,
+              "fontWeight": "normal",
+              "letterSpacing": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "vCw0m",
+      "x": 21220,
+      "y": 0,
+      "name": "プライバシーポリシーページ",
+      "clip": true,
+      "width": 1440,
+      "fill": "#FAF8F3",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "jUHTO",
+          "name": "header",
+          "width": "fill_container",
+          "height": 80,
+          "fill": "#FAF8F3",
+          "padding": [
+            0,
+            60
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ZXW4i",
+              "name": "logoArea",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "gwVUb",
+                  "name": "logoMark",
+                  "fill": "#8B6914",
+                  "content": "月",
+                  "fontFamily": "Noto Serif JP",
+                  "fontSize": 28,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "KYMBg",
+                  "name": "logoDivider",
+                  "fill": "#D4C5A0",
+                  "width": 1,
+                  "height": 32
+                },
+                {
+                  "type": "frame",
+                  "id": "OTOLY",
+                  "name": "logoText",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Zn15z",
+                      "name": "logoMain",
+                      "fill": "#2C2418",
+                      "content": "月瀬庵",
+                      "fontFamily": "Noto Serif JP",
+                      "fontSize": 20,
+                      "fontWeight": "600",
+                      "letterSpacing": 4
+                    },
+                    {
+                      "type": "text",
+                      "id": "0us7N",
+                      "name": "logoSub",
+                      "fill": "#8B7D6B",
+                      "content": "TSUKISE-AN",
+                      "fontFamily": "Cormorant Garamond",
+                      "fontSize": 10,
+                      "fontWeight": "500",
+                      "letterSpacing": 3
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "faBFj",
+              "name": "navArea",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "IZRbf",
+                  "name": "nav1",
+                  "fill": "#4A4035",
+                  "content": "客室",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "YVoeC",
+                  "name": "nav2",
+                  "fill": "#4A4035",
+                  "content": "温泉",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "sHGXC",
+                  "name": "nav3",
+                  "fill": "#4A4035",
+                  "content": "お料理",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "37vcU",
+                  "name": "nav4",
+                  "fill": "#4A4035",
+                  "content": "過ごし方",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "2EFMM",
+                  "name": "nav5",
+                  "fill": "#4A4035",
+                  "content": "アクセス",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "rectangle",
+                  "id": "sn1Pa",
+                  "name": "navDiv",
+                  "fill": "#D4C5A0",
+                  "width": 1,
+                  "height": 20
+                },
+                {
+                  "type": "frame",
+                  "id": "kfPvC",
+                  "name": "navCta",
+                  "fill": "#8B6914",
+                  "cornerRadius": 2,
+                  "padding": [
+                    14,
+                    44
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "QSEqY",
+                      "name": "navCtaText",
+                      "fill": "#FAF8F3",
+                      "content": "ご予約",
+                      "fontFamily": "Noto Sans JP",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "letterSpacing": 3
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "93lPd",
+          "name": "pageHero",
+          "clip": true,
+          "width": "fill_container",
+          "height": 360,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "VC92E",
+              "x": 0,
+              "y": 0,
+              "name": "heroBg",
+              "width": 1440,
+              "height": 360,
+              "fill": "#2C2418"
+            },
+            {
+              "type": "frame",
+              "id": "ONZ4m",
+              "x": 0,
+              "y": 0,
+              "name": "heroContent",
+              "width": 1440,
+              "height": 360,
+              "layout": "vertical",
+              "gap": 24,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "TSXlA",
+                  "name": "heroLabel",
+                  "gap": 20,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "FRi0Q",
+                      "name": "heroLine1",
+                      "fill": "#D4C5A0",
+                      "width": 40,
+                      "height": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "2ei0W",
+                      "name": "heroLabelText",
+                      "fill": "#D4C5A0",
+                      "content": "PRIVACY POLICY",
+                      "fontFamily": "Cormorant Garamond",
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "letterSpacing": 6
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "OA6Bc",
+                      "name": "heroLine2",
+                      "fill": "#D4C5A0",
+                      "width": 40,
+                      "height": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "Mib4a",
+                  "name": "heroTitle",
+                  "fill": "#FAF8F3",
+                  "content": "プライバシーポリシー",
+                  "textAlign": "center",
+                  "fontFamily": "Noto Serif JP",
+                  "fontSize": 42,
+                  "fontWeight": "600",
+                  "letterSpacing": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "wBMu2",
+          "name": "breadcrumb",
+          "width": "fill_container",
+          "fill": "#EEEBE3",
+          "gap": 8,
+          "padding": [
+            16,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "P1aQL",
+              "name": "bc1",
+              "fill": "#8B7D6B",
+              "content": "ホーム",
+              "fontFamily": "Noto Sans JP",
+              "fontSize": 12,
+              "fontWeight": "300",
+              "letterSpacing": 1
+            },
+            {
+              "type": "text",
+              "id": "jJsbk",
+              "name": "bcSep",
+              "fill": "#D4C5A0",
+              "content": ">",
+              "fontFamily": "Noto Sans JP",
+              "fontSize": 12,
+              "fontWeight": "300"
+            },
+            {
+              "type": "text",
+              "id": "EAoLN",
+              "name": "bc2",
+              "fill": "#2C2418",
+              "content": "プライバシーポリシー",
+              "fontFamily": "Noto Sans JP",
+              "fontSize": 12,
+              "fontWeight": "500",
+              "letterSpacing": 1
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "7nIni",
+          "name": "policyContent",
+          "width": "fill_container",
+          "fill": "#FAF8F3",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            80,
+            200
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "ACLWS",
+              "name": "introText",
+              "fill": "#2C2418",
+              "content": "月瀬庵（以下「当館」）は、お客様の個人情報の保護を重要な責務と考え、以下のとおりプライバシーポリシーを定め、個人情報の適切な取り扱いに努めます。",
+              "lineHeight": 2.2,
+              "fontFamily": "Noto Sans JP",
+              "fontSize": 14,
+              "fontWeight": "300"
+            },
+            {
+              "type": "frame",
+              "id": "mC6ov",
+              "name": "section1",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "9srQJ",
+                  "name": "sec1Title",
+                  "fill": "#2C2418",
+                  "content": "1. 個人情報の定義",
+                  "fontFamily": "Noto Serif JP",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "anOsI",
+                  "name": "sec1Body",
+                  "fill": "#8B7D6B",
+                  "content": "当館が取得する個人情報とは、お名前、ご住所、電話番号、メールアドレス、その他お客様を識別できる情報をいいます。",
+                  "lineHeight": 2,
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 14,
+                  "fontWeight": "300"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ywmCp",
+              "name": "section2",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "scd0d",
+                  "name": "sec2Title",
+                  "fill": "#2C2418",
+                  "content": "2. 個人情報の収集",
+                  "fontFamily": "Noto Serif JP",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "v5BzF",
+                  "name": "sec2Body",
+                  "fill": "#8B7D6B",
+                  "content": "当館は、以下の場合に個人情報を収集いたします。\n・ご予約のお申し込み時\n・お問い合わせフォームのご利用時\n・メールマガジンのご登録時\n・アンケートへのご回答時",
+                  "lineHeight": 2,
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 14,
+                  "fontWeight": "300"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "w9HKj",
+              "name": "section3",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "x6BX7",
+                  "name": "sec3Title",
+                  "fill": "#2C2418",
+                  "content": "3. 個人情報の利用目的",
+                  "fontFamily": "Noto Serif JP",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "2VdRw",
+                  "name": "sec3Body",
+                  "fill": "#8B7D6B",
+                  "content": "収集した個人情報は、以下の目的で利用いたします。\n・ご予約の確認およびご連絡\n・サービスの提供および改善\n・お問い合わせへのご対応\n・当館からのお知らせやキャンペーン情報のご案内\n・統計データの作成（個人を特定できない形式）",
+                  "lineHeight": 2,
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 14,
+                  "fontWeight": "300"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "7qQsI",
+              "name": "section4",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "p9ksj",
+                  "name": "sec4Title",
+                  "fill": "#2C2418",
+                  "content": "4. 個人情報の第三者提供",
+                  "fontFamily": "Noto Serif JP",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "Gbjy1",
+                  "name": "sec4Body",
+                  "fill": "#8B7D6B",
+                  "content": "当館は、法令に基づく場合を除き、お客様の同意なく個人情報を第三者に提供いたしません。",
+                  "lineHeight": 2,
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 14,
+                  "fontWeight": "300"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qwO0w",
+              "name": "section5",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "rE2TV",
+                  "name": "sec5Title",
+                  "fill": "#2C2418",
+                  "content": "5. 個人情報の管理",
+                  "fontFamily": "Noto Serif JP",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "gD2kq",
+                  "name": "sec5Body",
+                  "fill": "#8B7D6B",
+                  "content": "当館は、個人情報の漏洩、滅失、毀損を防止するため、適切なセキュリティ対策を講じます。",
+                  "lineHeight": 2,
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 14,
+                  "fontWeight": "300"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "gT8yW",
+              "name": "section6",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "UBSVG",
+                  "name": "sec6Title",
+                  "fill": "#2C2418",
+                  "content": "6. Cookieの使用について",
+                  "fontFamily": "Noto Serif JP",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "G0LM7",
+                  "name": "sec6Body",
+                  "fill": "#8B7D6B",
+                  "content": "当館のウェブサイトでは、サービス向上のためCookieを使用しております。Cookieの使用を希望されない場合は、ブラウザの設定により無効にすることができます。",
+                  "lineHeight": 2,
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 14,
+                  "fontWeight": "300"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "GQ7es",
+              "name": "section7",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Y28rQ",
+                  "name": "sec7Title",
+                  "fill": "#2C2418",
+                  "content": "7. プライバシーポリシーの変更",
+                  "fontFamily": "Noto Serif JP",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "FUOPx",
+                  "name": "sec7Body",
+                  "fill": "#8B7D6B",
+                  "content": "当館は、必要に応じて本ポリシーを変更することがあります。変更後のポリシーは、当ウェブサイトに掲載した時点から効力を生じます。",
+                  "lineHeight": 2,
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 14,
+                  "fontWeight": "300"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "bO2BK",
+              "name": "section8",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "e8JYj",
+                  "name": "sec8Title",
+                  "fill": "#2C2418",
+                  "content": "8. お問い合わせ窓口",
+                  "fontFamily": "Noto Serif JP",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "9j2gL",
+                  "name": "sec8Body",
+                  "fill": "#8B7D6B",
+                  "content": "個人情報の取り扱いに関するお問い合わせは、下記までご連絡ください。\n\n月瀬庵\n〒250-0522 神奈川県足柄下郡箱根町元箱根138\nTEL: 0460-83-XXXX\nEmail: info@tsukise-an.jp",
+                  "lineHeight": 2,
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 14,
+                  "fontWeight": "300"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Ikj4j",
+          "name": "lastUpdated",
+          "width": "fill_container",
+          "fill": "#FAF8F3",
+          "padding": [
+            40,
+            200
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "wNH0P",
+              "name": "lastUpdatedText",
+              "fill": "#8B7D6B",
+              "content": "最終更新日：2026年2月22日",
+              "textAlign": "center",
+              "fontFamily": "Noto Sans JP",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "0bP7Y",
+          "name": "ctaSection",
+          "clip": true,
+          "width": "fill_container",
+          "height": 480,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "fOVsU",
+              "x": 0,
+              "y": 0,
+              "name": "ctaBg",
+              "width": 1440,
+              "height": 480,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1771696586893.png",
+                "mode": "fill"
+              }
+            },
+            {
+              "type": "frame",
+              "id": "NjVdK",
+              "x": 0,
+              "y": 0,
+              "name": "ctaOverlay",
+              "width": 1440,
+              "height": 480,
+              "fill": "#1A150E88"
+            },
+            {
+              "type": "frame",
+              "id": "JMkA6",
+              "x": 0,
+              "y": 0,
+              "name": "ctaContent",
+              "width": 1440,
+              "height": 480,
+              "layout": "vertical",
+              "gap": 40,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "2Kn46",
+                  "name": "ctaIntro",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "jAkG5",
+                      "name": "ctaDecoLine",
+                      "fill": "#D4C5A088",
+                      "width": 1,
+                      "height": 30
+                    },
+                    {
+                      "type": "text",
+                      "id": "Rizbr",
+                      "name": "ctaTitle",
+                      "fill": "#faf8f3",
+                      "textGrowth": "fixed-width",
+                      "width": 700,
+                      "content": "あなたの特別な一日を、\n月瀬庵でお過ごしください。",
+                      "lineHeight": 1.8,
+                      "textAlign": "center",
+                      "fontFamily": "Noto Serif JP",
+                      "fontSize": 28,
+                      "fontWeight": "600",
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "ubsoW",
+                      "name": "ctaSub",
+                      "fill": "#C4B89A",
+                      "content": "ご予約・お問い合わせはお電話またはオンラインにて承ります",
+                      "fontFamily": "Noto Sans JP",
+                      "fontSize": 14,
+                      "fontWeight": "300",
+                      "letterSpacing": 2
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "HhCBy",
+                  "name": "ctaBtns",
+                  "gap": 24,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "DFlMw",
+                      "name": "ctaBtn1",
+                      "fill": "#8B6914",
+                      "padding": [
+                        16,
+                        48
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "q3tuY",
+                          "name": "ctaBtn1Text",
+                          "fill": "#FAF8F3",
+                          "content": "オンライン予約",
+                          "fontFamily": "Noto Sans JP",
+                          "fontSize": 14,
+                          "fontWeight": "500",
+                          "letterSpacing": 3
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "UZDoc",
+                      "name": "ctaBtn2",
+                      "fill": "transparent",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#D4C5A088"
+                      },
+                      "padding": [
+                        16,
+                        48
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ggBzP",
+                          "name": "ctaBtn2Text",
+                          "fill": "#D4C5A0",
+                          "content": "お電話で予約",
+                          "fontFamily": "Noto Sans JP",
+                          "fontSize": 14,
+                          "fontWeight": "300",
+                          "letterSpacing": 3
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "i8nMM",
+          "name": "footer",
+          "width": "fill_container",
+          "fill": "#1A150E",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            60,
+            80,
+            32,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "saFzJ",
+              "name": "footerTop",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "xxWzb",
+                  "name": "footerBrand",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "P26ET",
+                      "name": "footerLogoRow",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Hcq5q",
+                          "name": "footerLogoMark",
+                          "fill": "#8B6914",
+                          "content": "月",
+                          "fontFamily": "Noto Serif JP",
+                          "fontSize": 24,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "AHsKD",
+                          "name": "footerLogoDivider",
+                          "fill": "#D4C5A044",
+                          "width": 1,
+                          "height": 28
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Fj3nV",
+                          "name": "footerLogoTextFrame",
+                          "layout": "vertical",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "8oWWf",
+                              "name": "footerLogoMain",
+                              "fill": "#D4C5A0",
+                              "content": "月瀬庵",
+                              "fontFamily": "Noto Serif JP",
+                              "fontSize": 18,
+                              "fontWeight": "600",
+                              "letterSpacing": 4
+                            },
+                            {
+                              "type": "text",
+                              "id": "6Gfeb",
+                              "name": "footerLogoSub",
+                              "fill": "#6B5D4F",
+                              "content": "TSUKISE-AN",
+                              "fontFamily": "Cormorant Garamond",
+                              "fontSize": 10,
+                              "fontWeight": "500",
+                              "letterSpacing": 3
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "XsnCM",
+                      "name": "footerAddr",
+                      "fill": "#8B7D6B",
+                      "content": "〒250-0522 神奈川県足柄下郡箱根町元箱根138",
+                      "fontFamily": "Noto Sans JP",
+                      "fontSize": 12,
+                      "fontWeight": "300",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "U1flz",
+                  "name": "footerNavs",
+                  "gap": 40,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Nm1IE",
+                      "name": "fn1",
+                      "fill": "#8B7D6B",
+                      "content": "客室",
+                      "fontFamily": "Noto Sans JP",
+                      "fontSize": 12,
+                      "fontWeight": "300",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "X225n",
+                      "name": "fn2",
+                      "fill": "#8B7D6B",
+                      "content": "温泉",
+                      "fontFamily": "Noto Sans JP",
+                      "fontSize": 12,
+                      "fontWeight": "300",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "ZNxlS",
+                      "name": "fn3",
+                      "fill": "#8B7D6B",
+                      "content": "お料理",
+                      "fontFamily": "Noto Sans JP",
+                      "fontSize": 12,
+                      "fontWeight": "300",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "OnrRq",
+                      "name": "fn4",
+                      "fill": "#8B7D6B",
+                      "content": "過ごし方",
+                      "fontFamily": "Noto Sans JP",
+                      "fontSize": 12,
+                      "fontWeight": "300",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "GR4bQ",
+                      "name": "fn5",
+                      "fill": "#8B7D6B",
+                      "content": "アクセス",
+                      "fontFamily": "Noto Sans JP",
+                      "fontSize": 12,
+                      "fontWeight": "300",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "bqBte",
+                      "name": "fn6",
+                      "fill": "#8B6914",
+                      "content": "ご予約",
+                      "fontFamily": "Noto Sans JP",
+                      "fontSize": 12,
+                      "fontWeight": "300",
+                      "letterSpacing": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "wirMF",
+              "name": "footerSecondaryNav",
+              "width": "fill_container",
+              "gap": 24,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Nt9GN",
+                  "name": "nav1",
+                  "fill": "#8B7D6B",
+                  "content": "お知らせ",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "b90vM",
+                  "name": "nav2",
+                  "fill": "#8B7D6B",
+                  "content": "よくあるご質問",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "lbU4W",
+                  "name": "nav3",
+                  "fill": "#8B7D6B",
+                  "content": "お問い合わせ",
+                  "fontFamily": "Noto Sans JP",
+                  "fontSize": 12,
+                  "fontWeight": "300",
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "eglUP",
+              "name": "footerDivider",
+              "fill": "#2C241888",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "yzoeb",
+              "name": "footerMiddle",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "y1jWh",
+                  "name": "footerLegal",
+                  "gap": 32,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "0NB4E",
+                      "name": "legalPrivacy",
+                      "fill": "#6B5D4F",
+                      "content": "プライバシーポリシー",
+                      "fontFamily": "Noto Sans JP",
+                      "fontSize": 11,
+                      "fontWeight": "300",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "5SUsA",
+                      "name": "legalCommerce",
+                      "fill": "#6B5D4F",
+                      "content": "特定商取引法に基づく表記",
+                      "fontFamily": "Noto Sans JP",
+                      "fontSize": 11,
+                      "fontWeight": "300",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "cS9jy",
+                      "name": "legalSitemap",
+                      "fill": "#6B5D4F",
+                      "content": "サイトマップ",
+                      "fontFamily": "Noto Sans JP",
+                      "fontSize": 11,
+                      "fontWeight": "300",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "9I8Ei",
+                  "name": "footerSns",
+                  "gap": 24,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "q0yte",
+                      "name": "snsInstagram",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "instagram",
+                      "iconFontFamily": "lucide",
+                      "fill": "#8B7D6B"
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "A72sU",
+                      "name": "snsFacebook",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "facebook",
+                      "iconFontFamily": "lucide",
+                      "fill": "#8B7D6B"
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "aKqCS",
+                      "name": "snsLine",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "message-circle",
+                      "iconFontFamily": "lucide",
+                      "fill": "#8B7D6B"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "2e4Xo",
               "name": "footerBottom",
               "fill": "#6B5D4F55",
               "content": "© 2026 月瀬庵 TSUKISE-AN. All Rights Reserved.",
