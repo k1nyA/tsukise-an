@@ -82,7 +82,7 @@
   - 主要導線にE2Eテスト
 - 運用:
   - `.env.example` / セットアップ手順整備
-  - 障害時Runbook整備
+  - 障害時Runbook整備（`docs/BACKEND_RUNBOOK.md`）
 
 ## 7. 並列開発の前提（依存関係）
 - クリティカルパス:
