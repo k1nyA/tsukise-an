@@ -1,14 +1,20 @@
+import Image from 'next/image'
+
 export function HeroSection() {
   return (
     <section
       className="relative w-full overflow-hidden"
       style={{ height: 780 }}
     >
-      {/* Background image placeholder */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundColor: 'var(--ryokan-darkest)' }}
-        aria-hidden="true"
+      {/* Background image */}
+      <Image
+        src="/images/hero.png"
+        alt="芦ノ湖畔の月瀬庵"
+        fill
+        className="object-cover"
+        priority
+        quality={85}
+        sizes="100vw"
       />
 
       {/* Overlay */}
