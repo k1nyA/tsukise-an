@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
+    "test:env": "node --test --import tsx src/lib/env.test.ts",
     "typecheck": "tsc --noEmit",
     "verify": "npm run lint && npm run typecheck && npm run build",
     "add": "liftkit add",
@@ -15,6 +16,7 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@calcom/embed-react": "^1.5.3",
     "@csstools/normalize.css": "^12.1.1",
     "@material/material-color-utilities": "^0.3.0",
     "@radix-ui/react-navigation-menu": "^1.2.14",
@@ -23,6 +25,7 @@
     "clsx": "^2.1.1",
     "lucide-react": "^0.511.0",
     "material-dynamic-colors": "^1.1.4",
+    "microcms-js-sdk": "^3.3.0",
     "next": "15.3.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
@@ -38,6 +41,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
     "shadcn": "^2.7.0",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   }
 }
