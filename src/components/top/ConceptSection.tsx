@@ -6,7 +6,7 @@ export function ConceptSection() {
       className="flex w-full flex-col items-center"
       style={{
         backgroundColor: 'var(--ryokan-bg)',
-        padding: '120px 160px',
+        padding: '120px 80px',
         gap: 56,
       }}
     >
@@ -17,10 +17,10 @@ export function ConceptSection() {
       <h2
         style={{
           fontFamily: 'var(--font-heading)',
-          fontSize: 36,
+          fontSize: 32,
           fontWeight: 600,
           color: 'var(--ryokan-dark)',
-          letterSpacing: 6,
+          letterSpacing: 4,
           textAlign: 'center',
           margin: 0,
         }}
@@ -32,13 +32,13 @@ export function ConceptSection() {
       <p
         style={{
           fontFamily: 'var(--font-body)',
-          fontSize: 16,
+          fontSize: 15,
           fontWeight: 300,
           color: 'var(--ryokan-muted)',
-          letterSpacing: 1.5,
+          letterSpacing: 1,
           lineHeight: 2,
           textAlign: 'center',
-          maxWidth: 720,
+          maxWidth: 640,
           margin: 0,
         }}
       >
