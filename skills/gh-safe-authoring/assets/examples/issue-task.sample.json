@@ -1,0 +1,38 @@
+{
+  "title": "[FE-02] 共通コンポーネント基盤（Header/Footer/CTA/Breadcrumb）実装",
+  "repo": "k1nyA/tsukise-an",
+  "labels": [
+    "type:task",
+    "area:frontend",
+    "stack:component",
+    "method:tdd",
+    "priority:p0"
+  ],
+  "parentIssue": 34,
+  "sections": {
+    "background": "ページごとの重複実装により、UI差分と保守コストが増えている。",
+    "purpose": [
+      "共通コンポーネントを再利用可能なAPIで統一する",
+      "導線とボタン表記の揺れをなくす"
+    ],
+    "scope": [
+      "`Header` / `Footer` / `CTASection` / `Breadcrumb` を共通化",
+      "主要ページへ適用",
+      "ボタン色/角丸/ホバーをデザイントークンへ寄せる"
+    ],
+    "dependencies": [35, "#44"],
+    "rules": [
+      "`.pen` は編集しない（参照のみ）",
+      "PR本文は `--body-file` を使用"
+    ],
+    "tdd": {
+      "red": ["共通コンポーネントがなくページ単位で重複実装されている"],
+      "green": ["主要ページで共通コンポーネント化が完了している"],
+      "refactor": ["props/variantの命名を統一する"]
+    },
+    "acceptance": [
+      "4コンポーネントの再利用が可能",
+      "主要導線の表示崩れがない"
+    ]
+  }
+}

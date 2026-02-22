@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Safe Authoring"
+  short_description: "Safe Issue/PR authoring with schema"
+  default_prompt: "Create or update GitHub Issues and PRs safely from JSON specs using body-file."

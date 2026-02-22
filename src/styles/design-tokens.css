@@ -1,0 +1,40 @@
+/* ==========================================================================
+   Design Tokens — Single Source of Truth
+   Generated from docs/design-data/design-tokens.json
+   ========================================================================== */
+
+:root {
+  /* Colors - Background */
+  --ryokan-bg: #FAF8F3;
+  --ryokan-light-bg: #EEEBE3;
+  --ryokan-light-bg-alt: #F0EBE0;
+  --ryokan-dark: #2C2418;
+  --ryokan-darkest: #1A150E;
+  --ryokan-hero-overlay: #1A150E55;
+
+  /* Colors - Text */
+  --ryokan-muted: #4A4035;
+  --ryokan-subtle: #8B7D6B;
+  --ryokan-secondary: #6B5D4F;
+  --ryokan-text-on-dark: #FAF8F3;
+  --ryokan-text-subtle: #C4B89A;
+
+  /* Colors - Accent */
+  --ryokan-gold: #8B6914;
+  --ryokan-light-gold: #D4C5A0;
+  --ryokan-soft-line: #D4C5A055;
+
+  /* Typography - Font Families */
+  --font-heading: var(--font-serif-jp), 'Noto Serif JP', serif;
+  --font-body: var(--font-sans-jp), 'Noto Sans JP', sans-serif;
+  --font-accent: var(--font-display), 'Cormorant Garamond', serif;
+
+  /* Spacing & Layout */
+  --section-padding-y: 80px;
+  --section-padding-x: 120px;
+  --content-max-width: 1000px;
+  --page-width: 1440px;
+  --header-height: 80px;
+  --hero-height: 480px;
+  --subpage-hero-height: 360px;
+}

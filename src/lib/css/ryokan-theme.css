@@ -1,13 +1,5 @@
 :root {
-  --ryokan-bg: #faf8f3;
-  --ryokan-dark: #2c2418;
-  --ryokan-gold: #8b6914;
-  --ryokan-muted: #4a4035;
-  --ryokan-light-gold: #d4c5a0;
-  --ryokan-subtle: #8b7d6b;
-  --ryokan-light-bg: #eeebe3;
-  --ryokan-darkest: #1a150e;
-  --ryokan-soft-line: #d4c5a055;
+  /* Color variables are now defined in src/styles/design-tokens.css */
   --ryokan-container: min(1320px, calc(100vw - 120px));
   --ryokan-shadow: 0 24px 48px rgba(26, 21, 14, 0.12);
   --ryokan-anim: 0.36s cubic-bezier(0.22, 1, 0.36, 1);

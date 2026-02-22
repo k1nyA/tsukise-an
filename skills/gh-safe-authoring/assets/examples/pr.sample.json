@@ -1,0 +1,31 @@
+{
+  "title": "feat: add shared layout components for frontend pages",
+  "repo": "k1nyA/tsukise-an",
+  "base": "main",
+  "head": "codex/36-shared-components",
+  "labels": ["area:frontend", "type:task"],
+  "reviewers": ["k1nyA"],
+  "sections": {
+    "summary": [
+      "Header/Footer/CTA/Breadcrumb を共通コンポーネント化",
+      "トップ/詳細ページで再利用する導線を統一"
+    ],
+    "changes": [
+      "`src/components/Header.tsx` などの共通部品を実装",
+      "ページ側の重複UIを削除",
+      "デザイン変数を参照してボタン見た目を統一"
+    ],
+    "testing": [
+      "[x] npm run lint",
+      "[x] npm run typecheck",
+      "[x] npm run build"
+    ],
+    "reviewFocus": [
+      "既存導線が壊れていないか",
+      "共通化により表示崩れが増えていないか"
+    ],
+    "risks": ["スタイル上書き順によるボタン外観の差分"],
+    "relatedIssues": [34, 36],
+    "notes": ["本文は `--body-file` 経由で投入"]
+  }
+}
