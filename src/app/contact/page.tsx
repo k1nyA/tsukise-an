@@ -8,6 +8,8 @@ import { CTASection } from '@/components/shared/CTASection/CTASection'
 import { Footer } from '@/components/shared/Footer/Footer'
 
 export default function ContactPage() {
+  const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ?? ''
+
   return (
     <div className="ryokan-page">
       <Header />
@@ -20,7 +22,7 @@ export default function ContactPage() {
           ]}
         />
         <ContactIntroSection />
-        <ContactFormSection />
+        <ContactFormSection accessKey={accessKey} />
         <ContactInfoSection />
         <CTASection />
       </main>
