@@ -10,7 +10,6 @@ jobs:
   claude-review:
     if: >-
       ${{
-        secrets.CLAUDE_CODE_OAUTH_TOKEN != '' &&
         contains(fromJson('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association) &&
         (
           (github.event_name == 'issue_comment' && contains(github.event.comment.body, '@claude')) ||
@@ -25,7 +24,15 @@ jobs:
       issues: write
       id-token: write
       actions: read
+    env:
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
     steps:
+      - name: Ensure Claude token exists
+        if: ${{ env.CLAUDE_CODE_OAUTH_TOKEN == '' }}
+        run: |
+          echo "CLAUDE_CODE_OAUTH_TOKEN is not set."
+          exit 1
+
       - name: Checkout
         uses: actions/checkout@v4
         with:
@@ -34,6 +41,6 @@ jobs:
       - name: Run Claude Code Action
         uses: anthropics/claude-code-action@v1
         with:
-          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          claude_code_oauth_token: ${{ env.CLAUDE_CODE_OAUTH_TOKEN }}
           claude_args: |
             --max-turns 10
