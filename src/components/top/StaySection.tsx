@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { SectionLabel } from '@/components/shared/SectionLabel'
 
 const timelineEvening = [
@@ -5,21 +6,25 @@ const timelineEvening = [
     hour: '15:00',
     title: 'お出迎え',
     description: '抹茶と季節の和菓子で\nお迎えいたします',
+    image: '/images/stay-1500.png',
   },
   {
     hour: '17:00',
     title: '庭園散策',
     description: '回遊式庭園と苔庭を\nゆったりと巡ります',
+    image: '/images/stay-1700.jpg',
   },
   {
     hour: '18:30',
     title: '夕食・懐石',
     description: '個室にて月替わりの\n懐石料理をお楽しみに',
+    image: '/images/stay-1830.png',
   },
   {
     hour: '21:00',
     title: '月見の湯',
     description: '月明かりに照らされた\n露天風呂で至福のひとときを',
+    image: '/images/stay-2100.png',
   },
 ]
 
@@ -28,15 +33,27 @@ const timelineMorning = [
     hour: '08:00',
     title: '朝食',
     description: '箱根の朝を感じる\n和の朝ごはん',
+    image: '/images/stay-0800.png',
   },
   {
     hour: '11:00',
     title: 'お見送り',
     description: '芦ノ湖の景色を胸に\nお帰りの途へ',
+    image: '/images/stay-1100.png',
   },
 ]
 
-function TimelineCard({ hour, title, description }: { hour: string; title: string; description: string }) {
+function TimelineCard({
+  hour,
+  title,
+  description,
+  image,
+}: {
+  hour: string
+  title: string
+  description: string
+  image: string
+}) {
   return (
     <div className="flex flex-1 flex-col items-center gap-3">
       {/* Hour */}
@@ -52,14 +69,22 @@ function TimelineCard({ hour, title, description }: { hour: string; title: strin
         {hour}
       </span>
 
-      {/* Image placeholder */}
+      {/* Timeline image */}
       <div
-        className="w-full overflow-hidden"
+        className="relative w-full overflow-hidden"
         style={{
           aspectRatio: '4/3',
           backgroundColor: 'var(--ryokan-light-bg)',
         }}
-      />
+      >
+        <Image
+          src={image}
+          alt={title}
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, 25vw"
+        />
+      </div>
 
       {/* Title */}
       <h3
