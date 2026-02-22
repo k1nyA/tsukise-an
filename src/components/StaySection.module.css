@@ -1,0 +1,143 @@
+.section {
+  padding: 100px 80px;
+  background: var(--ryokan-bg);
+}
+
+.inner {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  gap: 60px;
+}
+
+.labelRow {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.line {
+  width: 56px;
+  height: 1px;
+  background: var(--ryokan-light-gold);
+}
+
+.label {
+  color: var(--ryokan-subtle);
+  font-family: var(--font-display), serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+
+.title {
+  margin: 0;
+  color: var(--ryokan-dark);
+  text-align: center;
+  font-family: var(--font-serif-jp), serif;
+  font-size: clamp(28px, 2.5vw, 32px);
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+.timelineGrid,
+.timelineGridSecondary {
+  width: 100%;
+  display: grid;
+  gap: 32px;
+  max-width: 1240px;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-content: center;
+  justify-items: center;
+}
+
+.timelineItem {
+  width: 100%;
+  max-width: 380px;
+  padding-top: 8px;
+  gap: 20px;
+  text-align: center;
+}
+
+.hour {
+  color: var(--ryokan-gold);
+  font-family: var(--font-display), serif;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.imageWrap {
+  position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 19 / 10;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.timelineItem h3 {
+  margin: 0;
+  color: var(--ryokan-dark);
+  font-family: var(--font-serif-jp), serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.timelineItem p {
+  margin: 0;
+  color: var(--ryokan-muted);
+  white-space: pre-line;
+  font-size: 13px;
+  line-height: 1.8;
+  letter-spacing: 0;
+}
+
+.dividerRow {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.dividerRow span {
+  color: var(--ryokan-subtle);
+  font-family: var(--font-serif-jp), serif;
+  font-size: 14px;
+  letter-spacing: 8px;
+}
+
+.dividerLine {
+  width: 120px;
+  height: 1px;
+  background: var(--ryokan-light-gold);
+}
+
+@media (max-width: 1080px) {
+  .timelineGrid,
+  .timelineGridSecondary {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 700px) {
+  .section {
+    padding: 84px 24px;
+  }
+
+  .timelineGrid,
+  .timelineGridSecondary {
+    grid-template-columns: 1fr;
+    max-width: none;
+  }
+
+  .timelineItem {
+    max-width: 380px;
+  }
+}

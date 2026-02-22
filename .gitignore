@@ -135,3 +135,9 @@ dist
 .yarn/install-state.gz
 .pnp.*
 .direnv
+
+# macOS / local artifacts
+.DS_Store
+
+# local automation artifacts
+output/
