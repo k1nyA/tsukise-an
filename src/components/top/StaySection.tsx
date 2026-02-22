@@ -1,12 +1,24 @@
 import Image from 'next/image'
 import { SectionLabel } from '@/components/shared/SectionLabel'
 
-const timelineEvening = [
+const timelineAfternoon = [
   {
     hour: '15:00',
-    title: 'お出迎え',
+    title: 'チェックイン・お出迎え',
     description: '抹茶と季節の和菓子で\nお迎えいたします',
     image: '/images/stay-1500.png',
+  },
+  {
+    hour: '15:30',
+    title: 'お部屋へご案内',
+    description: '離れの客室にて\nゆっくりとお寛ぎください',
+    image: '/images/stay-1530.jpg',
+  },
+  {
+    hour: '16:00',
+    title: '客室露天風呂',
+    description: 'プライベートな露天風呂で\n旅の疲れを癒して',
+    image: '/images/stay-1600.jpg',
   },
   {
     hour: '17:00',
@@ -14,11 +26,20 @@ const timelineEvening = [
     description: '回遊式庭園と苔庭を\nゆったりと巡ります',
     image: '/images/stay-1700.jpg',
   },
+]
+
+const timelineEvening = [
   {
     hour: '18:30',
     title: '夕食・懐石',
     description: '個室にて月替わりの\n懐石料理をお楽しみに',
     image: '/images/stay-1830.png',
+  },
+  {
+    hour: '20:00',
+    title: '湯上がりラウンジ',
+    description: 'お飲み物とともに\nくつろぎのひととき',
+    image: '/images/stay-2000.jpg',
   },
   {
     hour: '21:00',
@@ -34,6 +55,12 @@ const timelineMorning = [
     title: '朝食',
     description: '箱根の朝を感じる\n和の朝ごはん',
     image: '/images/stay-0800.png',
+  },
+  {
+    hour: '10:00',
+    title: 'チェックアウト準備',
+    description: 'お荷物のご準備と\nお土産処のご案内',
+    image: '/images/stay-1000.jpg',
   },
   {
     hour: '11:00',
@@ -148,8 +175,15 @@ export function StaySection() {
         月瀬庵での過ごし方
       </h2>
 
-      {/* Evening timeline row */}
+      {/* Afternoon timeline row */}
       <div className="flex w-full gap-8">
+        {timelineAfternoon.map((item) => (
+          <TimelineCard key={item.hour} {...item} />
+        ))}
+      </div>
+
+      {/* Evening timeline row */}
+      <div className="flex w-full justify-center gap-8">
         {timelineEvening.map((item) => (
           <TimelineCard key={item.hour} {...item} />
         ))}
