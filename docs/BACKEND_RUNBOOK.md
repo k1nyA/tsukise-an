@@ -48,6 +48,25 @@ npm run dev
 - `/contact`
 
 ## 4. 受け入れ確認（Smoke Test）
+### 4.0 自動スモーク（CI同等）
+Next.js 本番サーバーを起動した状態で、主要導線の疎通をまとめて確認する。
+
+```bash
+npm run start -- --port 3000
+# 別ターミナル
+npm run test:backend:smoke
+```
+
+環境変数:
+- `BACKEND_E2E_BASE_URL`（デフォルト: `http://127.0.0.1:3000`）
+- `BACKEND_E2E_TIMEOUT_MS`（デフォルト: `12000`）
+
+別ポート例:
+```bash
+npm run start -- --port 8080
+BACKEND_E2E_BASE_URL=http://127.0.0.1:8080 npm run test:backend:smoke
+```
+
 ### 4.1 microCMS
 - `/` で最新5件のお知らせが表示される
 - `/news` で一覧取得できる
@@ -77,6 +96,11 @@ npm run build
 ```bash
 node --test --import tsx src/lib/*.test.ts
 npx vitest run
+```
+
+本番サーバー起動中に:
+```bash
+npm run test:backend:smoke
 ```
 
 ## 6. 障害時初動（共通）
@@ -136,6 +160,7 @@ npx vitest run
 - GitHub Actions `CI`:
   - `Lint Typecheck Build`
   - `Internal Link Check`
+  - `Backend integration smoke`
 - PRレビュー:
   - `@claude /review` の結果
 - 本番デプロイ:
