@@ -50,6 +50,7 @@ jobs:
         uses: anthropics/claude-code-action@ea36d6abdedc17fc2a671b36060770b208a6f8f1 # v1.0.51 (pinned to avoid current SDK AJV crash)
         with:
           claude_code_oauth_token: ${{ env.CLAUDE_CODE_OAUTH_TOKEN }}
+          show_full_output: true # temporary for root-cause diagnosis of @claude failure
           claude_args: |
             --max-turns 10
             --setting-sources project,local
