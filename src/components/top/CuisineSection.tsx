@@ -1,15 +1,19 @@
+import Image from 'next/image'
 import { SectionLabel } from '@/components/shared/SectionLabel'
 
 const dishes = [
   {
+    image: '/images/cuisine-hassun.png',
     title: '八寸',
     description: '旬の食材を彩り豊かに',
   },
   {
+    image: '/images/cuisine-yakimono.png',
     title: '焼物',
     description: '相模湾直送の炭火焼き',
   },
   {
+    image: '/images/cuisine-mizugashi.png',
     title: '水菓子',
     description: '季節を映す和の甘味',
   },
@@ -68,14 +72,22 @@ export function CuisineSection() {
       <div className="flex w-full gap-6">
         {dishes.map((dish) => (
           <div key={dish.title} className="flex flex-1 flex-col items-center gap-4">
-            {/* Image placeholder */}
+            {/* Card image */}
             <div
-              className="w-full overflow-hidden"
+              className="relative w-full overflow-hidden"
               style={{
                 aspectRatio: '4/3',
                 backgroundColor: 'var(--ryokan-darkest)',
               }}
-            />
+            >
+              <Image
+                src={dish.image}
+                alt={dish.title}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
             <h3
               style={{
                 fontFamily: 'var(--font-heading)',

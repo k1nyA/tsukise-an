@@ -29,4 +29,38 @@ describe('CuisineSection', () => {
     const section = container.querySelector('section')
     expect(section).toBeInTheDocument()
   })
+
+  it('renders 3 cuisine card images', () => {
+    render(<CuisineSection />)
+    const images = screen.getAllByRole('img')
+    expect(images).toHaveLength(3)
+  })
+
+  it('renders hassun image with correct alt text', () => {
+    render(<CuisineSection />)
+    const img = screen.getByAltText('八寸')
+    expect(img).toBeInTheDocument()
+  })
+
+  it('renders yakimono image with correct alt text', () => {
+    render(<CuisineSection />)
+    const img = screen.getByAltText('焼物')
+    expect(img).toBeInTheDocument()
+  })
+
+  it('renders mizugashi image with correct alt text', () => {
+    render(<CuisineSection />)
+    const img = screen.getByAltText('水菓子')
+    expect(img).toBeInTheDocument()
+  })
+
+  it('renders cuisine images with correct src paths', () => {
+    const { container } = render(<CuisineSection />)
+    const imgElements = container.querySelectorAll('img')
+    const srcValues = Array.from(imgElements).map((img) => img.getAttribute('src') ?? '')
+
+    expect(srcValues.some((src) => src.includes('cuisine-hassun'))).toBe(true)
+    expect(srcValues.some((src) => src.includes('cuisine-yakimono'))).toBe(true)
+    expect(srcValues.some((src) => src.includes('cuisine-mizugashi'))).toBe(true)
+  })
 })
