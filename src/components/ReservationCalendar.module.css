@@ -1,0 +1,35 @@
+.calendarWrap {
+  width: 100%;
+  border: 1px solid rgba(139, 105, 20, 0.26);
+  border-radius: 12px;
+  background: #fff;
+  overflow: hidden;
+  min-height: 760px;
+}
+
+.loading {
+  margin: 0;
+  padding: 14px 18px;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: rgba(74, 64, 53, 0.82);
+  border-bottom: 1px solid rgba(139, 105, 20, 0.18);
+}
+
+.fallback {
+  padding: 24px;
+  border: 1px solid rgba(139, 105, 20, 0.28);
+  border-radius: 12px;
+  background: #fff;
+  color: var(--ryokan-muted);
+}
+
+.fallback p {
+  margin: 0;
+}
+
+.fallbackDetail {
+  margin-top: 8px !important;
+  font-size: 13px;
+  color: var(--ryokan-subtle);
+}
