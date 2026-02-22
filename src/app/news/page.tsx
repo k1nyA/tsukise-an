@@ -1,54 +1,70 @@
+import Link from 'next/link'
+
 import { Header } from '@/components/shared/Header/Header'
 import { PageHero } from '@/components/shared/PageHero/PageHero'
 import { Breadcrumb } from '@/components/shared/Breadcrumb/Breadcrumb'
-import { NewsListSection } from '@/components/news/NewsListSection'
+import { NewsListSection, type NewsArticle } from '@/components/news/NewsListSection'
 import { CTASection } from '@/components/shared/CTASection/CTASection'
 import { Footer } from '@/components/shared/Footer/Footer'
+import { getNewsList } from '@/lib/microcms'
+import {
+  buildNewsListHref,
+  getTotalPages,
+  NEWS_CATEGORY_TABS,
+  NEWS_PAGE_SIZE,
+  parseNewsListSearchParams,
+} from '@/lib/news-list-query'
 
-const newsArticles = [
-  {
-    id: '1',
-    date: '2026.03.15',
-    category: 'イベント',
-    title: '春の訪れ — 桜の時期のご案内と特別プランのお知らせ',
-    excerpt:
-      '芦ノ湖畔に佇む月瀬庵の庭園では、例年3月下旬から4月上旬にかけて、約50本の桜が一斉に咲き誇ります。',
-  },
-  {
-    id: '2',
-    date: '2026.02.28',
-    category: '季節の便り',
-    title: '冬の特別懐石 — 寒鰤と蟹の饗宴',
-    excerpt:
-      '料理長が厳選した冬の食材を使用した特別懐石コースをご用意いたしました。日本海直送の寒鰤と越前蟹をお楽しみいただけます。',
-  },
-  {
-    id: '3',
-    date: '2026.02.10',
-    category: 'お料理',
-    title: '新メニュー「月見御膳」登場',
-    excerpt:
-      '月をテーマにした新しい御膳メニューが登場いたします。月瀬庵ならではの風雅な一皿をお楽しみください。',
-  },
-  {
-    id: '4',
-    date: '2026.01.20',
-    category: 'メディア掲載',
-    title: '旅行雑誌「和の宿」に掲載されました',
-    excerpt:
-      '旅行雑誌「和の宿」2026年春号にて、月瀬庵の温泉と料理が特集されました。',
-  },
-  {
-    id: '5',
-    date: '2026.01.05',
-    category: '施設情報',
-    title: '大浴場リニューアルのお知らせ',
-    excerpt:
-      '大浴場のリニューアル工事が完了いたしました。新たに檜風呂と岩風呂を増設し、より多彩な湯浴みをお楽しみいただけます。',
-  },
-]
+type SearchParamsInput = Record<string, string | string[] | undefined>
 
-export default function NewsPage() {
+type PageProps = {
+  searchParams: Promise<SearchParamsInput>
+}
+
+const toDisplayDate = (isoDate: string): string => {
+  const datePart = isoDate.slice(0, 10)
+  return datePart.replaceAll('-', '.')
+}
+
+const stripHtml = (value: string): string => value.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim()
+
+const truncateText = (value: string, maxLength = 80): string => {
+  if (value.length <= maxLength) return value
+  return `${value.slice(0, maxLength)}…`
+}
+
+export default async function NewsPage({ searchParams }: PageProps) {
+  const resolvedSearchParams = await searchParams
+  const query = parseNewsListSearchParams(resolvedSearchParams)
+  const selectedCategory = query.category
+
+  let articles: NewsArticle[] = []
+  let totalPages = 1
+  let fetchError = ''
+
+  try {
+    const response = await getNewsList({
+      category: selectedCategory,
+      page: query.page,
+      limit: NEWS_PAGE_SIZE,
+    })
+
+    articles = response.contents.map((item) => ({
+      id: item.id,
+      date: toDisplayDate(item.publishedAt ?? item.createdAt),
+      category: item.category,
+      title: item.title,
+      excerpt: truncateText(item.description?.trim() || stripHtml(item.body)),
+    }))
+
+    totalPages = getTotalPages(response.totalCount, response.limit)
+  } catch (error) {
+    fetchError = '現在お知らせを取得できません。時間をおいて再度お試しください。'
+    console.error('Failed to fetch news list', error)
+  }
+
+  const categoryTabs = [{ label: 'すべて', value: undefined }, ...NEWS_CATEGORY_TABS.map((value) => ({ label: value, value }))]
+
   return (
     <div className="ryokan-page">
       <Header />
@@ -60,7 +76,84 @@ export default function NewsPage() {
             { label: 'お知らせ' },
           ]}
         />
-        <NewsListSection articles={newsArticles} />
+
+        <section
+          aria-label="お知らせカテゴリ"
+          className="flex w-full items-center justify-center"
+          style={{ gap: 16, padding: '40px 80px 24px 80px' }}
+        >
+          {categoryTabs.map((tab) => {
+            const isActive = (tab.value ?? undefined) === (selectedCategory ?? undefined)
+            const href = buildNewsListHref({ category: tab.value, page: 1 })
+
+            return (
+              <Link
+                key={tab.label}
+                href={href}
+                style={{
+                  borderRadius: 2,
+                  padding: '10px 24px',
+                  textDecoration: 'none',
+                  fontFamily: 'var(--font-body)',
+                  fontSize: 12,
+                  letterSpacing: 1,
+                  color: isActive ? 'var(--ryokan-text-on-dark)' : 'var(--ryokan-dark)',
+                  backgroundColor: isActive ? 'var(--ryokan-dark)' : 'transparent',
+                  border: isActive ? '1px solid var(--ryokan-dark)' : '1px solid var(--ryokan-light-gold)',
+                }}
+              >
+                {tab.label}
+              </Link>
+            )
+          })}
+        </section>
+
+        {fetchError ? (
+          <section className="w-full" style={{ padding: '40px 80px 80px' }}>
+            <p role="alert">{fetchError}</p>
+          </section>
+        ) : (
+          <>
+            <NewsListSection articles={articles} />
+
+            <section
+              aria-label="お知らせページネーション"
+              className="flex w-full items-center justify-center"
+              style={{ gap: 8, padding: '0 80px 72px 80px' }}
+            >
+              {Array.from({ length: totalPages }, (_, index) => {
+                const page = index + 1
+                const isActive = page === query.page
+                const href = buildNewsListHref({
+                  category: selectedCategory,
+                  page,
+                })
+                return (
+                  <Link
+                    key={page}
+                    href={href}
+                    aria-current={isActive ? 'page' : undefined}
+                    style={{
+                      minWidth: 32,
+                      textAlign: 'center',
+                      textDecoration: 'none',
+                      padding: '6px 10px',
+                      borderRadius: 2,
+                      border: '1px solid var(--ryokan-light-gold)',
+                      backgroundColor: isActive ? 'var(--ryokan-dark)' : 'transparent',
+                      color: isActive ? 'var(--ryokan-text-on-dark)' : 'var(--ryokan-dark)',
+                      fontFamily: 'var(--font-body)',
+                      fontSize: 12,
+                    }}
+                  >
+                    {page}
+                  </Link>
+                )
+              })}
+            </section>
+          </>
+        )}
+
         <CTASection />
       </main>
       <Footer />
