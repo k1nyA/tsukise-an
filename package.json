@@ -7,7 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "add": "liftkit add"
+    "lint:fix": "next lint --fix",
+    "typecheck": "tsc --noEmit",
+    "verify": "npm run lint && npm run typecheck && npm run build",
+    "add": "liftkit add",
+    "check:links": "node scripts/check-internal-links.mjs",
+    "prepare": "husky"
   },
   "dependencies": {
     "@csstools/normalize.css": "^12.1.1",
@@ -30,6 +35,8 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.3.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
     "shadcn": "^2.7.0",
     "typescript": "^5"
   }
