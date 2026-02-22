@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 export function CTASection() {
@@ -7,10 +8,13 @@ export function CTASection() {
       style={{ height: 480 }}
     >
       {/* Background image */}
-      <div
-        data-testid="cta-bg"
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundColor: 'var(--ryokan-darkest, #1A150E)' }}
+      <Image
+        src="/images/cta.png"
+        alt="月瀬庵の夜景"
+        fill
+        className="object-cover"
+        quality={85}
+        sizes="100vw"
       />
 
       {/* Overlay */}

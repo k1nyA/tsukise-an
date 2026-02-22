@@ -34,4 +34,12 @@ describe('CTASection', () => {
       screen.getByText('ご予約・お問い合わせはお電話またはオンラインにて承ります')
     ).toBeInTheDocument()
   })
+
+  it('renders a background image with src containing cta.png', () => {
+    render(<CTASection />)
+    const img = screen.getByAltText('月瀬庵の夜景')
+    expect(img).toBeInTheDocument()
+    expect(img.tagName).toBe('IMG')
+    expect(img).toHaveAttribute('src', expect.stringContaining('cta.png'))
+  })
 })

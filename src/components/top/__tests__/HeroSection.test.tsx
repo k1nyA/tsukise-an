@@ -26,4 +26,17 @@ describe('HeroSection', () => {
     render(<HeroSection />)
     expect(screen.getByText('箱根 芦ノ湖畔')).toBeInTheDocument()
   })
+
+  it('renders a background image with alt text "芦ノ湖畔の月瀬庵"', () => {
+    render(<HeroSection />)
+    const img = screen.getByAltText('芦ノ湖畔の月瀬庵')
+    expect(img).toBeInTheDocument()
+    expect(img.tagName).toBe('IMG')
+  })
+
+  it('renders the background image with src containing hero.png', () => {
+    render(<HeroSection />)
+    const img = screen.getByAltText('芦ノ湖畔の月瀬庵')
+    expect(img).toHaveAttribute('src', expect.stringContaining('hero.png'))
+  })
 })
