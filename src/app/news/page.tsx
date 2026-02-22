@@ -50,7 +50,7 @@ export default async function NewsPage({ searchParams }: PageProps) {
     })
 
     articles = response.contents.map((item) => ({
-      id: item.id,
+      id: item.slug,
       date: toDisplayDate(item.publishedAt ?? item.createdAt),
       category: item.category,
       title: item.title,
