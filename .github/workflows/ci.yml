@@ -79,6 +79,9 @@ jobs:
       - name: Check links
         run: npm run check:links
 
+      - name: Backend integration smoke
+        run: npm run test:backend:smoke
+
       - name: Stop app
         if: always()
         run: |
