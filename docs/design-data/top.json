@@ -1,0 +1,539 @@
+{
+  "page": {
+    "name": "月瀬庵 トップページ",
+    "nameEn": "Top",
+    "route": "/",
+    "penFrameId": "1QcCy"
+  },
+  "layout": {
+    "width": 1440,
+    "direction": "vertical",
+    "fill": "#FAF8F3",
+    "clip": true
+  },
+  "sections": [
+    {
+      "name": "Header",
+      "penId": "pmTa3",
+      "type": "frame",
+      "styles": {
+        "fill": "#FAF8F3",
+        "height": 80,
+        "width": "fill_container",
+        "justifyContent": "space_between",
+        "alignItems": "center",
+        "padding": [0, 60]
+      },
+      "children": [
+        {
+          "name": "logoArea",
+          "penId": "NmjRs",
+          "type": "frame",
+          "styles": {
+            "alignItems": "center",
+            "gap": 12
+          }
+        },
+        {
+          "name": "navArea",
+          "penId": "ybxJm",
+          "type": "frame",
+          "styles": {
+            "alignItems": "center",
+            "gap": 32
+          }
+        }
+      ]
+    },
+    {
+      "name": "Hero Section",
+      "penId": "CpYJn",
+      "type": "frame",
+      "styles": {
+        "height": 780,
+        "width": "fill_container",
+        "layout": "none",
+        "clip": true
+      },
+      "children": [
+        {
+          "name": "heroBg",
+          "penId": "U50U2",
+          "type": "frame",
+          "hasImageFill": true,
+          "styles": {
+            "width": 1440,
+            "height": 780,
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "name": "heroOverlay",
+          "penId": "npC0n",
+          "type": "frame",
+          "styles": {
+            "fill": "#1A150E77",
+            "width": 1440,
+            "height": 780,
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "name": "heroContent",
+          "penId": "X9ZKA",
+          "type": "frame",
+          "styles": {
+            "layout": "vertical",
+            "gap": 32,
+            "x": 100,
+            "y": 220
+          }
+        },
+        {
+          "name": "scrollIndicator",
+          "penId": "iSIUz",
+          "type": "frame",
+          "styles": {
+            "layout": "vertical",
+            "alignItems": "center",
+            "gap": 6,
+            "x": 710,
+            "y": 725
+          }
+        }
+      ]
+    },
+    {
+      "name": "Concept Section",
+      "penId": "QsqLV",
+      "type": "frame",
+      "hasImageFill": true,
+      "styles": {
+        "width": "fill_container",
+        "layout": "vertical",
+        "alignItems": "center",
+        "gap": 56,
+        "padding": [120, 160]
+      },
+      "children": [
+        {
+          "name": "conceptLabel",
+          "penId": "2bmT0",
+          "type": "frame",
+          "styles": {
+            "alignItems": "center",
+            "gap": 20
+          }
+        },
+        {
+          "name": "conceptTitle",
+          "penId": "oQKLJ",
+          "type": "text",
+          "content": "百三十年、変わらぬもてなし。",
+          "styles": {
+            "fill": "#2C2418",
+            "fontFamily": "Noto Serif JP",
+            "fontSize": 36,
+            "fontWeight": "600",
+            "letterSpacing": 6,
+            "textAlign": "center"
+          }
+        },
+        {
+          "name": "conceptBody",
+          "penId": "MDhQW",
+          "type": "text",
+          "content": "明治二十八年の創業以来、月瀬庵は箱根・芦ノ湖畔に静かに佇んでまいりました。\n湖面に映る月の美しさに心を奪われた初代が、この地に宿を開いたのが始まりです。\n\n木漏れ日の差す回廊、苔むした石庭、そして湯けむりの向こうに広がる芦ノ湖の眺め。\n時の流れを忘れ、ただ静かに自分に還る — そんな時間をお約束いたします。",
+          "styles": {
+            "fill": "#4A4035",
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 16,
+            "fontWeight": "300",
+            "letterSpacing": 1.5,
+            "lineHeight": 2,
+            "textAlign": "center",
+            "width": 720
+          }
+        },
+        {
+          "name": "conceptDeco",
+          "penId": "ze9To",
+          "type": "rectangle",
+          "styles": {
+            "fill": "#D4C5A0",
+            "width": 1,
+            "height": 40
+          }
+        }
+      ]
+    },
+    {
+      "name": "Room Section",
+      "penId": "OzZh1",
+      "type": "frame",
+      "styles": {
+        "height": 560,
+        "width": "fill_container",
+        "clip": true
+      },
+      "children": [
+        {
+          "name": "roomImg",
+          "penId": "h4QRX",
+          "type": "frame",
+          "hasImageFill": true,
+          "styles": {
+            "width": 800,
+            "height": 560,
+            "clip": true
+          }
+        },
+        {
+          "name": "roomContent",
+          "penId": "togIQ",
+          "type": "frame",
+          "styles": {
+            "fill": "#2C2418",
+            "layout": "vertical",
+            "justifyContent": "center",
+            "gap": 32,
+            "padding": 80,
+            "width": "fill_container",
+            "height": "fill_container"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Onsen Section",
+      "penId": "EQ7Ev",
+      "type": "frame",
+      "styles": {
+        "height": 560,
+        "width": "fill_container",
+        "clip": true
+      },
+      "children": [
+        {
+          "name": "onsenContent",
+          "penId": "tiCxy",
+          "type": "frame",
+          "styles": {
+            "fill": "#EEEBE3",
+            "layout": "vertical",
+            "justifyContent": "center",
+            "gap": 32,
+            "padding": 80,
+            "width": "fill_container",
+            "height": "fill_container"
+          }
+        },
+        {
+          "name": "onsenImg",
+          "penId": "hWXG9",
+          "type": "frame",
+          "hasImageFill": true,
+          "styles": {
+            "width": 800,
+            "height": 560,
+            "clip": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cuisine Section",
+      "penId": "h4cnh",
+      "type": "frame",
+      "hasImageFill": true,
+      "styles": {
+        "width": "fill_container",
+        "layout": "vertical",
+        "alignItems": "center",
+        "gap": 60,
+        "padding": [100, 80]
+      },
+      "children": [
+        {
+          "name": "cuisineLabel",
+          "penId": "IXHPx",
+          "type": "frame",
+          "styles": {
+            "alignItems": "center",
+            "gap": 20
+          }
+        },
+        {
+          "name": "cuisineTitle",
+          "penId": "Pu8Po",
+          "type": "text",
+          "content": "旬を紡ぐ、月替わり懐石",
+          "styles": {
+            "fill": "#FAF8F3",
+            "fontFamily": "Noto Serif JP",
+            "fontSize": 32,
+            "fontWeight": "600",
+            "letterSpacing": 4,
+            "textAlign": "center"
+          }
+        },
+        {
+          "name": "cuisineDesc",
+          "penId": "pQLOZ",
+          "type": "text",
+          "content": "相模湾の新鮮な海の幸と、箱根の山の恵みを\n料理長が一皿一皿、丁寧にお仕立ていたします。\nミシュラン二つ星の評価を賜りました。",
+          "styles": {
+            "fill": "#C4B89A",
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 15,
+            "fontWeight": "300",
+            "letterSpacing": 1,
+            "lineHeight": 2,
+            "textAlign": "center",
+            "width": 600
+          }
+        },
+        {
+          "name": "cuisineGrid",
+          "penId": "l21pE",
+          "type": "frame",
+          "styles": {
+            "gap": 24,
+            "width": "fill_container"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stay Section",
+      "penId": "1WpET",
+      "type": "frame",
+      "hasImageFill": true,
+      "styles": {
+        "width": "fill_container",
+        "layout": "vertical",
+        "alignItems": "center",
+        "gap": 60,
+        "padding": [100, 80]
+      },
+      "children": [
+        {
+          "name": "stayLabel",
+          "penId": "12apy",
+          "type": "frame",
+          "styles": {
+            "alignItems": "center",
+            "gap": 20
+          }
+        },
+        {
+          "name": "stayTitle",
+          "penId": "kLx54",
+          "type": "text",
+          "content": "月瀬庵での過ごし方",
+          "styles": {
+            "fill": "#2C2418",
+            "fontFamily": "Noto Serif JP",
+            "fontSize": 32,
+            "fontWeight": "600",
+            "letterSpacing": 4,
+            "textAlign": "center"
+          }
+        },
+        {
+          "name": "timelineRow",
+          "penId": "K0Ydl",
+          "type": "frame",
+          "styles": {
+            "gap": 32,
+            "width": "fill_container"
+          }
+        },
+        {
+          "name": "timelineRow2Evening",
+          "penId": "VQSqw",
+          "type": "frame",
+          "styles": {
+            "gap": 32,
+            "width": "fill_container"
+          }
+        },
+        {
+          "name": "timelineDivider",
+          "penId": "7Rbht",
+          "type": "frame",
+          "styles": {
+            "alignItems": "center",
+            "justifyContent": "center",
+            "gap": 24,
+            "width": "fill_container"
+          }
+        },
+        {
+          "name": "timelineRow2",
+          "penId": "ZrUMD",
+          "type": "frame",
+          "styles": {
+            "gap": 32,
+            "width": "fill_container"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Info Section",
+      "penId": "iDFJK",
+      "type": "frame",
+      "styles": {
+        "fill": "#F0EBE0",
+        "width": "fill_container",
+        "gap": 60,
+        "padding": 80
+      },
+      "children": [
+        {
+          "name": "newsCol",
+          "penId": "Q1W0F",
+          "type": "frame",
+          "styles": {
+            "layout": "vertical",
+            "gap": 32,
+            "width": "fill_container"
+          }
+        },
+        {
+          "name": "accessCol",
+          "penId": "iNN5y",
+          "type": "frame",
+          "styles": {
+            "layout": "vertical",
+            "gap": 24,
+            "width": 560
+          }
+        }
+      ]
+    },
+    {
+      "name": "c1",
+      "penId": "iICea",
+      "type": "frame",
+      "styles": {
+        "height": 480,
+        "width": "fill_container",
+        "layout": "none",
+        "clip": true
+      },
+      "children": [
+        {
+          "name": "ctaBg",
+          "penId": "S24GN",
+          "type": "frame",
+          "hasImageFill": true,
+          "styles": {
+            "width": 1440,
+            "height": 480,
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "name": "ctaOverlay",
+          "penId": "24JkW",
+          "type": "frame",
+          "styles": {
+            "fill": "#1A150E88",
+            "width": 1440,
+            "height": 480,
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "name": "ctaContent",
+          "penId": "rtjEX",
+          "type": "frame",
+          "styles": {
+            "layout": "vertical",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "gap": 40,
+            "width": 1440,
+            "height": 480,
+            "x": 0,
+            "y": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "f1",
+      "penId": "hioll",
+      "type": "frame",
+      "styles": {
+        "fill": "#1A150E",
+        "width": "fill_container",
+        "layout": "vertical",
+        "alignItems": "center",
+        "gap": 48,
+        "padding": [60, 80, 32, 80]
+      },
+      "children": [
+        {
+          "name": "footerTop",
+          "penId": "1g7ow",
+          "type": "frame",
+          "styles": {
+            "justifyContent": "space_between",
+            "width": "fill_container"
+          }
+        },
+        {
+          "name": "footerSecondaryNav",
+          "penId": "Fd42W",
+          "type": "frame",
+          "styles": {
+            "alignItems": "center",
+            "justifyContent": "center",
+            "gap": 24,
+            "width": "fill_container"
+          }
+        },
+        {
+          "name": "footerDivider",
+          "penId": "JIyr7",
+          "type": "rectangle",
+          "styles": {
+            "fill": "#2C241888",
+            "width": "fill_container",
+            "height": 1
+          }
+        },
+        {
+          "name": "footerMiddle",
+          "penId": "agPcj",
+          "type": "frame",
+          "styles": {
+            "alignItems": "center",
+            "justifyContent": "space_between",
+            "width": "fill_container"
+          }
+        },
+        {
+          "name": "footerBottom",
+          "penId": "s8sDr",
+          "type": "text",
+          "content": "\u00a9 2026 月瀬庵 TSUKISE-AN. All Rights Reserved.",
+          "styles": {
+            "fill": "#6B5D4F55",
+            "fontFamily": "Cormorant Garamond",
+            "fontSize": 11,
+            "fontWeight": "normal",
+            "letterSpacing": 2
+          }
+        }
+      ]
+    }
+  ]
+}

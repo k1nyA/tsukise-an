@@ -1,0 +1,683 @@
+{
+  "page": {
+    "name": "プライバシーポリシーページ",
+    "nameEn": "Privacy Policy",
+    "route": "/privacy",
+    "penFrameId": "vCw0m"
+  },
+  "layout": {
+    "width": 1440,
+    "direction": "vertical",
+    "fill": "#FAF8F3",
+    "clip": true
+  },
+  "sections": [
+    {
+      "name": "h12",
+      "penId": "qdUZd",
+      "type": "frame",
+      "styles": {
+        "fill": "#FAF8F3",
+        "width": "fill_container",
+        "height": 80,
+        "padding": [0, 60],
+        "justifyContent": "space_between",
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "name": "logoArea",
+          "penId": "JyNyM",
+          "type": "frame",
+          "styles": {
+            "alignItems": "center",
+            "gap": 12
+          }
+        },
+        {
+          "name": "navArea",
+          "penId": "ZXcPW",
+          "type": "frame",
+          "styles": {
+            "alignItems": "center",
+            "gap": 32
+          }
+        }
+      ]
+    },
+    {
+      "name": "pageHero",
+      "penId": "93lPd",
+      "type": "frame",
+      "styles": {
+        "width": "fill_container",
+        "height": 360,
+        "layout": "none",
+        "clip": true
+      },
+      "children": [
+        {
+          "name": "heroBg",
+          "penId": "VC92E",
+          "type": "frame",
+          "styles": {
+            "width": 1440,
+            "height": 360,
+            "x": 0,
+            "y": 0,
+            "hasImageFill": true
+          }
+        },
+        {
+          "name": "heroOverlay",
+          "penId": "zGH6D",
+          "type": "frame",
+          "styles": {
+            "fill": "#1A150E88",
+            "width": 1440,
+            "height": 360,
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "name": "heroContent",
+          "penId": "ONZ4m",
+          "type": "frame",
+          "styles": {
+            "width": 1440,
+            "height": 360,
+            "layout": "vertical",
+            "gap": 24,
+            "justifyContent": "center",
+            "alignItems": "center",
+            "x": 0,
+            "y": 0
+          },
+          "children": [
+            {
+              "name": "heroLabel",
+              "penId": "TSXlA",
+              "type": "frame",
+              "styles": {
+                "gap": 20,
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "name": "heroLine1",
+                  "penId": "FRi0Q",
+                  "type": "rectangle",
+                  "styles": {
+                    "fill": "#D4C5A0",
+                    "width": 40,
+                    "height": 1
+                  }
+                },
+                {
+                  "name": "heroLabelText",
+                  "penId": "2ei0W",
+                  "type": "text",
+                  "content": "PRIVACY POLICY",
+                  "styles": {
+                    "fill": "#D4C5A0",
+                    "fontFamily": "Cormorant Garamond",
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                    "letterSpacing": 6
+                  }
+                },
+                {
+                  "name": "heroLine2",
+                  "penId": "OA6Bc",
+                  "type": "rectangle",
+                  "styles": {
+                    "fill": "#D4C5A0",
+                    "width": 40,
+                    "height": 1
+                  }
+                }
+              ]
+            },
+            {
+              "name": "heroTitle",
+              "penId": "Mib4a",
+              "type": "text",
+              "content": "プライバシーポリシー",
+              "styles": {
+                "fill": "#FAF8F3",
+                "fontFamily": "Noto Serif JP",
+                "fontSize": 42,
+                "fontWeight": "600",
+                "letterSpacing": 8,
+                "textAlign": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "breadcrumb",
+      "penId": "wBMu2",
+      "type": "frame",
+      "styles": {
+        "fill": "#EEEBE3",
+        "width": "fill_container",
+        "padding": [16, 80],
+        "gap": 8,
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "name": "bc1",
+          "penId": "P1aQL",
+          "type": "text",
+          "content": "ホーム",
+          "context": "href: /",
+          "styles": {
+            "fill": "#8B7D6B",
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 12,
+            "fontWeight": "300",
+            "letterSpacing": 1
+          }
+        },
+        {
+          "name": "bcSep",
+          "penId": "jJsbk",
+          "type": "text",
+          "content": ">",
+          "styles": {
+            "fill": "#D4C5A0",
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 12,
+            "fontWeight": "300"
+          }
+        },
+        {
+          "name": "bc2",
+          "penId": "EAoLN",
+          "type": "text",
+          "content": "プライバシーポリシー",
+          "styles": {
+            "fill": "#2C2418",
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 12,
+            "fontWeight": "500",
+            "letterSpacing": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "policyContent",
+      "penId": "7nIni",
+      "type": "frame",
+      "styles": {
+        "fill": "#FAF8F3",
+        "width": "fill_container",
+        "layout": "vertical",
+        "padding": [80, 200],
+        "gap": 48
+      },
+      "children": [
+        {
+          "name": "introText",
+          "penId": "ACLWS",
+          "type": "text",
+          "content": "月瀬庵（以下「当館」）は、お客様の個人情報の保護を重要な責務と考え、以下のとおりプライバシーポリシーを定め、個人情報の適切な取り扱いに努めます。",
+          "styles": {
+            "fill": "#2C2418",
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 14,
+            "fontWeight": "300",
+            "lineHeight": 2.2
+          }
+        },
+        {
+          "name": "section1",
+          "penId": "mC6ov",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "layout": "vertical",
+            "gap": 16
+          },
+          "children": [
+            {
+              "name": "sec1Title",
+              "penId": "9srQJ",
+              "type": "text",
+              "content": "1. 個人情報の定義",
+              "styles": {
+                "fill": "#2C2418",
+                "fontFamily": "Noto Serif JP",
+                "fontSize": 18,
+                "fontWeight": "600"
+              }
+            },
+            {
+              "name": "sec1Body",
+              "penId": "anOsI",
+              "type": "text",
+              "content": "当館が取得する個人情報とは、お名前、ご住所、電話番号、メールアドレス、その他お客様を識別できる情報をいいます。",
+              "styles": {
+                "fill": "#8B7D6B",
+                "fontFamily": "Noto Sans JP",
+                "fontSize": 14,
+                "fontWeight": "300",
+                "lineHeight": 2
+              }
+            }
+          ]
+        },
+        {
+          "name": "section2",
+          "penId": "ywmCp",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "layout": "vertical",
+            "gap": 16
+          },
+          "children": [
+            {
+              "name": "sec2Title",
+              "penId": "scd0d",
+              "type": "text",
+              "content": "2. 個人情報の収集",
+              "styles": {
+                "fill": "#2C2418",
+                "fontFamily": "Noto Serif JP",
+                "fontSize": 18,
+                "fontWeight": "600"
+              }
+            },
+            {
+              "name": "sec2Body",
+              "penId": "v5BzF",
+              "type": "text",
+              "content": "当館は、以下の場合に個人情報を収集いたします。\n・ご予約のお申し込み時\n・お問い合わせフォームのご利用時\n・メールマガジンのご登録時\n・アンケートへのご回答時",
+              "styles": {
+                "fill": "#8B7D6B",
+                "fontFamily": "Noto Sans JP",
+                "fontSize": 14,
+                "fontWeight": "300",
+                "lineHeight": 2
+              }
+            }
+          ]
+        },
+        {
+          "name": "section3",
+          "penId": "w9HKj",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "layout": "vertical",
+            "gap": 16
+          },
+          "children": [
+            {
+              "name": "sec3Title",
+              "penId": "x6BX7",
+              "type": "text",
+              "content": "3. 個人情報の利用目的",
+              "styles": {
+                "fill": "#2C2418",
+                "fontFamily": "Noto Serif JP",
+                "fontSize": 18,
+                "fontWeight": "600"
+              }
+            },
+            {
+              "name": "sec3Body",
+              "penId": "2VdRw",
+              "type": "text",
+              "content": "収集した個人情報は、以下の目的で利用いたします。\n・ご予約の確認およびご連絡\n・サービスの提供および改善\n・お問い合わせへのご対応\n・当館からのお知らせやキャンペーン情報のご案内\n・統計データの作成（個人を特定できない形式）",
+              "styles": {
+                "fill": "#8B7D6B",
+                "fontFamily": "Noto Sans JP",
+                "fontSize": 14,
+                "fontWeight": "300",
+                "lineHeight": 2
+              }
+            }
+          ]
+        },
+        {
+          "name": "section4",
+          "penId": "7qQsI",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "layout": "vertical",
+            "gap": 16
+          },
+          "children": [
+            {
+              "name": "sec4Title",
+              "penId": "p9ksj",
+              "type": "text",
+              "content": "4. 個人情報の第三者提供",
+              "styles": {
+                "fill": "#2C2418",
+                "fontFamily": "Noto Serif JP",
+                "fontSize": 18,
+                "fontWeight": "600"
+              }
+            },
+            {
+              "name": "sec4Body",
+              "penId": "Gbjy1",
+              "type": "text",
+              "content": "当館は、法令に基づく場合を除き、お客様の同意なく個人情報を第三者に提供いたしません。",
+              "styles": {
+                "fill": "#8B7D6B",
+                "fontFamily": "Noto Sans JP",
+                "fontSize": 14,
+                "fontWeight": "300",
+                "lineHeight": 2
+              }
+            }
+          ]
+        },
+        {
+          "name": "section5",
+          "penId": "qwO0w",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "layout": "vertical",
+            "gap": 16
+          },
+          "children": [
+            {
+              "name": "sec5Title",
+              "penId": "rE2TV",
+              "type": "text",
+              "content": "5. 個人情報の管理",
+              "styles": {
+                "fill": "#2C2418",
+                "fontFamily": "Noto Serif JP",
+                "fontSize": 18,
+                "fontWeight": "600"
+              }
+            },
+            {
+              "name": "sec5Body",
+              "penId": "gD2kq",
+              "type": "text",
+              "content": "当館は、個人情報の漏洩、滅失、毀損を防止するため、適切なセキュリティ対策を講じます。",
+              "styles": {
+                "fill": "#8B7D6B",
+                "fontFamily": "Noto Sans JP",
+                "fontSize": 14,
+                "fontWeight": "300",
+                "lineHeight": 2
+              }
+            }
+          ]
+        },
+        {
+          "name": "section6",
+          "penId": "gT8yW",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "layout": "vertical",
+            "gap": 16
+          },
+          "children": [
+            {
+              "name": "sec6Title",
+              "penId": "UBSVG",
+              "type": "text",
+              "content": "6. Cookieの使用について",
+              "styles": {
+                "fill": "#2C2418",
+                "fontFamily": "Noto Serif JP",
+                "fontSize": 18,
+                "fontWeight": "600"
+              }
+            },
+            {
+              "name": "sec6Body",
+              "penId": "G0LM7",
+              "type": "text",
+              "content": "当館のウェブサイトでは、サービス向上のためCookieを使用しております。Cookieの使用を希望されない場合は、ブラウザの設定により無効にすることができます。",
+              "styles": {
+                "fill": "#8B7D6B",
+                "fontFamily": "Noto Sans JP",
+                "fontSize": 14,
+                "fontWeight": "300",
+                "lineHeight": 2
+              }
+            }
+          ]
+        },
+        {
+          "name": "section7",
+          "penId": "GQ7es",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "layout": "vertical",
+            "gap": 16
+          },
+          "children": [
+            {
+              "name": "sec7Title",
+              "penId": "Y28rQ",
+              "type": "text",
+              "content": "7. プライバシーポリシーの変更",
+              "styles": {
+                "fill": "#2C2418",
+                "fontFamily": "Noto Serif JP",
+                "fontSize": 18,
+                "fontWeight": "600"
+              }
+            },
+            {
+              "name": "sec7Body",
+              "penId": "FUOPx",
+              "type": "text",
+              "content": "当館は、必要に応じて本ポリシーを変更することがあります。変更後のポリシーは、当ウェブサイトに掲載した時点から効力を生じます。",
+              "styles": {
+                "fill": "#8B7D6B",
+                "fontFamily": "Noto Sans JP",
+                "fontSize": 14,
+                "fontWeight": "300",
+                "lineHeight": 2
+              }
+            }
+          ]
+        },
+        {
+          "name": "section8",
+          "penId": "bO2BK",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "layout": "vertical",
+            "gap": 16
+          },
+          "children": [
+            {
+              "name": "sec8Title",
+              "penId": "e8JYj",
+              "type": "text",
+              "content": "8. お問い合わせ窓口",
+              "styles": {
+                "fill": "#2C2418",
+                "fontFamily": "Noto Serif JP",
+                "fontSize": 18,
+                "fontWeight": "600"
+              }
+            },
+            {
+              "name": "sec8Body",
+              "penId": "9j2gL",
+              "type": "text",
+              "content": "個人情報の取り扱いに関するお問い合わせは、下記までご連絡ください。\n\n月瀬庵\n〒250-0522 神奈川県足柄下郡箱根町元箱根138\nTEL: 0460-83-XXXX\nEmail: info@tsukise-an.jp",
+              "styles": {
+                "fill": "#8B7D6B",
+                "fontFamily": "Noto Sans JP",
+                "fontSize": 14,
+                "fontWeight": "300",
+                "lineHeight": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "lastUpdated",
+      "penId": "Ikj4j",
+      "type": "frame",
+      "styles": {
+        "fill": "#FAF8F3",
+        "width": "fill_container",
+        "padding": [40, 200],
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "name": "lastUpdatedText",
+          "penId": "wNH0P",
+          "type": "text",
+          "content": "最終更新日：2026年2月22日",
+          "styles": {
+            "fill": "#8B7D6B",
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 12,
+            "fontWeight": "normal",
+            "textAlign": "center"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ctaSection",
+      "penId": "0bP7Y",
+      "type": "frame",
+      "styles": {
+        "width": "fill_container",
+        "height": 480,
+        "layout": "none",
+        "clip": true
+      },
+      "children": [
+        {
+          "name": "ctaBg",
+          "penId": "fOVsU",
+          "type": "frame",
+          "styles": {
+            "width": 1440,
+            "height": 480,
+            "x": 0,
+            "y": 0,
+            "hasImageFill": true
+          }
+        },
+        {
+          "name": "ctaOverlay",
+          "penId": "NjVdK",
+          "type": "frame",
+          "styles": {
+            "fill": "#1A150E88",
+            "width": 1440,
+            "height": 480,
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "name": "ctaContent",
+          "penId": "JMkA6",
+          "type": "frame",
+          "styles": {
+            "width": 1440,
+            "height": 480,
+            "layout": "vertical",
+            "gap": 40,
+            "justifyContent": "center",
+            "alignItems": "center",
+            "x": 0,
+            "y": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "footer",
+      "penId": "i8nMM",
+      "type": "frame",
+      "styles": {
+        "fill": "#1A150E",
+        "width": "fill_container",
+        "layout": "vertical",
+        "padding": [60, 80, 32, 80],
+        "gap": 48,
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "name": "footerTop",
+          "penId": "saFzJ",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "justifyContent": "space_between"
+          }
+        },
+        {
+          "name": "footerSecondaryNav",
+          "penId": "wirMF",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "gap": 24,
+            "justifyContent": "center",
+            "alignItems": "center"
+          }
+        },
+        {
+          "name": "footerDivider",
+          "penId": "eglUP",
+          "type": "rectangle",
+          "styles": {
+            "fill": "#2C241888",
+            "width": "fill_container",
+            "height": 1
+          }
+        },
+        {
+          "name": "footerMiddle",
+          "penId": "yzoeb",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "justifyContent": "space_between",
+            "alignItems": "center"
+          }
+        },
+        {
+          "name": "footerBottom",
+          "penId": "2e4Xo",
+          "type": "text",
+          "content": "\u00a9 2026 月瀬庵 TSUKISE-AN. All Rights Reserved.",
+          "styles": {
+            "fill": "#6B5D4F55",
+            "fontFamily": "Cormorant Garamond",
+            "fontSize": 11,
+            "fontWeight": "normal",
+            "letterSpacing": 2
+          }
+        }
+      ]
+    }
+  ]
+}

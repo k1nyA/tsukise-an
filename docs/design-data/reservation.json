@@ -1,0 +1,526 @@
+{
+  "page": {
+    "name": "予約ページ",
+    "nameEn": "Reservation",
+    "route": "/reservation",
+    "penFrameId": "Xbfwp"
+  },
+  "layout": {
+    "width": 1440,
+    "direction": "vertical",
+    "fill": "#FAF8F3",
+    "clip": true
+  },
+  "sections": [
+    {
+      "name": "h7",
+      "penId": "rVjGW",
+      "type": "frame",
+      "styles": {
+        "fill": "#FAF8F3",
+        "height": 80,
+        "width": "fill_container",
+        "justifyContent": "space_between",
+        "alignItems": "center",
+        "padding": [0, 60]
+      },
+      "children": [
+        {
+          "name": "logoArea",
+          "penId": "LYlib",
+          "type": "frame",
+          "styles": {
+            "alignItems": "center",
+            "gap": 12
+          }
+        },
+        {
+          "name": "navArea",
+          "penId": "jWIPp",
+          "type": "frame",
+          "styles": {
+            "alignItems": "center",
+            "gap": 32
+          }
+        }
+      ]
+    },
+    {
+      "name": "breadcrumb1",
+      "penId": "OpGX6",
+      "type": "frame",
+      "styles": {
+        "fill": "#EEEBE3",
+        "width": "fill_container",
+        "alignItems": "center",
+        "gap": 8,
+        "padding": [16, 80]
+      },
+      "children": [
+        {
+          "name": "bc1",
+          "penId": "SrTWR",
+          "type": "text",
+          "content": "ホーム",
+          "context": "href: /",
+          "styles": {
+            "fill": "#8B7D6B",
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 12,
+            "fontWeight": "300",
+            "letterSpacing": 1
+          }
+        },
+        {
+          "name": "bcSep",
+          "penId": "DhcRa",
+          "type": "text",
+          "content": ">",
+          "styles": {
+            "fill": "#D4C5A0",
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 12,
+            "fontWeight": "300"
+          }
+        },
+        {
+          "name": "bc2",
+          "penId": "9dzwP",
+          "type": "text",
+          "content": "ご予約",
+          "styles": {
+            "fill": "#2C2418",
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 12,
+            "fontWeight": "500",
+            "letterSpacing": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "hero6",
+      "penId": "p2vuq",
+      "type": "frame",
+      "styles": {
+        "width": "fill_container",
+        "height": 400,
+        "layout": "none",
+        "clip": true
+      },
+      "children": [
+        {
+          "name": "heroBg",
+          "penId": "K7he1",
+          "type": "frame",
+          "styles": {
+            "width": 1440,
+            "height": 400,
+            "x": 0,
+            "y": 0,
+            "hasImageFill": true
+          }
+        },
+        {
+          "name": "heroOverlay",
+          "penId": "yJhw0",
+          "type": "frame",
+          "styles": {
+            "fill": "#1A150E55",
+            "width": 1440,
+            "height": 400,
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "name": "heroContent",
+          "penId": "niSkP",
+          "type": "frame",
+          "styles": {
+            "width": 1440,
+            "height": 400,
+            "layout": "vertical",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "gap": 24,
+            "x": 0,
+            "y": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Reservation Intro",
+      "penId": "sNBRw",
+      "type": "frame",
+      "styles": {
+        "fill": "#FAF8F3",
+        "width": "fill_container",
+        "layout": "vertical",
+        "alignItems": "center",
+        "gap": 32,
+        "padding": [80, 200]
+      },
+      "children": [
+        {
+          "name": "introLabel",
+          "penId": "GC09z",
+          "type": "frame",
+          "styles": {
+            "alignItems": "center",
+            "gap": 20
+          }
+        },
+        {
+          "name": "introTitle",
+          "penId": "X8b8H",
+          "type": "text",
+          "content": "ご予約の流れ",
+          "styles": {
+            "fill": "#2C2418",
+            "fontFamily": "Noto Serif JP",
+            "fontSize": 28,
+            "fontWeight": "600",
+            "letterSpacing": 4,
+            "textAlign": "center"
+          }
+        },
+        {
+          "name": "introSteps",
+          "penId": "q8Mv6",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "gap": 40
+          }
+        }
+      ]
+    },
+    {
+      "name": "Booking Methods",
+      "penId": "cflwi",
+      "type": "frame",
+      "styles": {
+        "fill": "#FAF8F3",
+        "width": "fill_container",
+        "layout": "vertical",
+        "alignItems": "center",
+        "gap": 32,
+        "padding": [60, 120]
+      },
+      "children": [
+        {
+          "name": "bookingMethodsTitle",
+          "penId": "kr1d6",
+          "type": "text",
+          "content": "ご予約方法",
+          "styles": {
+            "fill": "#2C2418",
+            "fontFamily": "Noto Serif JP",
+            "fontSize": 24,
+            "fontWeight": "600",
+            "letterSpacing": 4
+          }
+        },
+        {
+          "name": "bookingRow",
+          "penId": "55tLt",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "gap": 24
+          }
+        }
+      ]
+    },
+    {
+      "name": "Room Selection",
+      "penId": "5kRIT",
+      "type": "frame",
+      "styles": {
+        "fill": "#FAF8F3",
+        "width": "fill_container",
+        "layout": "vertical",
+        "alignItems": "center",
+        "gap": 32,
+        "padding": [60, 80, 80, 80]
+      },
+      "children": [
+        {
+          "name": "roomSelTitle",
+          "penId": "fXc4W",
+          "type": "text",
+          "content": "客室タイプを選択してください",
+          "styles": {
+            "fill": "#2C2418",
+            "fontFamily": "Noto Serif JP",
+            "fontSize": 24,
+            "fontWeight": "600",
+            "letterSpacing": 4
+          }
+        },
+        {
+          "name": "roomSelRow",
+          "penId": "o1479",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "gap": 20
+          }
+        }
+      ]
+    },
+    {
+      "name": "Plan Section",
+      "penId": "R2yiV",
+      "type": "frame",
+      "styles": {
+        "fill": "#F0EBE0",
+        "width": "fill_container",
+        "layout": "vertical",
+        "alignItems": "center",
+        "gap": 40,
+        "padding": [80, 120]
+      },
+      "children": [
+        {
+          "name": "planSectionTitle",
+          "penId": "NOBpH",
+          "type": "text",
+          "content": "宿泊プラン",
+          "styles": {
+            "fill": "#2C2418",
+            "fontFamily": "Noto Serif JP",
+            "fontSize": 24,
+            "fontWeight": "600",
+            "letterSpacing": 4
+          }
+        },
+        {
+          "name": "planRow",
+          "penId": "oGUwW",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "gap": 24
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cal.com Calendar",
+      "penId": "oZIUF",
+      "type": "frame",
+      "styles": {
+        "fill": "#F0EBE0",
+        "width": "fill_container",
+        "layout": "vertical",
+        "alignItems": "center",
+        "gap": 32,
+        "padding": [60, 120]
+      },
+      "children": [
+        {
+          "name": "calLabel",
+          "penId": "7rrHP",
+          "type": "frame",
+          "styles": {
+            "alignItems": "center",
+            "gap": 16
+          }
+        },
+        {
+          "name": "calTitle",
+          "penId": "ILEBA",
+          "type": "text",
+          "content": "ご宿泊日を選択",
+          "styles": {
+            "fill": "#2C2418",
+            "fontFamily": "Noto Serif JP",
+            "fontSize": 24,
+            "fontWeight": "600",
+            "letterSpacing": 4
+          }
+        },
+        {
+          "name": "calWidget",
+          "penId": "LbUJI",
+          "type": "frame",
+          "styles": {
+            "fill": "#FAF8F3",
+            "width": "fill_container",
+            "height": 400,
+            "layout": "vertical",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "cornerRadius": 8,
+            "gap": 16,
+            "stroke": {
+              "fill": "#D4C5A033",
+              "thickness": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Booking Policies",
+      "penId": "WRGnj",
+      "type": "frame",
+      "styles": {
+        "fill": "#FAF8F3",
+        "width": "fill_container",
+        "layout": "vertical",
+        "gap": 32,
+        "padding": [60, 120]
+      },
+      "children": [
+        {
+          "name": "policyTitle",
+          "penId": "Ko0NM",
+          "type": "text",
+          "content": "ご予約に関するご注意",
+          "styles": {
+            "fill": "#2C2418",
+            "fontFamily": "Noto Serif JP",
+            "fontSize": 20,
+            "fontWeight": "600",
+            "letterSpacing": 3
+          }
+        },
+        {
+          "name": "policyGrid",
+          "penId": "8cTuZ",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "gap": 40
+          }
+        }
+      ]
+    },
+    {
+      "name": "c7",
+      "penId": "VaZzm",
+      "type": "frame",
+      "styles": {
+        "width": "fill_container",
+        "height": 480,
+        "layout": "none",
+        "clip": true
+      },
+      "children": [
+        {
+          "name": "ctaBg",
+          "penId": "uZdtd",
+          "type": "frame",
+          "styles": {
+            "width": 1440,
+            "height": 480,
+            "x": 0,
+            "y": 0,
+            "hasImageFill": true
+          }
+        },
+        {
+          "name": "ctaOverlay",
+          "penId": "bo7sI",
+          "type": "frame",
+          "styles": {
+            "fill": "#1A150E88",
+            "width": 1440,
+            "height": 480,
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "name": "ctaContent",
+          "penId": "mEm5P",
+          "type": "frame",
+          "styles": {
+            "width": 1440,
+            "height": 480,
+            "layout": "vertical",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "gap": 40,
+            "x": 0,
+            "y": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "f7",
+      "penId": "ER6g4",
+      "type": "frame",
+      "styles": {
+        "fill": "#1A150E",
+        "width": "fill_container",
+        "layout": "vertical",
+        "alignItems": "center",
+        "gap": 48,
+        "padding": [60, 80, 32, 80]
+      },
+      "children": [
+        {
+          "name": "footerTop",
+          "penId": "b1ITv",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "justifyContent": "space_between"
+          }
+        },
+        {
+          "name": "footerSecondaryNav",
+          "penId": "wuKOf",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "gap": 24
+          }
+        },
+        {
+          "name": "footerDivider",
+          "penId": "UduHs",
+          "type": "rectangle",
+          "styles": {
+            "fill": "#2C241888",
+            "width": "fill_container",
+            "height": 1
+          }
+        },
+        {
+          "name": "footerMiddle",
+          "penId": "4PzYm",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "justifyContent": "space_between",
+            "alignItems": "center"
+          }
+        },
+        {
+          "name": "footerBottom",
+          "penId": "Eik5g",
+          "type": "text",
+          "content": "© 2026 月瀬庵 TSUKISE-AN. All Rights Reserved.",
+          "styles": {
+            "fill": "#6B5D4F55",
+            "fontFamily": "Cormorant Garamond",
+            "fontSize": 11,
+            "fontWeight": "normal",
+            "letterSpacing": 2
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,453 @@
+{
+  "components": [
+    {
+      "name": "Hero Label",
+      "penId": "9WJuf",
+      "reusable": true,
+      "styles": {
+        "gap": 20,
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "name": "line1",
+          "penId": "L8wAS",
+          "type": "rectangle",
+          "styles": {
+            "fill": "#D4C5A0",
+            "width": 40,
+            "height": 1
+          }
+        },
+        {
+          "name": "labelText",
+          "penId": "MVT52",
+          "type": "text",
+          "content": "LABEL",
+          "styles": {
+            "fontFamily": "Cormorant Garamond",
+            "fontSize": 14,
+            "fontWeight": "500",
+            "color": "#D4C5A0",
+            "letterSpacing": 6
+          }
+        },
+        {
+          "name": "line2",
+          "penId": "UCbTd",
+          "type": "rectangle",
+          "styles": {
+            "fill": "#D4C5A0",
+            "width": 40,
+            "height": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Section Label",
+      "penId": "bQV0w",
+      "reusable": true,
+      "styles": {
+        "gap": 20,
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "name": "line1",
+          "penId": "8R1TS",
+          "type": "rectangle",
+          "styles": {
+            "fill": "#D4C5A0",
+            "width": 40,
+            "height": 1
+          }
+        },
+        {
+          "name": "labelText",
+          "penId": "T93K6",
+          "type": "text",
+          "content": "LABEL",
+          "styles": {
+            "fontFamily": "Cormorant Garamond",
+            "fontSize": 13,
+            "fontWeight": "500",
+            "color": "#8B7D6B",
+            "letterSpacing": 5
+          }
+        },
+        {
+          "name": "line2",
+          "penId": "IRgaA",
+          "type": "rectangle",
+          "styles": {
+            "fill": "#D4C5A0",
+            "width": 40,
+            "height": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Section Label Gold",
+      "penId": "lAKGL",
+      "reusable": true,
+      "styles": {
+        "gap": 20,
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "name": "line1",
+          "penId": "efnY0",
+          "type": "rectangle",
+          "styles": {
+            "fill": "#8B6914",
+            "width": 40,
+            "height": 1
+          }
+        },
+        {
+          "name": "labelText",
+          "penId": "3sASg",
+          "type": "text",
+          "content": "LABEL",
+          "styles": {
+            "fontFamily": "Cormorant Garamond",
+            "fontSize": 13,
+            "fontWeight": "500",
+            "color": "#8B6914",
+            "letterSpacing": 5
+          }
+        },
+        {
+          "name": "line2",
+          "penId": "cJL7J",
+          "type": "rectangle",
+          "styles": {
+            "fill": "#8B6914",
+            "width": 40,
+            "height": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sub Label",
+      "penId": "4Ai6N",
+      "reusable": true,
+      "styles": {
+        "gap": 16,
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "name": "line",
+          "penId": "rNIpu",
+          "type": "rectangle",
+          "styles": {
+            "fill": "#8B6914",
+            "width": 30,
+            "height": 1
+          }
+        },
+        {
+          "name": "labelText",
+          "penId": "AJrEN",
+          "type": "text",
+          "content": "LABEL",
+          "styles": {
+            "fontFamily": "Cormorant Garamond",
+            "fontSize": 12,
+            "fontWeight": "500",
+            "color": "#8B6914",
+            "letterSpacing": 5
+          }
+        }
+      ]
+    },
+    {
+      "name": "Section Title",
+      "penId": "7THkA",
+      "reusable": true,
+      "type": "text",
+      "content": "セクションタイトル",
+      "styles": {
+        "fontFamily": "Noto Serif JP",
+        "fontSize": 32,
+        "fontWeight": "600",
+        "color": "#2C2418",
+        "letterSpacing": 6,
+        "textAlign": "center"
+      }
+    },
+    {
+      "name": "News Card",
+      "penId": "S37He",
+      "reusable": false,
+      "styles": {
+        "width": "fill_container",
+        "padding": [32, 0],
+        "gap": 24,
+        "alignItems": "center",
+        "stroke": {
+          "fill": "#D4C5A033",
+          "thickness": 1
+        }
+      },
+      "children": [
+        {
+          "name": "card1Img",
+          "penId": "VsknQ",
+          "type": "frame",
+          "hasImageFill": true,
+          "styles": {
+            "width": 200,
+            "height": 140,
+            "cornerRadius": 2,
+            "clip": true
+          }
+        },
+        {
+          "name": "card1Content",
+          "penId": "WZHrO",
+          "type": "frame",
+          "styles": {
+            "layout": "vertical",
+            "gap": 12,
+            "width": "fill_container"
+          },
+          "children": [
+            {
+              "name": "card1Meta",
+              "penId": "7MJ7N",
+              "type": "frame",
+              "styles": {
+                "gap": 16,
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "name": "card1Date",
+                  "penId": "facMu",
+                  "type": "text",
+                  "content": "2026.02.15",
+                  "styles": {
+                    "fontFamily": "Cormorant Garamond",
+                    "fontSize": 13,
+                    "fontWeight": "500",
+                    "color": "#8B7D6B",
+                    "letterSpacing": 2
+                  }
+                },
+                {
+                  "name": "card1Cat",
+                  "penId": "pZWtZ",
+                  "type": "frame",
+                  "styles": {
+                    "fill": "#EEEBE3",
+                    "cornerRadius": 2,
+                    "padding": [4, 12]
+                  },
+                  "children": [
+                    {
+                      "name": "card1CatText",
+                      "penId": "X5bH3",
+                      "type": "text",
+                      "content": "季節のご案内",
+                      "styles": {
+                        "fontFamily": "Noto Sans JP",
+                        "fontSize": 11,
+                        "fontWeight": "500",
+                        "color": "#8B6914",
+                        "letterSpacing": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "card1Title",
+              "penId": "DJb1T",
+              "type": "text",
+              "content": "記事タイトル",
+              "styles": {
+                "fontFamily": "Noto Serif JP",
+                "fontSize": 18,
+                "fontWeight": "600",
+                "color": "#2C2418",
+                "letterSpacing": 2
+              }
+            },
+            {
+              "name": "card1Desc",
+              "penId": "YwGrH",
+              "type": "text",
+              "content": "記事の概要テキストが入ります。",
+              "styles": {
+                "fontFamily": "Noto Sans JP",
+                "fontSize": 14,
+                "fontWeight": "300",
+                "color": "#6B5D4F",
+                "letterSpacing": 1,
+                "lineHeight": 1.8,
+                "textGrowth": "fixed-width",
+                "width": 800
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Related Page Links",
+      "penId": "jdW4K",
+      "reusable": true,
+      "styles": {
+        "fill": "#FAF8F3",
+        "width": "fill_container",
+        "padding": [40, 80],
+        "gap": 60,
+        "justifyContent": "center",
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "name": "link1",
+          "penId": "Kofjx",
+          "type": "text",
+          "content": "リンク1 →",
+          "styles": {
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 14,
+            "fontWeight": "500",
+            "color": "#8B6914",
+            "letterSpacing": 1
+          }
+        },
+        {
+          "name": "link2",
+          "penId": "QjsOP",
+          "type": "text",
+          "content": "リンク2 →",
+          "styles": {
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 14,
+            "fontWeight": "500",
+            "color": "#8B6914",
+            "letterSpacing": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Icon Info Card",
+      "penId": "25Yvd",
+      "reusable": true,
+      "styles": {
+        "fill": "#F0EBE0",
+        "width": 280,
+        "cornerRadius": 4,
+        "padding": [32, 28],
+        "gap": 16,
+        "layout": "vertical",
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "name": "cardIcon",
+          "penId": "gyawB",
+          "type": "icon_font",
+          "styles": {
+            "iconFontFamily": "lucide",
+            "iconFontName": "map-pin",
+            "color": "#8B6914",
+            "width": 32,
+            "height": 32
+          }
+        },
+        {
+          "name": "cardTitle",
+          "penId": "lJj3x",
+          "type": "text",
+          "content": "カードタイトル",
+          "styles": {
+            "fontFamily": "Noto Serif JP",
+            "fontSize": 15,
+            "fontWeight": "600",
+            "color": "#2C2418",
+            "textAlign": "center"
+          }
+        },
+        {
+          "name": "cardDesc",
+          "penId": "QAFtU",
+          "type": "text",
+          "content": "カードの説明テキスト",
+          "styles": {
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 13,
+            "fontWeight": "300",
+            "color": "#8B7D6B",
+            "lineHeight": 1.8,
+            "textAlign": "center"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Info Item",
+      "penId": "pYjGY",
+      "reusable": true,
+      "styles": {
+        "width": 240,
+        "gap": 12,
+        "layout": "vertical",
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "name": "itemIcon",
+          "penId": "j5vmQ",
+          "type": "icon_font",
+          "styles": {
+            "iconFontFamily": "lucide",
+            "iconFontName": "circle",
+            "color": "#8B6914",
+            "width": 24,
+            "height": 24
+          }
+        },
+        {
+          "name": "itemTitle",
+          "penId": "DperZ",
+          "type": "text",
+          "content": "タイトル",
+          "styles": {
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 14,
+            "fontWeight": "600",
+            "color": "#2C2418",
+            "letterSpacing": 1,
+            "textAlign": "center"
+          }
+        },
+        {
+          "name": "itemDesc",
+          "penId": "bxhzK",
+          "type": "text",
+          "content": "説明テキスト",
+          "styles": {
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 13,
+            "fontWeight": "300",
+            "color": "#8B7D6B",
+            "lineHeight": 1.8,
+            "textAlign": "center"
+          }
+        }
+      ]
+    }
+  ]
+}

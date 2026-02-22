@@ -1,0 +1,443 @@
+{
+  "page": {
+    "name": "アクセスページ",
+    "nameEn": "Access",
+    "route": "/access",
+    "penFrameId": "BBsjr"
+  },
+  "layout": {
+    "width": 1440,
+    "direction": "vertical",
+    "fill": "#FAF8F3",
+    "clip": true
+  },
+  "sections": [
+    {
+      "name": "h6",
+      "penId": "9IpJt",
+      "type": "frame",
+      "styles": {
+        "fill": "#FAF8F3",
+        "height": 80,
+        "width": "fill_container",
+        "justifyContent": "space_between",
+        "alignItems": "center",
+        "padding": [0, 60]
+      },
+      "children": [
+        {
+          "name": "logoArea",
+          "penId": "bysRi",
+          "type": "frame",
+          "styles": {
+            "alignItems": "center",
+            "gap": 12
+          }
+        },
+        {
+          "name": "navArea",
+          "penId": "S6N4M",
+          "type": "frame",
+          "styles": {
+            "alignItems": "center",
+            "gap": 32
+          }
+        }
+      ]
+    },
+    {
+      "name": "bc2",
+      "penId": "KGsWH",
+      "type": "frame",
+      "styles": {
+        "fill": "#EEEBE3",
+        "width": "fill_container",
+        "alignItems": "center",
+        "gap": 8,
+        "padding": [16, 80]
+      },
+      "children": [
+        {
+          "name": "bc1",
+          "penId": "7Z13T",
+          "type": "text",
+          "content": "ホーム",
+          "context": "href: /",
+          "styles": {
+            "fill": "#8B7D6B",
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 12,
+            "fontWeight": "300",
+            "letterSpacing": 1
+          }
+        },
+        {
+          "name": "bcSep",
+          "penId": "uj3mQ",
+          "type": "text",
+          "content": ">",
+          "styles": {
+            "fill": "#D4C5A0",
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 12,
+            "fontWeight": "300"
+          }
+        },
+        {
+          "name": "bc2",
+          "penId": "2lch0",
+          "type": "text",
+          "content": "アクセス",
+          "styles": {
+            "fill": "#2C2418",
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 12,
+            "fontWeight": "500",
+            "letterSpacing": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "hero5",
+      "penId": "X9UuU",
+      "type": "frame",
+      "styles": {
+        "width": "fill_container",
+        "height": 480,
+        "layout": "none",
+        "clip": true
+      },
+      "children": [
+        {
+          "name": "heroBg",
+          "penId": "09TYS",
+          "type": "frame",
+          "styles": {
+            "width": 1440,
+            "height": 480,
+            "x": 0,
+            "y": 0,
+            "hasImageFill": true
+          }
+        },
+        {
+          "name": "heroOverlay",
+          "penId": "9c1cD",
+          "type": "frame",
+          "styles": {
+            "fill": "#1A150E55",
+            "width": 1440,
+            "height": 480,
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "name": "heroContent",
+          "penId": "SHej3",
+          "type": "frame",
+          "styles": {
+            "width": 1440,
+            "height": 480,
+            "layout": "vertical",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "gap": 24,
+            "x": 0,
+            "y": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Address Section",
+      "penId": "2MWWi",
+      "type": "frame",
+      "styles": {
+        "fill": "#FAF8F3",
+        "width": "fill_container",
+        "layout": "vertical",
+        "alignItems": "center",
+        "gap": 40,
+        "padding": [80, 200]
+      },
+      "children": [
+        {
+          "name": "addrLabel",
+          "penId": "XIJOF",
+          "type": "frame",
+          "styles": {
+            "alignItems": "center",
+            "gap": 20
+          }
+        },
+        {
+          "name": "addrTitle",
+          "penId": "c2r1Z",
+          "type": "text",
+          "content": "月瀬庵",
+          "styles": {
+            "fill": "#2C2418",
+            "fontFamily": "Noto Serif JP",
+            "fontSize": 32,
+            "fontWeight": "600",
+            "letterSpacing": 6,
+            "textAlign": "center"
+          }
+        },
+        {
+          "name": "addrInfo",
+          "penId": "JrS0g",
+          "type": "frame",
+          "styles": {
+            "layout": "vertical",
+            "alignItems": "center",
+            "gap": 16
+          }
+        },
+        {
+          "name": "addrDeco",
+          "penId": "USW6z",
+          "type": "rectangle",
+          "styles": {
+            "fill": "#D4C5A0",
+            "width": 1,
+            "height": 40
+          }
+        }
+      ]
+    },
+    {
+      "name": "Map Section",
+      "penId": "bfq9f",
+      "type": "frame",
+      "styles": {
+        "fill": "#F0EBE0",
+        "width": "fill_container",
+        "height": 320,
+        "layout": "vertical",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "padding": [32, 80]
+      },
+      "children": [
+        {
+          "name": "mapFrame",
+          "penId": "Em5Pt",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "height": 260,
+            "layout": "none",
+            "clip": true,
+            "cornerRadius": 4,
+            "hasImageFill": true
+          }
+        },
+        {
+          "name": "mapLink",
+          "penId": "PpfEU",
+          "type": "text",
+          "content": "Google Mapで見る →",
+          "context": "href: https://maps.google.com/?q=箱根町元箱根138 (external)",
+          "styles": {
+            "fill": "#8B6914",
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 14,
+            "fontWeight": "500",
+            "letterSpacing": 1,
+            "textAlign": "center"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Access Methods",
+      "penId": "XbrEx",
+      "type": "frame",
+      "styles": {
+        "fill": "#FAF8F3",
+        "width": "fill_container",
+        "layout": "vertical",
+        "alignItems": "center",
+        "gap": 40,
+        "padding": [60, 80]
+      },
+      "children": [
+        {
+          "name": "accessMethodsTitle",
+          "penId": "BwRYr",
+          "type": "text",
+          "content": "アクセス方法",
+          "styles": {
+            "fill": "#2C2418",
+            "fontFamily": "Noto Serif JP",
+            "fontSize": 28,
+            "fontWeight": "600",
+            "letterSpacing": 4
+          }
+        },
+        {
+          "name": "accessMethodsRow",
+          "penId": "AIqnR",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "gap": 32
+          }
+        }
+      ]
+    },
+    {
+      "name": "contactLink",
+      "penId": "BRQiw",
+      "type": "frame",
+      "styles": {
+        "fill": "#FAF8F3",
+        "width": "fill_container",
+        "layout": "vertical",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "padding": [40, 80]
+      },
+      "children": [
+        {
+          "name": "contactLinkText",
+          "penId": "4TmlZ",
+          "type": "text",
+          "content": "お問い合わせ →",
+          "context": "href: /contact",
+          "styles": {
+            "fill": "#8B6914",
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 15,
+            "fontWeight": "500",
+            "letterSpacing": 2,
+            "textAlign": "center"
+          }
+        }
+      ]
+    },
+    {
+      "name": "c6",
+      "penId": "DoTZW",
+      "type": "frame",
+      "styles": {
+        "width": "fill_container",
+        "height": 480,
+        "layout": "none",
+        "clip": true
+      },
+      "children": [
+        {
+          "name": "ctaBg",
+          "penId": "KvQLe",
+          "type": "frame",
+          "styles": {
+            "width": 1440,
+            "height": 480,
+            "x": 0,
+            "y": 0,
+            "hasImageFill": true
+          }
+        },
+        {
+          "name": "ctaOverlay",
+          "penId": "6tinp",
+          "type": "frame",
+          "styles": {
+            "fill": "#1A150E88",
+            "width": 1440,
+            "height": 480,
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "name": "ctaContent",
+          "penId": "dy8cW",
+          "type": "frame",
+          "styles": {
+            "width": 1440,
+            "height": 480,
+            "layout": "vertical",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "gap": 40,
+            "x": 0,
+            "y": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "f6",
+      "penId": "eZIQe",
+      "type": "frame",
+      "styles": {
+        "fill": "#1A150E",
+        "width": "fill_container",
+        "layout": "vertical",
+        "alignItems": "center",
+        "gap": 48,
+        "padding": [60, 80, 32, 80]
+      },
+      "children": [
+        {
+          "name": "footerTop",
+          "penId": "FPz59",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "justifyContent": "space_between"
+          }
+        },
+        {
+          "name": "footerSecondaryNav",
+          "penId": "KdCRB",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "gap": 24
+          }
+        },
+        {
+          "name": "footerDivider",
+          "penId": "o2tQ3",
+          "type": "rectangle",
+          "styles": {
+            "fill": "#2C241888",
+            "width": "fill_container",
+            "height": 1
+          }
+        },
+        {
+          "name": "footerMiddle",
+          "penId": "38ys6",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "justifyContent": "space_between",
+            "alignItems": "center"
+          }
+        },
+        {
+          "name": "footerBottom",
+          "penId": "Xapy9",
+          "type": "text",
+          "content": "© 2026 月瀬庵 TSUKISE-AN. All Rights Reserved.",
+          "styles": {
+            "fill": "#6B5D4F55",
+            "fontFamily": "Cormorant Garamond",
+            "fontSize": 11,
+            "fontWeight": "normal",
+            "letterSpacing": 2
+          }
+        }
+      ]
+    }
+  ]
+}

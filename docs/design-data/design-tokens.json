@@ -1,0 +1,143 @@
+{
+  "colors": {
+    "background": {
+      "primary": "#FAF8F3",
+      "sectionAlt": "#EEEBE3",
+      "sectionAltDark": "#F0EBE0",
+      "dark": "#2C2418",
+      "darkest": "#1A150E",
+      "hero-overlay": "#1A150E55"
+    },
+    "text": {
+      "heading": "#2C2418",
+      "body": "#4A4035",
+      "subtle": "#8B7D6B",
+      "secondary": "#6B5D4F",
+      "onDark": "#FAF8F3",
+      "onDarkSubtle": "#C4B89A"
+    },
+    "accent": {
+      "gold": "#8B6914",
+      "lightGold": "#D4C5A0",
+      "softLine": "#D4C5A055"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Noto Serif JP",
+      "body": "Noto Sans JP",
+      "accent": "Cormorant Garamond"
+    },
+    "styles": {
+      "h1": {
+        "fontFamily": "Noto Serif JP",
+        "fontWeight": "700",
+        "fontSize": "40px",
+        "letterSpacing": "3px",
+        "lineHeight": 1.6
+      },
+      "h2-section": {
+        "fontFamily": "Noto Serif JP",
+        "fontWeight": "600",
+        "fontSize": "28px",
+        "letterSpacing": "2px",
+        "lineHeight": 1.6
+      },
+      "h3-sub": {
+        "fontFamily": "Noto Sans JP",
+        "fontWeight": "500",
+        "fontSize": "18px",
+        "letterSpacing": "1px",
+        "lineHeight": 1.8
+      },
+      "body": {
+        "fontFamily": "Noto Sans JP",
+        "fontWeight": "300",
+        "fontSize": "15px",
+        "letterSpacing": "1px",
+        "lineHeight": 2.0
+      },
+      "small": {
+        "fontFamily": "Noto Sans JP",
+        "fontWeight": "300",
+        "fontSize": "12px",
+        "letterSpacing": "1px",
+        "lineHeight": 1.8
+      },
+      "label-en": {
+        "fontFamily": "Cormorant Garamond",
+        "fontWeight": "400",
+        "fontSize": "14px",
+        "letterSpacing": "3px",
+        "lineHeight": 1.4,
+        "textTransform": "uppercase"
+      },
+      "button": {
+        "fontFamily": "Noto Sans JP",
+        "fontWeight": "500",
+        "fontSize": "14px",
+        "letterSpacing": "2px",
+        "lineHeight": 1.4
+      }
+    }
+  },
+  "spacing": {
+    "sectionPaddingY": 80,
+    "sectionPaddingX": 120,
+    "contentMaxWidth": 1000,
+    "pageWidth": 1440,
+    "headerHeight": 80,
+    "heroHeight": 480,
+    "subpageHeroHeight": 360,
+    "gap": {
+      "section": 0,
+      "content": 40,
+      "items": 24,
+      "small": 12
+    }
+  },
+  "components": {
+    "button": {
+      "primary": {
+        "fill": "#8B6914",
+        "textColor": "#FAF8F3",
+        "padding": [16, 40],
+        "cornerRadius": 0,
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "letterSpacing": "2px"
+      },
+      "outline": {
+        "fill": "transparent",
+        "stroke": "#D4C5A0",
+        "textColor": "#FAF8F3",
+        "padding": [12, 32],
+        "cornerRadius": 0
+      }
+    },
+    "card": {
+      "cornerRadius": 0,
+      "shadow": "none",
+      "border": "none"
+    },
+    "divider": {
+      "color": "#D4C5A055",
+      "thickness": 1
+    }
+  },
+  "cssVariables": {
+    "--ryokan-bg": "#FAF8F3",
+    "--ryokan-dark": "#2C2418",
+    "--ryokan-gold": "#8B6914",
+    "--ryokan-muted": "#4A4035",
+    "--ryokan-light-gold": "#D4C5A0",
+    "--ryokan-subtle": "#8B7D6B",
+    "--ryokan-secondary": "#6B5D4F",
+    "--ryokan-light-bg": "#EEEBE3",
+    "--ryokan-light-bg-alt": "#F0EBE0",
+    "--ryokan-darkest": "#1A150E",
+    "--ryokan-soft-line": "#D4C5A055",
+    "--ryokan-text-on-dark": "#FAF8F3",
+    "--ryokan-text-subtle": "#C4B89A"
+  }
+}

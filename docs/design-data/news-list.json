@@ -1,0 +1,545 @@
+{
+  "page": {
+    "name": "お知らせ一覧ページ",
+    "nameEn": "News List",
+    "route": "/news",
+    "penFrameId": "RxtFj"
+  },
+  "layout": {
+    "width": 1440,
+    "direction": "vertical",
+    "fill": "#FAF8F3",
+    "clip": true
+  },
+  "sections": [
+    {
+      "name": "h9",
+      "penId": "IQK9O",
+      "type": "frame",
+      "styles": {
+        "fill": "#FAF8F3",
+        "height": 80,
+        "width": "fill_container",
+        "justifyContent": "space_between",
+        "alignItems": "center",
+        "padding": [0, 60]
+      },
+      "children": [
+        {
+          "name": "logoArea",
+          "penId": "DjYL2",
+          "type": "frame",
+          "styles": {
+            "alignItems": "center",
+            "gap": 12
+          }
+        },
+        {
+          "name": "navArea",
+          "penId": "s8H6v",
+          "type": "frame",
+          "styles": {
+            "alignItems": "center",
+            "gap": 32
+          }
+        }
+      ]
+    },
+    {
+      "name": "hero8",
+      "penId": "XIRR2",
+      "type": "frame",
+      "styles": {
+        "width": "fill_container",
+        "height": 360,
+        "layout": "none",
+        "clip": true
+      },
+      "children": [
+        {
+          "name": "heroBg",
+          "penId": "8CG7D",
+          "type": "frame",
+          "styles": {
+            "width": 1440,
+            "height": 360,
+            "x": 0,
+            "y": 0,
+            "hasImageFill": true
+          }
+        },
+        {
+          "name": "heroOverlay",
+          "penId": "5D0kO",
+          "type": "frame",
+          "styles": {
+            "fill": "#1A150E55",
+            "width": 1440,
+            "height": 360,
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "name": "heroContent",
+          "penId": "R5Dbe",
+          "type": "frame",
+          "styles": {
+            "width": 1440,
+            "height": 360,
+            "layout": "vertical",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "gap": 24,
+            "x": 0,
+            "y": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "bc1",
+      "penId": "LT0Tj",
+      "type": "frame",
+      "styles": {
+        "fill": "#EEEBE3",
+        "width": "fill_container",
+        "alignItems": "center",
+        "gap": 8,
+        "padding": [16, 80]
+      },
+      "children": [
+        {
+          "name": "bc1",
+          "penId": "Mwnsc",
+          "type": "text",
+          "content": "ホーム",
+          "context": "href: /",
+          "styles": {
+            "fill": "#8B7D6B",
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 12,
+            "fontWeight": "300",
+            "letterSpacing": 1
+          }
+        },
+        {
+          "name": "bcSep",
+          "penId": "dPryU",
+          "type": "text",
+          "content": ">",
+          "styles": {
+            "fill": "#D4C5A0",
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 12,
+            "fontWeight": "300"
+          }
+        },
+        {
+          "name": "bc2",
+          "penId": "oh6Xj",
+          "type": "text",
+          "content": "お知らせ",
+          "styles": {
+            "fill": "#2C2418",
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 12,
+            "fontWeight": "500",
+            "letterSpacing": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Category Tabs",
+      "penId": "MxpYN",
+      "type": "frame",
+      "styles": {
+        "fill": "#FAF8F3",
+        "width": "fill_container",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "gap": 16,
+        "padding": [40, 80, 24, 80]
+      },
+      "children": [
+        {
+          "name": "catAll",
+          "penId": "xM0mn",
+          "type": "frame",
+          "styles": {
+            "fill": "#2C2418",
+            "cornerRadius": 2,
+            "padding": [10, 24]
+          }
+        },
+        {
+          "name": "catEvent",
+          "penId": "Y3SEL",
+          "type": "frame",
+          "styles": {
+            "fill": "transparent",
+            "cornerRadius": 2,
+            "padding": [10, 24],
+            "stroke": {
+              "fill": "#D4C5A0",
+              "thickness": 1
+            }
+          }
+        },
+        {
+          "name": "catSeason",
+          "penId": "ZGakH",
+          "type": "frame",
+          "styles": {
+            "fill": "transparent",
+            "cornerRadius": 2,
+            "padding": [10, 24],
+            "stroke": {
+              "fill": "#D4C5A0",
+              "thickness": 1
+            }
+          }
+        },
+        {
+          "name": "catMenu",
+          "penId": "QynUp",
+          "type": "frame",
+          "styles": {
+            "fill": "transparent",
+            "cornerRadius": 2,
+            "padding": [10, 24],
+            "stroke": {
+              "fill": "#D4C5A0",
+              "thickness": 1
+            }
+          }
+        },
+        {
+          "name": "catMedia",
+          "penId": "2WEeB",
+          "type": "frame",
+          "styles": {
+            "fill": "transparent",
+            "cornerRadius": 2,
+            "padding": [10, 24],
+            "stroke": {
+              "fill": "#D4C5A0",
+              "thickness": 1
+            }
+          }
+        },
+        {
+          "name": "catFac",
+          "penId": "6eR8e",
+          "type": "frame",
+          "styles": {
+            "fill": "transparent",
+            "cornerRadius": 2,
+            "padding": [10, 24],
+            "stroke": {
+              "fill": "#D4C5A0",
+              "thickness": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "News List Section",
+      "penId": "dv3hU",
+      "type": "frame",
+      "styles": {
+        "fill": "#FAF8F3",
+        "width": "fill_container",
+        "layout": "vertical",
+        "padding": [60, 80, 80, 80]
+      },
+      "children": [
+        {
+          "name": "newsCard1",
+          "penId": "JifRE",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "alignItems": "center",
+            "gap": 24,
+            "padding": [32, 0],
+            "stroke": {
+              "fill": "#D4C5A066",
+              "thickness": 1
+            }
+          }
+        },
+        {
+          "name": "newsCard2",
+          "penId": "rgCUf",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "alignItems": "center",
+            "gap": 24,
+            "padding": [32, 0],
+            "stroke": {
+              "fill": "#D4C5A066",
+              "thickness": 1
+            }
+          }
+        },
+        {
+          "name": "newsCard3",
+          "penId": "tsJUL",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "alignItems": "center",
+            "gap": 24,
+            "padding": [32, 0],
+            "stroke": {
+              "fill": "#D4C5A066",
+              "thickness": 1
+            }
+          }
+        },
+        {
+          "name": "newsCard4",
+          "penId": "AeoXQ",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "alignItems": "center",
+            "gap": 24,
+            "padding": [32, 0],
+            "stroke": {
+              "fill": "#D4C5A066",
+              "thickness": 1
+            }
+          }
+        },
+        {
+          "name": "newsCard5",
+          "penId": "qh5ly",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "alignItems": "center",
+            "gap": 24,
+            "padding": [32, 0]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Pagination",
+      "penId": "0B98T",
+      "type": "frame",
+      "styles": {
+        "fill": "#FAF8F3",
+        "width": "fill_container",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "gap": 8,
+        "padding": [0, 80, 60, 80]
+      },
+      "children": [
+        {
+          "name": "pgPrev",
+          "penId": "RvkjS",
+          "type": "frame",
+          "styles": {
+            "width": 40,
+            "height": 40,
+            "alignItems": "center",
+            "justifyContent": "center",
+            "cornerRadius": 2,
+            "stroke": {
+              "fill": "#D4C5A0",
+              "thickness": 1
+            }
+          }
+        },
+        {
+          "name": "pg1",
+          "penId": "NoWTo",
+          "type": "frame",
+          "styles": {
+            "fill": "#2C2418",
+            "width": 40,
+            "height": 40,
+            "alignItems": "center",
+            "justifyContent": "center",
+            "cornerRadius": 2
+          }
+        },
+        {
+          "name": "pg2",
+          "penId": "l2bVy",
+          "type": "frame",
+          "styles": {
+            "width": 40,
+            "height": 40,
+            "alignItems": "center",
+            "justifyContent": "center",
+            "cornerRadius": 2,
+            "stroke": {
+              "fill": "#D4C5A0",
+              "thickness": 1
+            }
+          }
+        },
+        {
+          "name": "pg3",
+          "penId": "oDMxJ",
+          "type": "frame",
+          "styles": {
+            "width": 40,
+            "height": 40,
+            "alignItems": "center",
+            "justifyContent": "center",
+            "cornerRadius": 2,
+            "stroke": {
+              "fill": "#D4C5A0",
+              "thickness": 1
+            }
+          }
+        },
+        {
+          "name": "pgNext",
+          "penId": "Uyewj",
+          "type": "frame",
+          "styles": {
+            "width": 40,
+            "height": 40,
+            "alignItems": "center",
+            "justifyContent": "center",
+            "cornerRadius": 2,
+            "stroke": {
+              "fill": "#D4C5A0",
+              "thickness": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "c9",
+      "penId": "pdud6",
+      "type": "frame",
+      "styles": {
+        "width": "fill_container",
+        "height": 480,
+        "layout": "none",
+        "clip": true
+      },
+      "children": [
+        {
+          "name": "ctaBg",
+          "penId": "QwVms",
+          "type": "frame",
+          "styles": {
+            "width": 1440,
+            "height": 480,
+            "x": 0,
+            "y": 0,
+            "hasImageFill": true
+          }
+        },
+        {
+          "name": "ctaOverlay",
+          "penId": "5Qo2B",
+          "type": "frame",
+          "styles": {
+            "fill": "#1A150E88",
+            "width": 1440,
+            "height": 480,
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "name": "ctaContent",
+          "penId": "z8o5A",
+          "type": "frame",
+          "styles": {
+            "width": 1440,
+            "height": 480,
+            "layout": "vertical",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "gap": 40,
+            "x": 0,
+            "y": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "f9",
+      "penId": "tvFWC",
+      "type": "frame",
+      "styles": {
+        "fill": "#1A150E",
+        "width": "fill_container",
+        "layout": "vertical",
+        "alignItems": "center",
+        "gap": 48,
+        "padding": [60, 80, 32, 80]
+      },
+      "children": [
+        {
+          "name": "footerTop",
+          "penId": "5WpFZ",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "justifyContent": "space_between"
+          }
+        },
+        {
+          "name": "footerSecondaryNav",
+          "penId": "HNKS9",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "gap": 24
+          }
+        },
+        {
+          "name": "footerDivider",
+          "penId": "fuuBh",
+          "type": "rectangle",
+          "styles": {
+            "fill": "#2C241888",
+            "width": "fill_container",
+            "height": 1
+          }
+        },
+        {
+          "name": "footerMiddle",
+          "penId": "82GZZ",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "justifyContent": "space_between",
+            "alignItems": "center"
+          }
+        },
+        {
+          "name": "footerBottom",
+          "penId": "ujYiz",
+          "type": "text",
+          "content": "© 2026 月瀬庵 TSUKISE-AN. All Rights Reserved.",
+          "styles": {
+            "fill": "#6B5D4F55",
+            "fontFamily": "Cormorant Garamond",
+            "fontSize": 11,
+            "fontWeight": "normal",
+            "letterSpacing": 2
+          }
+        }
+      ]
+    }
+  ]
+}

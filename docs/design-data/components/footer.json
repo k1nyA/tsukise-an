@@ -1,0 +1,387 @@
+{
+  "component": {
+    "name": "Footer",
+    "penId": "o66tr",
+    "reusable": false,
+    "usage": "Each page has an independent copy"
+  },
+  "layout": {
+    "width": "fill_container",
+    "direction": "vertical",
+    "alignItems": "center"
+  },
+  "styles": {
+    "fill": "#1A150E",
+    "padding": [60, 80, 32, 80],
+    "gap": 48
+  },
+  "children": [
+    {
+      "name": "footerTop",
+      "penId": "2fuNS",
+      "type": "frame",
+      "styles": {
+        "width": "fill_container",
+        "justifyContent": "space_between"
+      },
+      "children": [
+        {
+          "name": "footerBrand",
+          "penId": "YSsos",
+          "type": "frame",
+          "styles": {
+            "layout": "vertical",
+            "gap": 16
+          },
+          "children": [
+            {
+              "name": "footerLogoRow",
+              "penId": "GKZwZ",
+              "type": "frame",
+              "styles": {
+                "gap": 12,
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "name": "footerLogoMark",
+                  "penId": "Rw719",
+                  "type": "text",
+                  "content": "月",
+                  "context": "href: /",
+                  "styles": {
+                    "fontFamily": "Noto Serif JP",
+                    "fontSize": 24,
+                    "fontWeight": "bold",
+                    "color": "#8B6914"
+                  }
+                },
+                {
+                  "name": "footerLogoDivider",
+                  "penId": "cRor0",
+                  "type": "rectangle",
+                  "styles": {
+                    "fill": "#4A4035",
+                    "width": 1,
+                    "height": 24
+                  }
+                },
+                {
+                  "name": "footerLogoName",
+                  "penId": "mdube",
+                  "type": "text",
+                  "content": "月瀬庵",
+                  "context": "href: /",
+                  "styles": {
+                    "fontFamily": "Noto Serif JP",
+                    "fontSize": 18,
+                    "fontWeight": "600",
+                    "color": "#FAF8F3",
+                    "letterSpacing": 3
+                  }
+                }
+              ]
+            },
+            {
+              "name": "footerAddr",
+              "penId": "yLx9M",
+              "type": "text",
+              "content": "〒250-0522 神奈川県足柄下郡箱根町元箱根138",
+              "styles": {
+                "fontFamily": "Noto Sans JP",
+                "fontSize": 12,
+                "fontWeight": "300",
+                "color": "#8B7D6B",
+                "letterSpacing": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "footerNavs",
+          "penId": "9ZPIh",
+          "type": "frame",
+          "styles": {
+            "gap": 40
+          },
+          "children": [
+            {
+              "name": "footerNav1",
+              "penId": "AeeCe",
+              "type": "text",
+              "content": "客室",
+              "context": "href: /rooms",
+              "styles": {
+                "fontFamily": "Noto Sans JP",
+                "fontSize": 12,
+                "fontWeight": "300",
+                "color": "#8B7D6B",
+                "letterSpacing": 2
+              }
+            },
+            {
+              "name": "footerNav2",
+              "penId": "9sDC5",
+              "type": "text",
+              "content": "温泉",
+              "context": "href: /onsen",
+              "styles": {
+                "fontFamily": "Noto Sans JP",
+                "fontSize": 12,
+                "fontWeight": "300",
+                "color": "#8B7D6B",
+                "letterSpacing": 2
+              }
+            },
+            {
+              "name": "footerNav3",
+              "penId": "yHHEE",
+              "type": "text",
+              "content": "お料理",
+              "context": "href: /cuisine",
+              "styles": {
+                "fontFamily": "Noto Sans JP",
+                "fontSize": 12,
+                "fontWeight": "300",
+                "color": "#8B7D6B",
+                "letterSpacing": 2
+              }
+            },
+            {
+              "name": "footerNav4",
+              "penId": "aIi9E",
+              "type": "text",
+              "content": "過ごし方",
+              "context": "href: /experience",
+              "styles": {
+                "fontFamily": "Noto Sans JP",
+                "fontSize": 12,
+                "fontWeight": "300",
+                "color": "#8B7D6B",
+                "letterSpacing": 2
+              }
+            },
+            {
+              "name": "footerNav5",
+              "penId": "bIGWY",
+              "type": "text",
+              "content": "アクセス",
+              "context": "href: /access",
+              "styles": {
+                "fontFamily": "Noto Sans JP",
+                "fontSize": 12,
+                "fontWeight": "300",
+                "color": "#8B7D6B",
+                "letterSpacing": 2
+              }
+            },
+            {
+              "name": "footerNav6",
+              "penId": "aLFPV",
+              "type": "text",
+              "content": "ご予約",
+              "context": "href: /reservation",
+              "styles": {
+                "fontFamily": "Noto Sans JP",
+                "fontSize": 12,
+                "fontWeight": "300",
+                "color": "#8B6914",
+                "letterSpacing": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "footerSecondaryNav",
+      "penId": "QJiKk",
+      "type": "frame",
+      "styles": {
+        "width": "fill_container",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "gap": 24
+      },
+      "children": [
+        {
+          "name": "footerSecNav1",
+          "penId": "hlDhr",
+          "type": "text",
+          "content": "お知らせ",
+          "context": "href: /news",
+          "styles": {
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 12,
+            "fontWeight": "300",
+            "color": "#8B7D6B",
+            "letterSpacing": 1
+          }
+        },
+        {
+          "name": "footerSecNav2",
+          "penId": "XwQ9L",
+          "type": "text",
+          "content": "よくあるご質問",
+          "context": "href: /faq",
+          "styles": {
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 12,
+            "fontWeight": "300",
+            "color": "#8B7D6B",
+            "letterSpacing": 1
+          }
+        },
+        {
+          "name": "footerSecNav3",
+          "penId": "hkOHp",
+          "type": "text",
+          "content": "お問い合わせ",
+          "context": "href: /contact",
+          "styles": {
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 12,
+            "fontWeight": "300",
+            "color": "#8B7D6B",
+            "letterSpacing": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "footerDivider",
+      "penId": "adZwg",
+      "type": "rectangle",
+      "styles": {
+        "fill": "#2C241888",
+        "width": "fill_container",
+        "height": 1
+      }
+    },
+    {
+      "name": "footerMiddle",
+      "penId": "mWhO4",
+      "type": "frame",
+      "styles": {
+        "width": "fill_container",
+        "justifyContent": "space_between",
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "name": "footerLegal",
+          "penId": "7iUxn",
+          "type": "frame",
+          "styles": {
+            "gap": 32,
+            "alignItems": "center"
+          },
+          "children": [
+            {
+              "name": "legalPrivacy",
+              "penId": "gqBRJ",
+              "type": "text",
+              "content": "プライバシーポリシー",
+              "context": "href: /privacy",
+              "styles": {
+                "fontFamily": "Noto Sans JP",
+                "fontSize": 11,
+                "fontWeight": "300",
+                "color": "#6B5D4F",
+                "letterSpacing": 1
+              }
+            },
+            {
+              "name": "legalCommerce",
+              "penId": "t0yzJ",
+              "type": "text",
+              "content": "特定商取引法に基づく表記",
+              "context": "href: /legal (PAGE MISSING)",
+              "styles": {
+                "fontFamily": "Noto Sans JP",
+                "fontSize": 11,
+                "fontWeight": "300",
+                "color": "#6B5D4F",
+                "letterSpacing": 1
+              }
+            },
+            {
+              "name": "legalSitemap",
+              "penId": "Odvjt",
+              "type": "text",
+              "content": "サイトマップ",
+              "context": "href: /sitemap (PAGE MISSING)",
+              "styles": {
+                "fontFamily": "Noto Sans JP",
+                "fontSize": 11,
+                "fontWeight": "300",
+                "color": "#6B5D4F",
+                "letterSpacing": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "footerSns",
+          "penId": "JQkFV",
+          "type": "frame",
+          "styles": {
+            "gap": 24,
+            "alignItems": "center"
+          },
+          "children": [
+            {
+              "name": "snsInstagram",
+              "penId": "prM8t",
+              "type": "icon_font",
+              "styles": {
+                "iconFontFamily": "lucide",
+                "iconFontName": "instagram",
+                "color": "#8B7D6B",
+                "width": 18,
+                "height": 18
+              }
+            },
+            {
+              "name": "snsFacebook",
+              "penId": "c8jro",
+              "type": "icon_font",
+              "styles": {
+                "iconFontFamily": "lucide",
+                "iconFontName": "facebook",
+                "color": "#8B7D6B",
+                "width": 18,
+                "height": 18
+              }
+            },
+            {
+              "name": "lineIcon",
+              "penId": "7FWEh",
+              "type": "icon_font",
+              "styles": {
+                "iconFontFamily": "lucide",
+                "iconFontName": "message-circle",
+                "color": "#8B7D6B",
+                "width": 18,
+                "height": 18
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "footerBottom",
+      "penId": "isrFf",
+      "type": "text",
+      "content": "© 2026 月瀬庵 TSUKISE-AN. All Rights Reserved.",
+      "styles": {
+        "fontFamily": "Cormorant Garamond",
+        "fontSize": 11,
+        "fontWeight": "normal",
+        "color": "#6B5D4F55",
+        "letterSpacing": 2
+      }
+    }
+  ]
+}

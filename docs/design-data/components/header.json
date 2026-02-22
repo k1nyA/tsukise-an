@@ -1,0 +1,215 @@
+{
+  "component": {
+    "name": "Header",
+    "penId": "z6WlB",
+    "reusable": false,
+    "usage": "Each page has an independent copy"
+  },
+  "layout": {
+    "width": "fill_container",
+    "height": 80,
+    "direction": "horizontal",
+    "justifyContent": "space_between",
+    "alignItems": "center"
+  },
+  "styles": {
+    "fill": "#FAF8F3",
+    "padding": [0, 60]
+  },
+  "children": [
+    {
+      "name": "logoArea",
+      "penId": "WYatb",
+      "type": "frame",
+      "context": "href: / (logo click → top page)",
+      "styles": {
+        "gap": 12,
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "name": "logoMark",
+          "penId": "9U2Ix",
+          "type": "text",
+          "content": "月",
+          "styles": {
+            "fontFamily": "Noto Serif JP",
+            "fontSize": 28,
+            "fontWeight": "bold",
+            "color": "#8B6914"
+          }
+        },
+        {
+          "name": "logoDivider",
+          "penId": "Nwt1h",
+          "type": "rectangle",
+          "styles": {
+            "fill": "#D4C5A0",
+            "width": 1,
+            "height": 32
+          }
+        },
+        {
+          "name": "logoText",
+          "penId": "mFNkR",
+          "type": "frame",
+          "styles": {
+            "layout": "vertical"
+          },
+          "children": [
+            {
+              "name": "logoMain",
+              "penId": "76MaQ",
+              "type": "text",
+              "content": "月瀬庵",
+              "context": "href: /",
+              "styles": {
+                "fontFamily": "Noto Serif JP",
+                "fontSize": 20,
+                "fontWeight": "600",
+                "color": "#2C2418",
+                "letterSpacing": 4
+              }
+            },
+            {
+              "name": "logoSub",
+              "penId": "atCso",
+              "type": "text",
+              "content": "TSUKISE-AN",
+              "styles": {
+                "fontFamily": "Cormorant Garamond",
+                "fontSize": 10,
+                "fontWeight": "500",
+                "color": "#8B7D6B",
+                "letterSpacing": 3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "navArea",
+      "penId": "XUftK",
+      "type": "frame",
+      "styles": {
+        "gap": 32,
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "name": "nav1",
+          "penId": "euBsD",
+          "type": "text",
+          "content": "客室",
+          "context": "href: /rooms",
+          "styles": {
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 13,
+            "fontWeight": "normal",
+            "color": "#4A4035",
+            "letterSpacing": 2
+          }
+        },
+        {
+          "name": "nav2",
+          "penId": "3QrvJ",
+          "type": "text",
+          "content": "温泉",
+          "context": "href: /onsen",
+          "styles": {
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 13,
+            "fontWeight": "normal",
+            "color": "#4A4035",
+            "letterSpacing": 2
+          }
+        },
+        {
+          "name": "nav3",
+          "penId": "zIi2N",
+          "type": "text",
+          "content": "お料理",
+          "context": "href: /cuisine",
+          "styles": {
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 13,
+            "fontWeight": "normal",
+            "color": "#4A4035",
+            "letterSpacing": 2
+          }
+        },
+        {
+          "name": "nav4",
+          "penId": "kYLbP",
+          "type": "text",
+          "content": "過ごし方",
+          "context": "href: /experience",
+          "styles": {
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 13,
+            "fontWeight": "normal",
+            "color": "#4A4035",
+            "letterSpacing": 2
+          }
+        },
+        {
+          "name": "nav5",
+          "penId": "1IGDa",
+          "type": "text",
+          "content": "アクセス",
+          "context": "href: /access",
+          "styles": {
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 13,
+            "fontWeight": "normal",
+            "color": "#4A4035",
+            "letterSpacing": 2
+          }
+        },
+        {
+          "name": "navDivider",
+          "penId": "Mpl1o",
+          "type": "rectangle",
+          "styles": {
+            "fill": "#D4C5A0",
+            "width": 1,
+            "height": 20
+          }
+        },
+        {
+          "name": "navCta",
+          "penId": "4IqjF",
+          "type": "frame",
+          "context": "href: /reservation",
+          "styles": {
+            "fill": "#8B6914",
+            "cornerRadius": 2,
+            "padding": [14, 44],
+            "alignItems": "center",
+            "stroke": {
+              "fill": "#8B6914",
+              "thickness": 1
+            }
+          },
+          "children": [
+            {
+              "name": "navCtaText",
+              "penId": "fhVR3",
+              "type": "text",
+              "content": "ご予約",
+              "context": "href: /reservation",
+              "styles": {
+                "fontFamily": "Noto Sans JP",
+                "fontSize": 13,
+                "fontWeight": "600",
+                "color": "#FAF8F3",
+                "letterSpacing": 3
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

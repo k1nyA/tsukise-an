@@ -1,0 +1,1005 @@
+{
+  "page": {
+    "name": "特定商取引法に基づく表記ページ",
+    "nameEn": "Legal (Commercial Transactions Act)",
+    "route": "/legal",
+    "penFrameId": "Cx0nw"
+  },
+  "layout": {
+    "width": 1440,
+    "direction": "vertical",
+    "fill": "#FAF8F3",
+    "clip": true
+  },
+  "sections": [
+    {
+      "name": "header",
+      "penId": "3k1AC",
+      "type": "frame",
+      "styles": {
+        "fill": "#FAF8F3",
+        "width": "fill_container",
+        "height": 80,
+        "padding": [0, 60],
+        "justifyContent": "space_between",
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "name": "logoArea",
+          "penId": "TrXWG",
+          "type": "frame",
+          "context": "href: / (logo click -> top page)",
+          "styles": {
+            "alignItems": "center",
+            "gap": 12
+          }
+        },
+        {
+          "name": "navArea",
+          "penId": "vDNvY",
+          "type": "frame",
+          "styles": {
+            "alignItems": "center",
+            "gap": 32
+          }
+        }
+      ]
+    },
+    {
+      "name": "pageHero",
+      "penId": "kVlQ5",
+      "type": "frame",
+      "styles": {
+        "width": "fill_container",
+        "height": 360,
+        "layout": "none",
+        "clip": true
+      },
+      "children": [
+        {
+          "name": "heroBg",
+          "penId": "jpnxv",
+          "type": "frame",
+          "styles": {
+            "width": 1440,
+            "height": 360,
+            "x": 0,
+            "y": 0,
+            "hasImageFill": true
+          }
+        },
+        {
+          "name": "heroOverlay",
+          "penId": "QvwGy",
+          "type": "frame",
+          "styles": {
+            "fill": "#1A150E88",
+            "width": 1440,
+            "height": 360,
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "name": "heroContent",
+          "penId": "BmTlg",
+          "type": "frame",
+          "styles": {
+            "width": 1440,
+            "height": 360,
+            "layout": "vertical",
+            "gap": 24,
+            "justifyContent": "center",
+            "alignItems": "center",
+            "x": 0,
+            "y": 0
+          },
+          "children": [
+            {
+              "name": "heroLabel",
+              "penId": "fNLm2",
+              "type": "frame",
+              "styles": {
+                "gap": 20,
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "name": "heroLine1",
+                  "penId": "uYRSg",
+                  "type": "rectangle",
+                  "styles": {
+                    "fill": "#D4C5A0",
+                    "width": 40,
+                    "height": 1
+                  }
+                },
+                {
+                  "name": "heroLabelText",
+                  "penId": "QzV3D",
+                  "type": "text",
+                  "content": "COMMERCIAL TRANSACTIONS ACT",
+                  "styles": {
+                    "fill": "#D4C5A0",
+                    "fontFamily": "Cormorant Garamond",
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                    "letterSpacing": 6
+                  }
+                },
+                {
+                  "name": "heroLine2",
+                  "penId": "PCah7",
+                  "type": "rectangle",
+                  "styles": {
+                    "fill": "#D4C5A0",
+                    "width": 40,
+                    "height": 1
+                  }
+                }
+              ]
+            },
+            {
+              "name": "heroTitle",
+              "penId": "otZMZ",
+              "type": "text",
+              "content": "特定商取引法に基づく表記",
+              "styles": {
+                "fill": "#FAF8F3",
+                "fontFamily": "Noto Serif JP",
+                "fontSize": 42,
+                "fontWeight": "600",
+                "letterSpacing": 8,
+                "textAlign": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "breadcrumb",
+      "penId": "zMzYS",
+      "type": "frame",
+      "styles": {
+        "fill": "#EEEBE3",
+        "width": "fill_container",
+        "padding": [16, 80],
+        "gap": 8,
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "name": "bc1",
+          "penId": "p6xDl",
+          "type": "text",
+          "content": "ホーム",
+          "context": "href: /",
+          "styles": {
+            "fill": "#8B7D6B",
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 12,
+            "fontWeight": "300",
+            "letterSpacing": 1
+          }
+        },
+        {
+          "name": "bcSep",
+          "penId": "RDNr4",
+          "type": "text",
+          "content": ">",
+          "styles": {
+            "fill": "#D4C5A0",
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 12,
+            "fontWeight": "300"
+          }
+        },
+        {
+          "name": "bc2",
+          "penId": "gjTHc",
+          "type": "text",
+          "content": "特定商取引法に基づく表記",
+          "styles": {
+            "fill": "#2C2418",
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 12,
+            "fontWeight": "500",
+            "letterSpacing": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "legalContent",
+      "penId": "gv7CO",
+      "type": "frame",
+      "styles": {
+        "fill": "#FAF8F3",
+        "width": "fill_container",
+        "layout": "vertical",
+        "padding": [80, 200],
+        "gap": 48
+      },
+      "children": [
+        {
+          "name": "introText",
+          "penId": "GLNA2",
+          "type": "text",
+          "content": "特定商取引法第11条に基づき、以下のとおり表記いたします。",
+          "styles": {
+            "fill": "#2C2418",
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 14,
+            "fontWeight": "300",
+            "lineHeight": 2.2
+          }
+        },
+        {
+          "name": "secBusiness",
+          "penId": "P6JcE",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "layout": "vertical",
+            "gap": 24
+          },
+          "children": [
+            {
+              "name": "sec1Title",
+              "penId": "95Ei7",
+              "type": "text",
+              "content": "事業者情報",
+              "styles": {
+                "fill": "#2C2418",
+                "fontFamily": "Noto Serif JP",
+                "fontSize": 18,
+                "fontWeight": "600"
+              }
+            },
+            {
+              "name": "sec1Divider",
+              "penId": "BymRS",
+              "type": "rectangle",
+              "styles": {
+                "fill": "#E5DFD3",
+                "width": "fill_container",
+                "height": 1
+              }
+            },
+            {
+              "name": "row1",
+              "penId": "mRLNm",
+              "type": "frame",
+              "styles": {
+                "width": "fill_container"
+              },
+              "children": [
+                {
+                  "name": "row1Label",
+                  "penId": "KVAUZ",
+                  "type": "text",
+                  "content": "事業者名称",
+                  "styles": {
+                    "fill": "#8B7E6A",
+                    "fontFamily": "Noto Sans JP",
+                    "fontSize": 14,
+                    "fontWeight": "600"
+                  }
+                },
+                {
+                  "name": "row1Value",
+                  "penId": "ppmY7",
+                  "type": "text",
+                  "content": "月瀬庵（つきせあん）",
+                  "styles": {
+                    "fill": "#2C2418",
+                    "fontFamily": "Noto Sans JP",
+                    "fontSize": 14,
+                    "lineHeight": 1.8
+                  }
+                }
+              ]
+            },
+            {
+              "name": "sep1",
+              "penId": "64fGh",
+              "type": "rectangle",
+              "styles": {
+                "fill": "#E5DFD3",
+                "width": "fill_container",
+                "height": 1
+              }
+            },
+            {
+              "name": "row2",
+              "penId": "kAtxR",
+              "type": "frame",
+              "styles": {
+                "width": "fill_container"
+              },
+              "children": [
+                {
+                  "name": "row2Label",
+                  "penId": "8779k",
+                  "type": "text",
+                  "content": "代表者",
+                  "styles": {
+                    "fill": "#8B7E6A",
+                    "fontFamily": "Noto Sans JP",
+                    "fontSize": 14,
+                    "fontWeight": "600"
+                  }
+                },
+                {
+                  "name": "row2Value",
+                  "penId": "EIjbg",
+                  "type": "text",
+                  "content": "山田 太郎",
+                  "styles": {
+                    "fill": "#2C2418",
+                    "fontFamily": "Noto Sans JP",
+                    "fontSize": 14,
+                    "lineHeight": 1.8
+                  }
+                }
+              ]
+            },
+            {
+              "name": "sep2",
+              "penId": "Pol5b",
+              "type": "rectangle",
+              "styles": {
+                "fill": "#E5DFD3",
+                "width": "fill_container",
+                "height": 1
+              }
+            },
+            {
+              "name": "row3",
+              "penId": "MRrXB",
+              "type": "frame",
+              "styles": {
+                "width": "fill_container"
+              },
+              "children": [
+                {
+                  "name": "row3Label",
+                  "penId": "GDeBF",
+                  "type": "text",
+                  "content": "所在地",
+                  "styles": {
+                    "fill": "#8B7E6A",
+                    "fontFamily": "Noto Sans JP",
+                    "fontSize": 14,
+                    "fontWeight": "600"
+                  }
+                },
+                {
+                  "name": "row3Value",
+                  "penId": "JVkb6",
+                  "type": "text",
+                  "content": "〒250-0522 神奈川県足柄下郡箱根町元箱根138",
+                  "styles": {
+                    "fill": "#2C2418",
+                    "fontFamily": "Noto Sans JP",
+                    "fontSize": 14,
+                    "lineHeight": 1.8
+                  }
+                }
+              ]
+            },
+            {
+              "name": "sep3",
+              "penId": "cXPmZ",
+              "type": "rectangle",
+              "styles": {
+                "fill": "#E5DFD3",
+                "width": "fill_container",
+                "height": 1
+              }
+            },
+            {
+              "name": "row4",
+              "penId": "ZZ4Zt",
+              "type": "frame",
+              "styles": {
+                "width": "fill_container"
+              },
+              "children": [
+                {
+                  "name": "row4Label",
+                  "penId": "y73VW",
+                  "type": "text",
+                  "content": "電話番号",
+                  "styles": {
+                    "fill": "#8B7E6A",
+                    "fontFamily": "Noto Sans JP",
+                    "fontSize": 14,
+                    "fontWeight": "600"
+                  }
+                },
+                {
+                  "name": "row4Value",
+                  "penId": "CozfV",
+                  "type": "text",
+                  "content": "0460-83-XXXX",
+                  "styles": {
+                    "fill": "#2C2418",
+                    "fontFamily": "Noto Sans JP",
+                    "fontSize": 14,
+                    "lineHeight": 1.8
+                  }
+                }
+              ]
+            },
+            {
+              "name": "sep4",
+              "penId": "Rekzd",
+              "type": "rectangle",
+              "styles": {
+                "fill": "#E5DFD3",
+                "width": "fill_container",
+                "height": 1
+              }
+            },
+            {
+              "name": "row5",
+              "penId": "IgnMt",
+              "type": "frame",
+              "styles": {
+                "width": "fill_container"
+              },
+              "children": [
+                {
+                  "name": "row5Label",
+                  "penId": "9VmgO",
+                  "type": "text",
+                  "content": "メールアドレス",
+                  "styles": {
+                    "fill": "#8B7E6A",
+                    "fontFamily": "Noto Sans JP",
+                    "fontSize": 14,
+                    "fontWeight": "600"
+                  }
+                },
+                {
+                  "name": "row5Value",
+                  "penId": "wdKXL",
+                  "type": "text",
+                  "content": "info@tsukise-an.example.com",
+                  "styles": {
+                    "fill": "#2C2418",
+                    "fontFamily": "Noto Sans JP",
+                    "fontSize": 14,
+                    "lineHeight": 1.8
+                  }
+                }
+              ]
+            },
+            {
+              "name": "sep5",
+              "penId": "3Nf54",
+              "type": "rectangle",
+              "styles": {
+                "fill": "#E5DFD3",
+                "width": "fill_container",
+                "height": 1
+              }
+            },
+            {
+              "name": "row6",
+              "penId": "d5GzD",
+              "type": "frame",
+              "styles": {
+                "width": "fill_container"
+              },
+              "children": [
+                {
+                  "name": "row6Label",
+                  "penId": "L7FlF",
+                  "type": "text",
+                  "content": "URL",
+                  "styles": {
+                    "fill": "#8B7E6A",
+                    "fontFamily": "Noto Sans JP",
+                    "fontSize": 14,
+                    "fontWeight": "600"
+                  }
+                },
+                {
+                  "name": "row6Value",
+                  "penId": "ek58x",
+                  "type": "text",
+                  "content": "https://tsukise-an.example.com",
+                  "styles": {
+                    "fill": "#2C2418",
+                    "fontFamily": "Noto Sans JP",
+                    "fontSize": 14,
+                    "lineHeight": 1.8
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "secPrice",
+          "penId": "jTxwa",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "layout": "vertical",
+            "gap": 24
+          },
+          "children": [
+            {
+              "name": "sec2Title",
+              "penId": "HdonQ",
+              "type": "text",
+              "content": "販売価格",
+              "styles": {
+                "fill": "#2C2418",
+                "fontFamily": "Noto Serif JP",
+                "fontSize": 18,
+                "fontWeight": "600"
+              }
+            },
+            {
+              "name": "sec2Divider",
+              "penId": "lsWjC",
+              "type": "rectangle",
+              "styles": {
+                "fill": "#E5DFD3",
+                "width": "fill_container",
+                "height": 1
+              }
+            },
+            {
+              "name": "sec2Body",
+              "penId": "KWMox",
+              "type": "text",
+              "content": "各宿泊プランページに表示された金額（税込）",
+              "styles": {
+                "fill": "#8B7D6B",
+                "fontFamily": "Noto Sans JP",
+                "fontSize": 14,
+                "fontWeight": "300",
+                "lineHeight": 2
+              }
+            }
+          ]
+        },
+        {
+          "name": "secExtraCost",
+          "penId": "QS6B5",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "layout": "vertical",
+            "gap": 24
+          },
+          "children": [
+            {
+              "name": "sec3Title",
+              "penId": "oPwNZ",
+              "type": "text",
+              "content": "販売価格以外の必要料金",
+              "styles": {
+                "fill": "#2C2418",
+                "fontFamily": "Noto Serif JP",
+                "fontSize": 18,
+                "fontWeight": "600"
+              }
+            },
+            {
+              "name": "sec3Divider",
+              "penId": "7cvik",
+              "type": "rectangle",
+              "styles": {
+                "fill": "#E5DFD3",
+                "width": "fill_container",
+                "height": 1
+              }
+            },
+            {
+              "name": "sec3Body",
+              "penId": "7B83b",
+              "type": "text",
+              "content": "入湯税（大人150円）、消費税",
+              "styles": {
+                "fill": "#8B7D6B",
+                "fontFamily": "Noto Sans JP",
+                "fontSize": 14,
+                "fontWeight": "300",
+                "lineHeight": 2
+              }
+            }
+          ]
+        },
+        {
+          "name": "secPayMethod",
+          "penId": "R1x6h",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "layout": "vertical",
+            "gap": 24
+          },
+          "children": [
+            {
+              "name": "sec4Title",
+              "penId": "d6seZ",
+              "type": "text",
+              "content": "支払方法",
+              "styles": {
+                "fill": "#2C2418",
+                "fontFamily": "Noto Serif JP",
+                "fontSize": 18,
+                "fontWeight": "600"
+              }
+            },
+            {
+              "name": "sec4Divider",
+              "penId": "5u8MG",
+              "type": "rectangle",
+              "styles": {
+                "fill": "#E5DFD3",
+                "width": "fill_container",
+                "height": 1
+              }
+            },
+            {
+              "name": "sec4Body",
+              "penId": "op8ZB",
+              "type": "text",
+              "content": "クレジットカード（VISA, Mastercard, JCB, AMEX）\n銀行振込（予約確定後にご案内）",
+              "styles": {
+                "fill": "#8B7D6B",
+                "fontFamily": "Noto Sans JP",
+                "fontSize": 14,
+                "fontWeight": "300",
+                "lineHeight": 2
+              }
+            }
+          ]
+        },
+        {
+          "name": "secPayTiming",
+          "penId": "9IRqf",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "layout": "vertical",
+            "gap": 24
+          },
+          "children": [
+            {
+              "name": "sec5Title",
+              "penId": "JvHQ8",
+              "type": "text",
+              "content": "支払時期",
+              "styles": {
+                "fill": "#2C2418",
+                "fontFamily": "Noto Serif JP",
+                "fontSize": 18,
+                "fontWeight": "600"
+              }
+            },
+            {
+              "name": "sec5Divider",
+              "penId": "HoO29",
+              "type": "rectangle",
+              "styles": {
+                "fill": "#E5DFD3",
+                "width": "fill_container",
+                "height": 1
+              }
+            },
+            {
+              "name": "sec5Body",
+              "penId": "3NqWZ",
+              "type": "text",
+              "content": "クレジットカード：チェックアウト時\n銀行振込：予約確定後7日以内",
+              "styles": {
+                "fill": "#8B7D6B",
+                "fontFamily": "Noto Sans JP",
+                "fontSize": 14,
+                "fontWeight": "300",
+                "lineHeight": 2
+              }
+            }
+          ]
+        },
+        {
+          "name": "secDelivery",
+          "penId": "7yzbw",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "layout": "vertical",
+            "gap": 24
+          },
+          "children": [
+            {
+              "name": "sec6Title",
+              "penId": "AtJwd",
+              "type": "text",
+              "content": "商品の引渡時期",
+              "styles": {
+                "fill": "#2C2418",
+                "fontFamily": "Noto Serif JP",
+                "fontSize": 18,
+                "fontWeight": "600"
+              }
+            },
+            {
+              "name": "sec6Divider",
+              "penId": "ayBqy",
+              "type": "rectangle",
+              "styles": {
+                "fill": "#E5DFD3",
+                "width": "fill_container",
+                "height": 1
+              }
+            },
+            {
+              "name": "sec6Body",
+              "penId": "p2tJT",
+              "type": "text",
+              "content": "チェックイン日（予約時に指定した宿泊日）",
+              "styles": {
+                "fill": "#8B7D6B",
+                "fontFamily": "Noto Sans JP",
+                "fontSize": 14,
+                "fontWeight": "300",
+                "lineHeight": 2
+              }
+            }
+          ]
+        },
+        {
+          "name": "secCancel",
+          "penId": "LczkF",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "layout": "vertical",
+            "gap": 24
+          },
+          "children": [
+            {
+              "name": "sec7Title",
+              "penId": "TDxdg",
+              "type": "text",
+              "content": "返品・キャンセルについて",
+              "styles": {
+                "fill": "#2C2418",
+                "fontFamily": "Noto Serif JP",
+                "fontSize": 18,
+                "fontWeight": "600"
+              }
+            },
+            {
+              "name": "sec7Divider",
+              "penId": "xXb85",
+              "type": "rectangle",
+              "styles": {
+                "fill": "#E5DFD3",
+                "width": "fill_container",
+                "height": 1
+              }
+            },
+            {
+              "name": "sec7Body",
+              "penId": "pi5ry",
+              "type": "text",
+              "content": "以下のキャンセル料が発生いたします。\n\n・14日前まで：無料\n・7日前まで：宿泊料金の30%\n・3日前まで：宿泊料金の50%\n・前日：宿泊料金の80%\n・当日・無連絡：宿泊料金の100%",
+              "styles": {
+                "fill": "#8B7D6B",
+                "fontFamily": "Noto Sans JP",
+                "fontSize": 14,
+                "fontWeight": "300",
+                "lineHeight": 2
+              }
+            }
+          ]
+        },
+        {
+          "name": "secSpecial",
+          "penId": "Lejg0",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "layout": "vertical",
+            "gap": 24
+          },
+          "children": [
+            {
+              "name": "sec8Title",
+              "penId": "5q29Q",
+              "type": "text",
+              "content": "特別条件",
+              "styles": {
+                "fill": "#2C2418",
+                "fontFamily": "Noto Serif JP",
+                "fontSize": 18,
+                "fontWeight": "600"
+              }
+            },
+            {
+              "name": "sec8Divider",
+              "penId": "jflt3",
+              "type": "rectangle",
+              "styles": {
+                "fill": "#E5DFD3",
+                "width": "fill_container",
+                "height": 1
+              }
+            },
+            {
+              "name": "sec8Body",
+              "penId": "KhQE5",
+              "type": "text",
+              "content": "・未成年者の単独でのご予約はお受けしておりません\n・ペットの同伴はご遠慮いただいております",
+              "styles": {
+                "fill": "#8B7D6B",
+                "fontFamily": "Noto Sans JP",
+                "fontSize": 14,
+                "fontWeight": "300",
+                "lineHeight": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "lastUpdated",
+      "penId": "5abQG",
+      "type": "frame",
+      "styles": {
+        "fill": "#FAF8F3",
+        "width": "fill_container",
+        "padding": [40, 200],
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "name": "lastUpdatedText",
+          "penId": "IBqK2",
+          "type": "text",
+          "content": "最終更新日：2026年2月22日",
+          "styles": {
+            "fill": "#8B7D6B",
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 12,
+            "fontWeight": "normal",
+            "textAlign": "center"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ctaSection",
+      "penId": "4sqVI",
+      "type": "frame",
+      "styles": {
+        "width": "fill_container",
+        "height": 480,
+        "layout": "none",
+        "clip": true
+      },
+      "children": [
+        {
+          "name": "ctaBg",
+          "penId": "lwIog",
+          "type": "frame",
+          "styles": {
+            "width": 1440,
+            "height": 480,
+            "x": 0,
+            "y": 0,
+            "hasImageFill": true
+          }
+        },
+        {
+          "name": "ctaOverlay",
+          "penId": "XPiMj",
+          "type": "frame",
+          "styles": {
+            "fill": "#1A150E88",
+            "width": 1440,
+            "height": 480,
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "name": "ctaContent",
+          "penId": "35XcA",
+          "type": "frame",
+          "styles": {
+            "width": 1440,
+            "height": 480,
+            "layout": "vertical",
+            "gap": 40,
+            "justifyContent": "center",
+            "alignItems": "center",
+            "x": 0,
+            "y": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "footer",
+      "penId": "0GjUa",
+      "type": "frame",
+      "styles": {
+        "fill": "#1A150E",
+        "width": "fill_container",
+        "layout": "vertical",
+        "padding": [60, 80, 32, 80],
+        "gap": 48,
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "name": "footerTop",
+          "penId": "yj7BU",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "justifyContent": "space_between"
+          }
+        },
+        {
+          "name": "footerSecondaryNav",
+          "penId": "cUUwT",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "gap": 24,
+            "justifyContent": "center",
+            "alignItems": "center"
+          }
+        },
+        {
+          "name": "footerDivider",
+          "penId": "Umh7I",
+          "type": "rectangle",
+          "styles": {
+            "fill": "#2C241888",
+            "width": "fill_container",
+            "height": 1
+          }
+        },
+        {
+          "name": "footerMiddle",
+          "penId": "cbU2c",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "justifyContent": "space_between",
+            "alignItems": "center"
+          }
+        },
+        {
+          "name": "footerBottom",
+          "penId": "gL4XA",
+          "type": "text",
+          "content": "\u00a9 2026 月瀬庵 TSUKISE-AN. All Rights Reserved.",
+          "styles": {
+            "fill": "#6B5D4F55",
+            "fontFamily": "Cormorant Garamond",
+            "fontSize": 11,
+            "fontWeight": "normal",
+            "letterSpacing": 2
+          }
+        }
+      ]
+    }
+  ]
+}

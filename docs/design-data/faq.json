@@ -1,0 +1,1476 @@
+{
+  "page": {
+    "name": "よくあるご質問ページ",
+    "nameEn": "FAQ",
+    "route": "/faq",
+    "penFrameId": "oOBdV"
+  },
+  "layout": {
+    "width": 1440,
+    "direction": "vertical",
+    "fill": "#FAF8F3",
+    "clip": true
+  },
+  "sections": [
+    {
+      "name": "h11",
+      "penId": "Ed9Yg",
+      "type": "frame",
+      "styles": {
+        "fill": "#FAF8F3",
+        "width": "fill_container",
+        "height": 80,
+        "padding": [0, 60],
+        "justifyContent": "space_between",
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "name": "logoArea",
+          "penId": "KSuVV",
+          "type": "frame",
+          "styles": {
+            "alignItems": "center",
+            "gap": 12
+          }
+        },
+        {
+          "name": "navArea",
+          "penId": "6YmXo",
+          "type": "frame",
+          "styles": {
+            "alignItems": "center",
+            "gap": 32
+          }
+        }
+      ]
+    },
+    {
+      "name": "hero9",
+      "penId": "J2UIN",
+      "type": "frame",
+      "styles": {
+        "width": "fill_container",
+        "height": 360,
+        "layout": "none",
+        "clip": true
+      },
+      "children": [
+        {
+          "name": "heroBg",
+          "penId": "9yd5m",
+          "type": "frame",
+          "styles": {
+            "width": 1440,
+            "height": 360,
+            "x": 0,
+            "y": 0,
+            "hasImageFill": true
+          }
+        },
+        {
+          "name": "heroOverlay",
+          "penId": "v8WZk",
+          "type": "frame",
+          "styles": {
+            "fill": "#1A150E55",
+            "width": 1440,
+            "height": 360,
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "name": "heroContent",
+          "penId": "dZ8mf",
+          "type": "frame",
+          "styles": {
+            "width": 1440,
+            "height": 360,
+            "layout": "vertical",
+            "gap": 24,
+            "justifyContent": "center",
+            "alignItems": "center",
+            "x": 0,
+            "y": 0
+          },
+          "children": [
+            {
+              "name": "heroLabel",
+              "penId": "z56O6",
+              "type": "frame",
+              "styles": {
+                "gap": 20,
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "name": "heroLine1",
+                  "penId": "JNIff",
+                  "type": "rectangle",
+                  "styles": {
+                    "fill": "#D4C5A0",
+                    "width": 40,
+                    "height": 1
+                  }
+                },
+                {
+                  "name": "heroLabelText",
+                  "penId": "HGqv9",
+                  "type": "text",
+                  "content": "FAQ",
+                  "styles": {
+                    "fill": "#D4C5A0",
+                    "fontFamily": "Cormorant Garamond",
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                    "letterSpacing": 6
+                  }
+                },
+                {
+                  "name": "heroLine2",
+                  "penId": "O3oYM",
+                  "type": "rectangle",
+                  "styles": {
+                    "fill": "#D4C5A0",
+                    "width": 40,
+                    "height": 1
+                  }
+                }
+              ]
+            },
+            {
+              "name": "heroTitle",
+              "penId": "QJosY",
+              "type": "text",
+              "content": "よくあるご質問",
+              "styles": {
+                "fill": "#FAF8F3",
+                "fontFamily": "Noto Serif JP",
+                "fontSize": 48,
+                "fontWeight": "600",
+                "letterSpacing": 8,
+                "textAlign": "center"
+              }
+            },
+            {
+              "name": "heroSub",
+              "penId": "DruU8",
+              "type": "text",
+              "content": "お客様からよくいただくご質問をまとめました",
+              "styles": {
+                "fill": "#D4C5A088",
+                "fontFamily": "Noto Sans JP",
+                "fontSize": 16,
+                "fontWeight": "300",
+                "letterSpacing": 2,
+                "textAlign": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "bc2",
+      "penId": "TrLdr",
+      "type": "frame",
+      "styles": {
+        "fill": "#EEEBE3",
+        "width": "fill_container",
+        "padding": [16, 80],
+        "gap": 8,
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "name": "bc1",
+          "penId": "qM2GC",
+          "type": "text",
+          "content": "ホーム",
+          "context": "href: /",
+          "styles": {
+            "fill": "#8B7D6B",
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 12,
+            "fontWeight": "300",
+            "letterSpacing": 1
+          }
+        },
+        {
+          "name": "bcSep",
+          "penId": "C2Ypz",
+          "type": "text",
+          "content": ">",
+          "styles": {
+            "fill": "#D4C5A0",
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 12,
+            "fontWeight": "300"
+          }
+        },
+        {
+          "name": "bc2",
+          "penId": "qar8X",
+          "type": "text",
+          "content": "よくあるご質問",
+          "styles": {
+            "fill": "#2C2418",
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 12,
+            "fontWeight": "500",
+            "letterSpacing": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "FAQ Intro",
+      "penId": "PUcBv",
+      "type": "frame",
+      "styles": {
+        "fill": "#FAF8F3",
+        "width": "fill_container",
+        "layout": "vertical",
+        "padding": [60, 200, 32, 200],
+        "gap": 32,
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "name": "introLabel",
+          "penId": "7BNHa",
+          "type": "ref",
+          "ref": "bQV0w",
+          "overrides": {
+            "T93K6": { "content": "Q & A" }
+          }
+        },
+        {
+          "name": "introTitle",
+          "penId": "ZpuIP",
+          "type": "text",
+          "content": "ご不明な点がございましたら\nお気軽にお問い合わせください",
+          "styles": {
+            "fill": "#2C2418",
+            "fontFamily": "Noto Serif JP",
+            "fontSize": 24,
+            "fontWeight": "600",
+            "letterSpacing": 3,
+            "lineHeight": 1.8,
+            "textAlign": "center"
+          }
+        },
+        {
+          "name": "introDeco",
+          "penId": "VllFS",
+          "type": "rectangle",
+          "styles": {
+            "fill": "#D4C5A0",
+            "width": 1,
+            "height": 40
+          }
+        }
+      ]
+    },
+    {
+      "name": "FAQ Reservation",
+      "penId": "4Llxq",
+      "type": "frame",
+      "styles": {
+        "fill": "#FAF8F3",
+        "width": "fill_container",
+        "layout": "vertical",
+        "padding": [60, 200],
+        "gap": 32
+      },
+      "children": [
+        {
+          "name": "sec1Title",
+          "penId": "GuGZj",
+          "type": "frame",
+          "styles": {
+            "alignItems": "center",
+            "gap": 16
+          },
+          "children": [
+            {
+              "name": "sec1Icon",
+              "penId": "QhLk8",
+              "type": "icon_font",
+              "styles": {
+                "fill": "#8B6914",
+                "width": 28,
+                "height": 28,
+                "iconFontFamily": "lucide",
+                "iconFontName": "calendar"
+              }
+            },
+            {
+              "name": "sec1Text",
+              "penId": "M2sN9",
+              "type": "text",
+              "content": "ご予約について",
+              "styles": {
+                "fill": "#2C2418",
+                "fontFamily": "Noto Serif JP",
+                "fontSize": 22,
+                "fontWeight": "600",
+                "letterSpacing": 3
+              }
+            }
+          ]
+        },
+        {
+          "name": "q1",
+          "penId": "NKNkv",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "layout": "vertical"
+          },
+          "children": [
+            {
+              "name": "q1q",
+              "penId": "6acmQ",
+              "type": "frame",
+              "styles": {
+                "fill": "#F0EBE0",
+                "width": "fill_container",
+                "padding": [20, 24],
+                "gap": 16,
+                "cornerRadius": [4, 4, 0, 0],
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "name": "q1icon",
+                  "penId": "iQylU",
+                  "type": "text",
+                  "content": "Q",
+                  "styles": {
+                    "fill": "#8B6914",
+                    "fontFamily": "Cormorant Garamond",
+                    "fontSize": 20,
+                    "fontWeight": "700"
+                  }
+                },
+                {
+                  "name": "q1text",
+                  "penId": "9cUbZ",
+                  "type": "text",
+                  "content": "予約はいつから可能ですか？",
+                  "styles": {
+                    "fill": "#2C2418",
+                    "fontFamily": "Noto Sans JP",
+                    "fontSize": 15,
+                    "fontWeight": "500",
+                    "letterSpacing": 1
+                  }
+                },
+                {
+                  "name": "q1chevron",
+                  "penId": "Y33Lu",
+                  "type": "icon_font",
+                  "styles": {
+                    "fill": "#8B7D6B",
+                    "width": 20,
+                    "height": 20,
+                    "iconFontFamily": "lucide",
+                    "iconFontName": "chevron-down"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "q1a",
+              "penId": "EnZBq",
+              "type": "frame",
+              "styles": {
+                "fill": "#FAF8F3",
+                "width": "fill_container",
+                "padding": [20, 24, 20, 60],
+                "cornerRadius": [0, 0, 4, 4],
+                "stroke": { "fill": "#D4C5A033", "thickness": 1 }
+              },
+              "children": [
+                {
+                  "name": "q1atext",
+                  "penId": "P7kp9",
+                  "type": "text",
+                  "content": "ご宿泊日の6ヶ月前より、オンラインまたはお電話にてご予約を承っております。特に桜や紅葉の季節は大変人気がございますので、お早めのご予約をお勧めいたします。",
+                  "styles": {
+                    "fill": "#4A4035",
+                    "fontFamily": "Noto Sans JP",
+                    "fontSize": 14,
+                    "fontWeight": "300",
+                    "letterSpacing": 1,
+                    "lineHeight": 2,
+                    "width": "fill_container",
+                    "textGrowth": "fixed-width"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "q2",
+          "penId": "1QWmx",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "layout": "vertical"
+          },
+          "children": [
+            {
+              "name": "q2q",
+              "penId": "epiFT",
+              "type": "frame",
+              "styles": {
+                "fill": "#F0EBE0",
+                "width": "fill_container",
+                "padding": [20, 24],
+                "gap": 16,
+                "cornerRadius": 4,
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "name": "q2icon",
+                  "penId": "VlzMW",
+                  "type": "text",
+                  "content": "Q",
+                  "styles": {
+                    "fill": "#8B6914",
+                    "fontFamily": "Cormorant Garamond",
+                    "fontSize": 20,
+                    "fontWeight": "700"
+                  }
+                },
+                {
+                  "name": "q2text",
+                  "penId": "drwGT",
+                  "type": "text",
+                  "content": "キャンセル料はかかりますか？",
+                  "styles": {
+                    "fill": "#2C2418",
+                    "fontFamily": "Noto Sans JP",
+                    "fontSize": 15,
+                    "fontWeight": "500",
+                    "letterSpacing": 1
+                  }
+                },
+                {
+                  "name": "q2chevron",
+                  "penId": "4hClx",
+                  "type": "icon_font",
+                  "styles": {
+                    "fill": "#8B7D6B",
+                    "width": 20,
+                    "height": 20,
+                    "iconFontFamily": "lucide",
+                    "iconFontName": "chevron-right"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "q3",
+          "penId": "AUjaZ",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "layout": "vertical"
+          },
+          "children": [
+            {
+              "name": "q3q",
+              "penId": "K1DHf",
+              "type": "frame",
+              "styles": {
+                "fill": "#F0EBE0",
+                "width": "fill_container",
+                "padding": [20, 24],
+                "gap": 16,
+                "cornerRadius": 4,
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "name": "q3icon",
+                  "penId": "UZz7W",
+                  "type": "text",
+                  "content": "Q",
+                  "styles": {
+                    "fill": "#8B6914",
+                    "fontFamily": "Cormorant Garamond",
+                    "fontSize": 20,
+                    "fontWeight": "700"
+                  }
+                },
+                {
+                  "name": "q3text",
+                  "penId": "PGGPU",
+                  "type": "text",
+                  "content": "チェックイン・チェックアウトの時間は？",
+                  "styles": {
+                    "fill": "#2C2418",
+                    "fontFamily": "Noto Sans JP",
+                    "fontSize": 15,
+                    "fontWeight": "500",
+                    "letterSpacing": 1
+                  }
+                },
+                {
+                  "name": "q3chevron",
+                  "penId": "KTsfQ",
+                  "type": "icon_font",
+                  "styles": {
+                    "fill": "#8B7D6B",
+                    "width": 20,
+                    "height": 20,
+                    "iconFontFamily": "lucide",
+                    "iconFontName": "chevron-right"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FAQ Onsen",
+      "penId": "dMaya",
+      "type": "frame",
+      "styles": {
+        "fill": "#F0EBE0",
+        "width": "fill_container",
+        "layout": "vertical",
+        "padding": [60, 200],
+        "gap": 32
+      },
+      "children": [
+        {
+          "name": "sec2Title",
+          "penId": "eM6cx",
+          "type": "frame",
+          "styles": {
+            "alignItems": "center",
+            "gap": 16
+          },
+          "children": [
+            {
+              "name": "sec2Icon",
+              "penId": "Csbi5",
+              "type": "icon_font",
+              "styles": {
+                "fill": "#8B6914",
+                "width": 28,
+                "height": 28,
+                "iconFontFamily": "lucide",
+                "iconFontName": "waves"
+              }
+            },
+            {
+              "name": "sec2Text",
+              "penId": "47Iik",
+              "type": "text",
+              "content": "温泉・お部屋について",
+              "styles": {
+                "fill": "#2C2418",
+                "fontFamily": "Noto Serif JP",
+                "fontSize": 22,
+                "fontWeight": "600",
+                "letterSpacing": 3
+              }
+            }
+          ]
+        },
+        {
+          "name": "q4",
+          "penId": "frwMg",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "layout": "vertical"
+          },
+          "children": [
+            {
+              "name": "q4q",
+              "penId": "cZeh5",
+              "type": "frame",
+              "styles": {
+                "fill": "#FAF8F3",
+                "width": "fill_container",
+                "padding": [20, 24],
+                "gap": 16,
+                "cornerRadius": 4,
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "name": "q4i",
+                  "penId": "xl4Xs",
+                  "type": "text",
+                  "content": "Q",
+                  "styles": {
+                    "fill": "#8B6914",
+                    "fontFamily": "Cormorant Garamond",
+                    "fontSize": 20,
+                    "fontWeight": "700"
+                  }
+                },
+                {
+                  "name": "q4t",
+                  "penId": "ftoOj",
+                  "type": "text",
+                  "content": "客室の露天風呂は24時間利用できますか？",
+                  "styles": {
+                    "fill": "#2C2418",
+                    "fontFamily": "Noto Sans JP",
+                    "fontSize": 15,
+                    "fontWeight": "500",
+                    "letterSpacing": 1
+                  }
+                },
+                {
+                  "name": "q4c",
+                  "penId": "n144l",
+                  "type": "icon_font",
+                  "styles": {
+                    "fill": "#8B7D6B",
+                    "width": 20,
+                    "height": 20,
+                    "iconFontFamily": "lucide",
+                    "iconFontName": "chevron-right"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "q5",
+          "penId": "AO55E",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "layout": "vertical"
+          },
+          "children": [
+            {
+              "name": "q5q",
+              "penId": "7sLcY",
+              "type": "frame",
+              "styles": {
+                "fill": "#FAF8F3",
+                "width": "fill_container",
+                "padding": [20, 24],
+                "gap": 16,
+                "cornerRadius": 4,
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "name": "q5i",
+                  "penId": "XZcIH",
+                  "type": "text",
+                  "content": "Q",
+                  "styles": {
+                    "fill": "#8B6914",
+                    "fontFamily": "Cormorant Garamond",
+                    "fontSize": 20,
+                    "fontWeight": "700"
+                  }
+                },
+                {
+                  "name": "q5t",
+                  "penId": "enbqZ",
+                  "type": "text",
+                  "content": "大浴場の営業時間を教えてください。",
+                  "styles": {
+                    "fill": "#2C2418",
+                    "fontFamily": "Noto Sans JP",
+                    "fontSize": 15,
+                    "fontWeight": "500",
+                    "letterSpacing": 1
+                  }
+                },
+                {
+                  "name": "q5c",
+                  "penId": "Mterm",
+                  "type": "icon_font",
+                  "styles": {
+                    "fill": "#8B7D6B",
+                    "width": 20,
+                    "height": 20,
+                    "iconFontFamily": "lucide",
+                    "iconFontName": "chevron-right"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "q6",
+          "penId": "02w1I",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "layout": "vertical"
+          },
+          "children": [
+            {
+              "name": "q6q",
+              "penId": "kjwIr",
+              "type": "frame",
+              "styles": {
+                "fill": "#FAF8F3",
+                "width": "fill_container",
+                "padding": [20, 24],
+                "gap": 16,
+                "cornerRadius": 4,
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "name": "q6i",
+                  "penId": "wFBUa",
+                  "type": "text",
+                  "content": "Q",
+                  "styles": {
+                    "fill": "#8B6914",
+                    "fontFamily": "Cormorant Garamond",
+                    "fontSize": 20,
+                    "fontWeight": "700"
+                  }
+                },
+                {
+                  "name": "q6t",
+                  "penId": "hBq4c",
+                  "type": "text",
+                  "content": "お部屋にアメニティはありますか？",
+                  "styles": {
+                    "fill": "#2C2418",
+                    "fontFamily": "Noto Sans JP",
+                    "fontSize": 15,
+                    "fontWeight": "500",
+                    "letterSpacing": 1
+                  }
+                },
+                {
+                  "name": "q6c",
+                  "penId": "pdboy",
+                  "type": "icon_font",
+                  "styles": {
+                    "fill": "#8B7D6B",
+                    "width": 20,
+                    "height": 20,
+                    "iconFontFamily": "lucide",
+                    "iconFontName": "chevron-right"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FAQ Cuisine",
+      "penId": "9BxlC",
+      "type": "frame",
+      "styles": {
+        "fill": "#FAF8F3",
+        "width": "fill_container",
+        "layout": "vertical",
+        "padding": [60, 200],
+        "gap": 32
+      },
+      "children": [
+        {
+          "name": "sec3Title",
+          "penId": "A2Gk9",
+          "type": "frame",
+          "styles": {
+            "alignItems": "center",
+            "gap": 16
+          },
+          "children": [
+            {
+              "name": "sec3Icon",
+              "penId": "xc3ua",
+              "type": "icon_font",
+              "styles": {
+                "fill": "#8B6914",
+                "width": 28,
+                "height": 28,
+                "iconFontFamily": "lucide",
+                "iconFontName": "utensils"
+              }
+            },
+            {
+              "name": "sec3Text",
+              "penId": "RIY5q",
+              "type": "text",
+              "content": "お食事について",
+              "styles": {
+                "fill": "#2C2418",
+                "fontFamily": "Noto Serif JP",
+                "fontSize": 22,
+                "fontWeight": "600",
+                "letterSpacing": 3
+              }
+            }
+          ]
+        },
+        {
+          "name": "q7",
+          "penId": "ex30w",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "layout": "vertical"
+          },
+          "children": [
+            {
+              "name": "q7q",
+              "penId": "3dulK",
+              "type": "frame",
+              "styles": {
+                "fill": "#F0EBE0",
+                "width": "fill_container",
+                "padding": [20, 24],
+                "gap": 16,
+                "cornerRadius": 4,
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "name": "q7i",
+                  "penId": "ts0kW",
+                  "type": "text",
+                  "content": "Q",
+                  "styles": {
+                    "fill": "#8B6914",
+                    "fontFamily": "Cormorant Garamond",
+                    "fontSize": 20,
+                    "fontWeight": "700"
+                  }
+                },
+                {
+                  "name": "q7t",
+                  "penId": "wYOIB",
+                  "type": "text",
+                  "content": "アレルギー対応はしていただけますか？",
+                  "styles": {
+                    "fill": "#2C2418",
+                    "fontFamily": "Noto Sans JP",
+                    "fontSize": 15,
+                    "fontWeight": "500",
+                    "letterSpacing": 1
+                  }
+                },
+                {
+                  "name": "q7c",
+                  "penId": "jHYr3",
+                  "type": "icon_font",
+                  "styles": {
+                    "fill": "#8B7D6B",
+                    "width": 20,
+                    "height": 20,
+                    "iconFontFamily": "lucide",
+                    "iconFontName": "chevron-right"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "q8",
+          "penId": "nvwBF",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "layout": "vertical"
+          },
+          "children": [
+            {
+              "name": "q8q",
+              "penId": "h7SC0",
+              "type": "frame",
+              "styles": {
+                "fill": "#F0EBE0",
+                "width": "fill_container",
+                "padding": [20, 24],
+                "gap": 16,
+                "cornerRadius": 4,
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "name": "q8i",
+                  "penId": "PKLpN",
+                  "type": "text",
+                  "content": "Q",
+                  "styles": {
+                    "fill": "#8B6914",
+                    "fontFamily": "Cormorant Garamond",
+                    "fontSize": 20,
+                    "fontWeight": "700"
+                  }
+                },
+                {
+                  "name": "q8t",
+                  "penId": "xfZMZ",
+                  "type": "text",
+                  "content": "お食事の時間は選べますか？",
+                  "styles": {
+                    "fill": "#2C2418",
+                    "fontFamily": "Noto Sans JP",
+                    "fontSize": 15,
+                    "fontWeight": "500",
+                    "letterSpacing": 1
+                  }
+                },
+                {
+                  "name": "q8c",
+                  "penId": "jnPpT",
+                  "type": "icon_font",
+                  "styles": {
+                    "fill": "#8B7D6B",
+                    "width": 20,
+                    "height": 20,
+                    "iconFontFamily": "lucide",
+                    "iconFontName": "chevron-right"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "q9",
+          "penId": "WXb3n",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "layout": "vertical"
+          },
+          "children": [
+            {
+              "name": "q9q",
+              "penId": "nm3Nm",
+              "type": "frame",
+              "styles": {
+                "fill": "#F0EBE0",
+                "width": "fill_container",
+                "padding": [20, 24],
+                "gap": 16,
+                "cornerRadius": 4,
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "name": "q9i",
+                  "penId": "1uExc",
+                  "type": "text",
+                  "content": "Q",
+                  "styles": {
+                    "fill": "#8B6914",
+                    "fontFamily": "Cormorant Garamond",
+                    "fontSize": 20,
+                    "fontWeight": "700"
+                  }
+                },
+                {
+                  "name": "q9t",
+                  "penId": "2KAkK",
+                  "type": "text",
+                  "content": "お子様向けのメニューはありますか？",
+                  "styles": {
+                    "fill": "#2C2418",
+                    "fontFamily": "Noto Sans JP",
+                    "fontSize": 15,
+                    "fontWeight": "500",
+                    "letterSpacing": 1
+                  }
+                },
+                {
+                  "name": "q9c",
+                  "penId": "MBwnC",
+                  "type": "icon_font",
+                  "styles": {
+                    "fill": "#8B7D6B",
+                    "width": 20,
+                    "height": 20,
+                    "iconFontFamily": "lucide",
+                    "iconFontName": "chevron-right"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FAQ Access",
+      "penId": "4zpVU",
+      "type": "frame",
+      "styles": {
+        "fill": "#F0EBE0",
+        "width": "fill_container",
+        "layout": "vertical",
+        "padding": [60, 200],
+        "gap": 32
+      },
+      "children": [
+        {
+          "name": "sec4Title",
+          "penId": "mdFPc",
+          "type": "frame",
+          "styles": {
+            "alignItems": "center",
+            "gap": 16
+          },
+          "children": [
+            {
+              "name": "sec4Icon",
+              "penId": "15TCb",
+              "type": "icon_font",
+              "styles": {
+                "fill": "#8B6914",
+                "width": 28,
+                "height": 28,
+                "iconFontFamily": "lucide",
+                "iconFontName": "map-pin"
+              }
+            },
+            {
+              "name": "sec4Text",
+              "penId": "0OcsC",
+              "type": "text",
+              "content": "アクセス・その他",
+              "styles": {
+                "fill": "#2C2418",
+                "fontFamily": "Noto Serif JP",
+                "fontSize": 22,
+                "fontWeight": "600",
+                "letterSpacing": 3
+              }
+            }
+          ]
+        },
+        {
+          "name": "q10",
+          "penId": "naK9N",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "layout": "vertical"
+          },
+          "children": [
+            {
+              "name": "q10q",
+              "penId": "d2H67",
+              "type": "frame",
+              "styles": {
+                "fill": "#FAF8F3",
+                "width": "fill_container",
+                "padding": [20, 24],
+                "gap": 16,
+                "cornerRadius": 4,
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "name": "q10i",
+                  "penId": "hmkb8",
+                  "type": "text",
+                  "content": "Q",
+                  "styles": {
+                    "fill": "#8B6914",
+                    "fontFamily": "Cormorant Garamond",
+                    "fontSize": 20,
+                    "fontWeight": "700"
+                  }
+                },
+                {
+                  "name": "q10t",
+                  "penId": "ok80I",
+                  "type": "text",
+                  "content": "送迎サービスはありますか？",
+                  "styles": {
+                    "fill": "#2C2418",
+                    "fontFamily": "Noto Sans JP",
+                    "fontSize": 15,
+                    "fontWeight": "500",
+                    "letterSpacing": 1
+                  }
+                },
+                {
+                  "name": "q10c",
+                  "penId": "gSyOI",
+                  "type": "icon_font",
+                  "styles": {
+                    "fill": "#8B7D6B",
+                    "width": 20,
+                    "height": 20,
+                    "iconFontFamily": "lucide",
+                    "iconFontName": "chevron-right"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "q11",
+          "penId": "6n8pa",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "layout": "vertical"
+          },
+          "children": [
+            {
+              "name": "q11q",
+              "penId": "tgSbD",
+              "type": "frame",
+              "styles": {
+                "fill": "#FAF8F3",
+                "width": "fill_container",
+                "padding": [20, 24],
+                "gap": 16,
+                "cornerRadius": 4,
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "name": "q11i",
+                  "penId": "7yfWR",
+                  "type": "text",
+                  "content": "Q",
+                  "styles": {
+                    "fill": "#8B6914",
+                    "fontFamily": "Cormorant Garamond",
+                    "fontSize": 20,
+                    "fontWeight": "700"
+                  }
+                },
+                {
+                  "name": "q11t",
+                  "penId": "U0f1d",
+                  "type": "text",
+                  "content": "駐車場はありますか？",
+                  "styles": {
+                    "fill": "#2C2418",
+                    "fontFamily": "Noto Sans JP",
+                    "fontSize": 15,
+                    "fontWeight": "500",
+                    "letterSpacing": 1
+                  }
+                },
+                {
+                  "name": "q11c",
+                  "penId": "7sq1c",
+                  "type": "icon_font",
+                  "styles": {
+                    "fill": "#8B7D6B",
+                    "width": 20,
+                    "height": 20,
+                    "iconFontFamily": "lucide",
+                    "iconFontName": "chevron-right"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "q12",
+          "penId": "dHjro",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "layout": "vertical"
+          },
+          "children": [
+            {
+              "name": "q12q",
+              "penId": "xtvWX",
+              "type": "frame",
+              "styles": {
+                "fill": "#FAF8F3",
+                "width": "fill_container",
+                "padding": [20, 24],
+                "gap": 16,
+                "cornerRadius": 4,
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "name": "q12i",
+                  "penId": "sEaGF",
+                  "type": "text",
+                  "content": "Q",
+                  "styles": {
+                    "fill": "#8B6914",
+                    "fontFamily": "Cormorant Garamond",
+                    "fontSize": 20,
+                    "fontWeight": "700"
+                  }
+                },
+                {
+                  "name": "q12t",
+                  "penId": "Dajpe",
+                  "type": "text",
+                  "content": "ペットの同伴は可能ですか？",
+                  "styles": {
+                    "fill": "#2C2418",
+                    "fontFamily": "Noto Sans JP",
+                    "fontSize": 15,
+                    "fontWeight": "500",
+                    "letterSpacing": 1
+                  }
+                },
+                {
+                  "name": "q12c",
+                  "penId": "6NurR",
+                  "type": "icon_font",
+                  "styles": {
+                    "fill": "#8B7D6B",
+                    "width": 20,
+                    "height": 20,
+                    "iconFontFamily": "lucide",
+                    "iconFontName": "chevron-right"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FAQ Contact Box",
+      "penId": "da36i",
+      "type": "frame",
+      "styles": {
+        "fill": "#FAF8F3",
+        "width": "fill_container",
+        "layout": "vertical",
+        "padding": [60, 200],
+        "gap": 24,
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "name": "contactInner",
+          "penId": "MXdS1",
+          "type": "frame",
+          "styles": {
+            "fill": "#2C2418",
+            "width": "fill_container",
+            "layout": "vertical",
+            "padding": [48, 60],
+            "gap": 24,
+            "cornerRadius": 4,
+            "alignItems": "center"
+          },
+          "children": [
+            {
+              "name": "contactTitle",
+              "penId": "SCtVi",
+              "type": "text",
+              "content": "ご質問が見つからない場合は",
+              "styles": {
+                "fill": "#FAF8F3",
+                "fontFamily": "Noto Serif JP",
+                "fontSize": 20,
+                "fontWeight": "600",
+                "letterSpacing": 3
+              }
+            },
+            {
+              "name": "contactDesc",
+              "penId": "fa6Wp",
+              "type": "text",
+              "content": "お探しの回答が見つからない場合は、お気軽にお問い合わせくださいませ。\nお電話またはメールにて、丁寧にお答えいたします。",
+              "styles": {
+                "fill": "#C4B89A",
+                "fontFamily": "Noto Sans JP",
+                "fontSize": 14,
+                "fontWeight": "300",
+                "letterSpacing": 1,
+                "lineHeight": 2,
+                "textAlign": "center"
+              }
+            },
+            {
+              "name": "contactBtns",
+              "penId": "7T24T",
+              "type": "frame",
+              "styles": {
+                "gap": 24,
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "name": "contactBtn1",
+                  "penId": "xp92y",
+                  "type": "frame",
+                  "styles": {
+                    "fill": "#8B6914",
+                    "padding": [14, 48],
+                    "cornerRadius": 2,
+                    "alignItems": "center"
+                  }
+                },
+                {
+                  "name": "contactBtn2",
+                  "penId": "v40Ey",
+                  "type": "frame",
+                  "styles": {
+                    "fill": "transparent",
+                    "padding": [14, 48],
+                    "cornerRadius": 2,
+                    "alignItems": "center",
+                    "stroke": { "fill": "#D4C5A088", "thickness": 1 }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "c11",
+      "penId": "W1q3B",
+      "type": "frame",
+      "styles": {
+        "width": "fill_container",
+        "height": 480,
+        "layout": "none",
+        "clip": true
+      },
+      "children": [
+        {
+          "name": "ctaBg",
+          "penId": "Y5RC4",
+          "type": "frame",
+          "styles": {
+            "width": 1440,
+            "height": 480,
+            "x": 0,
+            "y": 0,
+            "hasImageFill": true
+          }
+        },
+        {
+          "name": "ctaOverlay",
+          "penId": "PAJ6z",
+          "type": "frame",
+          "styles": {
+            "fill": "#1A150E88",
+            "width": 1440,
+            "height": 480,
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "name": "ctaContent",
+          "penId": "N0i4e",
+          "type": "frame",
+          "styles": {
+            "width": 1440,
+            "height": 480,
+            "layout": "vertical",
+            "gap": 40,
+            "justifyContent": "center",
+            "alignItems": "center",
+            "x": 0,
+            "y": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "f11",
+      "penId": "RrtJ5",
+      "type": "frame",
+      "styles": {
+        "fill": "#1A150E",
+        "width": "fill_container",
+        "layout": "vertical",
+        "padding": [60, 80, 32, 80],
+        "gap": 48,
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "name": "footerTop",
+          "penId": "Nk4Sq",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "justifyContent": "space_between"
+          }
+        },
+        {
+          "name": "footerSecondaryNav",
+          "penId": "QVY4B",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "gap": 24,
+            "justifyContent": "center",
+            "alignItems": "center"
+          }
+        },
+        {
+          "name": "footerDivider",
+          "penId": "4R6zo",
+          "type": "rectangle",
+          "styles": {
+            "fill": "#2C241888",
+            "width": "fill_container",
+            "height": 1
+          }
+        },
+        {
+          "name": "footerMiddle",
+          "penId": "1e3a4",
+          "type": "frame",
+          "styles": {
+            "width": "fill_container",
+            "justifyContent": "space_between",
+            "alignItems": "center"
+          }
+        },
+        {
+          "name": "footerBottom",
+          "penId": "GuJVs",
+          "type": "text",
+          "content": "\u00a9 2026 月瀬庵 TSUKISE-AN. All Rights Reserved.",
+          "styles": {
+            "fill": "#6B5D4F55",
+            "fontFamily": "Cormorant Garamond",
+            "fontSize": 11,
+            "fontWeight": "normal",
+            "letterSpacing": 2
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "component": {
+    "name": "CTA Section",
+    "penId": "ZAOub",
+    "reusable": false,
+    "usage": "Each page has an independent copy"
+  },
+  "layout": {
+    "width": "fill_container",
+    "height": 480,
+    "direction": "none",
+    "clip": true
+  },
+  "children": [
+    {
+      "name": "ctaBg",
+      "penId": "iWdax",
+      "type": "frame",
+      "hasImageFill": true,
+      "styles": {
+        "width": 1440,
+        "height": 480,
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "name": "ctaOverlay",
+      "penId": "9bAUb",
+      "type": "frame",
+      "styles": {
+        "fill": "#1A150E88",
+        "width": 1440,
+        "height": 480,
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "name": "ctaContent",
+      "penId": "q3VU8",
+      "type": "frame",
+      "styles": {
+        "width": 1440,
+        "height": 480,
+        "x": 0,
+        "y": 0,
+        "layout": "vertical",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "gap": 40
+      },
+      "children": [
+        {
+          "name": "ctaIntro",
+          "penId": "fn4Zd",
+          "type": "frame",
+          "styles": {
+            "layout": "vertical",
+            "alignItems": "center",
+            "gap": 16
+          },
+          "children": [
+            {
+              "name": "ctaDecoLine",
+              "penId": "sifzo",
+              "type": "rectangle",
+              "styles": {
+                "fill": "#D4C5A088",
+                "width": 1,
+                "height": 30
+              }
+            },
+            {
+              "name": "ctaTitle",
+              "penId": "63NGT",
+              "type": "text",
+              "content": "あなたの特別な一日を、\n月瀬庵でお過ごしください。",
+              "styles": {
+                "fontFamily": "Noto Serif JP",
+                "fontSize": 28,
+                "fontWeight": "600",
+                "color": "#FAFAF3",
+                "letterSpacing": 3,
+                "lineHeight": 1.8,
+                "textAlign": "center",
+                "textGrowth": "fixed-width",
+                "width": 700
+              }
+            },
+            {
+              "name": "ctaSub",
+              "penId": "wWb4o",
+              "type": "text",
+              "content": "ご予約・お問い合わせはお電話またはオンラインにて承ります",
+              "styles": {
+                "fontFamily": "Noto Sans JP",
+                "fontSize": 14,
+                "fontWeight": "300",
+                "color": "#C4B89A",
+                "letterSpacing": 2
+              }
+            }
+          ]
+        },
+        {
+          "name": "ctaBtns",
+          "penId": "hEn9J",
+          "type": "frame",
+          "styles": {
+            "alignItems": "center",
+            "gap": 24
+          },
+          "children": [
+            {
+              "name": "ctaBtn1",
+              "penId": "LCYuY",
+              "type": "frame",
+              "styles": {
+                "fill": "#8B6914",
+                "padding": [16, 48],
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "name": "ctaBtn1Text",
+                  "penId": "YtwXC",
+                  "type": "text",
+                  "content": "オンライン予約",
+                  "context": "href: /reservation",
+                  "styles": {
+                    "fontFamily": "Noto Sans JP",
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                    "color": "#FAFAF3",
+                    "letterSpacing": 3
+                  }
+                }
+              ]
+            },
+            {
+              "name": "ctaBtn2",
+              "penId": "3sCXd",
+              "type": "frame",
+              "styles": {
+                "fill": "transparent",
+                "padding": [16, 48],
+                "alignItems": "center",
+                "stroke": {
+                  "fill": "#D4C5A088",
+                  "thickness": 1
+                }
+              },
+              "children": [
+                {
+                  "name": "ctaBtn2Text",
+                  "penId": "P3Bvk",
+                  "type": "text",
+                  "content": "0460-83-XXXX",
+                  "context": "href: tel:0460-83-XXXX",
+                  "styles": {
+                    "fontFamily": "Cormorant Garamond",
+                    "fontSize": 16,
+                    "fontWeight": "500",
+                    "color": "#FAFAF3",
+                    "letterSpacing": 2
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

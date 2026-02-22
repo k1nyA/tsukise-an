@@ -1,0 +1,129 @@
+{
+  "component": {
+    "name": "Page Hero",
+    "penId": "QGYgp",
+    "reusable": false,
+    "usage": "Each page has an independent copy"
+  },
+  "layout": {
+    "width": "fill_container",
+    "height": 480,
+    "direction": "none",
+    "clip": true
+  },
+  "children": [
+    {
+      "name": "heroBg",
+      "penId": "rDCHe",
+      "type": "frame",
+      "hasImageFill": true,
+      "styles": {
+        "width": 1440,
+        "height": 480,
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "name": "heroOverlay",
+      "penId": "UfKLA",
+      "type": "frame",
+      "styles": {
+        "fill": "#1A150E55",
+        "width": 1440,
+        "height": 480,
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "name": "heroContent",
+      "penId": "KwHDQ",
+      "type": "frame",
+      "styles": {
+        "width": 1440,
+        "height": 480,
+        "x": 0,
+        "y": 0,
+        "layout": "vertical",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "gap": 24
+      },
+      "children": [
+        {
+          "name": "heroLabel",
+          "penId": "2hUpJ",
+          "type": "frame",
+          "styles": {
+            "gap": 20,
+            "alignItems": "center"
+          },
+          "children": [
+            {
+              "name": "heroLine1",
+              "penId": "Z0Dru",
+              "type": "rectangle",
+              "styles": {
+                "fill": "#D4C5A0",
+                "width": 40,
+                "height": 1
+              }
+            },
+            {
+              "name": "heroLabelText",
+              "penId": "VaKvV",
+              "type": "text",
+              "content": "LABEL",
+              "styles": {
+                "fontFamily": "Cormorant Garamond",
+                "fontSize": 14,
+                "fontWeight": "500",
+                "color": "#D4C5A0",
+                "letterSpacing": 6
+              }
+            },
+            {
+              "name": "heroLine2",
+              "penId": "jnOFL",
+              "type": "rectangle",
+              "styles": {
+                "fill": "#D4C5A0",
+                "width": 40,
+                "height": 1
+              }
+            }
+          ]
+        },
+        {
+          "name": "heroTitle",
+          "penId": "LYwjv",
+          "type": "text",
+          "content": "ページタイトル",
+          "styles": {
+            "fontFamily": "Noto Serif JP",
+            "fontSize": 48,
+            "fontWeight": "600",
+            "color": "#FAF8F3",
+            "letterSpacing": 8,
+            "textAlign": "center"
+          }
+        },
+        {
+          "name": "heroSub",
+          "penId": "KaLPn",
+          "type": "text",
+          "content": "サブタイトルテキスト",
+          "styles": {
+            "fontFamily": "Noto Sans JP",
+            "fontSize": 16,
+            "fontWeight": "300",
+            "color": "#D4C5A088",
+            "letterSpacing": 2,
+            "textAlign": "center"
+          }
+        }
+      ]
+    }
+  ]
+}

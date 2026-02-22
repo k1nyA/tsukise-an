@@ -1,0 +1,59 @@
+{
+  "component": {
+    "name": "Breadcrumb",
+    "penId": "msp0K",
+    "reusable": false,
+    "usage": "Each page has an independent copy"
+  },
+  "layout": {
+    "width": "fill_container",
+    "direction": "horizontal",
+    "alignItems": "center"
+  },
+  "styles": {
+    "fill": "#EEEBE3",
+    "padding": [16, 80],
+    "gap": 8
+  },
+  "children": [
+    {
+      "name": "bc1",
+      "penId": "oFTBB",
+      "type": "text",
+      "content": "ホーム",
+      "context": "href: /",
+      "styles": {
+        "fontFamily": "Noto Sans JP",
+        "fontSize": 12,
+        "fontWeight": "300",
+        "color": "#8B7D6B",
+        "letterSpacing": 1
+      }
+    },
+    {
+      "name": "bcSep",
+      "penId": "Jotpr",
+      "type": "text",
+      "content": ">",
+      "styles": {
+        "fontFamily": "Noto Sans JP",
+        "fontSize": 12,
+        "fontWeight": "300",
+        "color": "#D4C5A0"
+      }
+    },
+    {
+      "name": "bc2",
+      "penId": "k796h",
+      "type": "text",
+      "content": "現在のページ",
+      "styles": {
+        "fontFamily": "Noto Sans JP",
+        "fontSize": 12,
+        "fontWeight": "500",
+        "color": "#2C2418",
+        "letterSpacing": 1
+      }
+    }
+  ]
+}
