@@ -33,7 +33,15 @@ jobs:
           echo "CLAUDE_CODE_OAUTH_TOKEN is not set."
           exit 1
 
-      - name: Checkout
+      - name: Checkout PR head (issue_comment on PR)
+        if: ${{ github.event_name == 'issue_comment' && github.event.issue.pull_request }}
+        uses: actions/checkout@v4
+        with:
+          ref: refs/pull/${{ github.event.issue.number }}/head
+          fetch-depth: 1
+
+      - name: Checkout default ref
+        if: ${{ !(github.event_name == 'issue_comment' && github.event.issue.pull_request) }}
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
