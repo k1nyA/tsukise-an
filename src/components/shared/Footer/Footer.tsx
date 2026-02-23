@@ -1,15 +1,16 @@
 import Link from 'next/link'
+import { Instagram, Facebook, MessageCircle } from 'lucide-react'
 
-const PRIMARY_NAV_LINKS = [
+const PRIMARY_NAV = [
   { text: '客室', href: '/rooms' },
   { text: '温泉', href: '/onsen' },
   { text: 'お料理', href: '/cuisine' },
   { text: '過ごし方', href: '/experience' },
   { text: 'アクセス', href: '/access' },
-  { text: 'ご予約', href: '/reservation' },
+  { text: 'ご予約', href: '/reservation', highlight: true },
 ] as const
 
-const SECONDARY_NAV_LINKS = [
+const SECONDARY_NAV = [
   { text: 'お知らせ', href: '/news' },
   { text: 'よくあるご質問', href: '/faq' },
   { text: 'お問い合わせ', href: '/contact' },
@@ -24,42 +25,17 @@ const LEGAL_LINKS = [
 export function Footer() {
   return (
     <footer
+      className="flex w-full flex-col items-center"
       style={{
-        width: '100%',
         backgroundColor: 'var(--ryokan-darkest)',
         padding: '60px 80px 32px 80px',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
         gap: 48,
       }}
     >
-      {/* Top Section: Brand + Primary Nav */}
-      <div
-        style={{
-          width: '100%',
-          display: 'flex',
-          justifyContent: 'space-between',
-        }}
-      >
-        {/* Brand Area */}
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            gap: 16,
-          }}
-        >
-          {/* Logo Row */}
-          <Link
-            href="/"
-            style={{
-              display: 'flex',
-              gap: 12,
-              alignItems: 'center',
-              textDecoration: 'none',
-            }}
-          >
+      {/* Top: Brand + Nav */}
+      <div className="flex w-full justify-between">
+        <div className="flex flex-col" style={{ gap: 16 }}>
+          <Link href="/" className="flex items-center" style={{ gap: 12, textDecoration: 'none' }}>
             <span
               style={{
                 fontFamily: 'var(--font-heading)',
@@ -71,11 +47,7 @@ export function Footer() {
               月
             </span>
             <span
-              style={{
-                width: 1,
-                height: 24,
-                backgroundColor: 'var(--ryokan-muted)',
-              }}
+              style={{ width: 1, height: 24, backgroundColor: 'var(--ryokan-muted)' }}
               aria-hidden="true"
             />
             <span
@@ -90,12 +62,10 @@ export function Footer() {
               月瀬庵
             </span>
           </Link>
-
-          {/* Address */}
           <p
             style={{
               fontFamily: 'var(--font-body)',
-              fontSize: 12,
+              fontSize: 14,
               fontWeight: 300,
               color: 'var(--ryokan-subtle)',
               letterSpacing: 1,
@@ -106,51 +76,54 @@ export function Footer() {
           </p>
         </div>
 
-        {/* Primary Nav */}
-        <nav
-          aria-label="フッターナビゲーション"
-          style={{
-            display: 'flex',
-            gap: 40,
-            alignItems: 'flex-start',
-          }}
-        >
-          {PRIMARY_NAV_LINKS.map(({ text, href }) => (
-            <Link
-              key={href}
-              href={href}
-              style={{
-                fontFamily: 'var(--font-body)',
-                fontSize: 12,
-                fontWeight: 300,
-                color: text === 'ご予約' ? 'var(--ryokan-gold)' : 'var(--ryokan-subtle)',
-                letterSpacing: 2,
-                textDecoration: 'none',
-              }}
-            >
-              {text}
-            </Link>
-          ))}
+        <nav className="flex items-center" style={{ gap: 40 }}>
+          {PRIMARY_NAV.map(({ text, href, ...rest }) =>
+            'highlight' in rest ? (
+              <Link
+                key={href}
+                href={href}
+                style={{
+                  fontFamily: 'var(--font-body)',
+                  fontSize: 14,
+                  fontWeight: 500,
+                  color: 'var(--ryokan-subtle)',
+                  letterSpacing: 2,
+                  textDecoration: 'none',
+                  border: '1px solid var(--ryokan-subtle)',
+                  padding: '8px 24px',
+                }}
+              >
+                {text}
+              </Link>
+            ) : (
+              <Link
+                key={href}
+                href={href}
+                style={{
+                  fontFamily: 'var(--font-body)',
+                  fontSize: 14,
+                  fontWeight: 300,
+                  color: 'var(--ryokan-subtle)',
+                  letterSpacing: 2,
+                  textDecoration: 'none',
+                }}
+              >
+                {text}
+              </Link>
+            )
+          )}
         </nav>
       </div>
 
       {/* Secondary Nav */}
-      <div
-        style={{
-          width: '100%',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          gap: 24,
-        }}
-      >
-        {SECONDARY_NAV_LINKS.map(({ text, href }) => (
+      <div className="flex w-full items-center justify-center" style={{ gap: 24 }}>
+        {SECONDARY_NAV.map(({ text, href }) => (
           <Link
             key={href}
             href={href}
             style={{
               fontFamily: 'var(--font-body)',
-              fontSize: 12,
+              fontSize: 14,
               fontWeight: 300,
               color: 'var(--ryokan-subtle)',
               letterSpacing: 1,
@@ -164,38 +137,20 @@ export function Footer() {
 
       {/* Divider */}
       <div
-        style={{
-          width: '100%',
-          height: 1,
-          backgroundColor: '#2C241888',
-        }}
+        style={{ width: '100%', height: 1, backgroundColor: '#2C241888' }}
         aria-hidden="true"
       />
 
-      {/* Middle Section: Legal + SNS */}
-      <div
-        style={{
-          width: '100%',
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-        }}
-      >
-        {/* Legal Links */}
-        <div
-          style={{
-            display: 'flex',
-            gap: 32,
-            alignItems: 'center',
-          }}
-        >
+      {/* Legal + SNS */}
+      <div className="flex w-full items-center justify-between">
+        <div className="flex items-center" style={{ gap: 32 }}>
           {LEGAL_LINKS.map(({ text, href }) => (
             <Link
               key={href}
               href={href}
               style={{
                 fontFamily: 'var(--font-body)',
-                fontSize: 11,
+                fontSize: 14,
                 fontWeight: 300,
                 color: 'var(--ryokan-secondary)',
                 letterSpacing: 1,
@@ -206,25 +161,10 @@ export function Footer() {
             </Link>
           ))}
         </div>
-
-        {/* SNS Icons (placeholder) */}
-        <div
-          style={{
-            display: 'flex',
-            gap: 24,
-            alignItems: 'center',
-          }}
-          aria-label="SNS"
-        >
-          <span aria-label="Instagram" style={{ color: 'var(--ryokan-subtle)', fontSize: 18 }}>
-            {/* Instagram icon placeholder */}
-          </span>
-          <span aria-label="Facebook" style={{ color: 'var(--ryokan-subtle)', fontSize: 18 }}>
-            {/* Facebook icon placeholder */}
-          </span>
-          <span aria-label="LINE" style={{ color: 'var(--ryokan-subtle)', fontSize: 18 }}>
-            {/* LINE icon placeholder */}
-          </span>
+        <div className="flex items-center" style={{ gap: 24 }}>
+          <Instagram size={18} color="var(--ryokan-subtle)" />
+          <Facebook size={18} color="var(--ryokan-subtle)" />
+          <MessageCircle size={18} color="var(--ryokan-subtle)" />
         </div>
       </div>
 

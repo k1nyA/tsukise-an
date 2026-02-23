@@ -11,26 +11,14 @@ const NAV_LINKS = [
 export function Header() {
   return (
     <header
+      className="flex w-full items-center justify-between"
       style={{
-        width: '100%',
-        height: 'var(--header-height)',
+        height: 80,
         backgroundColor: 'var(--ryokan-bg)',
         padding: '0 60px',
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
       }}
     >
-      {/* Logo Area */}
-      <Link
-        href="/"
-        style={{
-          display: 'flex',
-          gap: 12,
-          alignItems: 'center',
-          textDecoration: 'none',
-        }}
-      >
+      <Link href="/" className="flex items-center gap-3" style={{ textDecoration: 'none' }}>
         <span
           style={{
             fontFamily: 'var(--font-heading)',
@@ -41,19 +29,11 @@ export function Header() {
         >
           月
         </span>
-
-        {/* Divider */}
         <span
-          style={{
-            width: 1,
-            height: 32,
-            backgroundColor: 'var(--ryokan-light-gold)',
-          }}
+          style={{ width: 1, height: 32, backgroundColor: 'var(--ryokan-light-gold)' }}
           aria-hidden="true"
         />
-
-        {/* Logo Text */}
-        <span style={{ display: 'flex', flexDirection: 'column' }}>
+        <span className="flex flex-col">
           <span
             style={{
               fontFamily: 'var(--font-heading)',
@@ -79,14 +59,7 @@ export function Header() {
         </span>
       </Link>
 
-      {/* Navigation Area */}
-      <nav
-        style={{
-          display: 'flex',
-          gap: 32,
-          alignItems: 'center',
-        }}
-      >
+      <nav className="flex items-center" style={{ gap: 32 }}>
         {NAV_LINKS.map(({ text, href }) => (
           <Link
             key={href}
@@ -103,20 +76,13 @@ export function Header() {
             {text}
           </Link>
         ))}
-
-        {/* Divider */}
         <span
-          style={{
-            width: 1,
-            height: 20,
-            backgroundColor: 'var(--ryokan-light-gold)',
-          }}
+          style={{ width: 1, height: 20, backgroundColor: 'var(--ryokan-light-gold)' }}
           aria-hidden="true"
         />
-
-        {/* CTA Button */}
         <Link
           href="/reservation"
+          className="inline-flex items-center"
           style={{
             backgroundColor: 'var(--ryokan-gold)',
             borderRadius: 2,
@@ -128,8 +94,6 @@ export function Header() {
             color: 'var(--ryokan-text-on-dark)',
             letterSpacing: 3,
             textDecoration: 'none',
-            display: 'inline-flex',
-            alignItems: 'center',
           }}
         >
           ご予約

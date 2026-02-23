@@ -1,12 +1,10 @@
 import Image from 'next/image'
+import Link from 'next/link'
+import { ChevronRight, Mouse } from 'lucide-react'
 
 export function HeroSection() {
   return (
-    <section
-      className="relative w-full overflow-hidden"
-      style={{ height: 780 }}
-    >
-      {/* Background image */}
+    <section className="relative w-full overflow-hidden" style={{ height: 780 }}>
       <Image
         src="/images/hero.png"
         alt="芦ノ湖畔の月瀬庵"
@@ -16,108 +14,103 @@ export function HeroSection() {
         quality={85}
         sizes="100vw"
       />
-
-      {/* Overlay */}
       <div
         className="absolute inset-0"
         style={{ backgroundColor: '#1A150E77' }}
         aria-hidden="true"
       />
 
-      {/* Hero Content */}
       <div
-        className="relative z-10 flex flex-col gap-8"
-        style={{ padding: '220px 0 0 100px' }}
+        className="relative z-10 flex flex-col"
+        style={{ gap: 32, top: 220, left: 100 }}
       >
-        {/* Location label row */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center" style={{ gap: 16 }}>
           <span
-            className="block"
-            style={{
-              width: 40,
-              height: 1,
-              backgroundColor: 'var(--ryokan-light-gold)',
-            }}
+            style={{ width: 40, height: 1, backgroundColor: 'var(--ryokan-light-gold)' }}
             aria-hidden="true"
           />
           <span
             style={{
-              fontFamily: 'var(--font-accent)',
-              fontSize: 13,
-              fontWeight: 500,
-              color: 'var(--ryokan-text-subtle)',
-              letterSpacing: 5,
+              fontFamily: 'var(--font-body)',
+              fontSize: 12,
+              fontWeight: 'normal',
+              color: 'var(--ryokan-light-gold)',
+              letterSpacing: 4,
             }}
           >
             箱根 芦ノ湖畔
           </span>
         </div>
 
-        {/* Main headline */}
         <h1
           style={{
             fontFamily: 'var(--font-heading)',
-            fontSize: 48,
-            fontWeight: 700,
-            color: 'var(--ryokan-text-on-dark)',
-            letterSpacing: 6,
-            lineHeight: 1.6,
+            fontSize: 56,
+            fontWeight: 'bold',
+            color: '#faf8f3',
+            letterSpacing: 4,
+            lineHeight: 1.5,
             margin: 0,
+            width: 600,
           }}
         >
-          月瀬庵
+          湖と月、
+          <br />
+          そして静寂。
         </h1>
 
-        {/* Subtitle */}
         <p
           style={{
-            fontFamily: 'var(--font-heading)',
-            fontSize: 20,
+            fontFamily: 'var(--font-body)',
+            fontSize: 16,
             fontWeight: 300,
-            color: 'var(--ryokan-text-on-dark)',
-            letterSpacing: 4,
+            color: 'var(--ryokan-light-gold)',
+            letterSpacing: 3,
             margin: 0,
           }}
         >
-          心を解くひととき
+          芦ノ湖の湖面に映る月を眺める、全八室の離れ宿
         </p>
 
-        {/* English label */}
-        <span
+        <Link
+          href="#concept"
+          className="inline-flex items-center"
           style={{
-            fontFamily: 'var(--font-accent)',
-            fontSize: 14,
-            fontWeight: 400,
-            color: 'var(--ryokan-text-subtle)',
-            letterSpacing: 6,
-            textTransform: 'uppercase' as const,
+            gap: 12,
+            padding: '14px 40px',
+            border: '1px solid #D4C5A0',
+            backgroundColor: 'transparent',
+            textDecoration: 'none',
+            width: 'fit-content',
           }}
         >
-          TSUKISE-AN
-        </span>
+          <span
+            style={{
+              fontFamily: 'var(--font-body)',
+              fontSize: 14,
+              fontWeight: 'normal',
+              color: '#D4C5A0',
+              letterSpacing: 3,
+            }}
+          >
+            宿を知る
+          </span>
+          <ChevronRight size={14} color="var(--ryokan-light-gold)" />
+        </Link>
       </div>
 
-      {/* Scroll Indicator */}
       <div
-        className="absolute left-1/2 flex -translate-x-1/2 flex-col items-center gap-1.5"
-        style={{ bottom: 40 }}
+        className="absolute z-10 flex w-full flex-col items-center"
+        style={{ gap: 6, left: 0, top: 725 }}
       >
-        <span
-          className="block"
-          style={{
-            width: 1,
-            height: 20,
-            backgroundColor: 'var(--ryokan-text-on-dark)',
-          }}
-          aria-hidden="true"
-        />
+        <Mouse size={20} color="#D4C5A088" strokeWidth={1.5} />
         <span
           style={{
             fontFamily: 'var(--font-accent)',
             fontSize: 10,
-            fontWeight: 400,
-            color: 'var(--ryokan-text-on-dark)',
-            letterSpacing: 2,
+            fontWeight: 'normal',
+            color: '#D4C5A088',
+            letterSpacing: 3,
           }}
         >
           Scroll

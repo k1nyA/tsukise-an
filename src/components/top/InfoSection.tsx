@@ -1,4 +1,6 @@
+import Image from 'next/image'
 import Link from 'next/link'
+import { ArrowRight } from 'lucide-react'
 import type { TopNewsItem } from '@/lib/top-news'
 
 type InfoSectionProps = {
@@ -10,30 +12,24 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
     <section
       className="flex w-full"
       style={{
-        backgroundColor: 'var(--ryokan-light-bg-alt)',
+        backgroundColor: 'var(--ryokan-info-bg)',
         padding: 80,
         gap: 60,
       }}
     >
       {/* News Column */}
       <div className="flex flex-1 flex-col" style={{ gap: 32 }}>
-        {/* Label row */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center" style={{ gap: 16 }}>
           <span
-            className="block"
-            style={{
-              width: 40,
-              height: 1,
-              backgroundColor: 'var(--ryokan-light-gold)',
-            }}
+            style={{ width: 30, height: 1, backgroundColor: 'var(--ryokan-gold)' }}
             aria-hidden="true"
           />
           <span
             style={{
               fontFamily: 'var(--font-accent)',
-              fontSize: 13,
+              fontSize: 12,
               fontWeight: 500,
-              color: 'var(--ryokan-subtle)',
+              color: 'var(--ryokan-gold)',
               letterSpacing: 5,
             }}
           >
@@ -41,14 +37,13 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
           </span>
         </div>
 
-        {/* Title */}
         <h2
           style={{
             fontFamily: 'var(--font-heading)',
             fontSize: 24,
             fontWeight: 600,
             color: 'var(--ryokan-dark)',
-            letterSpacing: 4,
+            letterSpacing: 3,
             margin: 0,
           }}
         >
@@ -110,43 +105,43 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
           )}
         </ul>
 
-        {/* Link to all news */}
         <Link
           href="/news"
-          className="inline-flex items-center gap-2"
+          className="inline-flex items-center"
           style={{
-            fontFamily: 'var(--font-body)',
-            fontSize: 13,
-            fontWeight: 500,
-            color: 'var(--ryokan-gold)',
-            letterSpacing: 2,
+            gap: 8,
             textDecoration: 'none',
+            width: 'fit-content',
           }}
         >
-          一覧を見る
-          <span aria-hidden="true">&rarr;</span>
+          <span
+            style={{
+              fontFamily: 'var(--font-body)',
+              fontSize: 14,
+              fontWeight: 'normal',
+              color: 'var(--ryokan-gold)',
+              letterSpacing: 2,
+            }}
+          >
+            一覧を見る
+          </span>
+          <ArrowRight size={14} color="var(--ryokan-gold)" />
         </Link>
       </div>
 
       {/* Access Column */}
       <div className="flex flex-col" style={{ width: 560, gap: 24 }}>
-        {/* Label row */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center" style={{ gap: 16 }}>
           <span
-            className="block"
-            style={{
-              width: 40,
-              height: 1,
-              backgroundColor: 'var(--ryokan-light-gold)',
-            }}
+            style={{ width: 30, height: 1, backgroundColor: 'var(--ryokan-gold)' }}
             aria-hidden="true"
           />
           <span
             style={{
               fontFamily: 'var(--font-accent)',
-              fontSize: 13,
+              fontSize: 12,
               fontWeight: 500,
-              color: 'var(--ryokan-subtle)',
+              color: 'var(--ryokan-gold)',
               letterSpacing: 5,
             }}
           >
@@ -154,78 +149,83 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
           </span>
         </div>
 
-        {/* Title */}
         <h2
           style={{
             fontFamily: 'var(--font-heading)',
             fontSize: 24,
             fontWeight: 600,
             color: 'var(--ryokan-dark)',
-            letterSpacing: 4,
+            letterSpacing: 3,
             margin: 0,
           }}
         >
           アクセス
         </h2>
 
-        {/* Address */}
-        <p
-          style={{
-            fontFamily: 'var(--font-body)',
-            fontSize: 14,
-            fontWeight: 300,
-            color: 'var(--ryokan-muted)',
-            letterSpacing: 1,
-            lineHeight: 2,
-            margin: 0,
-          }}
-        >
-          〒250-0522
-          <br />
-          神奈川県足柄下郡箱根町元箱根138
-          <br />
-          <br />
-          TEL 0460-83-XXXX
-          <br />
-          FAX 0460-83-XXXX
-        </p>
+        <div className="flex w-full" style={{ gap: 32 }}>
+          <p
+            style={{
+              fontFamily: 'var(--font-body)',
+              fontSize: 14,
+              fontWeight: 300,
+              color: 'var(--ryokan-secondary)',
+              letterSpacing: 1,
+              lineHeight: 2,
+              margin: 0,
+            }}
+          >
+            〒250-0522
+            <br />
+            神奈川県足柄下郡箱根町元箱根138
+            <br />
+            <br />
+            TEL&nbsp;&nbsp;0460-83-XXXX
+            <br />
+            FAX&nbsp;&nbsp;0460-83-XXXX
+          </p>
 
-        {/* Transport methods */}
-        <div className="flex flex-col" style={{ gap: 12 }}>
-          <div
-            className="flex items-center gap-3"
-            style={{
-              fontFamily: 'var(--font-body)',
-              fontSize: 13,
-              fontWeight: 300,
-              color: 'var(--ryokan-muted)',
-              letterSpacing: 1,
-            }}
-          >
-            <span>お車で：東名高速 御殿場ICより約40分</span>
-          </div>
-          <div
-            className="flex items-center gap-3"
-            style={{
-              fontFamily: 'var(--font-body)',
-              fontSize: 13,
-              fontWeight: 300,
-              color: 'var(--ryokan-muted)',
-              letterSpacing: 1,
-            }}
-          >
-            <span>電車で：箱根湯本駅より送迎車にて約30分</span>
+          <div className="flex flex-col" style={{ gap: 12 }}>
+            <div className="flex items-center" style={{ gap: 12 }}>
+              <span
+                style={{
+                  fontFamily: 'var(--font-body)',
+                  fontSize: 14,
+                  fontWeight: 300,
+                  color: 'var(--ryokan-muted)',
+                  letterSpacing: 1,
+                }}
+              >
+                お車で：東名高速 御殿場ICより約40分
+              </span>
+            </div>
+            <div className="flex items-center" style={{ gap: 12 }}>
+              <span
+                style={{
+                  fontFamily: 'var(--font-body)',
+                  fontSize: 14,
+                  fontWeight: 300,
+                  color: 'var(--ryokan-muted)',
+                  letterSpacing: 1,
+                }}
+              >
+                電車で：箱根湯本駅より送迎車にて約30分
+              </span>
+            </div>
           </div>
         </div>
 
-        {/* Map placeholder */}
         <div
-          className="w-full overflow-hidden"
-          style={{
-            aspectRatio: '16/9',
-            backgroundColor: 'var(--ryokan-light-bg)',
-          }}
-        />
+          className="relative w-full overflow-hidden"
+          style={{ height: 200, borderRadius: 4, border: '1px solid #D4C5A022' }}
+        >
+          <Image
+            src="/images/map.png"
+            alt="月瀬庵へのアクセスマップ"
+            fill
+            className="object-cover"
+            sizes="560px"
+          />
+        </div>
       </div>
     </section>
   )

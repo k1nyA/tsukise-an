@@ -3,11 +3,7 @@ import Link from 'next/link'
 
 export function CTASection() {
   return (
-    <section
-      className="relative w-full overflow-hidden"
-      style={{ height: 480 }}
-    >
-      {/* Background image */}
+    <section className="relative w-full overflow-hidden" style={{ height: 480 }}>
       <Image
         src="/images/cta.png"
         alt="月瀬庵の夜景"
@@ -16,89 +12,82 @@ export function CTASection() {
         quality={85}
         sizes="100vw"
       />
-
-      {/* Overlay */}
       <div
-        data-testid="cta-overlay"
         className="absolute inset-0"
         style={{ backgroundColor: '#1A150E88' }}
+        aria-hidden="true"
       />
 
-      {/* Content */}
-      <div className="relative z-10 flex h-full flex-col items-center justify-center gap-10">
-        {/* Intro section */}
-        <div className="flex flex-col items-center gap-4">
-          {/* Decorative vertical line */}
+      <div
+        className="relative z-10 flex h-full w-full flex-col items-center justify-center"
+        style={{ gap: 40 }}
+      >
+        <div className="flex flex-col items-center" style={{ gap: 16 }}>
           <span
-            className="block"
-            style={{
-              width: 1,
-              height: 30,
-              backgroundColor: '#D4C5A088',
-            }}
+            style={{ width: 1, height: 30, backgroundColor: '#D4C5A088' }}
+            aria-hidden="true"
           />
-
-          {/* Title */}
           <h2
-            className="text-center font-semibold"
             style={{
               fontFamily: 'var(--font-heading)',
               fontSize: 28,
-              color: '#FAFAF3',
+              fontWeight: 600,
+              color: '#faf8f3',
               letterSpacing: 3,
               lineHeight: 1.8,
+              textAlign: 'center',
+              margin: 0,
+              maxWidth: 700,
             }}
           >
-            <span className="block">あなたの特別な一日を、</span>
-            <span className="block">月瀬庵でお過ごしください。</span>
+            あなたの特別な一日を、
+            <br />
+            月瀬庵でお過ごしください。
           </h2>
-
-          {/* Subtitle */}
           <p
             style={{
               fontFamily: 'var(--font-body)',
               fontSize: 14,
               fontWeight: 300,
-              color: 'var(--ryokan-text-subtle, #C4B89A)',
+              color: 'var(--ryokan-text-subtle)',
               letterSpacing: 2,
+              margin: 0,
             }}
           >
             ご予約・お問い合わせはお電話またはオンラインにて承ります
           </p>
         </div>
 
-        {/* Buttons */}
-        <div className="flex items-center gap-6">
-          {/* Online reservation button */}
+        <div className="flex items-center" style={{ gap: 24 }}>
           <Link
             href="/reservation"
             className="flex items-center justify-center"
             style={{
-              backgroundColor: 'var(--ryokan-gold, #8B6914)',
+              backgroundColor: 'var(--ryokan-gold)',
               padding: '16px 48px',
               fontFamily: 'var(--font-body)',
               fontSize: 14,
               fontWeight: 500,
-              color: '#FAFAF3',
+              color: '#faf8f3',
               letterSpacing: 3,
+              textDecoration: 'none',
             }}
           >
             オンライン予約
           </Link>
-
-          {/* Phone button */}
           <a
             href="tel:0460-83-XXXX"
             className="flex items-center justify-center"
             style={{
               padding: '16px 48px',
-              border: '1px solid #D4C5A088',
+              border: '1px solid #D4C5A0',
               backgroundColor: 'transparent',
-              fontFamily: 'var(--font-accent)',
-              fontSize: 16,
+              fontFamily: 'var(--font-body)',
+              fontSize: 14,
               fontWeight: 500,
-              color: '#FAFAF3',
-              letterSpacing: 2,
+              color: '#D4C5A0',
+              letterSpacing: 3,
+              textDecoration: 'none',
             }}
           >
             0460-83-XXXX

@@ -10,7 +10,8 @@
   --ryokan-light-bg-alt: #F5F0E8;
   --ryokan-dark: #2C2418;
   --ryokan-darkest: #1A150E;
-  --ryokan-hero-overlay: #1A150E55;
+  --ryokan-hero-overlay: #1A150E77;
+  --ryokan-info-bg: #F0EBE0;
 
   /* Colors - Text */
   --ryokan-muted: #4A4035;
@@ -24,11 +25,6 @@
   --ryokan-light-gold: #D4C5A0;
   --ryokan-soft-line: #D4C5A055;
 
-  /* Typography - Font Families */
-  --font-heading: var(--font-serif-jp), 'Noto Serif JP', serif;
-  --font-body: var(--font-sans-jp), 'Noto Sans JP', sans-serif;
-  --font-accent: var(--font-display), 'Cormorant Garamond', serif;
-
   /* Spacing & Layout */
   --section-padding-y: 80px;
   --section-padding-x: 120px;
@@ -37,4 +33,12 @@
   --header-height: 80px;
   --hero-height: 480px;
   --subpage-hero-height: 360px;
+}
+
+/* Font families must be on body — Next.js font loader sets
+   --font-serif-jp, --font-sans-jp, --font-display on <body> */
+body {
+  --font-heading: var(--font-serif-jp), 'Noto Serif JP', serif;
+  --font-body: var(--font-sans-jp), 'Noto Sans JP', sans-serif;
+  --font-accent: var(--font-display), 'Cormorant Garamond', serif;
 }
