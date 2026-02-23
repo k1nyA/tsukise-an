@@ -1,0 +1,168 @@
+/* ===========================================
+   Ryokan Responsive CSS Variables
+   Breakpoints: Mobile(<768) / Tablet(768-1023) / PC(>=1024)
+   =========================================== */
+
+/* --- PC (default, >= 1024px) --- */
+:root {
+  /* Layout */
+  --r-section-px: 80px;
+  --r-section-py: 100px;
+  --r-header-height: 80px;
+  --r-header-px: 60px;
+
+  /* Hero */
+  --r-hero-height: 780px;
+  --r-hero-title-size: 56px;
+  --r-hero-title-spacing: 4px;
+  --r-hero-sub-size: 16px;
+  --r-hero-content-x: 100px;
+  --r-hero-content-y: 220px;
+  --r-hero-content-gap: 32px;
+
+  /* Section Titles */
+  --r-title-lg: 38px;
+  --r-title-md: 32px;
+  --r-title-sm: 28px;
+  --r-title-xs: 24px;
+  --r-title-spacing-lg: 4px;
+  --r-title-spacing-md: 4px;
+  --r-title-spacing-sm: 3px;
+
+  /* Body Text */
+  --r-body-lg: 16px;
+  --r-body-md: 15px;
+  --r-body-sm: 14px;
+  --r-body-xs: 13px;
+
+  /* Content */
+  --r-content-gap: 32px;
+  --r-content-padding: 80px;
+
+  /* CTA */
+  --r-cta-height: 480px;
+  --r-cta-gap: 40px;
+  --r-cta-btn-gap: 24px;
+
+  /* Footer */
+  --r-footer-py-top: 60px;
+  --r-footer-px: 80px;
+  --r-footer-py-bottom: 32px;
+  --r-footer-gap: 48px;
+
+  /* ImgText / TextImg */
+  --r-imgtext-img-width: 58.6%;
+  --r-imgtext-padding: 80px;
+  --r-imgtext-gap: 32px;
+
+  /* Cuisine / Stay */
+  --r-center-px: 80px;
+  --r-center-py: 100px;
+  --r-center-gap: 60px;
+  --r-grid-gap: 24px;
+  --r-timeline-gap: 32px;
+
+  /* Info */
+  --r-info-padding: 80px;
+  --r-info-gap: 60px;
+}
+
+/* --- Tablet (768px - 1023px) --- */
+@media (max-width: 1023px) {
+  :root {
+    --r-section-px: 40px;
+    --r-section-py: 80px;
+    --r-header-px: 40px;
+
+    --r-hero-height: 660px;
+    --r-hero-title-size: 44px;
+    --r-hero-title-spacing: 4px;
+    --r-hero-sub-size: 14px;
+    --r-hero-content-x: 60px;
+    --r-hero-content-y: 160px;
+    --r-hero-content-gap: 32px;
+
+    --r-title-lg: 28px;
+    --r-title-md: 32px;
+    --r-title-sm: 24px;
+    --r-title-spacing-lg: 3px;
+
+    --r-body-md: 13px;
+
+    --r-content-gap: 24px;
+    --r-content-padding: 40px;
+
+    --r-cta-height: 400px;
+
+    --r-footer-py-top: 48px;
+    --r-footer-px: 48px;
+    --r-footer-py-bottom: 24px;
+
+    --r-imgtext-img-width: 380px;
+    --r-imgtext-padding: 40px 36px;
+    --r-imgtext-gap: 24px;
+
+    --r-center-px: 40px;
+    --r-center-py: 80px;
+    --r-center-gap: 48px;
+    --r-grid-gap: 16px;
+    --r-timeline-gap: 16px;
+
+    --r-info-padding: 48px;
+    --r-info-gap: 40px;
+  }
+}
+
+/* --- Mobile (< 768px) --- */
+@media (max-width: 767px) {
+  :root {
+    --r-section-px: 24px;
+    --r-section-py: 60px;
+    --r-header-height: 60px;
+    --r-header-px: 20px;
+
+    --r-hero-height: 560px;
+    --r-hero-title-size: 32px;
+    --r-hero-title-spacing: 2px;
+    --r-hero-sub-size: 13px;
+    --r-hero-content-x: 24px;
+    --r-hero-content-y: 140px;
+    --r-hero-content-gap: 24px;
+
+    --r-title-lg: 24px;
+    --r-title-md: 24px;
+    --r-title-sm: 22px;
+    --r-title-xs: 22px;
+    --r-title-spacing-lg: 2px;
+    --r-title-spacing-md: 2px;
+    --r-title-spacing-sm: 2px;
+
+    --r-body-md: 14px;
+    --r-body-xs: 12px;
+
+    --r-content-gap: 32px;
+    --r-content-padding: 32px;
+
+    --r-cta-height: 360px;
+    --r-cta-gap: 32px;
+    --r-cta-btn-gap: 12px;
+
+    --r-footer-py-top: 40px;
+    --r-footer-px: 24px;
+    --r-footer-py-bottom: 24px;
+    --r-footer-gap: 32px;
+
+    --r-imgtext-img-width: 100%;
+    --r-imgtext-padding: 32px;
+    --r-imgtext-gap: 32px;
+
+    --r-center-px: 24px;
+    --r-center-py: 60px;
+    --r-center-gap: 40px;
+    --r-grid-gap: 24px;
+    --r-timeline-gap: 32px;
+
+    --r-info-padding: 32px;
+    --r-info-gap: 32px;
+  }
+}
