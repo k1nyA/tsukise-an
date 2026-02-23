@@ -16,9 +16,11 @@
   --r-hero-title-size: 56px;
   --r-hero-title-spacing: 4px;
   --r-hero-sub-size: 16px;
+  --r-hero-sub-spacing: 3px;
   --r-hero-content-x: 100px;
   --r-hero-content-y: 220px;
   --r-hero-content-gap: 32px;
+  --r-hero-headline-w: 600px;
 
   /* Section Titles */
   --r-title-lg: 38px;
@@ -39,21 +41,37 @@
   --r-content-gap: 32px;
   --r-content-padding: 80px;
 
+  /* Concept */
+  --r-concept-py: 120px;
+  --r-concept-px: 160px;
+  --r-concept-gap: 56px;
+  --r-concept-title: 36px;
+  --r-concept-title-ls: 6px;
+
   /* CTA */
   --r-cta-height: 480px;
   --r-cta-gap: 40px;
   --r-cta-btn-gap: 24px;
+  --r-cta-content-px: 0px;
+  --r-cta-title: 28px;
+  --r-cta-title-ls: 3px;
+  --r-cta-sub: 14px;
+  --r-cta-sub-ls: 2px;
+  --r-cta-btn-py: 16px;
+  --r-cta-btn-px: 48px;
 
   /* Footer */
   --r-footer-py-top: 60px;
   --r-footer-px: 80px;
   --r-footer-py-bottom: 32px;
   --r-footer-gap: 48px;
+  --r-footer-nav-gap: 40px;
 
   /* ImgText / TextImg */
   --r-imgtext-img-width: 58.6%;
   --r-imgtext-padding: 80px;
   --r-imgtext-gap: 32px;
+  --r-imgtext-img-h: auto;
 
   /* Cuisine / Stay */
   --r-center-px: 80px;
@@ -61,10 +79,22 @@
   --r-center-gap: 60px;
   --r-grid-gap: 24px;
   --r-timeline-gap: 32px;
+  --r-dish-h: 300px;
+  --r-timeline-img-h: 200px;
+  --r-divider-w: 120px;
+  --r-stay-gap: 60px;
 
   /* Info */
   --r-info-padding: 80px;
   --r-info-gap: 60px;
+  --r-map-h: 200px;
+
+  /* Header nav */
+  --r-nav-gap: 32px;
+  --r-nav-size: 13px;
+  --r-nav-cta-py: 14px;
+  --r-nav-cta-px: 44px;
+  --r-nav-cta-size: 13px;
 }
 
 /* --- Tablet (768px - 1023px) --- */
@@ -78,9 +108,11 @@
     --r-hero-title-size: 44px;
     --r-hero-title-spacing: 4px;
     --r-hero-sub-size: 14px;
+    --r-hero-sub-spacing: 3px;
     --r-hero-content-x: 60px;
     --r-hero-content-y: 160px;
     --r-hero-content-gap: 32px;
+    --r-hero-headline-w: 420px;
 
     --r-title-lg: 28px;
     --r-title-md: 32px;
@@ -92,13 +124,22 @@
     --r-content-gap: 24px;
     --r-content-padding: 40px;
 
+    --r-concept-py: 80px;
+    --r-concept-px: 100px;
+    --r-concept-gap: 48px;
+    --r-concept-title: 32px;
+
     --r-cta-height: 400px;
+    --r-cta-content-px: 60px;
+    --r-cta-title: 24px;
+    --r-cta-sub: 13px;
 
     --r-footer-py-top: 48px;
     --r-footer-px: 48px;
     --r-footer-py-bottom: 24px;
+    --r-footer-nav-gap: 20px;
 
-    --r-imgtext-img-width: 380px;
+    --r-imgtext-img-width: 450px;
     --r-imgtext-padding: 40px 36px;
     --r-imgtext-gap: 24px;
 
@@ -107,9 +148,17 @@
     --r-center-gap: 48px;
     --r-grid-gap: 16px;
     --r-timeline-gap: 16px;
+    --r-dish-h: 220px;
+    --r-stay-gap: 48px;
 
     --r-info-padding: 48px;
     --r-info-gap: 40px;
+
+    --r-nav-gap: 24px;
+    --r-nav-size: 12px;
+    --r-nav-cta-py: 12px;
+    --r-nav-cta-px: 32px;
+    --r-nav-cta-size: 12px;
   }
 }
 
@@ -125,9 +174,11 @@
     --r-hero-title-size: 32px;
     --r-hero-title-spacing: 2px;
     --r-hero-sub-size: 13px;
+    --r-hero-sub-spacing: 2px;
     --r-hero-content-x: 24px;
     --r-hero-content-y: 140px;
     --r-hero-content-gap: 24px;
+    --r-hero-headline-w: 300px;
 
     --r-title-lg: 24px;
     --r-title-md: 24px;
@@ -143,26 +194,102 @@
     --r-content-gap: 32px;
     --r-content-padding: 32px;
 
+    --r-concept-py: 60px;
+    --r-concept-px: 24px;
+    --r-concept-gap: 40px;
+    --r-concept-title: 24px;
+    --r-concept-title-ls: 3px;
+
     --r-cta-height: 360px;
     --r-cta-gap: 32px;
     --r-cta-btn-gap: 12px;
+    --r-cta-content-px: 24px;
+    --r-cta-title: 20px;
+    --r-cta-title-ls: 2px;
+    --r-cta-sub: 12px;
+    --r-cta-sub-ls: 1px;
+    --r-cta-btn-py: 14px;
+    --r-cta-btn-px: 40px;
 
     --r-footer-py-top: 40px;
     --r-footer-px: 24px;
     --r-footer-py-bottom: 24px;
     --r-footer-gap: 32px;
+    --r-footer-nav-gap: 12px;
 
     --r-imgtext-img-width: 100%;
     --r-imgtext-padding: 32px;
     --r-imgtext-gap: 32px;
+    --r-imgtext-img-h: 280px;
 
     --r-center-px: 24px;
     --r-center-py: 60px;
     --r-center-gap: 40px;
     --r-grid-gap: 24px;
     --r-timeline-gap: 32px;
+    --r-dish-h: 200px;
+    --r-timeline-img-h: 160px;
+    --r-divider-w: 60px;
+    --r-stay-gap: 32px;
 
     --r-info-padding: 32px;
     --r-info-gap: 32px;
+    --r-map-h: 180px;
+  }
+}
+
+/* ===========================================
+   Responsive Layout Utility Classes
+   =========================================== */
+
+/* ImgText: row → column on mobile */
+.r-imgtext-layout {
+  display: flex;
+  flex-direction: row;
+}
+
+/* TextImg: row → column-reverse on mobile (image on top) */
+.r-textimg-layout {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Info: row → column at tablet breakpoint */
+.r-info-layout {
+  display: flex;
+  flex-direction: row;
+}
+
+/* CTA buttons: row → column on mobile */
+.r-cta-btns {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Grid row: row → column on mobile */
+.r-grid-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 1023px) {
+  .r-info-layout {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .r-imgtext-layout {
+    flex-direction: column;
+  }
+  .r-textimg-layout {
+    flex-direction: column-reverse;
+  }
+  .r-cta-btns {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .r-grid-row {
+    flex-direction: column;
   }
 }

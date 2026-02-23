@@ -4,17 +4,22 @@ import { ArrowRight } from 'lucide-react'
 
 export function RoomSection() {
   return (
-    <section className="flex w-full overflow-hidden" style={{ flexDirection: 'row' }}>
+    <section className="r-imgtext-layout w-full overflow-hidden">
       <div
         className="relative overflow-hidden"
-        style={{ width: '58.6%', flexShrink: 0, minHeight: 400 }}
+        style={{
+          width: 'var(--r-imgtext-img-width)',
+          height: 'var(--r-imgtext-img-h)',
+          flexShrink: 0,
+          minHeight: 280,
+        }}
       >
         <Image
           src="/images/room.png"
           alt="月瀬庵の客室"
           fill
           className="object-cover"
-          sizes="58.6vw"
+          sizes="(max-width: 767px) 100vw, (max-width: 1023px) 450px, 58.6vw"
         />
       </div>
 
@@ -23,8 +28,8 @@ export function RoomSection() {
         style={{
           flex: 1,
           backgroundColor: 'var(--ryokan-dark)',
-          padding: 80,
-          gap: 32,
+          padding: 'var(--r-imgtext-padding)',
+          gap: 'var(--r-imgtext-gap)',
         }}
       >
         <div className="flex items-center" style={{ gap: 16 }}>
@@ -48,10 +53,10 @@ export function RoomSection() {
         <h2
           style={{
             fontFamily: 'var(--font-heading)',
-            fontSize: 38,
+            fontSize: 'var(--r-title-lg)',
             fontWeight: 600,
             color: 'var(--ryokan-text-on-dark)',
-            letterSpacing: 4,
+            letterSpacing: 'var(--r-title-spacing-lg)',
             lineHeight: 1.5,
             margin: 0,
           }}
@@ -64,7 +69,7 @@ export function RoomSection() {
         <p
           style={{
             fontFamily: 'var(--font-body)',
-            fontSize: 15,
+            fontSize: 'var(--r-body-md)',
             fontWeight: 300,
             color: 'var(--ryokan-light-gold)',
             letterSpacing: 1,
@@ -98,7 +103,7 @@ export function RoomSection() {
           <span
             style={{
               fontFamily: 'var(--font-body)',
-              fontSize: 14,
+              fontSize: 'var(--r-body-sm)',
               fontWeight: 'normal',
               color: 'var(--ryokan-light-gold)',
               letterSpacing: 3,

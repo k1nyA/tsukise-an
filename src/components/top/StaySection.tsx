@@ -33,8 +33,11 @@ function TimelineCard({ hour, title, desc, image }: { hour: string; title: strin
       >
         {hour}
       </span>
-      <div className="relative w-full overflow-hidden" style={{ height: 200 }}>
-        <Image src={image} alt={title} fill className="object-cover" sizes="25vw" />
+      <div
+        className="relative w-full overflow-hidden"
+        style={{ height: 'var(--r-timeline-img-h)' }}
+      >
+        <Image src={image} alt={title} fill className="object-cover" sizes="(max-width: 767px) 100vw, 25vw" />
       </div>
       <h3
         style={{
@@ -51,7 +54,7 @@ function TimelineCard({ hour, title, desc, image }: { hour: string; title: strin
       <p
         style={{
           fontFamily: 'var(--font-body)',
-          fontSize: 14,
+          fontSize: 'var(--r-body-xs)',
           fontWeight: 300,
           color: 'var(--ryokan-muted)',
           lineHeight: 1.8,
@@ -71,8 +74,8 @@ export function StaySection() {
     <section
       className="flex w-full flex-col items-center"
       style={{
-        padding: '100px 80px',
-        gap: 60,
+        padding: 'var(--r-center-py) var(--r-center-px)',
+        gap: 'var(--r-stay-gap)',
         backgroundColor: 'var(--ryokan-bg)',
         backgroundImage: 'url(/images/stay-bg.png)',
         backgroundSize: 'cover',
@@ -104,10 +107,10 @@ export function StaySection() {
       <h2
         style={{
           fontFamily: 'var(--font-heading)',
-          fontSize: 32,
+          fontSize: 'var(--r-title-md)',
           fontWeight: 600,
           color: 'var(--ryokan-dark)',
-          letterSpacing: 4,
+          letterSpacing: 'var(--r-title-spacing-md)',
           textAlign: 'center',
           margin: 0,
         }}
@@ -116,13 +119,13 @@ export function StaySection() {
       </h2>
 
       <div className="flex w-full flex-col" style={{ gap: 24 }}>
-        <div className="flex w-full" style={{ gap: 32 }}>
+        <div className="r-grid-row w-full" style={{ gap: 'var(--r-timeline-gap)' }}>
           {timelineAfternoon.map((item) => (
             <TimelineCard key={item.hour} {...item} />
           ))}
         </div>
 
-        <div className="flex w-full" style={{ gap: 32 }}>
+        <div className="r-grid-row w-full" style={{ gap: 'var(--r-timeline-gap)' }}>
           {timelineEvening.map((item) => (
             <TimelineCard key={item.hour} {...item} />
           ))}
@@ -130,7 +133,11 @@ export function StaySection() {
 
         <div className="flex w-full items-center justify-center" style={{ gap: 24 }}>
           <span
-            style={{ width: 120, height: 1, backgroundColor: 'var(--ryokan-light-gold)' }}
+            style={{
+              width: 'var(--r-divider-w)',
+              height: 1,
+              backgroundColor: 'var(--ryokan-light-gold)',
+            }}
             aria-hidden="true"
           />
           <span
@@ -145,12 +152,16 @@ export function StaySection() {
             翌 朝
           </span>
           <span
-            style={{ width: 120, height: 1, backgroundColor: 'var(--ryokan-light-gold)' }}
+            style={{
+              width: 'var(--r-divider-w)',
+              height: 1,
+              backgroundColor: 'var(--ryokan-light-gold)',
+            }}
             aria-hidden="true"
           />
         </div>
 
-        <div className="flex w-full" style={{ gap: 32 }}>
+        <div className="r-grid-row w-full" style={{ gap: 'var(--r-timeline-gap)' }}>
           {timelineMorning.map((item) => (
             <TimelineCard key={item.hour} {...item} />
           ))}

@@ -4,8 +4,8 @@ export function ConceptSection() {
       id="concept"
       className="flex w-full flex-col items-center"
       style={{
-        padding: '120px 160px',
-        gap: 56,
+        padding: 'var(--r-concept-py) var(--r-concept-px)',
+        gap: 'var(--r-concept-gap)',
         backgroundImage: 'url(/images/concept-bg.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
@@ -36,10 +36,10 @@ export function ConceptSection() {
       <h2
         style={{
           fontFamily: 'var(--font-heading)',
-          fontSize: 36,
+          fontSize: 'var(--r-concept-title)',
           fontWeight: 600,
           color: 'var(--ryokan-dark)',
-          letterSpacing: 6,
+          letterSpacing: 'var(--r-concept-title-ls)',
           textAlign: 'center',
           margin: 0,
         }}
@@ -50,7 +50,7 @@ export function ConceptSection() {
       <p
         style={{
           fontFamily: 'var(--font-body)',
-          fontSize: 16,
+          fontSize: 'var(--r-body-md)',
           fontWeight: 300,
           color: 'var(--ryokan-muted)',
           letterSpacing: 1.5,

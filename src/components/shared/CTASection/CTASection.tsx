@@ -3,7 +3,10 @@ import Link from 'next/link'
 
 export function CTASection() {
   return (
-    <section className="relative w-full overflow-hidden" style={{ height: 480 }}>
+    <section
+      className="relative w-full overflow-hidden"
+      style={{ height: 'var(--r-cta-height)' }}
+    >
       <Image
         src="/images/cta.png"
         alt="月瀬庵の夜景"
@@ -20,7 +23,10 @@ export function CTASection() {
 
       <div
         className="relative z-10 flex h-full w-full flex-col items-center justify-center"
-        style={{ gap: 40 }}
+        style={{
+          gap: 'var(--r-cta-gap)',
+          padding: '0 var(--r-cta-content-px)',
+        }}
       >
         <div className="flex flex-col items-center" style={{ gap: 16 }}>
           <span
@@ -30,14 +36,13 @@ export function CTASection() {
           <h2
             style={{
               fontFamily: 'var(--font-heading)',
-              fontSize: 28,
+              fontSize: 'var(--r-cta-title)',
               fontWeight: 600,
               color: '#faf8f3',
-              letterSpacing: 3,
+              letterSpacing: 'var(--r-cta-title-ls)',
               lineHeight: 1.8,
               textAlign: 'center',
               margin: 0,
-              maxWidth: 700,
             }}
           >
             あなたの特別な一日を、
@@ -47,10 +52,11 @@ export function CTASection() {
           <p
             style={{
               fontFamily: 'var(--font-body)',
-              fontSize: 14,
+              fontSize: 'var(--r-cta-sub)',
               fontWeight: 300,
               color: 'var(--ryokan-text-subtle)',
-              letterSpacing: 2,
+              letterSpacing: 'var(--r-cta-sub-ls)',
+              textAlign: 'center',
               margin: 0,
             }}
           >
@@ -58,15 +64,19 @@ export function CTASection() {
           </p>
         </div>
 
-        <div className="flex items-center" style={{ gap: 24 }}>
+        <div
+          className="r-cta-btns items-center"
+          style={{ gap: 'var(--r-cta-btn-gap)' }}
+        >
           <Link
             href="/reservation"
             className="flex items-center justify-center"
             style={{
               backgroundColor: 'var(--ryokan-gold)',
-              padding: '16px 48px',
+              padding: 'var(--r-cta-btn-py) var(--r-cta-btn-px)',
+              border: '1px solid var(--ryokan-gold)',
               fontFamily: 'var(--font-body)',
-              fontSize: 14,
+              fontSize: 'var(--r-body-sm)',
               fontWeight: 500,
               color: '#faf8f3',
               letterSpacing: 3,
@@ -79,11 +89,11 @@ export function CTASection() {
             href="tel:0460-83-XXXX"
             className="flex items-center justify-center"
             style={{
-              padding: '16px 48px',
-              border: '1px solid #D4C5A0',
+              padding: 'var(--r-cta-btn-py) var(--r-cta-btn-px)',
+              border: '1px solid #D4C5A088',
               backgroundColor: 'transparent',
               fontFamily: 'var(--font-body)',
-              fontSize: 14,
+              fontSize: 'var(--r-body-sm)',
               fontWeight: 500,
               color: '#D4C5A0',
               letterSpacing: 3,

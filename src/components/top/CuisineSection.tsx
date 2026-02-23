@@ -11,8 +11,8 @@ export function CuisineSection() {
     <section
       className="flex w-full flex-col items-center"
       style={{
-        padding: '100px 80px',
-        gap: 60,
+        padding: 'var(--r-center-py) var(--r-center-px)',
+        gap: 'var(--r-center-gap)',
         backgroundColor: 'var(--ryokan-dark)',
         backgroundImage: 'url(/images/cuisine-bg.png)',
         backgroundSize: 'cover',
@@ -44,10 +44,10 @@ export function CuisineSection() {
       <h2
         style={{
           fontFamily: 'var(--font-heading)',
-          fontSize: 32,
+          fontSize: 'var(--r-title-md)',
           fontWeight: 600,
           color: 'var(--ryokan-text-on-dark)',
-          letterSpacing: 4,
+          letterSpacing: 'var(--r-title-spacing-md)',
           textAlign: 'center',
           margin: 0,
         }}
@@ -58,13 +58,13 @@ export function CuisineSection() {
       <p
         style={{
           fontFamily: 'var(--font-body)',
-          fontSize: 15,
+          fontSize: 'var(--r-body-md)',
           fontWeight: 300,
           color: 'var(--ryokan-text-subtle)',
           letterSpacing: 1,
           lineHeight: 2,
           textAlign: 'center',
-          maxWidth: 640,
+          maxWidth: 600,
           margin: 0,
         }}
       >
@@ -75,44 +75,29 @@ export function CuisineSection() {
         ミシュラン二つ星の評価を賜りました。
       </p>
 
-      <div className="flex items-center" style={{ gap: 12 }}>
-        <span
-          style={{
-            fontFamily: 'var(--font-accent)',
-            fontSize: 13,
-            fontWeight: 500,
-            color: 'var(--ryokan-gold)',
-            letterSpacing: 3,
-          }}
-        >
-          VIEW MORE
-        </span>
-        <span
-          style={{ width: 40, height: 1, backgroundColor: 'var(--ryokan-gold)' }}
-          aria-hidden="true"
-        />
-      </div>
-
-      <div className="flex w-full" style={{ gap: 24 }}>
+      <div className="r-grid-row w-full" style={{ gap: 'var(--r-grid-gap)' }}>
         {dishes.map((dish) => (
           <div
             key={dish.title}
             className="flex flex-1 flex-col items-center"
             style={{ gap: 16, paddingBottom: 24 }}
           >
-            <div className="relative w-full overflow-hidden" style={{ height: 300 }}>
+            <div
+              className="relative w-full overflow-hidden"
+              style={{ height: 'var(--r-dish-h)' }}
+            >
               <Image
                 src={dish.image}
                 alt={dish.title}
                 fill
                 className="object-cover"
-                sizes="(max-width: 768px) 100vw, 33vw"
+                sizes="(max-width: 767px) 100vw, 33vw"
               />
             </div>
             <h3
               style={{
                 fontFamily: 'var(--font-heading)',
-                fontSize: 18,
+                fontSize: 16,
                 fontWeight: 600,
                 color: 'var(--ryokan-text-on-dark)',
                 letterSpacing: 2,
@@ -124,7 +109,7 @@ export function CuisineSection() {
             <p
               style={{
                 fontFamily: 'var(--font-body)',
-                fontSize: 14,
+                fontSize: 12,
                 fontWeight: 300,
                 color: 'var(--ryokan-subtle)',
                 margin: 0,

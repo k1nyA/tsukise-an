@@ -10,11 +10,11 @@ type InfoSectionProps = {
 export function InfoSection({ newsItems }: InfoSectionProps) {
   return (
     <section
-      className="flex w-full"
+      className="r-info-layout w-full"
       style={{
         backgroundColor: 'var(--ryokan-info-bg)',
-        padding: 80,
-        gap: 60,
+        padding: 'var(--r-info-padding)',
+        gap: 'var(--r-info-gap)',
       }}
     >
       {/* News Column */}
@@ -40,7 +40,7 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
         <h2
           style={{
             fontFamily: 'var(--font-heading)',
-            fontSize: 24,
+            fontSize: 'var(--r-title-xs)',
             fontWeight: 600,
             color: 'var(--ryokan-dark)',
             letterSpacing: 3,
@@ -66,7 +66,7 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
                 <span
                   style={{
                     fontFamily: 'var(--font-accent)',
-                    fontSize: 13,
+                    fontSize: 'var(--r-body-xs)',
                     fontWeight: 400,
                     color: 'var(--ryokan-subtle)',
                     letterSpacing: 1,
@@ -78,7 +78,7 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
                 <p
                   style={{
                     fontFamily: 'var(--font-body)',
-                    fontSize: 14,
+                    fontSize: 'var(--r-body-sm)',
                     fontWeight: 300,
                     color: 'var(--ryokan-dark)',
                     letterSpacing: 1,
@@ -93,7 +93,7 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
             <li
               style={{
                 fontFamily: 'var(--font-body)',
-                fontSize: 14,
+                fontSize: 'var(--r-body-sm)',
                 fontWeight: 300,
                 color: 'var(--ryokan-subtle)',
                 letterSpacing: 1,
@@ -117,7 +117,7 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
           <span
             style={{
               fontFamily: 'var(--font-body)',
-              fontSize: 14,
+              fontSize: 'var(--r-body-xs)',
               fontWeight: 'normal',
               color: 'var(--ryokan-gold)',
               letterSpacing: 2,
@@ -130,7 +130,7 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
       </div>
 
       {/* Access Column */}
-      <div className="flex flex-col" style={{ width: 560, gap: 24 }}>
+      <div className="flex flex-col" style={{ gap: 24, maxWidth: 560 }}>
         <div className="flex items-center" style={{ gap: 16 }}>
           <span
             style={{ width: 30, height: 1, backgroundColor: 'var(--ryokan-gold)' }}
@@ -152,7 +152,7 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
         <h2
           style={{
             fontFamily: 'var(--font-heading)',
-            fontSize: 24,
+            fontSize: 'var(--r-title-xs)',
             fontWeight: 600,
             color: 'var(--ryokan-dark)',
             letterSpacing: 3,
@@ -162,11 +162,11 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
           アクセス
         </h2>
 
-        <div className="flex w-full" style={{ gap: 32 }}>
+        <div className="flex flex-col" style={{ gap: 24 }}>
           <p
             style={{
               fontFamily: 'var(--font-body)',
-              fontSize: 14,
+              fontSize: 'var(--r-body-sm)',
               fontWeight: 300,
               color: 'var(--ryokan-secondary)',
               letterSpacing: 1,
@@ -189,7 +189,7 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
               <span
                 style={{
                   fontFamily: 'var(--font-body)',
-                  fontSize: 14,
+                  fontSize: 'var(--r-body-xs)',
                   fontWeight: 300,
                   color: 'var(--ryokan-muted)',
                   letterSpacing: 1,
@@ -202,7 +202,7 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
               <span
                 style={{
                   fontFamily: 'var(--font-body)',
-                  fontSize: 14,
+                  fontSize: 'var(--r-body-xs)',
                   fontWeight: 300,
                   color: 'var(--ryokan-muted)',
                   letterSpacing: 1,
@@ -216,7 +216,11 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
 
         <div
           className="relative w-full overflow-hidden"
-          style={{ height: 200, borderRadius: 4, border: '1px solid #D4C5A022' }}
+          style={{
+            height: 'var(--r-map-h)',
+            borderRadius: 4,
+            border: '1px solid #D4C5A022',
+          }}
         >
           <Image
             src="/images/map.png"

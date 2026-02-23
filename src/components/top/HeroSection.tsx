@@ -4,7 +4,7 @@ import { ChevronRight, Mouse } from 'lucide-react'
 
 export function HeroSection() {
   return (
-    <section className="relative w-full overflow-hidden" style={{ height: 780 }}>
+    <section className="relative w-full overflow-hidden" style={{ height: 'var(--r-hero-height)' }}>
       <Image
         src="/images/hero.png"
         alt="芦ノ湖畔の月瀬庵"
@@ -22,7 +22,11 @@ export function HeroSection() {
 
       <div
         className="relative z-10 flex flex-col"
-        style={{ gap: 32, top: 220, left: 100 }}
+        style={{
+          gap: 'var(--r-hero-content-gap)',
+          top: 'var(--r-hero-content-y)',
+          left: 'var(--r-hero-content-x)',
+        }}
       >
         <div className="flex items-center" style={{ gap: 16 }}>
           <span
@@ -45,13 +49,13 @@ export function HeroSection() {
         <h1
           style={{
             fontFamily: 'var(--font-heading)',
-            fontSize: 56,
+            fontSize: 'var(--r-hero-title-size)',
             fontWeight: 'bold',
             color: '#faf8f3',
-            letterSpacing: 4,
+            letterSpacing: 'var(--r-hero-title-spacing)',
             lineHeight: 1.5,
             margin: 0,
-            width: 600,
+            width: 'var(--r-hero-headline-w)',
           }}
         >
           湖と月、
@@ -62,10 +66,10 @@ export function HeroSection() {
         <p
           style={{
             fontFamily: 'var(--font-body)',
-            fontSize: 16,
+            fontSize: 'var(--r-hero-sub-size)',
             fontWeight: 300,
             color: 'var(--ryokan-light-gold)',
-            letterSpacing: 3,
+            letterSpacing: 'var(--r-hero-sub-spacing)',
             margin: 0,
           }}
         >
@@ -78,7 +82,7 @@ export function HeroSection() {
           style={{
             gap: 12,
             padding: '14px 40px',
-            border: '1px solid #D4C5A0',
+            border: '1px solid #D4C5A0CC',
             backgroundColor: 'transparent',
             textDecoration: 'none',
             width: 'fit-content',
@@ -87,7 +91,7 @@ export function HeroSection() {
           <span
             style={{
               fontFamily: 'var(--font-body)',
-              fontSize: 14,
+              fontSize: 13,
               fontWeight: 'normal',
               color: '#D4C5A0',
               letterSpacing: 3,
@@ -95,13 +99,18 @@ export function HeroSection() {
           >
             宿を知る
           </span>
-          <ChevronRight size={14} color="var(--ryokan-light-gold)" />
+          <ChevronRight size={14} color="#D4C5A0" />
         </Link>
       </div>
 
       <div
-        className="absolute z-10 flex w-full flex-col items-center"
-        style={{ gap: 6, left: 0, top: 725 }}
+        className="absolute z-10 flex flex-col items-center"
+        style={{
+          gap: 6,
+          left: '50%',
+          transform: 'translateX(-50%)',
+          bottom: 24,
+        }}
       >
         <Mouse size={20} color="#D4C5A088" strokeWidth={1.5} />
         <span
