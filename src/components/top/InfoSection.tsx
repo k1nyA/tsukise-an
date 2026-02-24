@@ -130,7 +130,7 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
       </div>
 
       {/* Access Column */}
-      <div className="flex flex-col" style={{ gap: 24, maxWidth: 560 }}>
+      <div className="flex flex-1 flex-col" style={{ gap: 24 }}>
         <div className="flex items-center" style={{ gap: 16 }}>
           <span
             style={{ width: 30, height: 1, backgroundColor: 'var(--ryokan-gold)' }}
