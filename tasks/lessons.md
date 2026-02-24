@@ -929,3 +929,29 @@ batch_get({nodeIds: ["sectionId"], readDepth: 5})
 | デザインレビュー | clip: true の親内テキストを重点確認 |
 
 **教訓**: 「知っているルール」と「毎回適用するルール」は別物。再発を防ぐにはチェックリストとして手順に組み込み、義務化する必要がある。
+
+### 40. fill_container を持つ子の親には必ず layout を設定する（Lesson #9/#22 再発）
+
+**問題**: 客室ページ Facilities Section の facLabel フレーム（3ビューポート分）に `layout` が未設定。子テキストノードに `width: "fill_container"` + `textGrowth: "fixed-width"` を設定済みだったが、親の layout が "none" のため fill_container が機能せず、テキストが **1px 幅 × 150px 高**に崩壊。"FACILITIES" が縦書きのように見え、セクション全体が縦に不自然に長くなった。
+
+**根本原因**: Lesson #9（fill_container の子は親に layout が必要）と Lesson #22（横並び子要素の親に layout:"horizontal" 必須）の再発。小さなラベルフレーム（facLabel = facLine + facLabelText の2要素横並び）でも例外ではない。
+
+**修正**:
+```javascript
+// 全3ビューポートの facLabel に layout + width を追加
+U("oajFo", {"layout": "horizontal", "width": "fill_container"})  // PC
+U("E0Ajj", {"layout": "horizontal", "width": "fill_container"})  // Tablet
+U("CgCwZ", {"layout": "horizontal", "width": "fill_container"})  // Mobile
+```
+
+**ルール — セクション作成完了時のレイアウトチェック強化**:
+
+Lesson #39 のチェックリストに追加:
+| タイミング | チェック内容 |
+|-----------|-------------|
+| フレーム作成時 | 子に fill_container がある → 親に layout を設定したか |
+| セクション作成完了 | snapshot_layout で width:1 のテキストノードがないか確認 |
+
+**診断方法**: `snapshot_layout` で `width: 1` かつ `height > 15` のテキストノードを探す。これは fill_container が機能していない典型的な症状。
+
+**一般化**: `fill_container` + `textGrowth: "fixed-width"` は必要条件だが十分条件ではない。**親の layout 設定**が揃って初めて機能する。テキスト崩壊のチェックは「テキストノード自身のプロパティ」だけでなく「親フレームの layout」も含めて3点セットで確認する。
