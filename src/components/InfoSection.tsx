@@ -74,7 +74,7 @@ export default function InfoSection() {
 
           <div className={styles.mapWrap}>
             <Image
-              src="/images/map-reference.png"
+              src="/images/top-info-map.png"
               alt="月瀬庵への地図"
               fill
               className={styles.mapImage}

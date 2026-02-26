@@ -1,9 +1,9 @@
 import Image from 'next/image'
 
 const dishes = [
-  { image: '/images/cuisine-hassun.png', title: '八寸', description: '旬の食材を彩り豊かに' },
-  { image: '/images/cuisine-yakimono.png', title: '焼物', description: '相模湾直送の炭火焼き' },
-  { image: '/images/cuisine-mizugashi.png', title: '水菓子', description: '季節を映す和の甘味' },
+  { image: '/images/top-cuisine-hassun.png', title: '八寸', description: '旬の食材を彩り豊かに' },
+  { image: '/images/top-cuisine-yakimono.png', title: '焼物', description: '相模湾直送の炭火焼き' },
+  { image: '/images/top-cuisine-mizugashi.png', title: '水菓子', description: '季節を映す和の甘味' },
 ]
 
 export function CuisineSection() {
@@ -14,7 +14,7 @@ export function CuisineSection() {
         padding: 'var(--r-center-py) var(--r-center-px)',
         gap: 'var(--r-center-gap)',
         backgroundColor: 'var(--ryokan-dark)',
-        backgroundImage: 'url(/images/cuisine-bg.png)',
+        backgroundImage: 'url(/images/top-cuisine-bg.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}

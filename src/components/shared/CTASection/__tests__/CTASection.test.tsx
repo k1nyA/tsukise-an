@@ -35,11 +35,11 @@ describe('CTASection', () => {
     ).toBeInTheDocument()
   })
 
-  it('renders a background image with src containing cta.png', () => {
+  it('renders a background image with src containing shared-cta-bg.png', () => {
     render(<CTASection />)
     const img = screen.getByAltText('月瀬庵の夜景')
     expect(img).toBeInTheDocument()
     expect(img.tagName).toBe('IMG')
-    expect(img).toHaveAttribute('src', expect.stringContaining('cta.png'))
+    expect(img).toHaveAttribute('src', expect.stringContaining('shared-cta-bg.png'))
   })
 })

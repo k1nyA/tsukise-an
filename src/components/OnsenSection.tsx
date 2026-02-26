@@ -43,7 +43,7 @@ export default function OnsenSection() {
 
         <div className={styles.imageWrap}>
           <Image
-            src="/images/onsen.png"
+            src="/images/top-onsen-main.png"
             alt="芦ノ湖を望む露天風呂"
             fill
             className={styles.image}

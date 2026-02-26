@@ -15,7 +15,7 @@ export function RoomSection() {
         }}
       >
         <Image
-          src="/images/room.png"
+          src="/images/top-room-main.png"
           alt="月瀬庵の客室"
           fill
           className="object-cover"

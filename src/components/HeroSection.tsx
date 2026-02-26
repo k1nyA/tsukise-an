@@ -11,7 +11,7 @@ export default function HeroSection() {
   return (
     <Section className={styles.hero} id="top">
       <Image
-        src="/images/hero.png"
+        src="/images/top-hero-main.png"
         alt="芦ノ湖畔の月瀬庵"
         fill
         className={styles.heroBg}

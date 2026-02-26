@@ -6,7 +6,7 @@ export function ConceptSection() {
       style={{
         padding: 'var(--r-concept-py) var(--r-concept-px)',
         gap: 'var(--r-concept-gap)',
-        backgroundImage: 'url(/images/concept-bg.png)',
+        backgroundImage: 'url(/images/top-concept-bg.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}

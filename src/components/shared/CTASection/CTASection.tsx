@@ -8,7 +8,7 @@ export function CTASection() {
       style={{ height: 'var(--r-cta-height)' }}
     >
       <Image
-        src="/images/cta.png"
+        src="/images/shared-cta-bg.png"
         alt="月瀬庵の夜景"
         fill
         className="object-cover"

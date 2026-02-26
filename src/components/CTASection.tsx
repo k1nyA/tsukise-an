@@ -11,7 +11,7 @@ export default function CTASection() {
   return (
     <Section className={styles.section}>
       <Image
-        src="/images/cta.png"
+        src="/images/shared-cta-bg.png"
         alt="月瀬庵の夜景"
         fill
         className={styles.bg}

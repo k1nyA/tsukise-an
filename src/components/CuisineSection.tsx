@@ -10,19 +10,19 @@ const dishes = [
   {
     title: "八寸",
     description: "旬の食材を彩り豊かに",
-    image: "/images/cuisine-hassun.png",
+    image: "/images/top-cuisine-hassun.png",
     alt: "八寸",
   },
   {
     title: "焼物",
     description: "相模湾直送の炭火焼き",
-    image: "/images/cuisine-yakimono.png",
+    image: "/images/top-cuisine-yakimono.png",
     alt: "焼物",
   },
   {
     title: "水菓子",
     description: "季節を映す和の甘味",
-    image: "/images/cuisine-mizugashi.png",
+    image: "/images/top-cuisine-mizugashi.png",
     alt: "水菓子",
   },
 ];

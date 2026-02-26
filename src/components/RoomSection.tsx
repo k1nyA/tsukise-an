@@ -13,7 +13,7 @@ export default function RoomSection() {
       <Row className={styles.row} alignItems="stretch">
         <div className={styles.imageWrap}>
           <Image
-            src="/images/room.png"
+            src="/images/top-room-main.png"
             alt="月瀬庵の離れ客室"
             fill
             className={styles.image}
