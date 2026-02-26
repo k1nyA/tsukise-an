@@ -95,10 +95,15 @@
   --r-footer-nav-gap: 40px;
 
   /* ImgText / TextImg */
-  --r-imgtext-img-width: 58.6%;
+  --r-imgtext-img-width: 800px;
   --r-imgtext-padding: 80px;
   --r-imgtext-gap: 32px;
   --r-imgtext-img-h: auto;
+  --r-imgtext-label-line-w: 30px;
+  --r-imgtext-label-gap: 16px;
+  --r-imgtext-label-ls: 5px;
+  --r-imgtext-link-gap: 12px;
+  --r-imgtext-link-arrow: 16px;
 
   /* Cuisine / Stay */
   --r-center-px: 80px;
@@ -179,6 +184,11 @@
     --r-imgtext-img-width: 450px;
     --r-imgtext-padding: 40px 36px;
     --r-imgtext-gap: 24px;
+    --r-imgtext-label-line-w: 24px;
+    --r-imgtext-label-gap: 12px;
+    --r-imgtext-label-ls: 4px;
+    --r-imgtext-link-gap: 10px;
+    --r-imgtext-link-arrow: 14px;
 
     --r-center-px: 40px;
     --r-center-py: 80px;
@@ -269,9 +279,14 @@
     --r-footer-nav-gap: 12px;
 
     --r-imgtext-img-width: 100%;
-    --r-imgtext-padding: 32px;
+    --r-imgtext-padding: 32px 32px 60px 32px;
     --r-imgtext-gap: 32px;
     --r-imgtext-img-h: 280px;
+    --r-imgtext-label-line-w: 30px;
+    --r-imgtext-label-gap: 16px;
+    --r-imgtext-label-ls: 5px;
+    --r-imgtext-link-gap: 12px;
+    --r-imgtext-link-arrow: 16px;
 
     --r-center-px: 24px;
     --r-center-py: 60px;
@@ -342,6 +357,30 @@
   }
   .r-grid-row {
     flex-direction: column;
+  }
+}
+
+/* ===========================================
+   Onsen Section Responsive Overrides
+   (Tablet desc color differs from PC/Mobile)
+   =========================================== */
+
+/* PC & Mobile: desc color = muted (#4A4035) */
+.r-onsen-desc {
+  color: var(--ryokan-muted);
+}
+
+/* Tablet: desc color = secondary (#6B5D4F) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .r-onsen-desc {
+    color: var(--ryokan-secondary);
+  }
+}
+
+/* Mobile: Onsen link font-size = 13px (vs Room's 14px) */
+@media (max-width: 767px) {
+  .r-onsen-link span {
+    font-size: 13px;
   }
 }
 

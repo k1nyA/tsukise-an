@@ -5,6 +5,7 @@ import { ArrowRight } from 'lucide-react'
 export function OnsenSection() {
   return (
     <section className="r-textimg-layout w-full overflow-hidden">
+      {/* Text Content (left on PC/Tablet, bottom on Mobile via column-reverse) */}
       <div
         className="flex flex-col justify-center"
         style={{
@@ -14,9 +15,17 @@ export function OnsenSection() {
           gap: 'var(--r-imgtext-gap)',
         }}
       >
-        <div className="flex items-center" style={{ gap: 16 }}>
+        {/* Section Label */}
+        <div
+          className="flex items-center"
+          style={{ gap: 'var(--r-imgtext-label-gap)' }}
+        >
           <span
-            style={{ width: 30, height: 1, backgroundColor: 'var(--ryokan-gold)' }}
+            style={{
+              width: 'var(--r-imgtext-label-line-w)',
+              height: 1,
+              backgroundColor: 'var(--ryokan-gold)',
+            }}
             aria-hidden="true"
           />
           <span
@@ -25,13 +34,14 @@ export function OnsenSection() {
               fontSize: 12,
               fontWeight: 500,
               color: 'var(--ryokan-gold)',
-              letterSpacing: 5,
+              letterSpacing: 'var(--r-imgtext-label-ls)',
             }}
           >
             ONSEN
           </span>
         </div>
 
+        {/* Title */}
         <h2
           style={{
             fontFamily: 'var(--font-heading)',
@@ -48,12 +58,13 @@ export function OnsenSection() {
           湯処
         </h2>
 
+        {/* Description */}
         <p
+          className="r-onsen-desc"
           style={{
             fontFamily: 'var(--font-body)',
             fontSize: 'var(--r-body-md)',
             fontWeight: 300,
-            color: 'var(--ryokan-muted)',
             letterSpacing: 1,
             lineHeight: 2,
             margin: 0,
@@ -75,11 +86,12 @@ export function OnsenSection() {
           身体の芯から温まります。
         </p>
 
+        {/* Link */}
         <Link
           href="/onsen"
-          className="inline-flex items-center"
+          className="r-onsen-link inline-flex items-center"
           style={{
-            gap: 12,
+            gap: 'var(--r-imgtext-link-gap)',
             textDecoration: 'none',
             width: 'fit-content',
           }}
@@ -87,7 +99,7 @@ export function OnsenSection() {
           <span
             style={{
               fontFamily: 'var(--font-body)',
-              fontSize: 'var(--r-body-sm)',
+              fontSize: 14,
               fontWeight: 'normal',
               color: 'var(--ryokan-gold)',
               letterSpacing: 3,
@@ -99,6 +111,7 @@ export function OnsenSection() {
         </Link>
       </div>
 
+      {/* Image (right on PC/Tablet, top on Mobile via column-reverse) */}
       <div
         className="relative overflow-hidden"
         style={{
@@ -113,7 +126,7 @@ export function OnsenSection() {
           alt="月瀬庵の温泉"
           fill
           className="object-cover"
-          sizes="(max-width: 767px) 100vw, (max-width: 1023px) 450px, 58.6vw"
+          sizes="(max-width: 767px) 100vw, (max-width: 1023px) 450px, 800px"
         />
       </div>
     </section>
