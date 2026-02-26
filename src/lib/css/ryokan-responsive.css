@@ -21,6 +21,7 @@
   --r-hero-content-y: 220px;
   --r-hero-content-gap: 32px;
   --r-hero-headline-w: 600px;
+  --r-hero-scroll-bottom: 55px;
 
   /* Subpage Hero */
   --r-subpage-hero-height: 480px;
@@ -140,6 +141,7 @@
     --r-hero-content-y: 160px;
     --r-hero-content-gap: 32px;
     --r-hero-headline-w: 420px;
+    --r-hero-scroll-bottom: 30px;
 
     --r-subpage-hero-height: 400px;
     --r-subpage-hero-title-size: 36px;
@@ -216,6 +218,7 @@
     --r-hero-content-y: 140px;
     --r-hero-content-gap: 24px;
     --r-hero-headline-w: 300px;
+    --r-hero-scroll-bottom: 50px;
 
     --r-subpage-hero-height: 320px;
     --r-subpage-hero-title-size: 28px;
