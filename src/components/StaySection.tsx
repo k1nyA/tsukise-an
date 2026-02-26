@@ -2,7 +2,7 @@
 
 import Column from "@/components/column";
 import Section from "@/components/section";
-import { Separator } from "@/components/ui/separator";
+
 import Image from "next/image";
 import styles from "./StaySection.module.css";
 
@@ -89,9 +89,9 @@ export default function StaySection() {
         </div>
 
         <div className={styles.dividerRow}>
-          <Separator className={styles.dividerLine} />
+          <hr className={styles.dividerLine} />
           <span>翌 朝</span>
-          <Separator className={styles.dividerLine} />
+          <hr className={styles.dividerLine} />
         </div>
 
         <div className={styles.timelineGridSecondary}>

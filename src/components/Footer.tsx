@@ -3,7 +3,7 @@
 import Column from "@/components/column";
 import Row from "@/components/row";
 import Section from "@/components/section";
-import { Separator } from "@/components/ui/separator";
+
 import { Facebook, Instagram, MessageCircle } from "lucide-react";
 import styles from "./Footer.module.css";
 
@@ -32,7 +32,7 @@ export default function Footer() {
           </nav>
         </Row>
 
-        <Separator className={styles.mainDivider} />
+        <hr className={styles.mainDivider} />
 
         <Row className={styles.middle} alignItems="center" justifyContent="space-between">
           <div className={styles.legal}>
