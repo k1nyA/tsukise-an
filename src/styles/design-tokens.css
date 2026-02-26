@@ -32,7 +32,7 @@
   --page-width: 1440px;
   --header-height: 80px;
   --hero-height: 480px;
-  --subpage-hero-height: 360px;
+  --subpage-hero-height: 480px;
 }
 
 /* Font families must be on body — Next.js font loader sets
