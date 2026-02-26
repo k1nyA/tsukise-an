@@ -157,6 +157,13 @@
   /* Access page — Contact Link Section */
   --r-access-contact-py: 40px;
   --r-access-contact-px: 80px;
+
+  /* Legal / Policy pages */
+  --r-legal-py: 80px;
+  --r-legal-px: 200px;
+  --r-legal-gap: 48px;
+  --r-legal-updated-py: 40px;
+  --r-legal-updated-px: 200px;
 }
 
 /* --- Tablet (768px - 1023px) --- */
@@ -261,6 +268,12 @@
     /* Access page — Contact Link Section */
     --r-access-contact-py: 40px;
     --r-access-contact-px: 60px;
+
+    /* Legal / Policy pages */
+    --r-legal-py: 80px;
+    --r-legal-px: 120px;
+    --r-legal-updated-py: 40px;
+    --r-legal-updated-px: 120px;
   }
 }
 
@@ -386,6 +399,12 @@
     /* Access page — Contact Link Section */
     --r-access-contact-py: 40px;
     --r-access-contact-px: 24px;
+
+    /* Legal / Policy pages */
+    --r-legal-py: 60px;
+    --r-legal-px: 24px;
+    --r-legal-updated-py: 24px;
+    --r-legal-updated-px: 24px;
   }
 }
 
@@ -556,6 +575,24 @@
   .r-access-methods-grid {
     grid-template-columns: 1fr;
     gap: 24px;
+  }
+}
+
+/* ===========================================
+   Legal Info Row: row (PC/Tablet) -> column (Mobile)
+   =========================================== */
+
+.r-legal-info-row {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .r-legal-info-row {
+    flex-direction: column;
+    gap: 4px;
   }
 }
 

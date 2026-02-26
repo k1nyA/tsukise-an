@@ -83,6 +83,12 @@ describe('LegalContentSection', () => {
       expect(dtElements.length).toBeGreaterThanOrEqual(6)
       expect(ddElements.length).toBeGreaterThanOrEqual(6)
     })
+
+    it('renders info rows with responsive r-legal-info-row class', () => {
+      const { container } = render(<LegalContentSection />)
+      const infoRows = container.querySelectorAll('.r-legal-info-row')
+      expect(infoRows.length).toBe(6)
+    })
   })
 
   // --- Section: 販売価格 ---
@@ -247,6 +253,14 @@ describe('LegalContentSection', () => {
     })
   })
 
+  it('uses responsive CSS variables for section padding', () => {
+    const { container } = render(<LegalContentSection />)
+    const section = container.querySelector('section')
+    expect(section).toHaveStyle({
+      padding: 'var(--r-legal-py) var(--r-legal-px)',
+    })
+  })
+
   it('renders section headings with heading font family', () => {
     render(<LegalContentSection />)
     const heading = screen.getByText('事業者情報')
@@ -257,5 +271,14 @@ describe('LegalContentSection', () => {
     const { container } = render(<LegalContentSection />)
     const dividers = container.querySelectorAll('[data-testid="legal-divider"]')
     expect(dividers.length).toBeGreaterThanOrEqual(8)
+  })
+
+  it('renders the last updated section as a separate element from the content section', () => {
+    const { container } = render(<LegalContentSection />)
+    const section = container.querySelector('section')
+    expect(section).toBeInTheDocument()
+    // The last updated text should not be inside the section element
+    const lastUpdated = screen.getByText(/最終更新日：2026年2月22日/)
+    expect(section!.contains(lastUpdated)).toBe(false)
   })
 })
