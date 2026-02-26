@@ -2,7 +2,7 @@
 
 import Column from "@/components/column";
 import Section from "@/components/section";
-import { Separator } from "@/components/ui/separator";
+
 import styles from "./ConceptSection.module.css";
 
 export default function ConceptSection() {
@@ -10,9 +10,9 @@ export default function ConceptSection() {
     <Section className={styles.section}>
       <Column className={styles.inner} alignItems="center">
         <div className={styles.labelRow}>
-          <Separator className={styles.decorLine} />
+          <hr className={styles.decorLine} />
           <span className={styles.label}>CONCEPT</span>
-          <Separator className={styles.decorLine} />
+          <hr className={styles.decorLine} />
         </div>
 
         <h2 className={styles.title}>百三十年、変わらぬもてなし。</h2>
