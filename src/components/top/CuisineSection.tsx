@@ -13,12 +13,12 @@ export function CuisineSection() {
       style={{
         padding: 'var(--r-center-py) var(--r-center-px)',
         gap: 'var(--r-center-gap)',
-        backgroundColor: 'var(--ryokan-dark)',
         backgroundImage: 'url(/images/top-cuisine-bg.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
     >
+      {/* Section Label: line - CUISINE - line */}
       <div className="flex items-center" style={{ gap: 20 }}>
         <span
           style={{ width: 60, height: 1, backgroundColor: 'var(--ryokan-gold)' }}
@@ -41,6 +41,7 @@ export function CuisineSection() {
         />
       </div>
 
+      {/* Section Title */}
       <h2
         style={{
           fontFamily: 'var(--font-heading)',
@@ -55,16 +56,18 @@ export function CuisineSection() {
         旬を紡ぐ、月替わり懐石
       </h2>
 
+      {/* Description */}
       <p
         style={{
           fontFamily: 'var(--font-body)',
-          fontSize: 'var(--r-body-md)',
+          fontSize: 'var(--r-cuisine-desc-size)',
           fontWeight: 300,
           color: 'var(--ryokan-text-subtle)',
           letterSpacing: 1,
           lineHeight: 2,
           textAlign: 'center',
-          maxWidth: 600,
+          width: 'var(--r-cuisine-desc-width)',
+          maxWidth: '100%',
           margin: 0,
         }}
       >
@@ -75,11 +78,12 @@ export function CuisineSection() {
         ミシュラン二つ星の評価を賜りました。
       </p>
 
-      <div className="r-grid-row w-full" style={{ gap: 'var(--r-grid-gap)' }}>
+      {/* Dish Card Grid: 3-col PC / 2+1 Tablet / 1-col Mobile */}
+      <div className="r-cuisine-grid">
         {dishes.map((dish) => (
           <div
             key={dish.title}
-            className="flex flex-1 flex-col items-center"
+            className="flex flex-col items-center"
             style={{ gap: 16, paddingBottom: 24 }}
           >
             <div
@@ -91,7 +95,7 @@ export function CuisineSection() {
                 alt={dish.title}
                 fill
                 className="object-cover"
-                sizes="(max-width: 767px) 100vw, 33vw"
+                sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
               />
             </div>
             <h3
