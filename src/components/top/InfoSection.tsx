@@ -223,7 +223,7 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
           }}
         >
           <Image
-            src="/images/map.png"
+            src="/images/top-info-map.png"
             alt="月瀬庵へのアクセスマップ"
             fill
             className="object-cover"

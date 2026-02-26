@@ -39,7 +39,7 @@ describe('OnsenSection', () => {
   it('renders the onsen image with correct src', () => {
     render(<OnsenSection />)
     const img = screen.getByRole('img', { name: /露天風呂/ })
-    expect(img).toHaveAttribute('src', expect.stringContaining('onsen.png'))
+    expect(img).toHaveAttribute('src', expect.stringContaining('top-onsen-main.png'))
   })
 
   it('renders content on the left and image on the right', () => {

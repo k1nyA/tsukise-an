@@ -109,7 +109,7 @@ export function OnsenSection() {
         }}
       >
         <Image
-          src="/images/onsen.png"
+          src="/images/top-onsen-main.png"
           alt="月瀬庵の温泉"
           fill
           className="object-cover"

@@ -39,7 +39,7 @@ describe('RoomSection', () => {
   it('renders the room image with correct src', () => {
     render(<RoomSection />)
     const img = screen.getByRole('img', { name: /客室/ })
-    expect(img).toHaveAttribute('src', expect.stringContaining('room.png'))
+    expect(img).toHaveAttribute('src', expect.stringContaining('top-room-main.png'))
   })
 
   it('renders image on the left and content on the right', () => {

@@ -6,7 +6,7 @@ export function HeroSection() {
   return (
     <section className="relative w-full overflow-hidden" style={{ height: 'var(--r-hero-height)' }}>
       <Image
-        src="/images/hero.png"
+        src="/images/top-hero-main.png"
         alt="芦ノ湖畔の月瀬庵"
         fill
         className="object-cover"

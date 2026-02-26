@@ -34,9 +34,9 @@ describe('HeroSection', () => {
     expect(img.tagName).toBe('IMG')
   })
 
-  it('renders the background image with src containing hero.png', () => {
+  it('renders the background image with src containing top-hero-main.png', () => {
     render(<HeroSection />)
     const img = screen.getByAltText('芦ノ湖畔の月瀬庵')
-    expect(img).toHaveAttribute('src', expect.stringContaining('hero.png'))
+    expect(img).toHaveAttribute('src', expect.stringContaining('top-hero-main.png'))
   })
 })
