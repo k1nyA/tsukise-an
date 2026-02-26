@@ -122,6 +122,10 @@
   --r-divider-gap: 24px;
   --r-stay-gap: 60px;
 
+  /* Cuisine-specific */
+  --r-cuisine-desc-size: 15px;
+  --r-cuisine-desc-width: 600px;
+
   /* Info */
   --r-info-padding: 80px;
   --r-info-gap: 60px;
@@ -208,6 +212,10 @@
     --r-timeline-gap: 16px;
     --r-dish-h: 220px;
     --r-stay-gap: 48px;
+
+    /* Cuisine-specific (Tablet: desc stays 15px, width 600px) */
+    --r-cuisine-desc-size: 15px;
+    --r-cuisine-desc-width: 600px;
 
     --r-info-padding: 48px;
     --r-info-gap: 40px;
@@ -314,6 +322,10 @@
     --r-divider-w: 60px;
     --r-divider-gap: 12px;
     --r-stay-gap: 32px;
+
+    /* Cuisine-specific (Mobile: desc 14px, full width) */
+    --r-cuisine-desc-size: 14px;
+    --r-cuisine-desc-width: 100%;
 
     --r-info-padding: 32px;
     --r-info-gap: 32px;
@@ -429,6 +441,29 @@
 @media (max-width: 767px) {
   .stay-grid--4,
   .stay-grid--3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===========================================
+   Cuisine Grid: 3-col (PC) / 2+1 (Tablet) / 1-col (Mobile)
+   =========================================== */
+
+.r-cuisine-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--r-grid-gap);
+  width: 100%;
+}
+
+@media (max-width: 1023px) {
+  .r-cuisine-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .r-cuisine-grid {
     grid-template-columns: 1fr;
   }
 }
