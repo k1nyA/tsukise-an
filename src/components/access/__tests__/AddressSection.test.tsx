@@ -3,9 +3,9 @@ import { render, screen } from '@/test/utils'
 import { AddressSection } from '../AddressSection'
 
 describe('AddressSection', () => {
-  it('renders the ADDRESS English label', () => {
+  it('renders the LOCATION English label', () => {
     render(<AddressSection />)
-    expect(screen.getByText('ADDRESS')).toBeInTheDocument()
+    expect(screen.getByText('LOCATION')).toBeInTheDocument()
   })
 
   it('renders the ryokan name as section title', () => {
@@ -23,9 +23,15 @@ describe('AddressSection', () => {
     ).toBeInTheDocument()
   })
 
-  it('renders the phone number', () => {
+  it('renders the phone and fax number', () => {
     render(<AddressSection />)
-    expect(screen.getByText(/0460-83-XXXX/)).toBeInTheDocument()
+    expect(screen.getByText(/TEL.*0460-83-XXXX.*FAX.*0460-83-XXXX/)).toBeInTheDocument()
+  })
+
+  it('renders check-in and check-out times', () => {
+    render(<AddressSection />)
+    expect(screen.getByText(/チェックイン 15:00/)).toBeInTheDocument()
+    expect(screen.getByText(/チェックアウト 11:00/)).toBeInTheDocument()
   })
 
   it('renders the section as a semantic section element', () => {

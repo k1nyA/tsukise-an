@@ -137,6 +137,26 @@
   --r-nav-cta-py: 14px;
   --r-nav-cta-px: 44px;
   --r-nav-cta-size: 13px;
+
+  /* Access page — Address Section */
+  --r-access-addr-py: 80px;
+  --r-access-addr-px: 200px;
+  --r-access-addr-title-size: 32px;
+  --r-access-addr-title-ls: 6px;
+  --r-access-addr-line1-size: 16px;
+  --r-access-addr-line1-ls: 1.5px;
+
+  /* Access page — Map Section */
+  --r-access-map-py: 32px;
+  --r-access-map-px: 80px;
+
+  /* Access page — Access Methods Section */
+  --r-access-methods-py: 60px;
+  --r-access-methods-px: 80px;
+
+  /* Access page — Contact Link Section */
+  --r-access-contact-py: 40px;
+  --r-access-contact-px: 80px;
 }
 
 /* --- Tablet (768px - 1023px) --- */
@@ -225,6 +245,22 @@
     --r-nav-cta-py: 12px;
     --r-nav-cta-px: 32px;
     --r-nav-cta-size: 12px;
+
+    /* Access page — Address Section */
+    --r-access-addr-py: 60px;
+    --r-access-addr-px: 100px;
+
+    /* Access page — Map Section */
+    --r-access-map-py: 32px;
+    --r-access-map-px: 60px;
+
+    /* Access page — Access Methods Section */
+    --r-access-methods-py: 60px;
+    --r-access-methods-px: 60px;
+
+    /* Access page — Contact Link Section */
+    --r-access-contact-py: 40px;
+    --r-access-contact-px: 60px;
   }
 }
 
@@ -330,6 +366,26 @@
     --r-info-padding: 32px;
     --r-info-gap: 32px;
     --r-map-h: 180px;
+
+    /* Access page — Address Section */
+    --r-access-addr-py: 60px;
+    --r-access-addr-px: 24px;
+    --r-access-addr-title-size: 24px;
+    --r-access-addr-title-ls: 4px;
+    --r-access-addr-line1-size: 14px;
+    --r-access-addr-line1-ls: 1px;
+
+    /* Access page — Map Section */
+    --r-access-map-py: 24px;
+    --r-access-map-px: 24px;
+
+    /* Access page — Access Methods Section */
+    --r-access-methods-py: 40px;
+    --r-access-methods-px: 24px;
+
+    /* Access page — Contact Link Section */
+    --r-access-contact-py: 40px;
+    --r-access-contact-px: 24px;
   }
 }
 
@@ -475,6 +531,31 @@
 @media (max-width: 767px) {
   .r-cuisine-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ===========================================
+   Access Methods Grid
+   PC: 4-column row | Tablet/Mobile: 1-column stack
+   =========================================== */
+
+.r-access-methods-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+@media (max-width: 1023px) {
+  .r-access-methods-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .r-access-methods-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 }
 

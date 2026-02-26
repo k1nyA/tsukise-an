@@ -6,7 +6,7 @@ export function ContactLinkSection() {
       className="flex w-full items-center justify-center"
       style={{
         backgroundColor: 'var(--ryokan-bg, #FAF8F3)',
-        padding: '40px 80px',
+        padding: 'var(--r-access-contact-py) var(--r-access-contact-px)',
       }}
     >
       <Link
@@ -21,7 +21,7 @@ export function ContactLinkSection() {
           textAlign: 'center',
         }}
       >
-        お問い合わせ &rarr;
+        お問い合わせ →
       </Link>
     </section>
   )
