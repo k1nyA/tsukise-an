@@ -65,4 +65,9 @@ describe('Header', () => {
     render(<Header />)
     expect(screen.getByRole('navigation')).toBeInTheDocument()
   })
+
+  it('renders the mobile menu button', () => {
+    render(<Header />)
+    expect(screen.getByRole('button', { name: 'メニューを開く' })).toBeInTheDocument()
+  })
 })
