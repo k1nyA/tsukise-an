@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Car, TrainFront } from 'lucide-react'
 import type { TopNewsItem } from '@/lib/top-news'
 
 type InfoSectionProps = {
@@ -19,6 +19,7 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
     >
       {/* News Column */}
       <div className="flex flex-1 flex-col" style={{ gap: 32 }}>
+        {/* Section Label */}
         <div className="flex items-center" style={{ gap: 16 }}>
           <span
             style={{ width: 30, height: 1, backgroundColor: 'var(--ryokan-gold)' }}
@@ -37,6 +38,7 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
           </span>
         </div>
 
+        {/* Section Title */}
         <h2
           style={{
             fontFamily: 'var(--font-heading)',
@@ -51,25 +53,27 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
         </h2>
 
         {/* News list */}
-        <ul className="flex flex-col" style={{ gap: 16, listStyle: 'none', padding: 0, margin: 0 }}>
+        <ul
+          className="flex flex-col w-full"
+          style={{ listStyle: 'none', padding: 0, margin: 0 }}
+        >
           {newsItems.length > 0 ? (
             newsItems.map((item) => (
               <li
                 key={item.slug}
-                className="flex items-baseline"
+                className="flex items-center w-full"
                 style={{
-                  gap: 16,
-                  paddingBottom: 16,
-                  borderBottom: '1px solid var(--ryokan-soft-line)',
+                  gap: 24,
+                  padding: '16px 0',
+                  borderBottom: '1px solid var(--ryokan-light-gold)',
                 }}
               >
                 <span
                   style={{
                     fontFamily: 'var(--font-accent)',
                     fontSize: 'var(--r-body-xs)',
-                    fontWeight: 400,
+                    fontWeight: 500,
                     color: 'var(--ryokan-subtle)',
-                    letterSpacing: 1,
                     flexShrink: 0,
                   }}
                 >
@@ -80,8 +84,7 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
                     fontFamily: 'var(--font-body)',
                     fontSize: 'var(--r-body-sm)',
                     fontWeight: 300,
-                    color: 'var(--ryokan-dark)',
-                    letterSpacing: 1,
+                    color: 'var(--ryokan-muted)',
                     margin: 0,
                   }}
                 >
@@ -105,6 +108,7 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
           )}
         </ul>
 
+        {/* View All Link */}
         <Link
           href="/news"
           className="inline-flex items-center"
@@ -130,7 +134,8 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
       </div>
 
       {/* Access Column */}
-      <div className="flex flex-1 flex-col" style={{ gap: 24 }}>
+      <div className="r-info-access-col flex flex-col" style={{ gap: 24 }}>
+        {/* Section Label */}
         <div className="flex items-center" style={{ gap: 16 }}>
           <span
             style={{ width: 30, height: 1, backgroundColor: 'var(--ryokan-gold)' }}
@@ -149,6 +154,7 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
           </span>
         </div>
 
+        {/* Section Title */}
         <h2
           style={{
             fontFamily: 'var(--font-heading)',
@@ -162,7 +168,8 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
           アクセス
         </h2>
 
-        <div className="flex flex-col" style={{ gap: 24 }}>
+        {/* Address & Transport Info */}
+        <div className="flex flex-col w-full" style={{ gap: 24 }}>
           <p
             style={{
               fontFamily: 'var(--font-body)',
@@ -184,14 +191,16 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
             FAX&nbsp;&nbsp;0460-83-XXXX
           </p>
 
+          {/* Access Methods */}
           <div className="flex flex-col" style={{ gap: 12 }}>
             <div className="flex items-center" style={{ gap: 12 }}>
+              <Car size={16} color="var(--ryokan-gold)" aria-hidden="true" />
               <span
                 style={{
                   fontFamily: 'var(--font-body)',
                   fontSize: 'var(--r-body-xs)',
                   fontWeight: 300,
-                  color: 'var(--ryokan-muted)',
+                  color: 'var(--ryokan-secondary)',
                   letterSpacing: 1,
                 }}
               >
@@ -199,12 +208,13 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
               </span>
             </div>
             <div className="flex items-center" style={{ gap: 12 }}>
+              <TrainFront size={16} color="var(--ryokan-gold)" aria-hidden="true" />
               <span
                 style={{
                   fontFamily: 'var(--font-body)',
                   fontSize: 'var(--r-body-xs)',
                   fontWeight: 300,
-                  color: 'var(--ryokan-muted)',
+                  color: 'var(--ryokan-secondary)',
                   letterSpacing: 1,
                 }}
               >
@@ -214,6 +224,7 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
           </div>
         </div>
 
+        {/* Map */}
         <div
           className="relative w-full overflow-hidden"
           style={{
@@ -227,7 +238,7 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
             alt="月瀬庵へのアクセスマップ"
             fill
             className="object-cover"
-            sizes="560px"
+            sizes="(min-width: 1024px) 560px, 100vw"
           />
         </div>
       </div>

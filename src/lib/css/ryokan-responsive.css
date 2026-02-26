@@ -366,6 +366,12 @@
   flex-direction: row;
 }
 
+/* Info access column: fixed 560px on PC, full on tablet/mobile */
+.r-info-access-col {
+  width: 560px;
+  flex-shrink: 0;
+}
+
 /* CTA buttons: row → column on mobile */
 .r-cta-btns {
   display: flex;
@@ -381,6 +387,10 @@
 @media (max-width: 1023px) {
   .r-info-layout {
     flex-direction: column;
+  }
+  .r-info-access-col {
+    width: 100%;
+    flex-shrink: 1;
   }
 }
 
