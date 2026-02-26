@@ -19,7 +19,7 @@ export function RoomSection() {
           alt="月瀬庵の客室"
           fill
           className="object-cover"
-          sizes="(max-width: 767px) 100vw, (max-width: 1023px) 450px, 58.6vw"
+          sizes="(max-width: 767px) 100vw, (max-width: 1023px) 450px, 800px"
         />
       </div>
 
@@ -32,9 +32,17 @@ export function RoomSection() {
           gap: 'var(--r-imgtext-gap)',
         }}
       >
-        <div className="flex items-center" style={{ gap: 16 }}>
+        {/* Section Label */}
+        <div
+          className="flex items-center"
+          style={{ gap: 'var(--r-imgtext-label-gap)' }}
+        >
           <span
-            style={{ width: 30, height: 1, backgroundColor: 'var(--ryokan-gold)' }}
+            style={{
+              width: 'var(--r-imgtext-label-line-w)',
+              height: 1,
+              backgroundColor: 'var(--ryokan-gold)',
+            }}
             aria-hidden="true"
           />
           <span
@@ -43,13 +51,14 @@ export function RoomSection() {
               fontSize: 12,
               fontWeight: 500,
               color: 'var(--ryokan-gold)',
-              letterSpacing: 5,
+              letterSpacing: 'var(--r-imgtext-label-ls)',
             }}
           >
             ROOMS
           </span>
         </div>
 
+        {/* Title */}
         <h2
           style={{
             fontFamily: 'var(--font-heading)',
@@ -66,6 +75,7 @@ export function RoomSection() {
           離れ
         </h2>
 
+        {/* Description */}
         <p
           style={{
             fontFamily: 'var(--font-body)',
@@ -91,11 +101,12 @@ export function RoomSection() {
           専用露天風呂を備えております。
         </p>
 
+        {/* Link */}
         <Link
           href="/rooms"
           className="inline-flex items-center"
           style={{
-            gap: 12,
+            gap: 'var(--r-imgtext-link-gap)',
             textDecoration: 'none',
             width: 'fit-content',
           }}
@@ -103,7 +114,7 @@ export function RoomSection() {
           <span
             style={{
               fontFamily: 'var(--font-body)',
-              fontSize: 'var(--r-body-sm)',
+              fontSize: 14,
               fontWeight: 'normal',
               color: 'var(--ryokan-light-gold)',
               letterSpacing: 3,
@@ -111,7 +122,13 @@ export function RoomSection() {
           >
             客室を見る
           </span>
-          <ArrowRight size={16} color="var(--ryokan-light-gold)" />
+          <ArrowRight
+            style={{
+              width: 'var(--r-imgtext-link-arrow)',
+              height: 'var(--r-imgtext-link-arrow)',
+            }}
+            color="var(--ryokan-light-gold)"
+          />
         </Link>
       </div>
     </section>
