@@ -13,6 +13,7 @@
 
   /* Hero */
   --r-hero-height: 780px;
+  --r-subpage-hero-height: 360px;
   --r-hero-title-size: 56px;
   --r-hero-title-spacing: 4px;
   --r-hero-sub-size: 16px;
@@ -105,6 +106,7 @@
     --r-header-px: 40px;
 
     --r-hero-height: 660px;
+    --r-subpage-hero-height: 300px;
     --r-hero-title-size: 44px;
     --r-hero-title-spacing: 4px;
     --r-hero-sub-size: 14px;
@@ -171,6 +173,7 @@
     --r-header-px: 20px;
 
     --r-hero-height: 560px;
+    --r-subpage-hero-height: 240px;
     --r-hero-title-size: 32px;
     --r-hero-title-spacing: 2px;
     --r-hero-sub-size: 13px;

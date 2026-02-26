@@ -3,3 +3,47 @@
 @import "../lib/css/index.css";
 @import "../lib/css/ryokan-theme.css";
 @import "../lib/css/ryokan-responsive.css";
+
+/* ============================================================
+   Tailwind v4 @theme — Design Token Registration
+   Maps CSS variables from design-tokens.css to Tailwind utilities.
+   e.g. --color-ryokan-bg → bg-ryokan-bg, text-ryokan-bg, etc.
+   ============================================================ */
+@theme {
+  /* ---------- Colors ---------- */
+  --color-ryokan-bg: var(--ryokan-bg);
+  --color-ryokan-dark: var(--ryokan-dark);
+  --color-ryokan-darkest: var(--ryokan-darkest);
+  --color-ryokan-gold: var(--ryokan-gold);
+  --color-ryokan-muted: var(--ryokan-muted);
+  --color-ryokan-subtle: var(--ryokan-subtle);
+  --color-ryokan-secondary: var(--ryokan-secondary);
+  --color-ryokan-light-gold: var(--ryokan-light-gold);
+  --color-ryokan-light-bg: var(--ryokan-light-bg);
+  --color-ryokan-light-bg-alt: var(--ryokan-light-bg-alt);
+  --color-ryokan-soft-line: var(--ryokan-soft-line);
+  --color-ryokan-text-on-dark: var(--ryokan-text-on-dark);
+  --color-ryokan-text-subtle: var(--ryokan-text-subtle);
+  --color-ryokan-hero-overlay: var(--ryokan-hero-overlay);
+  --color-ryokan-info-bg: var(--ryokan-info-bg);
+
+  /* ---------- Font Families ---------- */
+  /* Next.js font loader sets --font-serif-jp, --font-sans-jp,
+     --font-display on <body>. design-tokens.css maps those to
+     --font-heading / --font-body / --font-accent on body.
+     @theme references resolve at runtime via var(). */
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
+  --font-accent: var(--font-accent);
+
+  /* ---------- Spacing ---------- */
+  --spacing-section-y: var(--section-padding-y);
+  --spacing-section-x: var(--section-padding-x);
+  --spacing-header: var(--header-height);
+  --spacing-hero: var(--hero-height);
+  --spacing-subpage-hero: var(--subpage-hero-height);
+
+  /* ---------- Max Widths ---------- */
+  --max-width-content: var(--content-max-width);
+  --max-width-page: var(--page-width);
+}
