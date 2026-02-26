@@ -11,9 +11,15 @@ export function ConceptSection() {
         backgroundPosition: 'center',
       }}
     >
+      {/* Section Label with decorative lines */}
       <div className="flex items-center" style={{ gap: 20 }}>
         <span
-          style={{ width: 60, height: 1, backgroundColor: 'var(--ryokan-light-gold)' }}
+          className="block"
+          style={{
+            width: 'var(--r-concept-label-line-w)',
+            height: 1,
+            backgroundColor: 'var(--ryokan-light-gold)',
+          }}
           aria-hidden="true"
         />
         <span
@@ -28,11 +34,17 @@ export function ConceptSection() {
           CONCEPT
         </span>
         <span
-          style={{ width: 60, height: 1, backgroundColor: 'var(--ryokan-light-gold)' }}
+          className="block"
+          style={{
+            width: 'var(--r-concept-label-line-w)',
+            height: 1,
+            backgroundColor: 'var(--ryokan-light-gold)',
+          }}
           aria-hidden="true"
         />
       </div>
 
+      {/* Section Title */}
       <h2
         style={{
           fontFamily: 'var(--font-heading)',
@@ -42,22 +54,24 @@ export function ConceptSection() {
           letterSpacing: 'var(--r-concept-title-ls)',
           textAlign: 'center',
           margin: 0,
+          width: '100%',
         }}
       >
         百三十年、変わらぬもてなし。
       </h2>
 
+      {/* Body Text */}
       <p
+        className="r-concept-body"
         style={{
           fontFamily: 'var(--font-body)',
-          fontSize: 'var(--r-body-md)',
+          fontSize: 'var(--r-concept-body-size)',
           fontWeight: 300,
           color: 'var(--ryokan-muted)',
-          letterSpacing: 1.5,
-          lineHeight: 2,
-          textAlign: 'center',
+          letterSpacing: 'var(--r-concept-body-ls)',
+          lineHeight: 'var(--r-concept-body-lh)',
           margin: 0,
-          maxWidth: 720,
+          width: '100%',
         }}
       >
         明治二十八年の創業以来、月瀬庵は箱根・芦ノ湖畔に静かに佇んでまいりました。
@@ -70,6 +84,7 @@ export function ConceptSection() {
         時の流れを忘れ、ただ静かに自分に還る — そんな時間をお約束いたします。
       </p>
 
+      {/* Decorative vertical line */}
       <span
         style={{ width: 1, height: 40, backgroundColor: 'var(--ryokan-light-gold)' }}
         aria-hidden="true"
