@@ -48,4 +48,21 @@ describe('InfoSection', () => {
     render(<InfoSection newsItems={[]} />)
     expect(screen.getByText('お知らせは現在準備中です。')).toBeInTheDocument()
   })
+
+  it('renders access methods with transport info', () => {
+    render(<InfoSection newsItems={mockNewsItems} />)
+    expect(screen.getByText(/お車で：東名高速/)).toBeInTheDocument()
+    expect(screen.getByText(/電車で：箱根湯本駅/)).toBeInTheDocument()
+  })
+
+  it('renders TEL and FAX numbers', () => {
+    render(<InfoSection newsItems={mockNewsItems} />)
+    expect(screen.getByText(/0460-83-XXXX/)).toBeInTheDocument()
+  })
+
+  it('renders the map image with alt text', () => {
+    render(<InfoSection newsItems={mockNewsItems} />)
+    const mapImg = screen.getByAltText('月瀬庵へのアクセスマップ')
+    expect(mapImg).toBeInTheDocument()
+  })
 })
