@@ -32,13 +32,13 @@ describe('OnsenSection', () => {
 
   it('renders an onsen image with appropriate alt text', () => {
     render(<OnsenSection />)
-    const img = screen.getByRole('img', { name: /露天風呂/ })
+    const img = screen.getByRole('img', { name: /温泉/ })
     expect(img).toBeInTheDocument()
   })
 
   it('renders the onsen image with correct src', () => {
     render(<OnsenSection />)
-    const img = screen.getByRole('img', { name: /露天風呂/ })
+    const img = screen.getByRole('img', { name: /温泉/ })
     expect(img).toHaveAttribute('src', expect.stringContaining('top-onsen-main.png'))
   })
 

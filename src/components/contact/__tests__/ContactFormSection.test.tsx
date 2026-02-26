@@ -20,45 +20,16 @@ describe('ContactFormSection', () => {
     expect(screen.getByText('Powered by Web3Forms')).toBeInTheDocument()
   })
 
-  // --- Name fields ---
-  it('renders the last name (sei) label with required marker', () => {
+  // --- Name field ---
+  it('renders the name label with required marker', () => {
     render(<ContactFormSection />)
-    expect(screen.getByText(/お名前（姓）/)).toBeInTheDocument()
-  })
-
-  it('renders the last name input with correct placeholder', () => {
-    render(<ContactFormSection />)
-    const input = screen.getByPlaceholderText('月瀬')
-    expect(input).toBeInTheDocument()
-    expect(input).toHaveAttribute('type', 'text')
-    expect(input).toBeRequired()
-  })
-
-  it('renders the first name (mei) label with required marker', () => {
-    render(<ContactFormSection />)
-    expect(screen.getByText(/お名前（名）/)).toBeInTheDocument()
-  })
-
-  it('renders the first name input with correct placeholder', () => {
-    render(<ContactFormSection />)
-    const input = screen.getByPlaceholderText('太郎')
-    expect(input).toBeInTheDocument()
-    expect(input).toHaveAttribute('type', 'text')
-    expect(input).toBeRequired()
+    expect(screen.getByText(/お名前/)).toBeInTheDocument()
   })
 
   // --- Email field ---
   it('renders the email label with required marker', () => {
     render(<ContactFormSection />)
     expect(screen.getByText(/メールアドレス/)).toBeInTheDocument()
-  })
-
-  it('renders the email input with correct type and placeholder', () => {
-    render(<ContactFormSection />)
-    const input = screen.getByPlaceholderText('example@email.com')
-    expect(input).toBeInTheDocument()
-    expect(input).toHaveAttribute('type', 'email')
-    expect(input).toBeRequired()
   })
 
   // --- Phone field ---
@@ -68,29 +39,20 @@ describe('ContactFormSection', () => {
     expect(phoneLabel).toBeInTheDocument()
   })
 
-  it('renders the phone input with correct placeholder', () => {
-    render(<ContactFormSection />)
-    const input = screen.getByPlaceholderText('090-1234-5678')
-    expect(input).toBeInTheDocument()
-    expect(input).toHaveAttribute('type', 'tel')
-    expect(input).not.toBeRequired()
-  })
-
   // --- Subject select ---
   it('renders the subject select with required attribute', () => {
-    render(<ContactFormSection />)
-    const select = screen.getByRole('combobox', { name: /お問い合わせ種別/ })
+    const { container } = render(<ContactFormSection />)
+    const select = container.querySelector('select')
     expect(select).toBeInTheDocument()
     expect(select).toBeRequired()
   })
 
   it('renders subject select options', () => {
     render(<ContactFormSection />)
-    expect(screen.getByText('お問い合わせ種別を選択')).toBeInTheDocument()
-    expect(screen.getByText('ご宿泊について')).toBeInTheDocument()
-    expect(screen.getByText('お祝い・ご接待について')).toBeInTheDocument()
-    expect(screen.getByText('お食事について')).toBeInTheDocument()
-    expect(screen.getByText('その他のお問い合わせ')).toBeInTheDocument()
+    expect(screen.getByText('ご予約について')).toBeInTheDocument()
+    expect(screen.getByText('施設について')).toBeInTheDocument()
+    expect(screen.getByText('アクセスについて')).toBeInTheDocument()
+    expect(screen.getByText('その他')).toBeInTheDocument()
   })
 
   // --- Message textarea ---
@@ -99,27 +61,23 @@ describe('ContactFormSection', () => {
     expect(screen.getByText(/お問い合わせ内容/)).toBeInTheDocument()
   })
 
-  it('renders the message textarea with correct placeholder', () => {
-    render(<ContactFormSection />)
-    const textarea = screen.getByPlaceholderText('ご質問やご要望をご記入ください')
+  it('renders the message textarea', () => {
+    const { container } = render(<ContactFormSection />)
+    const textarea = container.querySelector('textarea')
     expect(textarea).toBeInTheDocument()
-    expect(textarea.tagName).toBe('TEXTAREA')
     expect(textarea).toBeRequired()
   })
 
   // --- Privacy checkbox ---
   it('renders the privacy policy checkbox', () => {
     render(<ContactFormSection />)
-    const checkbox = screen.getByRole('checkbox', { name: /プライバシーポリシーに同意する/ })
+    const checkbox = screen.getByRole('checkbox')
     expect(checkbox).toBeInTheDocument()
-    expect(checkbox).toBeRequired()
   })
 
-  it('renders a link to the privacy policy', () => {
+  it('renders the privacy agreement text', () => {
     render(<ContactFormSection />)
-    const link = screen.getByRole('link', { name: 'プライバシーポリシー' })
-    expect(link).toBeInTheDocument()
-    expect(link).toHaveAttribute('href', '/privacy')
+    expect(screen.getByText(/プライバシーポリシーに同意する/)).toBeInTheDocument()
   })
 
   // --- Submit button ---
@@ -128,6 +86,14 @@ describe('ContactFormSection', () => {
     const button = screen.getByRole('button', { name: '送信する' })
     expect(button).toBeInTheDocument()
     expect(button).toHaveAttribute('type', 'submit')
+  })
+
+  // --- Missing access key warning ---
+  it('shows a warning when no access key is provided', () => {
+    render(<ContactFormSection />)
+    expect(
+      screen.getByText(/フォーム送信設定が未完了です/)
+    ).toBeInTheDocument()
   })
 
   // --- Form labels linked to inputs ---

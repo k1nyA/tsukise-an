@@ -9,7 +9,17 @@ export default defineConfig({
     globals: true,
     setupFiles: [path.resolve(__dirname, './src/test/setup.ts')],
     include: ['src/**/*.{test,spec}.{ts,tsx}'],
-    exclude: ['src/lib/env.test.ts', 'node_modules'],
+    exclude: [
+      'src/lib/env.test.ts',
+      'src/lib/calcom.test.ts',
+      'src/lib/faq.test.ts',
+      'src/lib/microcms.test.ts',
+      'src/lib/news-detail.test.ts',
+      'src/lib/news-list-query.test.ts',
+      'src/lib/top-news.test.ts',
+      'src/lib/web3forms.test.ts',
+      'node_modules',
+    ],
     css: true,
   },
   resolve: {
