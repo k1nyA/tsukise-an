@@ -75,6 +75,10 @@
   --r-concept-gap: 56px;
   --r-concept-title: 36px;
   --r-concept-title-ls: 6px;
+  --r-concept-label-line-w: 60px;
+  --r-concept-body-size: 15px;
+  --r-concept-body-ls: 1.5px;
+  --r-concept-body-lh: 2;
 
   /* CTA */
   --r-cta-height: 480px;
@@ -96,10 +100,15 @@
   --r-footer-nav-gap: 40px;
 
   /* ImgText / TextImg */
-  --r-imgtext-img-width: 58.6%;
+  --r-imgtext-img-width: 800px;
   --r-imgtext-padding: 80px;
   --r-imgtext-gap: 32px;
   --r-imgtext-img-h: auto;
+  --r-imgtext-label-line-w: 30px;
+  --r-imgtext-label-gap: 16px;
+  --r-imgtext-label-ls: 5px;
+  --r-imgtext-link-gap: 12px;
+  --r-imgtext-link-arrow: 16px;
 
   /* Cuisine / Stay */
   --r-center-px: 80px;
@@ -167,6 +176,10 @@
     --r-concept-px: 100px;
     --r-concept-gap: 48px;
     --r-concept-title: 32px;
+    --r-concept-label-line-w: 40px;
+    --r-concept-body-size: 14px;
+    --r-concept-body-ls: 1px;
+    --r-concept-body-lh: 2.2;
 
     --r-cta-height: 400px;
     --r-cta-content-px: 60px;
@@ -181,6 +194,11 @@
     --r-imgtext-img-width: 450px;
     --r-imgtext-padding: 40px 36px;
     --r-imgtext-gap: 24px;
+    --r-imgtext-label-line-w: 24px;
+    --r-imgtext-label-gap: 12px;
+    --r-imgtext-label-ls: 4px;
+    --r-imgtext-link-gap: 10px;
+    --r-imgtext-link-arrow: 14px;
 
     --r-center-px: 40px;
     --r-center-py: 80px;
@@ -253,6 +271,10 @@
     --r-concept-gap: 40px;
     --r-concept-title: 24px;
     --r-concept-title-ls: 3px;
+    --r-concept-label-line-w: 40px;
+    --r-concept-body-size: 14px;
+    --r-concept-body-ls: 1px;
+    --r-concept-body-lh: 2.2;
 
     --r-cta-height: 360px;
     --r-cta-gap: 32px;
@@ -272,9 +294,14 @@
     --r-footer-nav-gap: 12px;
 
     --r-imgtext-img-width: 100%;
-    --r-imgtext-padding: 32px;
+    --r-imgtext-padding: 32px 32px 60px 32px;
     --r-imgtext-gap: 32px;
     --r-imgtext-img-h: 280px;
+    --r-imgtext-label-line-w: 30px;
+    --r-imgtext-label-gap: 16px;
+    --r-imgtext-label-ls: 5px;
+    --r-imgtext-link-gap: 12px;
+    --r-imgtext-link-arrow: 16px;
 
     --r-center-px: 24px;
     --r-center-py: 60px;
@@ -295,6 +322,17 @@
 /* ===========================================
    Responsive Layout Utility Classes
    =========================================== */
+
+/* Concept body: center on PC/Tablet, left on Mobile */
+.r-concept-body {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .r-concept-body {
+    text-align: left;
+  }
+}
 
 /* ImgText: row → column on mobile */
 .r-imgtext-layout {
@@ -345,6 +383,30 @@
   }
   .r-grid-row {
     flex-direction: column;
+  }
+}
+
+/* ===========================================
+   Onsen Section Responsive Overrides
+   (Tablet desc color differs from PC/Mobile)
+   =========================================== */
+
+/* PC & Mobile: desc color = muted (#4A4035) */
+.r-onsen-desc {
+  color: var(--ryokan-muted);
+}
+
+/* Tablet: desc color = secondary (#6B5D4F) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .r-onsen-desc {
+    color: var(--ryokan-secondary);
+  }
+}
+
+/* Mobile: Onsen link font-size = 13px (vs Room's 14px) */
+@media (max-width: 767px) {
+  .r-onsen-link span {
+    font-size: 13px;
   }
 }
 
