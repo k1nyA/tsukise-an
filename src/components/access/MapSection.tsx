@@ -1,24 +1,44 @@
 export function MapSection() {
   return (
     <section
-      className="flex w-full flex-col items-center justify-center"
+      className="r-access-map flex w-full flex-col items-center justify-center"
       style={{
-        backgroundColor: 'var(--ryokan-light-bg-alt, #F0EBE0)',
-        padding: '32px 80px',
+        backgroundColor: 'var(--ryokan-info-bg, #F0EBE0)',
+        padding: 'var(--r-access-map-py) var(--r-access-map-px)',
         minHeight: 320,
       }}
     >
-      {/* Map placeholder frame */}
+      {/* Map placeholder frame — to be replaced with Google Maps iframe */}
       <div
         data-testid="map-frame"
-        className="w-full"
+        className="relative w-full overflow-hidden"
         style={{
           height: 260,
           borderRadius: 4,
           backgroundColor: 'var(--ryokan-light-bg, #EEEBE3)',
-          overflow: 'hidden',
         }}
-      />
+      >
+        {/* Overlay text placeholder */}
+        <div
+          className="flex h-full w-full items-center justify-center"
+          style={{
+            backgroundColor: '#2C241833',
+          }}
+        >
+          <span
+            style={{
+              fontFamily: 'var(--font-body)',
+              fontSize: 16,
+              fontWeight: 'normal',
+              color: 'var(--ryokan-text-on-dark, #FAF8F3)',
+              letterSpacing: 2,
+              textAlign: 'center',
+            }}
+          >
+            Google Maps 埋め込みエリア
+          </span>
+        </div>
+      </div>
 
       {/* Google Map link */}
       <a
@@ -35,7 +55,7 @@ export function MapSection() {
           textDecoration: 'none',
         }}
       >
-        Google Mapで見る &rarr;
+        Google Mapで見る →
       </a>
     </section>
   )

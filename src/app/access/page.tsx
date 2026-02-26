@@ -13,7 +13,11 @@ export default function AccessPage() {
     <div className="ryokan-page">
       <Header />
       <main>
-        <PageHero title="アクセス" labelEn="ACCESS" />
+        <PageHero
+          title="アクセス"
+          labelEn="ACCESS"
+          subtitle="箱根・芦ノ湖畔の隠れ宿へ"
+        />
         <Breadcrumb
           items={[
             { label: 'ホーム', href: '/' },
