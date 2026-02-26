@@ -16,7 +16,7 @@ export function HeroSection() {
       />
       <div
         className="absolute inset-0"
-        style={{ backgroundColor: '#1A150E77' }}
+        style={{ backgroundColor: 'var(--ryokan-hero-overlay)' }}
         aria-hidden="true"
       />
 
@@ -51,7 +51,7 @@ export function HeroSection() {
             fontFamily: 'var(--font-heading)',
             fontSize: 'var(--r-hero-title-size)',
             fontWeight: 'bold',
-            color: '#faf8f3',
+            color: 'var(--ryokan-text-on-dark)',
             letterSpacing: 'var(--r-hero-title-spacing)',
             lineHeight: 1.5,
             margin: 0,
@@ -78,11 +78,12 @@ export function HeroSection() {
 
         <Link
           href="#concept"
-          className="inline-flex items-center"
+          className="inline-flex items-center justify-center"
           style={{
             gap: 12,
             padding: '14px 40px',
-            border: '1px solid #D4C5A0CC',
+            border: '1px solid var(--ryokan-light-gold)',
+            borderColor: '#D4C5A0CC',
             backgroundColor: 'transparent',
             textDecoration: 'none',
             width: 'fit-content',
@@ -93,7 +94,7 @@ export function HeroSection() {
               fontFamily: 'var(--font-body)',
               fontSize: 13,
               fontWeight: 'normal',
-              color: '#D4C5A0',
+              color: 'var(--ryokan-light-gold)',
               letterSpacing: 3,
             }}
           >
@@ -109,7 +110,7 @@ export function HeroSection() {
           gap: 6,
           left: '50%',
           transform: 'translateX(-50%)',
-          bottom: 24,
+          bottom: 'var(--r-hero-scroll-bottom)',
         }}
       >
         <Mouse size={20} color="#D4C5A088" strokeWidth={1.5} />
