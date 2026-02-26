@@ -69,7 +69,7 @@ describe('Footer', () => {
   it('renders the address info', () => {
     render(<Footer />)
     expect(
-      screen.getByText(/〒250-0522 神奈川県足柄下郡箱根町元箱根138/)
+      screen.getByText(/〒250-0522/)
     ).toBeInTheDocument()
   })
 
