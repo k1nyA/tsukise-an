@@ -11,9 +11,8 @@
   --r-header-height: 80px;
   --r-header-px: 60px;
 
-  /* Hero */
+  /* Hero (Top page) */
   --r-hero-height: 780px;
-  --r-subpage-hero-height: 360px;
   --r-hero-title-size: 56px;
   --r-hero-title-spacing: 4px;
   --r-hero-sub-size: 16px;
@@ -23,6 +22,23 @@
   --r-hero-content-gap: 32px;
   --r-hero-headline-w: 600px;
 
+  /* Subpage Hero */
+  --r-subpage-hero-height: 480px;
+  --r-subpage-hero-title-size: 48px;
+  --r-subpage-hero-title-ls: 8px;
+  --r-subpage-hero-label-size: 14px;
+  --r-subpage-hero-label-ls: 6px;
+  --r-subpage-hero-label-line-w: 40px;
+  --r-subpage-hero-label-gap: 20px;
+  --r-subpage-hero-sub-size: 16px;
+  --r-subpage-hero-sub-ls: 2px;
+  --r-subpage-hero-content-gap: 24px;
+  --r-subpage-hero-content-px: 0px;
+
+  /* Breadcrumb */
+  --r-breadcrumb-py: 16px;
+  --r-breadcrumb-px: 80px;
+
   /* Section Titles */
   --r-title-lg: 38px;
   --r-title-md: 32px;
@@ -31,6 +47,16 @@
   --r-title-spacing-lg: 4px;
   --r-title-spacing-md: 4px;
   --r-title-spacing-sm: 3px;
+
+  /* Section Label */
+  --r-section-label-size: 13px;
+  --r-section-label-ls: 5px;
+  --r-section-label-line-w: 40px;
+  --r-section-label-gap: 20px;
+
+  /* Section Title (heading) */
+  --r-section-title-size: 32px;
+  --r-section-title-ls: 6px;
 
   /* Body Text */
   --r-body-lg: 16px;
@@ -106,7 +132,6 @@
     --r-header-px: 40px;
 
     --r-hero-height: 660px;
-    --r-subpage-hero-height: 300px;
     --r-hero-title-size: 44px;
     --r-hero-title-spacing: 4px;
     --r-hero-sub-size: 14px;
@@ -115,6 +140,16 @@
     --r-hero-content-y: 160px;
     --r-hero-content-gap: 32px;
     --r-hero-headline-w: 420px;
+
+    --r-subpage-hero-height: 400px;
+    --r-subpage-hero-title-size: 36px;
+    --r-subpage-hero-title-ls: 6px;
+    --r-subpage-hero-sub-size: 14px;
+    --r-subpage-hero-content-gap: 20px;
+    --r-subpage-hero-content-px: 40px;
+
+    --r-breadcrumb-py: 16px;
+    --r-breadcrumb-px: 40px;
 
     --r-title-lg: 28px;
     --r-title-md: 32px;
@@ -173,7 +208,6 @@
     --r-header-px: 20px;
 
     --r-hero-height: 560px;
-    --r-subpage-hero-height: 240px;
     --r-hero-title-size: 32px;
     --r-hero-title-spacing: 2px;
     --r-hero-sub-size: 13px;
@@ -182,6 +216,20 @@
     --r-hero-content-y: 140px;
     --r-hero-content-gap: 24px;
     --r-hero-headline-w: 300px;
+
+    --r-subpage-hero-height: 320px;
+    --r-subpage-hero-title-size: 28px;
+    --r-subpage-hero-title-ls: 4px;
+    --r-subpage-hero-label-size: 13px;
+    --r-subpage-hero-label-ls: 5px;
+    --r-subpage-hero-label-line-w: 30px;
+    --r-subpage-hero-label-gap: 16px;
+    --r-subpage-hero-sub-size: 13px;
+    --r-subpage-hero-content-gap: 16px;
+    --r-subpage-hero-content-px: 24px;
+
+    --r-breadcrumb-py: 12px;
+    --r-breadcrumb-px: 20px;
 
     --r-title-lg: 24px;
     --r-title-md: 24px;

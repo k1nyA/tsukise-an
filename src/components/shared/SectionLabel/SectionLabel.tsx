@@ -5,16 +5,23 @@ export type SectionLabelProps = {
 
 export function SectionLabel({ english, variant = 'default' }: SectionLabelProps) {
   const isGold = variant === 'gold'
-  const textColor = isGold ? '#8B6914' : '#8B7D6B'
-  const lineColor = isGold ? '#8B6914' : '#D4C5A0'
+  const textColor = isGold
+    ? 'var(--ryokan-gold, #8B6914)'
+    : 'var(--ryokan-subtle, #8B7D6B)'
+  const lineColor = isGold
+    ? 'var(--ryokan-gold, #8B6914)'
+    : 'var(--ryokan-light-gold, #D4C5A0)'
 
   return (
-    <div className="flex items-center gap-5">
+    <div
+      className="flex items-center"
+      style={{ gap: 'var(--r-section-label-gap)' }}
+    >
       <span
         data-testid="section-label-line"
         className="block"
         style={{
-          width: 40,
+          width: 'var(--r-section-label-line-w)',
           height: 1,
           backgroundColor: lineColor,
         }}
@@ -22,10 +29,10 @@ export function SectionLabel({ english, variant = 'default' }: SectionLabelProps
       <span
         style={{
           fontFamily: 'var(--font-accent)',
-          fontSize: 13,
+          fontSize: 'var(--r-section-label-size)',
           fontWeight: 500,
           color: textColor,
-          letterSpacing: 5,
+          letterSpacing: 'var(--r-section-label-ls)',
         }}
       >
         {english}
@@ -34,7 +41,7 @@ export function SectionLabel({ english, variant = 'default' }: SectionLabelProps
         data-testid="section-label-line"
         className="block"
         style={{
-          width: 40,
+          width: 'var(--r-section-label-line-w)',
           height: 1,
           backgroundColor: lineColor,
         }}

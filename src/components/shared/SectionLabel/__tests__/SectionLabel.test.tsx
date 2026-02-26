@@ -14,16 +14,17 @@ describe('SectionLabel', () => {
     expect(lines.length).toBe(2)
   })
 
-  it('applies default variant styling with subtle text color', () => {
+  it('applies default variant with subtle text color via CSS var', () => {
     render(<SectionLabel english="ABOUT" />)
     const label = screen.getByText('ABOUT')
-    expect(label).toHaveStyle({ color: '#8B7D6B' })
+    // Uses CSS variable; check it contains the var reference
+    expect(label.style.color).toContain('--ryokan-subtle')
   })
 
-  it('applies gold variant styling with gold text color', () => {
+  it('applies gold variant with gold text color via CSS var', () => {
     render(<SectionLabel english="RESERVATION" variant="gold" />)
     const label = screen.getByText('RESERVATION')
-    expect(label).toHaveStyle({ color: '#8B6914' })
+    expect(label.style.color).toContain('--ryokan-gold')
   })
 
   it('gold variant uses gold color for decorative lines', () => {
@@ -31,7 +32,16 @@ describe('SectionLabel', () => {
       <SectionLabel english="RESERVATION" variant="gold" />
     )
     const lines = container.querySelectorAll('[data-testid="section-label-line"]')
-    expect(lines[0]).toHaveStyle({ backgroundColor: '#8B6914' })
-    expect(lines[1]).toHaveStyle({ backgroundColor: '#8B6914' })
+    expect(lines[0].getAttribute('style')).toContain('--ryokan-gold')
+    expect(lines[1].getAttribute('style')).toContain('--ryokan-gold')
+  })
+
+  it('default variant uses light-gold for decorative lines', () => {
+    const { container } = render(
+      <SectionLabel english="ROOMS" />
+    )
+    const lines = container.querySelectorAll('[data-testid="section-label-line"]')
+    expect(lines[0].getAttribute('style')).toContain('--ryokan-light-gold')
+    expect(lines[1].getAttribute('style')).toContain('--ryokan-light-gold')
   })
 })

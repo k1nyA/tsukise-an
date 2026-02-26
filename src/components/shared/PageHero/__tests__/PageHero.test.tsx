@@ -3,9 +3,10 @@ import { render, screen } from '@/test/utils'
 import { PageHero } from '../'
 
 describe('PageHero', () => {
-  it('renders the title text', () => {
+  it('renders the title text as h1', () => {
     render(<PageHero title="お料理" labelEn="CUISINE" />)
-    expect(screen.getByText('お料理')).toBeInTheDocument()
+    const heading = screen.getByRole('heading', { level: 1 })
+    expect(heading).toHaveTextContent('お料理')
   })
 
   it('renders the English label text', () => {
@@ -13,7 +14,7 @@ describe('PageHero', () => {
     expect(screen.getByText('CUISINE')).toBeInTheDocument()
   })
 
-  it('has proper background structure with overlay element', () => {
+  it('has an overlay element', () => {
     const { container } = render(
       <PageHero title="客室" labelEn="ROOMS" backgroundImage="/images/rooms-hero.jpg" />
     )
@@ -27,12 +28,34 @@ describe('PageHero', () => {
     expect(lines.length).toBe(2)
   })
 
-  it('applies background image when provided', () => {
+  it('renders fallback dark background when no backgroundImage', () => {
     const { container } = render(
-      <PageHero title="客室" labelEn="ROOMS" backgroundImage="/images/rooms-hero.jpg" />
+      <PageHero title="客室" labelEn="ROOMS" />
     )
     const bgElement = container.querySelector('[data-testid="hero-bg"]')
     expect(bgElement).toBeInTheDocument()
-    expect(bgElement).toHaveStyle({ backgroundImage: 'url(/images/rooms-hero.jpg)' })
+  })
+
+  it('renders next/image when backgroundImage is provided', () => {
+    render(
+      <PageHero title="客室" labelEn="ROOMS" backgroundImage="/images/rooms-hero.jpg" />
+    )
+    const img = document.querySelector('img')
+    expect(img).toBeInTheDocument()
+  })
+
+  it('renders optional subtitle when provided', () => {
+    render(
+      <PageHero title="客室" labelEn="ROOMS" subtitle="静寂の離れ" />
+    )
+    expect(screen.getByText('静寂の離れ')).toBeInTheDocument()
+  })
+
+  it('does not render subtitle when not provided', () => {
+    const { container } = render(
+      <PageHero title="客室" labelEn="ROOMS" />
+    )
+    // Only h1 and label text should exist - no <p> for subtitle
+    expect(container.querySelector('p')).toBeNull()
   })
 })

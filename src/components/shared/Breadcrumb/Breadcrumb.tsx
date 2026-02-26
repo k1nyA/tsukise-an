@@ -15,8 +15,8 @@ export function Breadcrumb({ items }: BreadcrumbProps) {
       aria-label="パンくずリスト"
       style={{
         width: '100%',
-        backgroundColor: 'var(--ryokan-light-bg)',
-        padding: '16px 80px',
+        backgroundColor: 'var(--ryokan-light-bg, #EEEBE3)',
+        padding: 'var(--r-breadcrumb-py) var(--r-breadcrumb-px)',
         display: 'flex',
         alignItems: 'center',
         gap: 8,
@@ -35,7 +35,7 @@ export function Breadcrumb({ items }: BreadcrumbProps) {
                   fontFamily: 'var(--font-body)',
                   fontSize: 12,
                   fontWeight: 300,
-                  color: 'var(--ryokan-light-gold)',
+                  color: 'var(--ryokan-light-gold, #D4C5A0)',
                 }}
               >
                 &gt;
@@ -49,9 +49,9 @@ export function Breadcrumb({ items }: BreadcrumbProps) {
                 style={{
                   fontFamily: 'var(--font-body)',
                   fontSize: 12,
-                  fontWeight: 300,
-                  color: 'var(--ryokan-subtle)',
-                  letterSpacing: 1,
+                  fontWeight: 500,
+                  color: 'var(--ryokan-subtle, #8B7D6B)',
+                  letterSpacing: 2,
                   textDecoration: 'none',
                 }}
               >
@@ -62,11 +62,11 @@ export function Breadcrumb({ items }: BreadcrumbProps) {
                 style={{
                   fontFamily: 'var(--font-body)',
                   fontSize: 12,
-                  fontWeight: isLast ? 500 : 300,
-                  color: isLast ? 'var(--ryokan-dark)' : 'var(--ryokan-subtle)',
-                  letterSpacing: 1,
+                  fontWeight: 500,
+                  color: 'var(--ryokan-subtle, #8B7D6B)',
+                  letterSpacing: 2,
                 }}
-                {...(isLast ? { 'aria-current': 'page' } : {})}
+                {...(isLast ? { 'aria-current': 'page' as const } : {})}
               >
                 {item.label}
               </span>

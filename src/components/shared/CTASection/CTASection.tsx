@@ -9,7 +9,7 @@ export function CTASection() {
     >
       <Image
         src="/images/shared-cta-bg.png"
-        alt="月瀬庵の夜景"
+        alt=""
         fill
         className="object-cover"
         quality={85}
@@ -28,7 +28,7 @@ export function CTASection() {
           padding: '0 var(--r-cta-content-px)',
         }}
       >
-        <div className="flex flex-col items-center" style={{ gap: 16 }}>
+        <div className="flex flex-col items-center" style={{ gap: 16, width: '100%' }}>
           <span
             style={{ width: 1, height: 30, backgroundColor: '#D4C5A088' }}
             aria-hidden="true"
@@ -38,7 +38,7 @@ export function CTASection() {
               fontFamily: 'var(--font-heading)',
               fontSize: 'var(--r-cta-title)',
               fontWeight: 600,
-              color: '#faf8f3',
+              color: '#FAF8F3',
               letterSpacing: 'var(--r-cta-title-ls)',
               lineHeight: 1.8,
               textAlign: 'center',
@@ -54,7 +54,7 @@ export function CTASection() {
               fontFamily: 'var(--font-body)',
               fontSize: 'var(--r-cta-sub)',
               fontWeight: 300,
-              color: 'var(--ryokan-text-subtle)',
+              color: 'var(--ryokan-text-subtle, #C4B89A)',
               letterSpacing: 'var(--r-cta-sub-ls)',
               textAlign: 'center',
               margin: 0,
@@ -72,13 +72,13 @@ export function CTASection() {
             href="/reservation"
             className="flex items-center justify-center"
             style={{
-              backgroundColor: 'var(--ryokan-gold)',
+              backgroundColor: 'var(--ryokan-gold, #8B6914)',
               padding: 'var(--r-cta-btn-py) var(--r-cta-btn-px)',
-              border: '1px solid var(--ryokan-gold)',
+              border: '1px solid var(--ryokan-gold, #8B6914)',
               fontFamily: 'var(--font-body)',
               fontSize: 'var(--r-body-sm)',
               fontWeight: 500,
-              color: '#faf8f3',
+              color: '#FAF8F3',
               letterSpacing: 3,
               textDecoration: 'none',
             }}
