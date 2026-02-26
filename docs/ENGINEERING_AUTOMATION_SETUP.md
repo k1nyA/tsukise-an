@@ -10,6 +10,8 @@
   - `npm run typecheck`
 - Verify:
   - `npm run verify`（lint + typecheck + build）
+- Claude preflight:
+  - `npm run preflight:claude`（開始前のローカル実行前チェック）
 - Husky:
   - `.husky/pre-commit` -> `lint-staged`
   - `.husky/pre-push` -> `typecheck`, `lint`
@@ -64,3 +66,12 @@
 - スキーマ定義: 入力/外部レスポンスの不整合検知
 - コンパイルチェック: 型崩れをPRで即検知
 - テストライブラリ: 回帰防止を自動化
+
+## 6. Claude 実行前チェック / 復旧導線
+- セッション開始時は `npm run preflight:claude` を実行してから作業開始する
+- 失敗時は `docs/CLAUDE_RECOVERY_RUNBOOK.md` に従って復旧する
+- 代表的な検知項目:
+  - `cwd` が存在しない
+  - `gh` の repo context 不一致
+  - `ulimit -n` 不足
+  - 失効した worktree metadata
