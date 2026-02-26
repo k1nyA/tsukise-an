@@ -21,7 +21,7 @@ const timelineMorning = [
 
 function TimelineCard({ hour, title, desc, image }: { hour: string; title: string; desc: string; image: string }) {
   return (
-    <div className="flex flex-1 flex-col items-center" style={{ gap: 20, paddingTop: 8 }}>
+    <div className="stay-card">
       <span
         style={{
           fontFamily: 'var(--font-accent)',
@@ -37,7 +37,7 @@ function TimelineCard({ hour, title, desc, image }: { hour: string; title: strin
         className="relative w-full overflow-hidden"
         style={{ height: 'var(--r-timeline-img-h)' }}
       >
-        <Image src={image} alt={title} fill className="object-cover" sizes="(max-width: 767px) 100vw, 25vw" />
+        <Image src={image} alt={title} fill className="object-cover" sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 25vw" />
       </div>
       <h3
         style={{
@@ -76,12 +76,12 @@ export function StaySection() {
       style={{
         padding: 'var(--r-center-py) var(--r-center-px)',
         gap: 'var(--r-stay-gap)',
-        backgroundColor: 'var(--ryokan-bg)',
         backgroundImage: 'url(/images/top-stay-bg.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
     >
+      {/* Section Label */}
       <div className="flex items-center" style={{ gap: 20 }}>
         <span
           style={{ width: 60, height: 1, backgroundColor: 'var(--ryokan-light-gold)' }}
@@ -104,6 +104,7 @@ export function StaySection() {
         />
       </div>
 
+      {/* Section Title */}
       <h2
         style={{
           fontFamily: 'var(--font-heading)',
@@ -118,54 +119,56 @@ export function StaySection() {
         月瀬庵での過ごし方
       </h2>
 
-      <div className="flex w-full flex-col" style={{ gap: 24 }}>
-        <div className="r-grid-row w-full" style={{ gap: 'var(--r-timeline-gap)' }}>
-          {timelineAfternoon.map((item) => (
-            <TimelineCard key={item.hour} {...item} />
-          ))}
-        </div>
+      {/* Timeline Afternoon: PC=4col, Tablet=2col, Mobile=1col */}
+      <div className="stay-grid stay-grid--4">
+        {timelineAfternoon.map((item) => (
+          <TimelineCard key={item.hour} {...item} />
+        ))}
+      </div>
 
-        <div className="r-grid-row w-full" style={{ gap: 'var(--r-timeline-gap)' }}>
-          {timelineEvening.map((item) => (
-            <TimelineCard key={item.hour} {...item} />
-          ))}
-        </div>
+      {/* Timeline Evening: PC=3col, Tablet=2col, Mobile=1col */}
+      <div className="stay-grid stay-grid--3">
+        {timelineEvening.map((item) => (
+          <TimelineCard key={item.hour} {...item} />
+        ))}
+      </div>
 
-        <div className="flex w-full items-center justify-center" style={{ gap: 24 }}>
-          <span
-            style={{
-              width: 'var(--r-divider-w)',
-              height: 1,
-              backgroundColor: 'var(--ryokan-light-gold)',
-            }}
-            aria-hidden="true"
-          />
-          <span
-            style={{
-              fontFamily: 'var(--font-heading)',
-              fontSize: 14,
-              fontWeight: 'normal',
-              color: 'var(--ryokan-subtle)',
-              letterSpacing: 8,
-            }}
-          >
-            翌 朝
-          </span>
-          <span
-            style={{
-              width: 'var(--r-divider-w)',
-              height: 1,
-              backgroundColor: 'var(--ryokan-light-gold)',
-            }}
-            aria-hidden="true"
-          />
-        </div>
+      {/* Divider: 翌 朝 */}
+      <div className="flex w-full items-center justify-center" style={{ gap: 'var(--r-divider-gap)' }}>
+        <span
+          style={{
+            width: 'var(--r-divider-w)',
+            height: 1,
+            backgroundColor: 'var(--ryokan-light-gold)',
+          }}
+          aria-hidden="true"
+        />
+        <span
+          style={{
+            fontFamily: 'var(--font-heading)',
+            fontSize: 14,
+            fontWeight: 'normal',
+            color: 'var(--ryokan-subtle)',
+            letterSpacing: 8,
+          }}
+        >
+          翌 朝
+        </span>
+        <span
+          style={{
+            width: 'var(--r-divider-w)',
+            height: 1,
+            backgroundColor: 'var(--ryokan-light-gold)',
+          }}
+          aria-hidden="true"
+        />
+      </div>
 
-        <div className="r-grid-row w-full" style={{ gap: 'var(--r-timeline-gap)' }}>
-          {timelineMorning.map((item) => (
-            <TimelineCard key={item.hour} {...item} />
-          ))}
-        </div>
+      {/* Timeline Morning: PC=3col, Tablet=2col, Mobile=1col */}
+      <div className="stay-grid stay-grid--3">
+        {timelineMorning.map((item) => (
+          <TimelineCard key={item.hour} {...item} />
+        ))}
       </div>
     </section>
   )

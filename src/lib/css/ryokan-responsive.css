@@ -119,6 +119,7 @@
   --r-dish-h: 300px;
   --r-timeline-img-h: 200px;
   --r-divider-w: 120px;
+  --r-divider-gap: 24px;
   --r-stay-gap: 60px;
 
   /* Info */
@@ -311,6 +312,7 @@
     --r-dish-h: 200px;
     --r-timeline-img-h: 160px;
     --r-divider-w: 60px;
+    --r-divider-gap: 12px;
     --r-stay-gap: 32px;
 
     --r-info-padding: 32px;
@@ -383,6 +385,51 @@
   }
   .r-grid-row {
     flex-direction: column;
+  }
+}
+
+/* ===========================================
+   Stay Section Timeline Grid
+   PC: 4col/3col | Tablet: 2col | Mobile: 1col
+   =========================================== */
+
+.stay-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 8px;
+  min-width: 0;
+}
+
+/* PC (default): CSS Grid */
+.stay-grid {
+  display: grid;
+  width: 100%;
+  gap: var(--r-timeline-gap);
+}
+
+.stay-grid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.stay-grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Tablet: 2 columns */
+@media (max-width: 1023px) {
+  .stay-grid--4,
+  .stay-grid--3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 767px) {
+  .stay-grid--4,
+  .stay-grid--3 {
+    grid-template-columns: 1fr;
   }
 }
 
