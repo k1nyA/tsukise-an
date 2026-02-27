@@ -4,20 +4,27 @@ export function ConceptSection() {
   return (
     <section
       className="flex w-full flex-col items-center"
-      style={{ padding: '100px 200px', gap: 48 }}
+      style={{
+        padding: 'var(--r-cuisine-concept-py) var(--r-cuisine-concept-px)',
+        gap: 'var(--r-cuisine-concept-gap)',
+        backgroundImage: 'url(/images/cuisine-concept-bg.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
     >
       {/* Label with decorative lines */}
       <SectionLabel english="PHILOSOPHY" />
 
       {/* Section title */}
       <h2
-        className="text-center"
+        className="r-cuisine-concept-body"
         style={{
           fontFamily: 'var(--font-heading)',
-          fontSize: 32,
+          fontSize: 'var(--r-cuisine-concept-title)',
           fontWeight: 600,
           color: 'var(--ryokan-dark, #2C2418)',
-          letterSpacing: 6,
+          letterSpacing: 'var(--r-cuisine-concept-title-ls)',
+          margin: 0,
         }}
       >
         土地の恵みを、一皿に。
@@ -25,15 +32,16 @@ export function ConceptSection() {
 
       {/* Body text */}
       <p
-        className="text-center"
+        className="r-cuisine-concept-body"
         style={{
           fontFamily: 'var(--font-body)',
-          fontSize: 16,
+          fontSize: 'var(--r-cuisine-concept-body)',
           fontWeight: 300,
           color: 'var(--ryokan-secondary, #6B5D4F)',
-          letterSpacing: 1.5,
-          lineHeight: 2.4,
-          maxWidth: 620,
+          letterSpacing: 'var(--r-cuisine-concept-body-ls)',
+          lineHeight: 'var(--r-cuisine-concept-body-lh)',
+          maxWidth: 'var(--r-cuisine-concept-body-max-w)',
+          margin: 0,
         }}
       >
         月瀬庵の料理長・水月が手掛ける月替わり懐石は、

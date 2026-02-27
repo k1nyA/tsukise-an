@@ -20,9 +20,9 @@ describe('DiningRoomSection', () => {
     ).toBeInTheDocument()
   })
 
-  it('renders an image placeholder with aria-label', () => {
+  it('renders an image with descriptive alt text', () => {
     render(<DiningRoomSection />)
-    expect(screen.getByLabelText('食事処のイメージ')).toBeInTheDocument()
+    expect(screen.getByAltText('食事処のイメージ')).toBeInTheDocument()
   })
 
   it('renders the section as a semantic section element', () => {

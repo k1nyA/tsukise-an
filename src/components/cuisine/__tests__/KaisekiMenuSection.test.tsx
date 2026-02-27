@@ -41,10 +41,17 @@ describe('KaisekiMenuSection', () => {
     expect(section).toBeInTheDocument()
   })
 
-  it('renders image placeholders with descriptive aria-labels', () => {
+  it('renders images for courses with available photos', () => {
     render(<KaisekiMenuSection />)
-    expect(screen.getByLabelText('先附の写真')).toBeInTheDocument()
-    expect(screen.getByLabelText('椀物の写真')).toBeInTheDocument()
-    expect(screen.getByLabelText('造りの写真')).toBeInTheDocument()
+    expect(screen.getByAltText('先附の写真')).toBeInTheDocument()
+    expect(screen.getByAltText('椀物の写真')).toBeInTheDocument()
+    expect(screen.getByAltText('造りの写真')).toBeInTheDocument()
+  })
+
+  it('renders placeholder images for courses without photos', () => {
+    render(<KaisekiMenuSection />)
+    expect(screen.getByLabelText('八寸の写真')).toBeInTheDocument()
+    expect(screen.getByLabelText('揚物の写真')).toBeInTheDocument()
+    expect(screen.getByLabelText('食事の写真')).toBeInTheDocument()
   })
 })

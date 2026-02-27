@@ -1,0 +1,128 @@
+/* ===========================================
+   Cuisine Page Responsive CSS Variables
+   Breakpoints: Mobile(<768) / Tablet(768-1023) / PC(>=1024)
+   =========================================== */
+
+/* --- PC (default, >= 1024px) --- */
+:root {
+  /* Cuisine Concept Section */
+  --r-cuisine-concept-py: 100px;
+  --r-cuisine-concept-px: 200px;
+  --r-cuisine-concept-gap: 48px;
+  --r-cuisine-concept-title: 32px;
+  --r-cuisine-concept-title-ls: 6px;
+  --r-cuisine-concept-body: 16px;
+  --r-cuisine-concept-body-ls: 1.5px;
+  --r-cuisine-concept-body-lh: 2.4;
+  --r-cuisine-concept-body-max-w: 620px;
+
+  /* Kaiseki Menu Section */
+  --r-cuisine-kaiseki-pt: 60px;
+  --r-cuisine-kaiseki-px: 80px;
+  --r-cuisine-kaiseki-pb: 100px;
+  --r-cuisine-kaiseki-gap: 40px;
+  --r-cuisine-kaiseki-title: 24px;
+  --r-cuisine-kaiseki-title-ls: 4px;
+  --r-cuisine-kaiseki-card-img-h: 260px;
+
+  /* Allergy Section */
+  --r-cuisine-allergy-py: 80px;
+  --r-cuisine-allergy-px: 120px;
+  --r-cuisine-allergy-gap: 48px;
+
+  /* Related Links Section */
+  --r-cuisine-links-py: 40px;
+  --r-cuisine-links-px: 80px;
+  --r-cuisine-links-gap: 60px;
+}
+
+/* --- Tablet (768px - 1023px) --- */
+@media (max-width: 1023px) {
+  :root {
+    --r-cuisine-concept-py: 80px;
+    --r-cuisine-concept-px: 100px;
+    --r-cuisine-concept-title: 28px;
+    --r-cuisine-concept-title-ls: 5px;
+    --r-cuisine-concept-body: 14px;
+    --r-cuisine-concept-body-ls: 1px;
+    --r-cuisine-concept-body-lh: 2.2;
+
+    --r-cuisine-kaiseki-px: 60px;
+    --r-cuisine-kaiseki-pb: 80px;
+
+    --r-cuisine-allergy-py: 60px;
+    --r-cuisine-allergy-px: 80px;
+
+    --r-cuisine-links-px: 60px;
+  }
+}
+
+/* --- Mobile (< 768px) --- */
+@media (max-width: 767px) {
+  :root {
+    --r-cuisine-concept-py: 60px;
+    --r-cuisine-concept-px: 24px;
+    --r-cuisine-concept-gap: 40px;
+    --r-cuisine-concept-title: 24px;
+    --r-cuisine-concept-title-ls: 3px;
+    --r-cuisine-concept-body: 14px;
+    --r-cuisine-concept-body-ls: 1px;
+    --r-cuisine-concept-body-lh: 2.2;
+    --r-cuisine-concept-body-max-w: 100%;
+
+    --r-cuisine-kaiseki-pt: 40px;
+    --r-cuisine-kaiseki-px: 24px;
+    --r-cuisine-kaiseki-pb: 60px;
+
+    --r-cuisine-allergy-py: 60px;
+    --r-cuisine-allergy-px: 24px;
+
+    --r-cuisine-links-py: 40px;
+    --r-cuisine-links-px: 24px;
+    --r-cuisine-links-gap: 60px;
+  }
+}
+
+/* ===========================================
+   Cuisine Page Responsive Utility Classes
+   =========================================== */
+
+/* Allergy items: row on PC/Tablet, column on Mobile */
+.r-cuisine-allergy-items {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+@media (max-width: 767px) {
+  .r-cuisine-allergy-items {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+/* Cuisine Links: row on PC/Tablet, column on Mobile */
+.r-cuisine-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--r-cuisine-links-gap);
+}
+
+@media (max-width: 767px) {
+  .r-cuisine-links {
+    flex-direction: column;
+  }
+}
+
+/* Concept body: center on PC/Tablet, left on Mobile */
+.r-cuisine-concept-body {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .r-cuisine-concept-body {
+    text-align: left;
+  }
+}

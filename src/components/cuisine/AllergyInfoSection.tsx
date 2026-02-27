@@ -28,8 +28,8 @@ export function AllergyInfoSection() {
       className="flex w-full flex-col items-center"
       style={{
         backgroundColor: 'var(--ryokan-light-bg-alt, #F0EBE0)',
-        padding: '80px 120px',
-        gap: 48,
+        padding: 'var(--r-cuisine-allergy-py) var(--r-cuisine-allergy-px)',
+        gap: 'var(--r-cuisine-allergy-gap)',
       }}
     >
       {/* Title */}
@@ -37,17 +37,18 @@ export function AllergyInfoSection() {
         className="text-center"
         style={{
           fontFamily: 'var(--font-heading)',
-          fontSize: 24,
+          fontSize: 'var(--r-title-xs)',
           fontWeight: 600,
           color: 'var(--ryokan-dark, #2C2418)',
-          letterSpacing: 4,
+          letterSpacing: 'var(--r-title-spacing-sm)',
+          margin: 0,
         }}
       >
         アレルギー・特別対応
       </h2>
 
-      {/* Allergy items grid */}
-      <div className="flex w-full" style={{ gap: 40 }}>
+      {/* Allergy items: row on PC/Tablet, column on Mobile */}
+      <div className="r-cuisine-allergy-items w-full">
         {allergyItems.map((item) => (
           <div
             key={item.title}
@@ -72,6 +73,7 @@ export function AllergyInfoSection() {
                 fontWeight: 600,
                 color: 'var(--ryokan-dark, #2C2418)',
                 letterSpacing: 1,
+                margin: 0,
               }}
             >
               {item.title}
@@ -87,6 +89,7 @@ export function AllergyInfoSection() {
                 color: 'var(--ryokan-secondary, #6B5D4F)',
                 lineHeight: 1.8,
                 whiteSpace: 'pre-line',
+                margin: 0,
               }}
             >
               {item.description}

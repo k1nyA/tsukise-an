@@ -34,11 +34,11 @@ export default function CuisinePage() {
 
         {/* Related page links */}
         <div
-          className="flex w-full items-center justify-center"
+          className="r-cuisine-links w-full"
           style={{
             backgroundColor: 'var(--ryokan-bg, #FAF8F3)',
-            gap: 60,
-            padding: '40px 80px',
+            padding:
+              'var(--r-cuisine-links-py) var(--r-cuisine-links-px)',
           }}
         >
           <Link
