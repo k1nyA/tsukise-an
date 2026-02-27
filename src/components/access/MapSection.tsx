@@ -5,7 +5,7 @@ export function MapSection() {
       style={{
         backgroundColor: 'var(--ryokan-info-bg, #F0EBE0)',
         padding: 'var(--r-access-map-py) var(--r-access-map-px)',
-        minHeight: 320,
+        minHeight: 'var(--r-access-map-min-h)',
       }}
     >
       {/* Map placeholder frame — to be replaced with Google Maps iframe */}
@@ -13,7 +13,7 @@ export function MapSection() {
         data-testid="map-frame"
         className="relative w-full overflow-hidden"
         style={{
-          height: 260,
+          height: 'var(--r-access-map-frame-h)',
           borderRadius: 4,
           backgroundColor: 'var(--ryokan-light-bg, #EEEBE3)',
         }}
