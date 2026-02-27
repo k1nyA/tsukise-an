@@ -1,0 +1,37 @@
+/* ===========================================
+   Access Page Responsive CSS Variables
+   Breakpoints: Mobile(<768) / Tablet(768-1023) / PC(>=1024)
+   =========================================== */
+
+/* --- PC (default, >= 1024px) --- */
+:root {
+  /* Map frame height */
+  --r-access-map-frame-h: 260px;
+  --r-access-map-min-h: 320px;
+
+  /* Address label decorative line */
+  --r-access-label-line-w: 40px;
+  --r-access-label-gap: 20px;
+}
+
+/* --- Tablet (768px - 1023px) --- */
+@media (max-width: 1023px) {
+  :root {
+    --r-access-map-frame-h: 220px;
+    --r-access-map-min-h: auto;
+
+    --r-access-label-line-w: 40px;
+    --r-access-label-gap: 20px;
+  }
+}
+
+/* --- Mobile (< 768px) --- */
+@media (max-width: 767px) {
+  :root {
+    --r-access-map-frame-h: 180px;
+    --r-access-map-min-h: auto;
+
+    --r-access-label-line-w: 30px;
+    --r-access-label-gap: 16px;
+  }
+}

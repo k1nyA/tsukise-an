@@ -1,572 +1,484 @@
 {
-  "page": {
-    "name": "温泉ページ",
-    "nameEn": "Onsen",
-    "route": "/onsen",
-    "penFrameId": "Ghbhb"
-  },
-  "layout": {
-    "width": 1440,
-    "direction": "vertical",
-    "fill": "#FAF8F3",
-    "clip": true
-  },
-  "sections": [
-    {
-      "name": "h3",
-      "penId": "ez1KE",
-      "type": "frame",
-      "styles": {
-        "fill": "#FAF8F3",
-        "height": 80,
-        "width": "fill_container",
-        "justifyContent": "space_between",
-        "alignItems": "center",
-        "padding": [0, 60]
-      },
-      "children": [
+  "page": "onsen",
+  "title": "温泉ページ (Onsen Page)",
+  "description": "Onsen (Hot Spring) page design with three viewport variants (PC, Tablet, Mobile)",
+  "viewports": {
+    "pc": {
+      "id": "Ghbhb",
+      "name": "温泉ページ",
+      "width": 1440,
+      "layout": "vertical",
+      "fill": "#FAF8F3",
+      "sections": [
         {
-          "name": "logoArea",
-          "penId": "uXa7S",
+          "id": "gJ4uJ",
+          "name": "h3",
           "type": "frame",
-          "styles": {
-            "alignItems": "center",
-            "gap": 12
-          }
+          "description": "Header with logo and navigation",
+          "width": "fill_container",
+          "height": 80,
+          "layout": "horizontal",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "padding": [0, 60],
+          "fill": "#FAF8F3"
         },
         {
-          "name": "navArea",
-          "penId": "9DctZ",
-          "type": "frame",
-          "styles": {
-            "alignItems": "center",
-            "gap": 32
-          }
-        }
-      ]
-    },
-    {
-      "name": "bc2",
-      "penId": "oRNNo",
-      "type": "frame",
-      "styles": {
-        "fill": "#EEEBE3",
-        "width": "fill_container",
-        "alignItems": "center",
-        "gap": 8,
-        "padding": [16, 80]
-      },
-      "children": [
-        {
-          "name": "bc1",
-          "penId": "l3EWi",
-          "type": "text",
-          "content": "ホーム",
-          "context": "href: /",
-          "styles": {
-            "fill": "#8B7D6B",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 12,
-            "fontWeight": "300",
-            "letterSpacing": 1
-          }
-        },
-        {
-          "name": "bcSep",
-          "penId": "sBZpE",
-          "type": "text",
-          "content": ">",
-          "styles": {
-            "fill": "#D4C5A0",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 12,
-            "fontWeight": "300"
-          }
-        },
-        {
+          "id": "yRMp8",
           "name": "bc2",
-          "penId": "c9wHk",
-          "type": "text",
-          "content": "温泉",
-          "styles": {
-            "fill": "#2C2418",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 12,
-            "fontWeight": "500",
-            "letterSpacing": 1
-          }
+          "type": "frame",
+          "description": "Breadcrumb navigation",
+          "width": "fill_container",
+          "padding": [16, 80],
+          "fill": "#EEEBE3",
+          "gap": 8,
+          "alignItems": "center"
+        },
+        {
+          "id": "pJSQU",
+          "name": "hero2",
+          "type": "frame",
+          "description": "Hero section with background image overlay",
+          "width": "fill_container",
+          "height": 480,
+          "layout": "none",
+          "clip": true
+        },
+        {
+          "id": "Jo11h",
+          "name": "Onsen Concept",
+          "type": "frame",
+          "description": "Concept section with title and description",
+          "width": "fill_container",
+          "layout": "vertical",
+          "alignItems": "center",
+          "gap": 48,
+          "padding": [100, 200],
+          "fill": "image"
+        },
+        {
+          "id": "n6lJG",
+          "name": "pcDaiyokujoRef",
+          "type": "frame",
+          "description": "Daiyokujo (Large public bath) section",
+          "width": "fill_container",
+          "layout": "horizontal",
+          "children": ["roomImg", "roomContent"]
+        },
+        {
+          "id": "0pVaQ",
+          "name": "pcRotenburoRef",
+          "type": "frame",
+          "description": "Rotenburo (Open-air bath) section",
+          "width": "fill_container",
+          "layout": "horizontal",
+          "children": ["onsenContent", "onsenImg"]
+        },
+        {
+          "id": "Y1hL5",
+          "name": "pcWaterQualityRef",
+          "type": "frame",
+          "description": "Water quality (spring properties) section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "alignItems": "center",
+          "gap": 48,
+          "padding": [80, 120],
+          "fill": "image"
+        },
+        {
+          "id": "5Zm4g",
+          "name": "pcOnsenGuideRef",
+          "type": "frame",
+          "description": "Onsen guide section",
+          "width": "fill_container",
+          "layout": "horizontal",
+          "gap": 60,
+          "padding": [80, 120],
+          "fill": "#FAF8F3"
+        },
+        {
+          "id": "8pDDV",
+          "name": "pcBathEtiRef",
+          "type": "frame",
+          "description": "Bath etiquette section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "alignItems": "center",
+          "gap": 48,
+          "padding": [80, 120],
+          "fill": "#F0EBE0"
+        },
+        {
+          "id": "YC5B1",
+          "name": "pcOnsenLinksRef",
+          "type": "frame",
+          "description": "Navigation links section",
+          "width": "fill_container",
+          "layout": "horizontal",
+          "justifyContent": "center",
+          "gap": 60,
+          "padding": [40, 80],
+          "fill": "#FAF8F3",
+          "links": [
+            {"text": "空室を確認する →", "href": "/reservation"},
+            {"text": "客室を見る →", "href": "/rooms"}
+          ]
+        },
+        {
+          "id": "mRdCe",
+          "name": "c3",
+          "type": "frame",
+          "description": "CTA section with background image",
+          "width": "fill_container",
+          "height": 480,
+          "layout": "none",
+          "clip": true
+        },
+        {
+          "id": "HRKjI",
+          "name": "f3",
+          "type": "frame",
+          "description": "Footer",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [60, 80, 32, 80],
+          "fill": "#1A150E"
         }
       ]
     },
-    {
-      "name": "hero2",
-      "penId": "hOq3f",
-      "type": "frame",
-      "styles": {
-        "height": 480,
-        "width": "fill_container",
-        "layout": "none",
-        "clip": true
-      },
-      "children": [
+    "tablet": {
+      "id": "9XhX7",
+      "name": "温泉ページ Tablet",
+      "width": 768,
+      "layout": "vertical",
+      "fill": "#FAF8F3",
+      "sections": [
         {
-          "name": "heroBg",
-          "penId": "5tKcH",
+          "id": "Tofnb",
+          "name": "h3",
           "type": "frame",
-          "hasImageFill": true,
-          "styles": {
-            "width": 1440,
-            "height": 480,
-            "x": 0,
-            "y": 0
-          }
+          "description": "Header (tablet)",
+          "width": "fill_container",
+          "height": 80,
+          "layout": "horizontal",
+          "padding": [0, 40]
         },
         {
-          "name": "heroOverlay",
-          "penId": "wfoLY",
+          "id": "9ztKC",
+          "name": "bc2",
           "type": "frame",
-          "styles": {
-            "fill": "#1A150E55",
-            "width": 1440,
-            "height": 480,
-            "x": 0,
-            "y": 0
-          }
+          "description": "Breadcrumb (tablet)",
+          "width": "fill_container",
+          "padding": [16, 40],
+          "fill": "#EEEBE3"
         },
         {
-          "name": "heroContent",
-          "penId": "s5o9a",
+          "id": "TJRDc",
+          "name": "hero2",
           "type": "frame",
-          "styles": {
-            "layout": "vertical",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "gap": 24,
-            "width": 1440,
-            "height": 480,
-            "x": 0,
-            "y": 0
-          }
+          "description": "Hero (tablet)",
+          "width": "fill_container",
+          "height": 400,
+          "layout": "none",
+          "clip": true
+        },
+        {
+          "id": "stvZ3",
+          "name": "onsenTC",
+          "type": "frame",
+          "description": "Concept (tablet)",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [80, 100]
+        },
+        {
+          "id": "GSw3M",
+          "name": "tabDaiyokujoRef",
+          "type": "frame",
+          "description": "Daiyokujo (tablet)",
+          "width": "fill_container",
+          "layout": "horizontal"
+        },
+        {
+          "id": "od7aw",
+          "name": "tabRotenburoRef",
+          "type": "frame",
+          "description": "Rotenburo (tablet)",
+          "width": "fill_container",
+          "layout": "horizontal"
+        },
+        {
+          "id": "DyjiV",
+          "name": "tabWaterQualityRef",
+          "type": "frame",
+          "description": "Water quality (tablet)",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [60, 80]
+        },
+        {
+          "id": "SBtdn",
+          "name": "tabOnsenGuideRef",
+          "type": "frame",
+          "description": "Guide (tablet)",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [60, 80]
+        },
+        {
+          "id": "ETHAP",
+          "name": "tabBathEtiRef",
+          "type": "frame",
+          "description": "Bath etiquette (tablet)",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [60, 80]
+        },
+        {
+          "id": "IT3eQ",
+          "name": "tabOnsenLinksRef",
+          "type": "frame",
+          "description": "Links (tablet)",
+          "width": "fill_container",
+          "layout": "horizontal",
+          "gap": 60,
+          "padding": [40, 60]
+        },
+        {
+          "id": "IokZl",
+          "name": "c3",
+          "type": "frame",
+          "description": "CTA (tablet)",
+          "width": "fill_container",
+          "height": 440
+        },
+        {
+          "id": "aQOhu",
+          "name": "f3",
+          "type": "frame",
+          "description": "Footer (tablet)",
+          "width": "fill_container",
+          "padding": [48, 48, 24, 48]
         }
       ]
     },
-    {
-      "name": "Onsen Concept",
-      "penId": "jD8Fu",
-      "type": "frame",
-      "hasImageFill": true,
-      "styles": {
-        "width": "fill_container",
-        "layout": "vertical",
-        "alignItems": "center",
-        "gap": 48,
-        "padding": [100, 200]
-      },
-      "children": [
+    "mobile": {
+      "id": "iz6Pr",
+      "name": "温泉ページ Mobile",
+      "width": 375,
+      "layout": "vertical",
+      "fill": "#FAF8F3",
+      "sections": [
         {
-          "name": "oConceptLabel",
-          "penId": "e7cuz",
+          "id": "rcl2T",
+          "name": "h3",
           "type": "frame",
-          "styles": {
-            "alignItems": "center",
-            "gap": 20
-          }
+          "description": "Header (mobile)",
+          "width": "fill_container",
+          "height": 60,
+          "layout": "horizontal",
+          "padding": [0, 20]
         },
         {
-          "name": "oConceptTitle",
-          "penId": "3JWpX",
-          "type": "text",
-          "content": "湯に浸り、景に溶ける。",
-          "styles": {
-            "fill": "#2C2418",
-            "fontFamily": "Noto Serif JP",
-            "fontSize": 32,
-            "fontWeight": "600",
-            "letterSpacing": 6,
-            "textAlign": "center"
-          }
+          "id": "MQk6x",
+          "name": "bc2",
+          "type": "frame",
+          "description": "Breadcrumb (mobile)",
+          "width": "fill_container",
+          "padding": [12, 20],
+          "fill": "#EEEBE3"
         },
         {
-          "name": "oConceptBody",
-          "penId": "mAYaf",
-          "type": "text",
-          "content": "月瀬庵の湯は、古くから「美肌の湯」として知られる姥子温泉。\n芦ノ湖を望む露天風呂では、朝は湖面を這う霧を、\n夕は山々に沈む夕陽を、夜は水面に映る月を眺めながら、\n至福のひとときをお過ごしいただけます。",
-          "styles": {
-            "fill": "#6B5D4F",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 16,
-            "fontWeight": "300",
-            "letterSpacing": 1.5,
-            "lineHeight": 2.4,
-            "textAlign": "center",
-            "width": 640
-          }
+          "id": "W6sal",
+          "name": "hr2",
+          "type": "frame",
+          "description": "Hero (mobile)",
+          "width": "fill_container",
+          "height": 320,
+          "layout": "none",
+          "clip": true
         },
         {
-          "name": "oConceptDeco",
-          "penId": "kewEp",
-          "type": "rectangle",
-          "styles": {
-            "fill": "#D4C5A0",
-            "width": 1,
-            "height": 40
-          }
-        }
-      ]
-    },
-    {
-      "name": "Daiyokujo Section",
-      "penId": "8ILba",
-      "type": "frame",
-      "styles": {
-        "height": 520,
-        "width": "fill_container",
-        "clip": true
-      },
-      "children": [
-        {
-          "name": "daiyokuImg",
-          "penId": "EFXlY",
+          "id": "pUYCr",
+          "name": "onsenCS",
           "type": "frame",
-          "hasImageFill": true,
-          "styles": {
-            "width": 720,
-            "height": 520,
-            "clip": true
-          }
+          "description": "Concept (mobile)",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [60, 24]
         },
         {
-          "name": "daiyokuContent",
-          "penId": "UEpwL",
+          "id": "Yg6KV",
+          "name": "mobDaiyokujoRef",
           "type": "frame",
-          "styles": {
-            "fill": "#FAF8F3",
-            "layout": "vertical",
-            "justifyContent": "center",
-            "gap": 24,
-            "padding": 60,
-            "width": "fill_container",
-            "height": "fill_container"
-          }
-        }
-      ]
-    },
-    {
-      "name": "Rotenburo Section",
-      "penId": "Law8r",
-      "type": "frame",
-      "styles": {
-        "height": 520,
-        "width": "fill_container",
-        "clip": true
-      },
-      "children": [
-        {
-          "name": "rotenContent",
-          "penId": "JyX1Q",
-          "type": "frame",
-          "styles": {
-            "fill": "#F0EBE0",
-            "layout": "vertical",
-            "justifyContent": "center",
-            "gap": 24,
-            "padding": 60,
-            "width": "fill_container",
-            "height": "fill_container"
-          }
+          "description": "Daiyokujo (mobile)",
+          "width": "fill_container",
+          "layout": "vertical"
         },
         {
-          "name": "rotenImg",
-          "penId": "WkRwu",
+          "id": "lE65N",
+          "name": "mobRotenburoRef",
           "type": "frame",
-          "hasImageFill": true,
-          "styles": {
-            "width": 720,
-            "height": 520,
-            "clip": true
-          }
-        }
-      ]
-    },
-    {
-      "name": "Water Quality Section",
-      "penId": "FwAbn",
-      "type": "frame",
-      "hasImageFill": true,
-      "styles": {
-        "width": "fill_container",
-        "layout": "vertical",
-        "alignItems": "center",
-        "gap": 48,
-        "padding": [80, 120]
-      },
-      "children": [
-        {
-          "name": "qualLabel",
-          "penId": "jEWvv",
-          "type": "frame",
-          "styles": {
-            "alignItems": "center",
-            "gap": 16
-          }
+          "description": "Rotenburo (mobile)",
+          "width": "fill_container",
+          "layout": "vertical"
         },
         {
-          "name": "qualTitle",
-          "penId": "iF99y",
-          "type": "text",
-          "content": "泉質と効能",
-          "styles": {
-            "fill": "#FAF8F3",
-            "fontFamily": "Noto Serif JP",
-            "fontSize": 28,
-            "fontWeight": "600",
-            "letterSpacing": 4,
-            "textAlign": "center"
-          }
+          "id": "laPFb",
+          "name": "mobWaterQualityRef",
+          "type": "frame",
+          "description": "Water quality (mobile)",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [60, 24]
         },
         {
-          "name": "qualGrid",
-          "penId": "gcNmg",
+          "id": "PIFEE",
+          "name": "mobOnsenGuideRef",
           "type": "frame",
-          "styles": {
-            "width": "fill_container"
-          }
-        }
-      ]
-    },
-    {
-      "name": "Onsen Guide Section",
-      "penId": "uWV7l",
-      "type": "frame",
-      "styles": {
-        "fill": "#FAF8F3",
-        "width": "fill_container",
-        "gap": 60,
-        "padding": [80, 120]
-      },
-      "children": [
-        {
-          "name": "guideTitle",
-          "penId": "KRxib",
-          "type": "frame",
-          "styles": {
-            "layout": "vertical",
-            "gap": 16,
-            "width": 300
-          }
+          "description": "Guide (mobile)",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [60, 24],
+          "gap": 32
         },
         {
-          "name": "guideContent",
-          "penId": "wYVyf",
+          "id": "5coKT",
+          "name": "mobBathEtiRef",
           "type": "frame",
-          "styles": {
-            "layout": "vertical",
-            "gap": 24,
-            "width": "fill_container"
-          }
-        }
-      ]
-    },
-    {
-      "name": "Bathing Etiquette Section",
-      "penId": "JM4oH",
-      "type": "frame",
-      "styles": {
-        "fill": "#F0EBE0",
-        "width": "fill_container",
-        "layout": "vertical",
-        "alignItems": "center",
-        "gap": 48,
-        "padding": [80, 120]
-      },
-      "children": [
-        {
-          "name": "etiTitle",
-          "penId": "obmqG",
-          "type": "text",
-          "content": "入浴のご案内",
-          "styles": {
-            "fill": "#2C2418",
-            "fontFamily": "Noto Serif JP",
-            "fontSize": 24,
-            "fontWeight": "600",
-            "letterSpacing": 4,
-            "textAlign": "center"
-          }
+          "description": "Bath etiquette (mobile)",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [60, 24]
         },
         {
-          "name": "etiGrid",
-          "penId": "f7kdW",
+          "id": "kHJh0",
+          "name": "mobOnsenLinksRef",
           "type": "frame",
-          "styles": {
-            "gap": 32,
-            "width": "fill_container"
-          }
-        }
-      ]
-    },
-    {
-      "name": "onsenLinksWrap",
-      "penId": "zUZ0X",
-      "type": "frame",
-      "styles": {
-        "fill": "#FAF8F3",
-        "width": "fill_container",
-        "alignItems": "center",
-        "justifyContent": "center",
-        "gap": 60,
-        "padding": [40, 80]
-      },
-      "children": [
-        {
-          "name": "onsenLink1",
-          "penId": "5Cu7T",
-          "type": "text",
-          "content": "空室を確認する \u2192",
-          "context": "href: /reservation",
-          "styles": {
-            "fill": "#8B6914",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 14,
-            "fontWeight": "500",
-            "letterSpacing": 1
-          }
+          "description": "Links (mobile)",
+          "width": "fill_container",
+          "layout": "horizontal",
+          "gap": 60,
+          "padding": [40, 24]
         },
         {
-          "name": "onsenLink2",
-          "penId": "9Rd0f",
-          "type": "text",
-          "content": "客室を見る \u2192",
-          "context": "href: /rooms",
-          "styles": {
-            "fill": "#8B6914",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 14,
-            "fontWeight": "500",
-            "letterSpacing": 1
-          }
-        }
-      ]
-    },
-    {
-      "name": "c3",
-      "penId": "Sg01Y",
-      "type": "frame",
-      "styles": {
-        "height": 480,
-        "width": "fill_container",
-        "layout": "none",
-        "clip": true
-      },
-      "children": [
-        {
-          "name": "ctaBg",
-          "penId": "JgCkz",
+          "id": "iPFjR",
+          "name": "c3",
           "type": "frame",
-          "hasImageFill": true,
-          "styles": {
-            "width": 1440,
-            "height": 480,
-            "x": 0,
-            "y": 0
-          }
+          "description": "CTA (mobile)",
+          "width": "fill_container",
+          "height": 420
         },
         {
-          "name": "ctaOverlay",
-          "penId": "MFV5N",
+          "id": "IfpBU",
+          "name": "f3",
           "type": "frame",
-          "styles": {
-            "fill": "#1A150E88",
-            "width": 1440,
-            "height": 480,
-            "x": 0,
-            "y": 0
-          }
-        },
-        {
-          "name": "ctaContent",
-          "penId": "Q9kwD",
-          "type": "frame",
-          "styles": {
-            "layout": "vertical",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "gap": 40,
-            "width": 1440,
-            "height": 480,
-            "x": 0,
-            "y": 0
-          }
-        }
-      ]
-    },
-    {
-      "name": "f3",
-      "penId": "7RLlv",
-      "type": "frame",
-      "styles": {
-        "fill": "#1A150E",
-        "width": "fill_container",
-        "layout": "vertical",
-        "alignItems": "center",
-        "gap": 48,
-        "padding": [60, 80, 32, 80]
-      },
-      "children": [
-        {
-          "name": "footerTop",
-          "penId": "e0Ilo",
-          "type": "frame",
-          "styles": {
-            "justifyContent": "space_between",
-            "width": "fill_container"
-          }
-        },
-        {
-          "name": "footerSecondaryNav",
-          "penId": "CX7nX",
-          "type": "frame",
-          "styles": {
-            "alignItems": "center",
-            "justifyContent": "center",
-            "gap": 24,
-            "width": "fill_container"
-          }
-        },
-        {
-          "name": "footerDivider",
-          "penId": "DHZMS",
-          "type": "rectangle",
-          "styles": {
-            "fill": "#2C241888",
-            "width": "fill_container",
-            "height": 1
-          }
-        },
-        {
-          "name": "footerMiddle",
-          "penId": "2kg1i",
-          "type": "frame",
-          "styles": {
-            "alignItems": "center",
-            "justifyContent": "space_between",
-            "width": "fill_container"
-          }
-        },
-        {
-          "name": "footerBottom",
-          "penId": "ZI0Vw",
-          "type": "text",
-          "content": "\u00a9 2026 月瀬庵 TSUKISE-AN. All Rights Reserved.",
-          "styles": {
-            "fill": "#6B5D4F55",
-            "fontFamily": "Cormorant Garamond",
-            "fontSize": 11,
-            "fontWeight": "normal",
-            "letterSpacing": 2
-          }
+          "description": "Footer (mobile)",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [40, 24, 24, 24],
+          "gap": 32
         }
       ]
     }
-  ]
+  },
+  "colorPalette": {
+    "primary": {
+      "light": "#FAF8F3",
+      "medium": "#EEEBE3",
+      "dark": "#2C2418"
+    },
+    "accent": {
+      "gold": "#D4C5A0",
+      "bronze": "#8B7D6B",
+      "deepBronze": "#8B6914"
+    },
+    "text": {
+      "dark": "#2C2418",
+      "medium": "#4A4035",
+      "light": "#6B5D4F",
+      "subdued": "#6B5D4F55"
+    },
+    "backgrounds": {
+      "light": "#FAF8F3",
+      "medium": "#EEEBE3",
+      "lightTan": "#F0EBE0",
+      "dark": "#1A150E",
+      "darkOverlay": "#1A150E55",
+      "darkOverlayStrong": "#1A150E88"
+    }
+  },
+  "typography": {
+    "headings": {
+      "fontFamily": "Noto Serif JP",
+      "sizes": [24, 28, 32],
+      "weights": ["600"]
+    },
+    "body": {
+      "fontFamily": "Noto Sans JP",
+      "sizes": [12, 14, 16],
+      "weights": ["300", "500"]
+    },
+    "accent": {
+      "fontFamily": "Cormorant Garamond",
+      "sizes": [11],
+      "weights": ["normal"]
+    }
+  },
+  "spacing": {
+    "padding": {
+      "pc": {
+        "vertical": [60, 80, 100],
+        "horizontal": [80, 120, 200]
+      },
+      "tablet": {
+        "vertical": [40, 60, 80],
+        "horizontal": [40, 80, 100]
+      },
+      "mobile": {
+        "vertical": [24, 40, 60],
+        "horizontal": [20, 24, 40]
+      }
+    },
+    "gaps": [12, 16, 20, 24, 32, 40, 48, 60]
+  },
+  "exportDate": "2026-02-27",
+  "sectionContent": {
+    "conceptTitle": "湯に浸り、景に溶ける。",
+    "conceptBody": "月瀬庵の湯は、古くから「美肌の湯」として知られる姥子温泉。\n芦ノ湖を望む露天風呂では、朝は湖面を這う霧を、\n夕は山々に沈む夕陽を、夜は水面に映る月を眺めながら、\n至福のひとときをお過ごしいただけます。",
+    "waterQualityTitle": "泉質と効能",
+    "bathEtiTitle": "入浴のご案内",
+    "copyrightText": "© 2026 月瀬庵 TSUKISE-AN. All Rights Reserved."
+  },
+  "images": {
+    "onsenHero": "./images/generated-1771720534142.png",
+    "conceptBg": "./images/generated-1771732299230.png",
+    "daiyokujoImg": "./images/generated-1771720608060.png",
+    "rotenburoImg": "./images/generated-1771720649489.png",
+    "waterQualityBg": "./images/generated-1771732421109.png",
+    "ctaBg": "./images/generated-1771696586893.png"
+  },
+  "notes": {
+    "structure": "All three viewport frames use resolved instances to show the complete expanded component structure",
+    "components": "Hero and CTA sections use layout:none with positioned children for overlay effects",
+    "responsive": "Padding, gap, and font sizes scale across PC (1440px), Tablet (768px), and Mobile (375px) viewports",
+    "sections": [
+      "Header with navigation",
+      "Breadcrumb trail",
+      "Hero section with overlay",
+      "Concept section (湯に浸り、景に溶ける)",
+      "Daiyokujo (Large public bath) feature",
+      "Rotenburo (Open-air bath) feature",
+      "Water quality information",
+      "Onsen guide section",
+      "Bath etiquette section",
+      "Navigation links to other pages",
+      "CTA section",
+      "Footer"
+    ]
+  }
 }

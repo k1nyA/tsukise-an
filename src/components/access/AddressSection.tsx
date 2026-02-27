@@ -9,11 +9,11 @@ export function AddressSection() {
       }}
     >
       {/* Section label — LOCATION */}
-      <div className="flex items-center" style={{ gap: 20 }}>
+      <div className="flex items-center" style={{ gap: 'var(--r-access-label-gap)' }}>
         <span
           className="block"
           style={{
-            width: 40,
+            width: 'var(--r-access-label-line-w)',
             height: 1,
             backgroundColor: 'var(--ryokan-light-gold, #D4C5A0)',
           }}
@@ -32,7 +32,7 @@ export function AddressSection() {
         <span
           className="block"
           style={{
-            width: 40,
+            width: 'var(--r-access-label-line-w)',
             height: 1,
             backgroundColor: 'var(--ryokan-light-gold, #D4C5A0)',
           }}

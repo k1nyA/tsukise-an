@@ -1,443 +1,369 @@
 {
-  "page": {
-    "name": "アクセスページ",
-    "nameEn": "Access",
-    "route": "/access",
-    "penFrameId": "BBsjr"
-  },
-  "layout": {
-    "width": 1440,
-    "direction": "vertical",
-    "fill": "#FAF8F3",
-    "clip": true
-  },
-  "sections": [
-    {
-      "name": "h6",
-      "penId": "9IpJt",
-      "type": "frame",
-      "styles": {
-        "fill": "#FAF8F3",
-        "height": 80,
-        "width": "fill_container",
-        "justifyContent": "space_between",
-        "alignItems": "center",
-        "padding": [0, 60]
-      },
-      "children": [
+  "page": "Access (アクセス)",
+  "pageCode": "access",
+  "viewports": {
+    "pc": {
+      "id": "BBsjr",
+      "name": "アクセスページ",
+      "width": 1440,
+      "height": "auto",
+      "fill": "#FAF8F3",
+      "sections": [
         {
-          "name": "logoArea",
-          "penId": "bysRi",
+          "id": "Bv1Kq",
+          "name": "h6 (Header)",
           "type": "frame",
-          "styles": {
-            "alignItems": "center",
-            "gap": 12
-          }
+          "width": "fill_container",
+          "height": 80,
+          "fill": "#FAF8F3",
+          "padding": [0, 60],
+          "children": [
+            {
+              "id": "Bv1Kq/1VWx3",
+              "name": "logoArea",
+              "type": "frame",
+              "content": "Logo section with mark and divider"
+            },
+            {
+              "id": "Bv1Kq/NM0V6",
+              "name": "navArea",
+              "type": "frame",
+              "gap": 32,
+              "content": "Navigation items (客室, 温泉, お料理, 過ごし方, アクセス, CTA)"
+            }
+          ]
         },
         {
-          "name": "navArea",
-          "penId": "S6N4M",
+          "id": "vnhQ8",
+          "name": "bc6 (Breadcrumb)",
           "type": "frame",
-          "styles": {
-            "alignItems": "center",
-            "gap": 32
-          }
+          "width": "fill_container",
+          "fill": "#EEEBE3",
+          "padding": [16, 80],
+          "content": "ホーム > アクセス"
+        },
+        {
+          "id": "9AY73",
+          "name": "hero5 (Hero Section)",
+          "type": "frame",
+          "width": "fill_container",
+          "height": 480,
+          "layout": "none",
+          "children": [
+            {
+              "name": "heroBg",
+              "type": "image",
+              "url": "./images/generated-1771721536390.png"
+            },
+            {
+              "name": "heroOverlay",
+              "type": "overlay",
+              "fill": "#1A150E55"
+            },
+            {
+              "name": "heroContent",
+              "type": "frame",
+              "layout": "vertical",
+              "gap": 24,
+              "content": "Title: アクセス, Subtitle: 箱根・芦ノ湖畔の隠れ宿へ"
+            }
+          ]
+        },
+        {
+          "id": "loXm0",
+          "name": "pcAddrRef (Address Section)",
+          "type": "frame",
+          "width": "fill_container",
+          "fill": "#FAF8F3",
+          "padding": [80, 200],
+          "gap": 40,
+          "layout": "vertical",
+          "children": [
+            {
+              "name": "addrLabel",
+              "type": "frame",
+              "content": "LOCATION label with decorative lines"
+            },
+            {
+              "name": "addrTitle",
+              "type": "text",
+              "content": "月瀬庵",
+              "fontSize": 32,
+              "fill": "#2C2418"
+            },
+            {
+              "name": "addrInfo",
+              "type": "frame",
+              "gap": 16,
+              "content": "Address: 〒250-0522 神奈川県足柄下郡箱根町元箱根138, Phone/Fax, Check-in/out times"
+            }
+          ]
+        },
+        {
+          "id": "wmWZ3",
+          "name": "pcMapRef (Map Section)",
+          "type": "frame",
+          "width": "fill_container",
+          "fill": "#F0EBE0",
+          "padding": [32, 80],
+          "height": 320,
+          "gap": 40,
+          "children": [
+            {
+              "name": "mapFrame",
+              "type": "frame",
+              "width": "fill_container",
+              "content": "Map image with overlay"
+            },
+            {
+              "name": "mapLink",
+              "type": "text",
+              "content": "Google Mapで見る →"
+            }
+          ]
+        },
+        {
+          "id": "GKMB0",
+          "name": "pcAccessRef (Access Methods)",
+          "type": "frame",
+          "width": "fill_container",
+          "fill": "#FAF8F3",
+          "padding": [60, 80],
+          "gap": 40,
+          "layout": "vertical",
+          "children": [
+            {
+              "name": "accessMethodsTitle",
+              "type": "text",
+              "content": "アクセス方法"
+            },
+            {
+              "name": "accessMethodsRow",
+              "type": "frame",
+              "gap": 32,
+              "children": [
+                {"name": "train", "content": "Train access method"},
+                {"name": "car", "content": "Car access method"},
+                {"name": "shuttle", "content": "Shuttle access method"},
+                {"name": "bus", "content": "Bus access method"}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nNmqm",
+          "name": "pcContactRef (Contact CTA)",
+          "type": "frame",
+          "width": "fill_container",
+          "fill": "#FAF8F3",
+          "padding": [40, 80],
+          "content": "お問い合わせ → (link)"
+        },
+        {
+          "id": "bUfYD",
+          "name": "c6 (CTA Section)",
+          "type": "frame",
+          "width": "fill_container",
+          "height": 480,
+          "layout": "none",
+          "content": "Background image with overlay and CTA content"
+        },
+        {
+          "id": "pP2ao",
+          "name": "f6 (Footer)",
+          "type": "frame",
+          "width": "fill_container",
+          "fill": "#1A150E",
+          "padding": [60, 80, 32, 80],
+          "gap": 48,
+          "layout": "vertical",
+          "content": "Footer with branding, navigation, legal, and social links"
         }
       ]
     },
-    {
-      "name": "bc2",
-      "penId": "KGsWH",
-      "type": "frame",
-      "styles": {
-        "fill": "#EEEBE3",
-        "width": "fill_container",
-        "alignItems": "center",
-        "gap": 8,
-        "padding": [16, 80]
-      },
-      "children": [
+    "tablet": {
+      "id": "oUA9k",
+      "name": "アクセスページ Tablet",
+      "width": 768,
+      "height": "auto",
+      "fill": "#FAF8F3",
+      "sections": [
         {
-          "name": "bc1",
-          "penId": "7Z13T",
-          "type": "text",
-          "content": "ホーム",
-          "context": "href: /",
-          "styles": {
-            "fill": "#8B7D6B",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 12,
-            "fontWeight": "300",
-            "letterSpacing": 1
-          }
+          "id": "FejgH",
+          "name": "h6 (Header)",
+          "type": "frame",
+          "width": "fill_container",
+          "height": 80,
+          "fill": "#FAF8F3",
+          "padding": [0, 40],
+          "content": "Logo and navigation"
         },
         {
-          "name": "bcSep",
-          "penId": "uj3mQ",
-          "type": "text",
-          "content": ">",
-          "styles": {
-            "fill": "#D4C5A0",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 12,
-            "fontWeight": "300"
-          }
+          "id": "YHCJr",
+          "name": "bc5 (Breadcrumb)",
+          "type": "frame",
+          "width": "fill_container",
+          "fill": "#EEEBE3",
+          "padding": [16, 40],
+          "content": "ホーム > アクセス"
         },
         {
-          "name": "bc2",
-          "penId": "2lch0",
-          "type": "text",
-          "content": "アクセス",
-          "styles": {
-            "fill": "#2C2418",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 12,
-            "fontWeight": "500",
-            "letterSpacing": 1
-          }
+          "id": "dSYkB",
+          "name": "hero5 (Hero Section)",
+          "type": "frame",
+          "width": "fill_container",
+          "height": 400,
+          "layout": "none",
+          "content": "Hero with image, overlay, and content"
+        },
+        {
+          "id": "axPUb",
+          "name": "tabAddrRef (Address Section)",
+          "type": "frame",
+          "width": "fill_container",
+          "fill": "#FAF8F3",
+          "padding": [60, 100],
+          "gap": 40,
+          "content": "Address information section"
+        },
+        {
+          "id": "diuGC",
+          "name": "tabMapRef (Map Section)",
+          "type": "frame",
+          "width": "fill_container",
+          "fill": "#F0EBE0",
+          "padding": [32, 60],
+          "content": "Map section"
+        },
+        {
+          "id": "280pn",
+          "name": "tabAccessRef (Access Methods)",
+          "type": "frame",
+          "width": "fill_container",
+          "fill": "#FAF8F3",
+          "padding": 60,
+          "gap": 40,
+          "content": "Access methods in vertical layout"
+        },
+        {
+          "id": "Gkug3",
+          "name": "tabContactRef (Contact CTA)",
+          "type": "frame",
+          "width": "fill_container",
+          "fill": "#FAF8F3",
+          "padding": [40, 60],
+          "content": "Contact link"
+        },
+        {
+          "id": "HYU2x",
+          "name": "c6 (CTA Section)",
+          "type": "frame",
+          "width": "fill_container",
+          "height": 440,
+          "content": "CTA section"
+        },
+        {
+          "id": "xc9DF",
+          "name": "f6 (Footer)",
+          "type": "frame",
+          "width": "fill_container",
+          "fill": "#1A150E",
+          "padding": [48, 48, 24, 48],
+          "content": "Footer"
         }
       ]
     },
-    {
-      "name": "hero5",
-      "penId": "X9UuU",
-      "type": "frame",
-      "styles": {
-        "width": "fill_container",
-        "height": 480,
-        "layout": "none",
-        "clip": true
-      },
-      "children": [
+    "mobile": {
+      "id": "5ORgT",
+      "name": "アクセスページ Mobile",
+      "width": 375,
+      "height": "auto",
+      "fill": "#FAF8F3",
+      "sections": [
         {
-          "name": "heroBg",
-          "penId": "09TYS",
+          "id": "0tk0M",
+          "name": "h6 (Header)",
           "type": "frame",
-          "styles": {
-            "width": 1440,
-            "height": 480,
-            "x": 0,
-            "y": 0,
-            "hasImageFill": true
-          }
+          "width": "fill_container",
+          "height": 60,
+          "fill": "#FAF8F3",
+          "padding": [0, 20],
+          "content": "Logo with hamburger menu"
         },
         {
-          "name": "heroOverlay",
-          "penId": "9c1cD",
+          "id": "VGw0n",
+          "name": "bc5 (Breadcrumb)",
           "type": "frame",
-          "styles": {
-            "fill": "#1A150E55",
-            "width": 1440,
-            "height": 480,
-            "x": 0,
-            "y": 0
-          }
+          "width": "fill_container",
+          "fill": "#EEEBE3",
+          "padding": [12, 20],
+          "content": "ホーム > アクセス"
         },
         {
-          "name": "heroContent",
-          "penId": "SHej3",
+          "id": "EKYGE",
+          "name": "hr5 (Hero Section)",
           "type": "frame",
-          "styles": {
-            "width": 1440,
-            "height": 480,
-            "layout": "vertical",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "gap": 24,
-            "x": 0,
-            "y": 0
-          }
-        }
-      ]
-    },
-    {
-      "name": "Address Section",
-      "penId": "2MWWi",
-      "type": "frame",
-      "styles": {
-        "fill": "#FAF8F3",
-        "width": "fill_container",
-        "layout": "vertical",
-        "alignItems": "center",
-        "gap": 40,
-        "padding": [80, 200]
-      },
-      "children": [
-        {
-          "name": "addrLabel",
-          "penId": "XIJOF",
-          "type": "frame",
-          "styles": {
-            "alignItems": "center",
-            "gap": 20
-          }
+          "width": "fill_container",
+          "height": 320,
+          "content": "Hero section mobile"
         },
         {
-          "name": "addrTitle",
-          "penId": "c2r1Z",
-          "type": "text",
-          "content": "月瀬庵",
-          "styles": {
-            "fill": "#2C2418",
-            "fontFamily": "Noto Serif JP",
-            "fontSize": 32,
-            "fontWeight": "600",
-            "letterSpacing": 6,
-            "textAlign": "center"
-          }
-        },
-        {
-          "name": "addrInfo",
-          "penId": "JrS0g",
+          "id": "qP5D6",
+          "name": "mobAddrRef (Address Section)",
           "type": "frame",
-          "styles": {
-            "layout": "vertical",
-            "alignItems": "center",
-            "gap": 16
-          }
+          "width": "fill_container",
+          "fill": "#FAF8F3",
+          "padding": [60, 24],
+          "gap": 40,
+          "content": "Address section"
         },
         {
-          "name": "addrDeco",
-          "penId": "USW6z",
-          "type": "rectangle",
-          "styles": {
-            "fill": "#D4C5A0",
-            "width": 1,
-            "height": 40
-          }
-        }
-      ]
-    },
-    {
-      "name": "Map Section",
-      "penId": "bfq9f",
-      "type": "frame",
-      "styles": {
-        "fill": "#F0EBE0",
-        "width": "fill_container",
-        "height": 320,
-        "layout": "vertical",
-        "alignItems": "center",
-        "justifyContent": "center",
-        "padding": [32, 80]
-      },
-      "children": [
-        {
-          "name": "mapFrame",
-          "penId": "Em5Pt",
+          "id": "4NzZS",
+          "name": "mobMapRef (Map Section)",
           "type": "frame",
-          "styles": {
-            "width": "fill_container",
-            "height": 260,
-            "layout": "none",
-            "clip": true,
-            "cornerRadius": 4,
-            "hasImageFill": true
-          }
+          "width": "fill_container",
+          "fill": "#F0EBE0",
+          "padding": 24,
+          "content": "Map section"
         },
         {
-          "name": "mapLink",
-          "penId": "PpfEU",
-          "type": "text",
-          "content": "Google Mapで見る →",
-          "context": "href: https://maps.google.com/?q=箱根町元箱根138 (external)",
-          "styles": {
-            "fill": "#8B6914",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 14,
-            "fontWeight": "500",
-            "letterSpacing": 1,
-            "textAlign": "center"
-          }
-        }
-      ]
-    },
-    {
-      "name": "Access Methods",
-      "penId": "XbrEx",
-      "type": "frame",
-      "styles": {
-        "fill": "#FAF8F3",
-        "width": "fill_container",
-        "layout": "vertical",
-        "alignItems": "center",
-        "gap": 40,
-        "padding": [60, 80]
-      },
-      "children": [
-        {
-          "name": "accessMethodsTitle",
-          "penId": "BwRYr",
-          "type": "text",
-          "content": "アクセス方法",
-          "styles": {
-            "fill": "#2C2418",
-            "fontFamily": "Noto Serif JP",
-            "fontSize": 28,
-            "fontWeight": "600",
-            "letterSpacing": 4
-          }
-        },
-        {
-          "name": "accessMethodsRow",
-          "penId": "AIqnR",
+          "id": "i93T1",
+          "name": "mobAccessRef (Access Methods)",
           "type": "frame",
-          "styles": {
-            "width": "fill_container",
-            "gap": 32
-          }
-        }
-      ]
-    },
-    {
-      "name": "contactLink",
-      "penId": "BRQiw",
-      "type": "frame",
-      "styles": {
-        "fill": "#FAF8F3",
-        "width": "fill_container",
-        "layout": "vertical",
-        "alignItems": "center",
-        "justifyContent": "center",
-        "padding": [40, 80]
-      },
-      "children": [
-        {
-          "name": "contactLinkText",
-          "penId": "4TmlZ",
-          "type": "text",
-          "content": "お問い合わせ →",
-          "context": "href: /contact",
-          "styles": {
-            "fill": "#8B6914",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 15,
-            "fontWeight": "500",
-            "letterSpacing": 2,
-            "textAlign": "center"
-          }
-        }
-      ]
-    },
-    {
-      "name": "c6",
-      "penId": "DoTZW",
-      "type": "frame",
-      "styles": {
-        "width": "fill_container",
-        "height": 480,
-        "layout": "none",
-        "clip": true
-      },
-      "children": [
-        {
-          "name": "ctaBg",
-          "penId": "KvQLe",
-          "type": "frame",
-          "styles": {
-            "width": 1440,
-            "height": 480,
-            "x": 0,
-            "y": 0,
-            "hasImageFill": true
-          }
+          "width": "fill_container",
+          "fill": "#FAF8F3",
+          "padding": [40, 24],
+          "gap": 40,
+          "content": "Access methods in vertical layout"
         },
         {
-          "name": "ctaOverlay",
-          "penId": "6tinp",
+          "id": "4uCTE",
+          "name": "mobContactRef (Contact CTA)",
           "type": "frame",
-          "styles": {
-            "fill": "#1A150E88",
-            "width": 1440,
-            "height": 480,
-            "x": 0,
-            "y": 0
-          }
+          "width": "fill_container",
+          "fill": "#FAF8F3",
+          "padding": [40, 24],
+          "content": "Contact link"
         },
         {
-          "name": "ctaContent",
-          "penId": "dy8cW",
+          "id": "2dIae",
+          "name": "c6 (CTA Section)",
           "type": "frame",
-          "styles": {
-            "width": 1440,
-            "height": 480,
-            "layout": "vertical",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "gap": 40,
-            "x": 0,
-            "y": 0
-          }
-        }
-      ]
-    },
-    {
-      "name": "f6",
-      "penId": "eZIQe",
-      "type": "frame",
-      "styles": {
-        "fill": "#1A150E",
-        "width": "fill_container",
-        "layout": "vertical",
-        "alignItems": "center",
-        "gap": 48,
-        "padding": [60, 80, 32, 80]
-      },
-      "children": [
-        {
-          "name": "footerTop",
-          "penId": "FPz59",
-          "type": "frame",
-          "styles": {
-            "width": "fill_container",
-            "justifyContent": "space_between"
-          }
+          "width": "fill_container",
+          "height": 420,
+          "content": "CTA section"
         },
         {
-          "name": "footerSecondaryNav",
-          "penId": "KdCRB",
+          "id": "YEqup",
+          "name": "f6 (Footer)",
           "type": "frame",
-          "styles": {
-            "width": "fill_container",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "gap": 24
-          }
-        },
-        {
-          "name": "footerDivider",
-          "penId": "o2tQ3",
-          "type": "rectangle",
-          "styles": {
-            "fill": "#2C241888",
-            "width": "fill_container",
-            "height": 1
-          }
-        },
-        {
-          "name": "footerMiddle",
-          "penId": "38ys6",
-          "type": "frame",
-          "styles": {
-            "width": "fill_container",
-            "justifyContent": "space_between",
-            "alignItems": "center"
-          }
-        },
-        {
-          "name": "footerBottom",
-          "penId": "Xapy9",
-          "type": "text",
-          "content": "© 2026 月瀬庵 TSUKISE-AN. All Rights Reserved.",
-          "styles": {
-            "fill": "#6B5D4F55",
-            "fontFamily": "Cormorant Garamond",
-            "fontSize": 11,
-            "fontWeight": "normal",
-            "letterSpacing": 2
-          }
+          "width": "fill_container",
+          "fill": "#1A150E",
+          "padding": [40, 24, 24, 24],
+          "gap": 32,
+          "content": "Footer mobile"
         }
       ]
     }
-  ]
+  }
 }

@@ -1,419 +1,346 @@
 {
-  "page": {
-    "name": "お問い合わせページ",
-    "nameEn": "Contact",
-    "route": "/contact",
-    "penFrameId": "Kq0ek"
-  },
-  "layout": {
-    "width": 1440,
-    "direction": "vertical",
-    "fill": "#FAF8F3",
-    "clip": true
-  },
-  "sections": [
-    {
-      "name": "h8",
-      "penId": "KgJlC",
-      "type": "frame",
-      "styles": {
-        "fill": "#FAF8F3",
-        "height": 80,
-        "width": "fill_container",
-        "justifyContent": "space_between",
-        "alignItems": "center",
-        "padding": [0, 60]
-      },
-      "children": [
+  "page": "Contact (お問い合わせ)",
+  "pageCode": "contact",
+  "viewports": {
+    "pc": {
+      "id": "Kq0ek",
+      "name": "お問い合わせページ",
+      "width": 1440,
+      "height": "auto",
+      "fill": "#FAF8F3",
+      "sections": [
         {
-          "name": "logoArea",
-          "penId": "J8EZp",
+          "id": "wzkm8",
+          "name": "h8 (Header)",
           "type": "frame",
-          "styles": {
-            "alignItems": "center",
-            "gap": 12
-          }
+          "width": "fill_container",
+          "height": 80,
+          "fill": "#FAF8F3",
+          "padding": [0, 60],
+          "content": "Logo and navigation"
         },
         {
-          "name": "navArea",
-          "penId": "leL3S",
+          "id": "wEBSI",
+          "name": "bc8 (Breadcrumb)",
           "type": "frame",
-          "styles": {
-            "alignItems": "center",
-            "gap": 32
-          }
-        }
-      ]
-    },
-    {
-      "name": "breadcrumb2",
-      "penId": "CzpIS",
-      "type": "frame",
-      "styles": {
-        "fill": "#EEEBE3",
-        "width": "fill_container",
-        "alignItems": "center",
-        "gap": 8,
-        "padding": [16, 80]
-      },
-      "children": [
-        {
-          "name": "bc1",
-          "penId": "an5Au",
-          "type": "text",
-          "content": "ホーム",
-          "context": "href: /",
-          "styles": {
-            "fill": "#8B7D6B",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 12,
-            "fontWeight": "300",
-            "letterSpacing": 1
-          }
+          "width": "fill_container",
+          "fill": "#EEEBE3",
+          "padding": [16, 80],
+          "content": "ホーム > お問い合わせ"
         },
         {
-          "name": "bcSep",
-          "penId": "gscZI",
-          "type": "text",
-          "content": ">",
-          "styles": {
-            "fill": "#D4C5A0",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 12,
-            "fontWeight": "300"
-          }
-        },
-        {
-          "name": "bc2",
-          "penId": "UjzeL",
-          "type": "text",
-          "content": "お問い合わせ",
-          "styles": {
-            "fill": "#2C2418",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 12,
-            "fontWeight": "500",
-            "letterSpacing": 1
-          }
-        }
-      ]
-    },
-    {
-      "name": "hero7",
-      "penId": "wfVRd",
-      "type": "frame",
-      "styles": {
-        "width": "fill_container",
-        "height": 400,
-        "layout": "none",
-        "clip": true
-      },
-      "children": [
-        {
-          "name": "heroBg",
-          "penId": "GjBp6",
+          "id": "ikzRn",
+          "name": "hero7 (Hero Section)",
           "type": "frame",
-          "styles": {
-            "width": 1440,
-            "height": 400,
-            "x": 0,
-            "y": 0,
-            "hasImageFill": true
-          }
-        },
-        {
-          "name": "heroOverlay",
-          "penId": "n6LLh",
-          "type": "frame",
-          "styles": {
-            "fill": "#1A150E55",
-            "width": 1440,
-            "height": 400,
-            "x": 0,
-            "y": 0
-          }
-        },
-        {
-          "name": "heroContent",
-          "penId": "AfDjf",
-          "type": "frame",
-          "styles": {
-            "width": 1440,
-            "height": 400,
-            "layout": "vertical",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "gap": 24,
-            "x": 0,
-            "y": 0
-          }
-        }
-      ]
-    },
-    {
-      "name": "Contact Intro",
-      "penId": "fQ0F3",
-      "type": "frame",
-      "styles": {
-        "fill": "#FAF8F3",
-        "width": "fill_container",
-        "layout": "vertical",
-        "alignItems": "center",
-        "gap": 40,
-        "padding": [80, 200]
-      },
-      "children": [
-        {
-          "name": "introLabel",
-          "penId": "Ryuys",
-          "type": "ref",
-          "ref": "bQV0w",
-          "descendants": {
-            "T93K6": {
-              "content": "INQUIRY"
+          "width": "fill_container",
+          "height": 400,
+          "layout": "none",
+          "children": [
+            {
+              "name": "heroBg",
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1769921595419-1078b1861f10 (Unsplash)"
+            },
+            {
+              "name": "heroContent",
+              "type": "frame",
+              "content": "Hero with title and subtitle"
             }
-          }
+          ]
         },
         {
-          "name": "introTitle",
-          "penId": "cIjrs",
-          "type": "text",
-          "content": "お気軽にご相談ください",
-          "styles": {
-            "fill": "#2C2418",
-            "fontFamily": "Noto Serif JP",
-            "fontSize": 28,
-            "fontWeight": "600",
-            "letterSpacing": 4,
-            "textAlign": "center"
-          }
-        },
-        {
-          "name": "introBody",
-          "penId": "EKQfT",
-          "type": "text",
-          "content": "ご宿泊のご相談、お部屋の空き状況、\nお祝い事やご接待のご要望など、\nどのようなことでもお気軽にお問い合わせくださいませ。\n\n通常2営業日以内にご返信いたします。\nお急ぎの場合はお電話（0460-83-XXXX）にてご連絡ください。",
-          "styles": {
-            "fill": "#6B5D4F",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 16,
-            "fontWeight": "300",
-            "letterSpacing": 1.5,
-            "lineHeight": 2.2,
-            "textAlign": "center",
-            "textGrowth": "fixed-width",
-            "width": 600
-          }
-        },
-        {
-          "name": "introDeco",
-          "penId": "sOP9S",
-          "type": "rectangle",
-          "styles": {
-            "fill": "#D4C5A0",
-            "width": 1,
-            "height": 40
-          }
-        }
-      ]
-    },
-    {
-      "name": "Contact Form Section",
-      "penId": "N8CBz",
-      "type": "frame",
-      "styles": {
-        "fill": "#F0EBE0",
-        "width": "fill_container",
-        "layout": "vertical",
-        "alignItems": "center",
-        "gap": 40,
-        "padding": [80, 120]
-      },
-      "children": [
-        {
-          "name": "formContainer",
-          "penId": "gBHra",
+          "id": "uZ4rO",
+          "name": "pcIntroRef (Introduction Section)",
           "type": "frame",
-          "styles": {
-            "fill": "#FAF8F3",
-            "width": "fill_container",
-            "layout": "vertical",
-            "gap": 32,
-            "cornerRadius": 4,
-            "padding": [60, 80],
-            "stroke": {
-              "fill": "#D4C5A033",
-              "thickness": 1
+          "width": "fill_container",
+          "fill": "#FAF8F3",
+          "padding": [80, 200],
+          "gap": 40,
+          "layout": "vertical",
+          "children": [
+            {
+              "name": "introLabel",
+              "type": "frame",
+              "content": "INQUIRY label with decorative lines"
+            },
+            {
+              "name": "introTitle",
+              "type": "text",
+              "content": "お気軽にご相談ください",
+              "fontSize": 28,
+              "fill": "#2C2418"
+            },
+            {
+              "name": "introBody",
+              "type": "text",
+              "content": "Inquiry information and instructions",
+              "fontSize": 16,
+              "fill": "#6B5D4F",
+              "width": 600
             }
-          }
+          ]
+        },
+        {
+          "id": "DxJkD",
+          "name": "pcFormRef (Contact Form)",
+          "type": "frame",
+          "width": "fill_container",
+          "fill": "#F0EBE0",
+          "padding": [80, 120],
+          "gap": 40,
+          "layout": "vertical",
+          "children": [
+            {
+              "name": "formContainer",
+              "type": "frame",
+              "fill": "#FAF8F3",
+              "cornerRadius": 4,
+              "gap": 32,
+              "padding": [60, 80],
+              "content": "Contact form with fields (name, email, message, etc.)"
+            }
+          ]
+        },
+        {
+          "id": "qCf0s",
+          "name": "pcOtherRef (Phone & Info Section)",
+          "type": "frame",
+          "width": "fill_container",
+          "fill": "#FAF8F3",
+          "padding": [80, 120],
+          "gap": 40,
+          "layout": "horizontal",
+          "children": [
+            {
+              "name": "phoneCol",
+              "type": "frame",
+              "width": 400,
+              "gap": 20,
+              "content": "Phone contact information"
+            },
+            {
+              "name": "dividerLine",
+              "type": "rectangle",
+              "width": 1,
+              "height": 80,
+              "fill": "#D4C5A0"
+            },
+            {
+              "name": "infoRow",
+              "type": "frame",
+              "gap": 60,
+              "content": "Additional information columns"
+            }
+          ]
+        },
+        {
+          "id": "wwsCq",
+          "name": "c8 (CTA Section)",
+          "type": "frame",
+          "width": "fill_container",
+          "height": 480,
+          "layout": "none",
+          "content": "CTA section with background image and overlay"
+        },
+        {
+          "id": "bIHBg",
+          "name": "f8 (Footer)",
+          "type": "frame",
+          "width": "fill_container",
+          "fill": "#1A150E",
+          "padding": [60, 80, 32, 80],
+          "gap": 48,
+          "layout": "vertical",
+          "content": "Footer"
         }
       ]
     },
-    {
-      "name": "Other Contact Section",
-      "penId": "cBbin",
-      "type": "frame",
-      "styles": {
-        "fill": "#FAF8F3",
-        "width": "fill_container",
-        "alignItems": "center",
-        "justifyContent": "center",
-        "gap": 40,
-        "padding": [80, 120]
-      },
-      "children": [
+    "tablet": {
+      "id": "UUQAt",
+      "name": "お問い合わせページ Tablet",
+      "width": 768,
+      "height": "auto",
+      "fill": "#FAF8F3",
+      "sections": [
         {
-          "name": "phoneCol",
-          "penId": "rFHjl",
+          "id": "hUD07",
+          "name": "h8 (Header)",
           "type": "frame",
-          "styles": {
-            "width": 400,
-            "layout": "vertical",
-            "alignItems": "center",
-            "gap": 20
-          }
+          "width": "fill_container",
+          "height": 80,
+          "fill": "#FAF8F3",
+          "padding": [0, 40],
+          "content": "Logo and navigation"
         },
         {
-          "name": "dividerLine",
-          "penId": "ENVQl",
-          "type": "rectangle",
-          "styles": {
-            "fill": "#D4C5A0",
-            "width": 1,
-            "height": 80
-          }
+          "id": "TeTy1",
+          "name": "bc7 (Breadcrumb)",
+          "type": "frame",
+          "width": "fill_container",
+          "fill": "#EEEBE3",
+          "padding": [16, 40],
+          "content": "ホーム > お問い合わせ"
         },
         {
-          "name": "infoRow",
-          "penId": "4WX0D",
+          "id": "HAZDh",
+          "name": "hero7 (Hero Section)",
           "type": "frame",
-          "styles": {
-            "width": "fill_container",
-            "justifyContent": "center",
-            "gap": 60
-          }
+          "width": "fill_container",
+          "height": 400,
+          "layout": "none",
+          "content": "Hero section for tablet"
+        },
+        {
+          "id": "2MT1M",
+          "name": "tabIntroRef (Introduction)",
+          "type": "frame",
+          "width": "fill_container",
+          "fill": "#FAF8F3",
+          "padding": [60, 100],
+          "gap": 40,
+          "layout": "vertical",
+          "content": "Introduction section"
+        },
+        {
+          "id": "v035w",
+          "name": "tabFormRef (Contact Form)",
+          "type": "frame",
+          "width": "fill_container",
+          "fill": "#F0EBE0",
+          "padding": [60, 80],
+          "gap": 40,
+          "layout": "vertical",
+          "content": "Contact form for tablet"
+        },
+        {
+          "id": "duVAR",
+          "name": "tabOtherRef (Phone & Info)",
+          "type": "frame",
+          "width": "fill_container",
+          "fill": "#FAF8F3",
+          "padding": [40, 60],
+          "gap": 32,
+          "layout": "vertical",
+          "content": "Phone and info section (vertical for tablet)"
+        },
+        {
+          "id": "fX5ec",
+          "name": "c8 (CTA Section)",
+          "type": "frame",
+          "width": "fill_container",
+          "height": 440,
+          "content": "CTA section"
+        },
+        {
+          "id": "cISAy",
+          "name": "f8 (Footer)",
+          "type": "frame",
+          "width": "fill_container",
+          "fill": "#1A150E",
+          "padding": [48, 48, 24, 48],
+          "content": "Footer"
         }
       ]
     },
-    {
-      "name": "c8",
-      "penId": "8aoI6",
-      "type": "frame",
-      "styles": {
-        "width": "fill_container",
-        "height": 480,
-        "layout": "none",
-        "clip": true
-      },
-      "children": [
+    "mobile": {
+      "id": "1FTBg",
+      "name": "お問い合わせページ Mobile",
+      "width": 375,
+      "height": "auto",
+      "fill": "#FAF8F3",
+      "sections": [
         {
-          "name": "ctaBg",
-          "penId": "FRasJ",
+          "id": "mTlNu",
+          "name": "h8 (Header)",
           "type": "frame",
-          "styles": {
-            "width": 1440,
-            "height": 480,
-            "x": 0,
-            "y": 0,
-            "hasImageFill": true
-          }
+          "width": "fill_container",
+          "height": 60,
+          "fill": "#FAF8F3",
+          "padding": [0, 20],
+          "content": "Logo with hamburger menu"
         },
         {
-          "name": "ctaOverlay",
-          "penId": "dtUXI",
+          "id": "0McBI",
+          "name": "bc7 (Breadcrumb)",
           "type": "frame",
-          "styles": {
-            "fill": "#1A150E88",
-            "width": 1440,
-            "height": 480,
-            "x": 0,
-            "y": 0
-          }
+          "width": "fill_container",
+          "fill": "#EEEBE3",
+          "padding": [12, 20],
+          "content": "ホーム > お問い合わせ"
         },
         {
-          "name": "ctaContent",
-          "penId": "xwMZx",
+          "id": "qLRZV",
+          "name": "hr7 (Hero Section)",
           "type": "frame",
-          "styles": {
-            "width": 1440,
-            "height": 480,
-            "layout": "vertical",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "gap": 40,
-            "x": 0,
-            "y": 0
-          }
-        }
-      ]
-    },
-    {
-      "name": "f8",
-      "penId": "8SzmJ",
-      "type": "frame",
-      "styles": {
-        "fill": "#1A150E",
-        "width": "fill_container",
-        "layout": "vertical",
-        "alignItems": "center",
-        "gap": 48,
-        "padding": [60, 80, 32, 80]
-      },
-      "children": [
-        {
-          "name": "footerTop",
-          "penId": "9zUFp",
-          "type": "frame",
-          "styles": {
-            "width": "fill_container",
-            "justifyContent": "space_between"
-          }
+          "width": "fill_container",
+          "height": 320,
+          "content": "Hero section mobile"
         },
         {
-          "name": "footerSecondaryNav",
-          "penId": "5l9Ny",
+          "id": "Bysqb",
+          "name": "mobIntroRef (Introduction)",
           "type": "frame",
-          "styles": {
-            "width": "fill_container",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "gap": 24
-          }
+          "width": "fill_container",
+          "fill": "#FAF8F3",
+          "padding": [60, 24],
+          "gap": 40,
+          "layout": "vertical",
+          "children": [
+            {
+              "name": "introTitle",
+              "type": "text",
+              "content": "お気軽にご相談ください",
+              "fontSize": 22,
+              "fill": "#2C2418"
+            },
+            {
+              "name": "introBody",
+              "type": "text",
+              "content": "Inquiry information"
+            }
+          ]
         },
         {
-          "name": "footerDivider",
-          "penId": "gFOqX",
-          "type": "rectangle",
-          "styles": {
-            "fill": "#2C241888",
-            "width": "fill_container",
-            "height": 1
-          }
-        },
-        {
-          "name": "footerMiddle",
-          "penId": "lFM4a",
+          "id": "meLwZ",
+          "name": "mobFormRef (Contact Form)",
           "type": "frame",
-          "styles": {
-            "width": "fill_container",
-            "justifyContent": "space_between",
-            "alignItems": "center"
-          }
+          "width": "fill_container",
+          "fill": "#F0EBE0",
+          "padding": [60, 24],
+          "gap": 40,
+          "layout": "vertical",
+          "content": "Contact form for mobile"
         },
         {
-          "name": "footerBottom",
-          "penId": "N1sIy",
-          "type": "text",
-          "content": "© 2026 月瀬庵 TSUKISE-AN. All Rights Reserved.",
-          "styles": {
-            "fill": "#6B5D4F55",
-            "fontFamily": "Cormorant Garamond",
-            "fontSize": 11,
-            "fontWeight": "normal",
-            "letterSpacing": 2
-          }
+          "id": "EYtFK",
+          "name": "mobOtherRef (Phone & Info)",
+          "type": "frame",
+          "width": "fill_container",
+          "fill": "#FAF8F3",
+          "padding": [60, 24],
+          "gap": 32,
+          "layout": "vertical",
+          "content": "Phone and info section mobile"
+        },
+        {
+          "id": "Xqiop",
+          "name": "c8 (CTA Section)",
+          "type": "frame",
+          "width": "fill_container",
+          "height": 420,
+          "content": "CTA section mobile"
+        },
+        {
+          "id": "zfeSO",
+          "name": "f8 (Footer)",
+          "type": "frame",
+          "width": "fill_container",
+          "fill": "#1A150E",
+          "padding": [40, 24, 24, 24],
+          "gap": 32,
+          "content": "Footer mobile"
         }
       ]
     }
-  ]
+  }
 }

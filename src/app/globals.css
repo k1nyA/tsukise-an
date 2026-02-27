@@ -6,6 +6,7 @@
 @import "../components/cuisine/cuisine-responsive.css";
 @import "../components/onsen/onsen-responsive.css";
 @import "../components/experience/experience-responsive.css";
+@import "../components/access/access-responsive.css";
 
 /* ============================================================
    Tailwind v4 @theme — Design Token Registration

@@ -1,586 +1,474 @@
 {
-  "page": {
-    "name": "お料理ページ",
-    "nameEn": "Cuisine",
-    "route": "/cuisine",
-    "penFrameId": "SeRNo"
-  },
-  "layout": {
-    "width": 1440,
-    "direction": "vertical",
-    "fill": "#FAF8F3",
-    "clip": true
-  },
-  "sections": [
-    {
-      "name": "h4",
-      "penId": "CHrqX",
-      "type": "frame",
-      "styles": {
-        "fill": "#FAF8F3",
-        "height": 80,
-        "width": "fill_container",
-        "justifyContent": "space_between",
-        "alignItems": "center",
-        "padding": [0, 60]
-      },
-      "children": [
+  "page": "cuisine",
+  "title": "お料理ページ (Cuisine Page)",
+  "description": "月替わり懐石料理とアレルギー対応情報を紹介するページ",
+  "exportDate": "2026-02-27",
+  "viewports": {
+    "pc": {
+      "id": "SeRNo",
+      "name": "お料理ページ",
+      "width": 1440,
+      "layout": "vertical",
+      "fill": "#FAF8F3",
+      "sections": [
         {
-          "name": "logoArea",
-          "penId": "GMnTf",
+          "id": "woEI2",
+          "name": "h4",
           "type": "frame",
-          "styles": {
-            "alignItems": "center",
-            "gap": 12
-          }
+          "description": "Header Navigation",
+          "width": "fill_container",
+          "height": 80,
+          "fill": "#FAF8F3",
+          "padding": [0, 60],
+          "layout": "horizontal",
+          "alignItems": "center",
+          "justifyContent": "space_between"
         },
         {
-          "name": "navArea",
-          "penId": "swmka",
+          "id": "owWnz",
+          "name": "bc3",
           "type": "frame",
-          "styles": {
-            "alignItems": "center",
-            "gap": 32
-          }
+          "description": "Breadcrumb Navigation",
+          "width": "fill_container",
+          "fill": "#EEEBE3",
+          "padding": [16, 80],
+          "layout": "horizontal",
+          "gap": 8,
+          "alignItems": "center"
+        },
+        {
+          "id": "RjDel",
+          "name": "hero3",
+          "type": "frame",
+          "description": "Hero Section with background image",
+          "width": "fill_container",
+          "height": 480,
+          "layout": "none",
+          "clip": true
+        },
+        {
+          "id": "gu4fN",
+          "name": "Cuisine Concept",
+          "type": "frame",
+          "description": "Concept section explaining cuisine philosophy",
+          "width": "fill_container",
+          "fill": "image: ./images/generated-1771732310700.png",
+          "padding": [100, 200],
+          "layout": "vertical",
+          "gap": 48,
+          "alignItems": "center"
+        },
+        {
+          "id": "zHlor",
+          "name": "pcKRef",
+          "type": "frame",
+          "description": "Kaiseki Menu Section (PC Cuisine Section component)",
+          "width": "fill_container",
+          "fill": "#FAF8F3",
+          "padding": [60, 80, 100, 80],
+          "layout": "vertical",
+          "gap": 40,
+          "alignItems": "center"
+        },
+        {
+          "id": "NrXAh",
+          "name": "newIngred",
+          "type": "frame",
+          "description": "Ingredients section (ImgText layout)",
+          "width": "fill_container"
+        },
+        {
+          "id": "3yvkr",
+          "name": "breakSec4",
+          "type": "frame",
+          "description": "Breakfast section (TextImg layout)",
+          "width": "fill_container"
+        },
+        {
+          "id": "dqZ9r",
+          "name": "diningSec4",
+          "type": "frame",
+          "description": "Dining room section (ImgText layout)",
+          "width": "fill_container"
+        },
+        {
+          "id": "02Td0",
+          "name": "pcARef",
+          "type": "frame",
+          "description": "Allergy & Special Accommodations Section",
+          "width": "fill_container",
+          "fill": "#F0EBE0",
+          "padding": [80, 120],
+          "layout": "vertical",
+          "gap": 48,
+          "alignItems": "center"
+        },
+        {
+          "id": "FRPpb",
+          "name": "pcLRef",
+          "type": "frame",
+          "description": "Cuisine Links Section",
+          "width": "fill_container",
+          "fill": "#FAF8F3",
+          "padding": [40, 80],
+          "layout": "horizontal",
+          "gap": 60,
+          "alignItems": "center",
+          "justifyContent": "center"
+        },
+        {
+          "id": "wVRRT",
+          "name": "c4",
+          "type": "frame",
+          "description": "CTA Section with background image",
+          "width": "fill_container",
+          "height": 480,
+          "layout": "none",
+          "clip": true
+        },
+        {
+          "id": "JRtDU",
+          "name": "f4",
+          "type": "frame",
+          "description": "Footer",
+          "width": "fill_container",
+          "fill": "#1A150E",
+          "padding": [60, 80, 32, 80],
+          "layout": "vertical",
+          "gap": 48,
+          "alignItems": "center"
         }
       ]
     },
-    {
-      "name": "bc3",
-      "penId": "EHhgo",
-      "type": "frame",
-      "styles": {
-        "fill": "#EEEBE3",
-        "width": "fill_container",
-        "alignItems": "center",
-        "gap": 8,
-        "padding": [16, 80]
-      },
-      "children": [
+    "tablet": {
+      "id": "9fsmK",
+      "name": "お料理ページ Tablet",
+      "width": 768,
+      "layout": "vertical",
+      "fill": "#FAF8F3",
+      "sections": [
         {
-          "name": "bc1",
-          "penId": "P3rfu",
-          "type": "text",
-          "content": "ホーム",
-          "context": "href: /",
-          "styles": {
-            "fill": "#8B7D6B",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 12,
-            "fontWeight": "300",
-            "letterSpacing": 1
-          }
+          "id": "XNBHt",
+          "name": "h4",
+          "type": "frame",
+          "description": "Header Navigation (Tablet)",
+          "width": "fill_container",
+          "height": 80,
+          "fill": "#FAF8F3",
+          "padding": [0, 40],
+          "layout": "horizontal",
+          "alignItems": "center",
+          "justifyContent": "space_between"
         },
         {
-          "name": "bcSep",
-          "penId": "1FWkC",
-          "type": "text",
-          "content": ">",
-          "styles": {
-            "fill": "#D4C5A0",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 12,
-            "fontWeight": "300"
-          }
+          "id": "wVox4",
+          "name": "bc3",
+          "type": "frame",
+          "description": "Breadcrumb Navigation (Tablet)",
+          "width": "fill_container",
+          "fill": "#EEEBE3",
+          "padding": [16, 40],
+          "layout": "horizontal",
+          "gap": 8,
+          "alignItems": "center"
         },
         {
-          "name": "bc2",
-          "penId": "tQzZ6",
-          "type": "text",
-          "content": "お料理",
-          "styles": {
-            "fill": "#2C2418",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 12,
-            "fontWeight": "500",
-            "letterSpacing": 1
-          }
+          "id": "U5Scg",
+          "name": "hero3",
+          "type": "frame",
+          "description": "Hero Section (Tablet)",
+          "width": "fill_container",
+          "height": 400,
+          "layout": "none",
+          "clip": true
+        },
+        {
+          "id": "xwYXG",
+          "name": "cuisineTC",
+          "type": "frame",
+          "description": "Concept section (Tablet)",
+          "width": "fill_container",
+          "fill": "image: ./images/generated-1771732310700.png",
+          "padding": [80, 100],
+          "layout": "vertical",
+          "gap": 48,
+          "alignItems": "center"
+        },
+        {
+          "id": "mkBLd",
+          "name": "tabKRef",
+          "type": "frame",
+          "description": "Kaiseki Menu Section (Tablet)",
+          "width": "fill_container",
+          "fill": "#FAF8F3",
+          "padding": [60, 60, 80, 60],
+          "layout": "vertical",
+          "gap": 40,
+          "alignItems": "center"
+        },
+        {
+          "id": "AvNyb",
+          "name": "Ingredients Section",
+          "type": "frame",
+          "description": "Ingredients section (Tablet)",
+          "width": "fill_container"
+        },
+        {
+          "id": "uW5sm",
+          "name": "Breakfast Section",
+          "type": "frame",
+          "description": "Breakfast section (Tablet)",
+          "width": "fill_container"
+        },
+        {
+          "id": "TJnGO",
+          "name": "Dining Room Section",
+          "type": "frame",
+          "description": "Dining room section (Tablet)",
+          "width": "fill_container"
+        },
+        {
+          "id": "H85Wn",
+          "name": "tabARef",
+          "type": "frame",
+          "description": "Allergy & Special Accommodations Section (Tablet)",
+          "width": "fill_container",
+          "fill": "#F0EBE0",
+          "padding": [60, 80],
+          "layout": "vertical",
+          "gap": 48,
+          "alignItems": "center"
+        },
+        {
+          "id": "BX6LE",
+          "name": "tabLRef",
+          "type": "frame",
+          "description": "Cuisine Links Section (Tablet)",
+          "width": "fill_container",
+          "fill": "#FAF8F3",
+          "padding": [40, 60],
+          "layout": "horizontal",
+          "gap": 60,
+          "alignItems": "center",
+          "justifyContent": "center"
+        },
+        {
+          "id": "U5b34",
+          "name": "c4",
+          "type": "frame",
+          "description": "CTA Section (Tablet)",
+          "width": "fill_container",
+          "height": 440,
+          "layout": "none",
+          "clip": true
+        },
+        {
+          "id": "mF0NU",
+          "name": "f4",
+          "type": "frame",
+          "description": "Footer (Tablet)",
+          "width": "fill_container",
+          "fill": "#1A150E",
+          "padding": [48, 48, 24, 48],
+          "layout": "vertical",
+          "gap": 48,
+          "alignItems": "center"
         }
       ]
     },
-    {
-      "name": "hero3",
-      "penId": "P9IEc",
-      "type": "frame",
-      "styles": {
-        "height": 480,
-        "width": "fill_container",
-        "layout": "none",
-        "clip": true
-      },
-      "children": [
+    "mobile": {
+      "id": "oTPux",
+      "name": "お料理ページ Mobile",
+      "width": 375,
+      "layout": "vertical",
+      "fill": "#FAF8F3",
+      "sections": [
         {
-          "name": "heroBg",
-          "penId": "x32ra",
+          "id": "OBYf8",
+          "name": "h4",
           "type": "frame",
-          "hasImageFill": true,
-          "styles": {
-            "width": 1440,
-            "height": 480,
-            "x": 0,
-            "y": 0
-          }
+          "description": "Header Navigation (Mobile)",
+          "width": "fill_container",
+          "height": 60,
+          "fill": "#FAF8F3",
+          "padding": [0, 20],
+          "layout": "horizontal",
+          "alignItems": "center",
+          "justifyContent": "space_between"
         },
         {
-          "name": "heroOverlay",
-          "penId": "k97XP",
+          "id": "MYfiJ",
+          "name": "bc3",
           "type": "frame",
-          "styles": {
-            "fill": "#1A150E55",
-            "width": 1440,
-            "height": 480,
-            "x": 0,
-            "y": 0
-          }
+          "description": "Breadcrumb Navigation (Mobile)",
+          "width": "fill_container",
+          "fill": "#EEEBE3",
+          "padding": [12, 20],
+          "layout": "horizontal",
+          "gap": 8,
+          "alignItems": "center"
         },
         {
-          "name": "heroContent",
-          "penId": "vXXCb",
+          "id": "ZTnzN",
+          "name": "hr3",
           "type": "frame",
-          "styles": {
-            "layout": "vertical",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "gap": 24,
-            "width": 1440,
-            "height": 480,
-            "x": 0,
-            "y": 0
-          }
-        }
-      ]
-    },
-    {
-      "name": "Cuisine Concept",
-      "penId": "jnDxX",
-      "type": "frame",
-      "hasImageFill": true,
-      "styles": {
-        "width": "fill_container",
-        "layout": "vertical",
-        "alignItems": "center",
-        "gap": 48,
-        "padding": [100, 200]
-      },
-      "children": [
-        {
-          "name": "cConceptLabel",
-          "penId": "90yAK",
-          "type": "frame",
-          "styles": {
-            "alignItems": "center",
-            "gap": 20
-          }
+          "description": "Hero Section (Mobile)",
+          "width": "fill_container",
+          "height": 320,
+          "layout": "none",
+          "clip": true
         },
         {
-          "name": "cConceptTitle",
-          "penId": "B4G5f",
-          "type": "text",
-          "content": "土地の恵みを、一皿に。",
-          "styles": {
-            "fill": "#2C2418",
-            "fontFamily": "Noto Serif JP",
-            "fontSize": 32,
-            "fontWeight": "600",
-            "letterSpacing": 6,
-            "textAlign": "center"
-          }
+          "id": "8TDwV",
+          "name": "cuisineCS",
+          "type": "frame",
+          "description": "Concept section (Mobile)",
+          "width": "fill_container",
+          "fill": "image: ./images/generated-1771732310700.png",
+          "padding": [60, 24],
+          "layout": "vertical",
+          "gap": 40,
+          "alignItems": "center"
         },
         {
-          "name": "cConceptBody",
-          "penId": "CnAzU",
-          "type": "text",
-          "content": "月瀬庵の料理長・水月が手掛ける月替わり懐石は、\n箱根・小田原の海と山が育む食材を軸に、\n季節の移ろいを一皿一皿に映し出します。\n\n器は地元の作家による特注品。\n目で愉しみ、香りで感じ、舌で味わう\n五感のすべてに響く料理をお届けいたします。",
-          "styles": {
-            "fill": "#6B5D4F",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 16,
-            "fontWeight": "300",
-            "letterSpacing": 1.5,
-            "lineHeight": 2.4,
-            "textAlign": "center",
-            "width": 620
-          }
+          "id": "RJUOE",
+          "name": "mobKRef",
+          "type": "frame",
+          "description": "Kaiseki Menu Section (Mobile)",
+          "width": "fill_container",
+          "fill": "#FAF8F3",
+          "padding": [40, 24, 60, 24],
+          "layout": "vertical",
+          "gap": 40,
+          "alignItems": "center"
         },
         {
-          "name": "cConceptDeco",
-          "penId": "dNES2",
-          "type": "rectangle",
-          "styles": {
-            "fill": "#D4C5A0",
-            "width": 1,
-            "height": 40
-          }
-        }
-      ]
-    },
-    {
-      "name": "Kaiseki Menu Section",
-      "penId": "o1rgU",
-      "type": "frame",
-      "styles": {
-        "fill": "#FAF8F3",
-        "width": "fill_container",
-        "layout": "vertical",
-        "alignItems": "center",
-        "gap": 40,
-        "padding": [60, 80, 100, 80]
-      },
-      "children": [
-        {
-          "name": "menuTitle",
-          "penId": "tQyyT",
-          "type": "text",
-          "content": "月替わり懐石  \u2014 如月の膳 \u2014",
-          "styles": {
-            "fill": "#2C2418",
-            "fontFamily": "Noto Serif JP",
-            "fontSize": 24,
-            "fontWeight": "600",
-            "letterSpacing": 4,
-            "textAlign": "center"
-          }
+          "id": "2IG03",
+          "name": "ingredSec4",
+          "type": "frame",
+          "description": "Ingredients section (Mobile)",
+          "width": "fill_container",
+          "layout": "vertical"
         },
         {
-          "name": "menuRow1",
-          "penId": "KkKhn",
+          "id": "FScbS",
+          "name": "breakSec4",
           "type": "frame",
-          "styles": {
-            "gap": 24,
-            "width": "fill_container"
-          }
+          "description": "Breakfast section (Mobile)",
+          "width": "fill_container",
+          "layout": "vertical"
         },
         {
-          "name": "menuRow2",
-          "penId": "sWo1z",
+          "id": "r3XlJ",
+          "name": "diningSec4",
           "type": "frame",
-          "styles": {
-            "gap": 24,
-            "width": "fill_container"
-          }
+          "description": "Dining room section (Mobile)",
+          "width": "fill_container",
+          "layout": "vertical"
         },
         {
-          "name": "menuRow2",
-          "penId": "j3LFR",
+          "id": "1acu2",
+          "name": "mobARef",
           "type": "frame",
-          "styles": {
-            "gap": 24,
-            "width": "fill_container"
-          }
-        }
-      ]
-    },
-    {
-      "name": "Ingredients Section",
-      "penId": "Svdtf",
-      "type": "frame",
-      "styles": {
-        "height": 480,
-        "width": "fill_container",
-        "clip": true
-      },
-      "children": [
-        {
-          "name": "ingredImg",
-          "penId": "q4DSV",
-          "type": "frame",
-          "hasImageFill": true,
-          "styles": {
-            "width": 640,
-            "height": 480,
-            "clip": true
-          }
+          "description": "Allergy & Special Accommodations Section (Mobile)",
+          "width": "fill_container",
+          "fill": "#F0EBE0",
+          "padding": [60, 24],
+          "layout": "vertical",
+          "gap": 48,
+          "alignItems": "center"
         },
         {
-          "name": "ingredContent",
-          "penId": "upxn5",
+          "id": "J8foY",
+          "name": "mobLRef",
           "type": "frame",
-          "styles": {
-            "fill": "#F0EBE0",
-            "layout": "vertical",
-            "justifyContent": "center",
-            "gap": 24,
-            "padding": 60,
-            "width": "fill_container",
-            "height": "fill_container"
-          }
-        }
-      ]
-    },
-    {
-      "name": "Breakfast Section",
-      "penId": "wOuAo",
-      "type": "frame",
-      "styles": {
-        "height": 480,
-        "width": "fill_container",
-        "clip": true
-      },
-      "children": [
-        {
-          "name": "breakContent",
-          "penId": "cBCs6",
-          "type": "frame",
-          "styles": {
-            "fill": "#2C2418",
-            "layout": "vertical",
-            "justifyContent": "center",
-            "gap": 24,
-            "padding": 60,
-            "width": "fill_container",
-            "height": "fill_container"
-          }
+          "description": "Cuisine Links Section (Mobile)",
+          "width": "fill_container",
+          "fill": "#FAF8F3",
+          "padding": [40, 24],
+          "layout": "vertical",
+          "gap": 60,
+          "alignItems": "center",
+          "justifyContent": "center"
         },
         {
-          "name": "breakImg",
-          "penId": "xFAST",
+          "id": "7slTT",
+          "name": "c4",
           "type": "frame",
-          "hasImageFill": true,
-          "styles": {
-            "width": 640,
-            "height": 480,
-            "clip": true
-          }
-        }
-      ]
-    },
-    {
-      "name": "Dining Room Section",
-      "penId": "R6H5u",
-      "type": "frame",
-      "styles": {
-        "height": 480,
-        "width": "fill_container",
-        "clip": true
-      },
-      "children": [
-        {
-          "name": "diningImg",
-          "penId": "X2y1O",
-          "type": "frame",
-          "hasImageFill": true,
-          "styles": {
-            "width": 640,
-            "height": 480,
-            "clip": true
-          }
+          "description": "CTA Section (Mobile)",
+          "width": "fill_container",
+          "height": 420,
+          "layout": "none",
+          "clip": true
         },
         {
-          "name": "diningContent",
-          "penId": "6zsPf",
+          "id": "tRZye",
+          "name": "f4",
           "type": "frame",
-          "styles": {
-            "fill": "#FAF8F3",
-            "layout": "vertical",
-            "justifyContent": "center",
-            "gap": 24,
-            "padding": 60,
-            "width": "fill_container",
-            "height": "fill_container"
-          }
-        }
-      ]
-    },
-    {
-      "name": "Allergy Info Section",
-      "penId": "CD4BQ",
-      "type": "frame",
-      "styles": {
-        "fill": "#F0EBE0",
-        "width": "fill_container",
-        "layout": "vertical",
-        "alignItems": "center",
-        "gap": 48,
-        "padding": [80, 120]
-      },
-      "children": [
-        {
-          "name": "allergyTitle",
-          "penId": "VIObA",
-          "type": "text",
-          "content": "アレルギー・特別対応",
-          "styles": {
-            "fill": "#2C2418",
-            "fontFamily": "Noto Serif JP",
-            "fontSize": 24,
-            "fontWeight": "600",
-            "letterSpacing": 4,
-            "textAlign": "center"
-          }
-        },
-        {
-          "name": "allergyGrid",
-          "penId": "xq420",
-          "type": "frame",
-          "styles": {
-            "gap": 40,
-            "width": "fill_container"
-          }
-        }
-      ]
-    },
-    {
-      "name": "cuisineLinksWrap",
-      "penId": "wdqKg",
-      "type": "frame",
-      "styles": {
-        "fill": "#FAF8F3",
-        "width": "fill_container",
-        "alignItems": "center",
-        "justifyContent": "center",
-        "gap": 60,
-        "padding": [40, 80]
-      },
-      "children": [
-        {
-          "name": "cuisineLink1",
-          "penId": "TRbkz",
-          "type": "text",
-          "content": "ご予約はこちら \u2192",
-          "context": "href: /reservation",
-          "styles": {
-            "fill": "#8B6914",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 14,
-            "fontWeight": "500",
-            "letterSpacing": 1
-          }
-        },
-        {
-          "name": "cuisineLink2",
-          "penId": "lgfIS",
-          "type": "text",
-          "content": "過ごし方を見る \u2192",
-          "context": "href: /experience",
-          "styles": {
-            "fill": "#8B6914",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 14,
-            "fontWeight": "500",
-            "letterSpacing": 1
-          }
-        }
-      ]
-    },
-    {
-      "name": "c4",
-      "penId": "6sK79",
-      "type": "frame",
-      "styles": {
-        "height": 480,
-        "width": "fill_container",
-        "layout": "none",
-        "clip": true
-      },
-      "children": [
-        {
-          "name": "ctaBg",
-          "penId": "DdNzP",
-          "type": "frame",
-          "hasImageFill": true,
-          "styles": {
-            "width": 1440,
-            "height": 480,
-            "x": 0,
-            "y": 0
-          }
-        },
-        {
-          "name": "ctaOverlay",
-          "penId": "aWTG5",
-          "type": "frame",
-          "styles": {
-            "fill": "#1A150E88",
-            "width": 1440,
-            "height": 480,
-            "x": 0,
-            "y": 0
-          }
-        },
-        {
-          "name": "ctaContent",
-          "penId": "Ae7aI",
-          "type": "frame",
-          "styles": {
-            "layout": "vertical",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "gap": 40,
-            "width": 1440,
-            "height": 480,
-            "x": 0,
-            "y": 0
-          }
-        }
-      ]
-    },
-    {
-      "name": "f4",
-      "penId": "tAPdL",
-      "type": "frame",
-      "styles": {
-        "fill": "#1A150E",
-        "width": "fill_container",
-        "layout": "vertical",
-        "alignItems": "center",
-        "gap": 48,
-        "padding": [60, 80, 32, 80]
-      },
-      "children": [
-        {
-          "name": "footerTop",
-          "penId": "TEp9Z",
-          "type": "frame",
-          "styles": {
-            "justifyContent": "space_between",
-            "width": "fill_container"
-          }
-        },
-        {
-          "name": "footerSecondaryNav",
-          "penId": "XjBBw",
-          "type": "frame",
-          "styles": {
-            "alignItems": "center",
-            "justifyContent": "center",
-            "gap": 24,
-            "width": "fill_container"
-          }
-        },
-        {
-          "name": "footerDivider",
-          "penId": "82hNM",
-          "type": "rectangle",
-          "styles": {
-            "fill": "#2C241888",
-            "width": "fill_container",
-            "height": 1
-          }
-        },
-        {
-          "name": "footerMiddle",
-          "penId": "4fgPF",
-          "type": "frame",
-          "styles": {
-            "alignItems": "center",
-            "justifyContent": "space_between",
-            "width": "fill_container"
-          }
-        },
-        {
-          "name": "footerBottom",
-          "penId": "uWXy8",
-          "type": "text",
-          "content": "\u00a9 2026 月瀬庵 TSUKISE-AN. All Rights Reserved.",
-          "styles": {
-            "fill": "#6B5D4F55",
-            "fontFamily": "Cormorant Garamond",
-            "fontSize": 11,
-            "fontWeight": "normal",
-            "letterSpacing": 2
-          }
+          "description": "Footer (Mobile)",
+          "width": "fill_container",
+          "fill": "#1A150E",
+          "padding": [40, 24, 24, 24],
+          "layout": "vertical",
+          "gap": 32,
+          "alignItems": "center"
         }
       ]
     }
-  ]
+  },
+  "colors": {
+    "primary_dark": "#2C2418",
+    "primary_light": "#FAF8F3",
+    "accent_gold": "#D4C5A0",
+    "accent_dark_gold": "#8B6914",
+    "text_dark": "#4A4035",
+    "text_medium": "#6B5D4F",
+    "text_light": "#8B7D6B",
+    "background_light": "#F0EBE0",
+    "background_beige": "#EEEBE3",
+    "overlay_dark": "#1A150E"
+  },
+  "typography": {
+    "serif_family": "Noto Serif JP",
+    "sans_family": "Noto Sans JP",
+    "heading_large": {
+      "size": 32,
+      "weight": "600",
+      "family": "Noto Serif JP",
+      "letterSpacing": 6
+    },
+    "heading_medium": {
+      "size": 24,
+      "weight": "600",
+      "family": "Noto Serif JP",
+      "letterSpacing": 4
+    },
+    "body_large": {
+      "size": 16,
+      "weight": "300",
+      "family": "Noto Sans JP",
+      "letterSpacing": 1.5,
+      "lineHeight": 2.4
+    },
+    "body_medium": {
+      "size": 14,
+      "weight": "300",
+      "family": "Noto Sans JP",
+      "letterSpacing": 1,
+      "lineHeight": 2.2
+    },
+    "label_small": {
+      "size": 12,
+      "weight": "500",
+      "family": "Noto Sans JP",
+      "letterSpacing": 2
+    }
+  },
+  "spacing": {
+    "section_padding_pc": [80, 120],
+    "section_padding_tablet": [60, 80],
+    "section_padding_mobile": [60, 24],
+    "section_gap": 48
+  },
+  "notes": "This JSON contains the resolved instance structure for the お料理 (Cuisine) page across three viewports (PC, Tablet, Mobile). Data extracted with resolveInstances:true from Pencil MCP. Includes all key sections: Header, Breadcrumb, Hero, Concept, Kaiseki Menu, Ingredients, Breakfast, Dining Room, Allergy Info, Cuisine Links, CTA, and Footer."
 }
