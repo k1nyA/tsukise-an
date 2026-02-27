@@ -5,19 +5,19 @@ const plans = [
     name: 'スタンダードプラン',
     description: '一泊二食付きの基本プラン',
     price: '¥45,000〜',
-    image: '/images/plans/standard.jpg',
+    image: '/images/rooms-tsukimi-main.png',
   },
   {
     name: '記念日プラン',
     description: '特別な日を彩る記念日プラン',
     price: '¥65,000〜',
-    image: '/images/plans/anniversary.jpg',
+    image: '/images/cuisine-hero.png',
   },
   {
     name: '連泊プラン',
     description: '2泊以上でお得な連泊プラン',
     price: '¥40,000〜/泊',
-    image: '/images/plans/consecutive.jpg',
+    image: '/images/onsen-hero.png',
   },
 ]
 

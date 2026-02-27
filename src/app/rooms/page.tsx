@@ -7,14 +7,13 @@ import { AmenitiesSection } from '@/components/rooms/AmenitiesSection'
 import { CTASection } from '@/components/shared/CTASection/CTASection'
 import { Footer } from '@/components/shared/Footer/Footer'
 import Link from 'next/link'
-import '@/components/rooms/rooms-responsive.css'
 
 export default function RoomsPage() {
   return (
     <div className="ryokan-page">
       <Header />
       <main>
-        <PageHero title="客室" labelEn="ROOMS" />
+        <PageHero title="客室" labelEn="ROOMS" backgroundImage="/images/rooms-hero.png" />
         <Breadcrumb
           items={[
             { label: 'ホーム', href: '/' },

@@ -14,7 +14,7 @@ export default function ContactPage() {
     <div className="ryokan-page">
       <Header />
       <main>
-        <PageHero title="お問い合わせ" labelEn="CONTACT" />
+        <PageHero title="お問い合わせ" labelEn="CONTACT" backgroundImage="/images/onsen-hero.png" />
         <Breadcrumb
           items={[
             { label: 'ホーム', href: '/' },

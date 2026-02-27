@@ -17,7 +17,7 @@ export default function ExperiencePage() {
     <div className="ryokan-page">
       <Header />
       <main>
-        <PageHero title="過ごし方" labelEn="EXPERIENCE" />
+        <PageHero title="過ごし方" labelEn="EXPERIENCE" backgroundImage="/images/experience-hero.png" />
         <Breadcrumb
           items={[
             { label: 'ホーム', href: '/' },

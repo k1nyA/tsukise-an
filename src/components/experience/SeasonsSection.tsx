@@ -1,23 +1,29 @@
+import Image from 'next/image'
+
 const seasons = [
   {
     label: 'Spring  —  春',
     title: '湖畔の桜と山菜',
     description: '芦ノ湖畔に咲く桜を愛でながら、\n春の山菜狩り体験を。',
+    image: '/images/experience-season-spring.png',
   },
   {
     label: 'Summer  —  夏',
     title: '湖上カヌーと花火',
     description: '早朝のカヌー体験と、\n夕涼みの花火鑑賞を。',
+    image: '/images/experience-season-summer.png',
   },
   {
     label: 'Autumn  —  秋',
     title: '紅葉と月見の宴',
     description: '色づく山々のハイキングと、\n中秋の名月を愛でる宴を。',
+    image: '/images/experience-season-autumn.png',
   },
   {
     label: 'Winter  —  冬',
     title: '雪見温泉と星空',
     description: '雪に包まれた露天風呂と、\n冬の澄んだ星空観賞を。',
+    image: '/images/experience-season-winter.png',
   },
 ]
 
@@ -55,15 +61,22 @@ export function SeasonsSection() {
             data-testid="season-card"
             className="flex flex-col overflow-hidden"
           >
-            {/* Image placeholder */}
+            {/* Season image */}
             <div
               data-testid="season-image"
-              className="w-full overflow-hidden"
+              className="relative w-full overflow-hidden"
               style={{
                 height: 'var(--r-exp-seasons-card-img-h)',
-                backgroundColor: 'var(--ryokan-light-bg, #EEEBE3)',
               }}
-            />
+            >
+              <Image
+                src={season.image}
+                alt={season.title}
+                fill
+                className="object-cover"
+                sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 25vw"
+              />
+            </div>
 
             {/* Info */}
             <div
