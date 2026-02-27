@@ -7,6 +7,7 @@ import { AmenitiesSection } from '@/components/rooms/AmenitiesSection'
 import { CTASection } from '@/components/shared/CTASection/CTASection'
 import { Footer } from '@/components/shared/Footer/Footer'
 import Link from 'next/link'
+import '@/components/rooms/rooms-responsive.css'
 
 export default function RoomsPage() {
   return (
@@ -26,11 +27,11 @@ export default function RoomsPage() {
 
         {/* Related page links */}
         <div
-          className="flex w-full items-center justify-center"
+          className="r-rooms-related-layout w-full"
           style={{
             backgroundColor: 'var(--ryokan-bg, #FAF8F3)',
-            gap: 60,
-            padding: '40px 80px',
+            gap: 'var(--r-rooms-related-gap)',
+            padding: 'var(--r-rooms-related-py) var(--r-section-px)',
           }}
         >
           <Link

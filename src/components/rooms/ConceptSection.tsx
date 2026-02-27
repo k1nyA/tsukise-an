@@ -2,7 +2,13 @@ export function ConceptSection() {
   return (
     <section
       className="flex w-full flex-col items-center"
-      style={{ padding: '100px 200px', gap: 48 }}
+      style={{
+        padding: 'var(--r-rooms-concept-py) var(--r-rooms-concept-px)',
+        gap: 'var(--r-rooms-concept-gap)',
+        backgroundImage: 'url(/images/rooms-concept-bg.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
     >
       {/* Label with decorative lines */}
       <div className="flex items-center" style={{ gap: 20 }}>
@@ -40,10 +46,10 @@ export function ConceptSection() {
         className="text-center"
         style={{
           fontFamily: 'var(--font-heading)',
-          fontSize: 32,
+          fontSize: 'var(--r-rooms-concept-title)',
           fontWeight: 600,
           color: 'var(--ryokan-dark, #2C2418)',
-          letterSpacing: 6,
+          letterSpacing: 'var(--r-rooms-concept-title-ls)',
         }}
       >
         離れの贅、静寂の時。
@@ -51,15 +57,16 @@ export function ConceptSection() {
 
       {/* Body text */}
       <p
-        className="text-center"
+        className="r-rooms-concept-body"
         style={{
           fontFamily: 'var(--font-body)',
-          fontSize: 16,
+          fontSize: 'var(--r-rooms-concept-body)',
           fontWeight: 300,
           color: 'var(--ryokan-secondary, #6B5D4F)',
           letterSpacing: 1.5,
-          lineHeight: 2.4,
-          maxWidth: 600,
+          lineHeight: 'var(--r-rooms-concept-body-lh)',
+          width: 'var(--r-rooms-concept-body-width)',
+          maxWidth: '100%',
         }}
       >
         月瀬庵の客室は、すべて独立した離れ形式。

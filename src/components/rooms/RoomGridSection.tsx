@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 type RoomData = {
@@ -6,6 +7,7 @@ type RoomData = {
   size: string
   description: string
   tags: string[]
+  image?: string
 }
 
 const rooms: RoomData[] = [
@@ -16,6 +18,7 @@ const rooms: RoomData[] = [
     description:
       '芦ノ湖を一望する最上階の特別室。\n月の出を正面に望む唯一の客室です。',
     tags: ['露天風呂付', '芦ノ湖ビュー', '最上階'],
+    image: '/images/rooms-tsukimi-main.png',
   },
   {
     labelEn: 'KACHO',
@@ -24,6 +27,7 @@ const rooms: RoomData[] = [
     description:
       '四季折々の日本庭園を臨む離れ。\n檜の内湯で森林の香りに包まれます。',
     tags: ['檜風呂付', '庭園ビュー'],
+    image: '/images/rooms-kacho-main.png',
   },
   {
     labelEn: 'FUGA',
@@ -32,6 +36,7 @@ const rooms: RoomData[] = [
     description:
       '深い森に抱かれた静謐な一棟。\n岩造りの露天風呂で森林浴を。',
     tags: ['露天風呂付', '林間'],
+    image: '/images/rooms-fuga-main.png',
   },
   {
     labelEn: 'MIKAGAMI',
@@ -40,6 +45,7 @@ const rooms: RoomData[] = [
     description:
       '湖面に映る月が名前の由来。\n石造りの露天風呂から芦ノ湖を眺めて。',
     tags: ['露天風呂付', '湖畔'],
+    image: '/images/rooms-mikagami-main.png',
   },
   {
     labelEn: 'MATSUKAZE',
@@ -79,17 +85,30 @@ function RoomCard({ room }: { room: RoomData }) {
   return (
     <article
       className="flex flex-col overflow-hidden"
-      style={{ flex: '1 1 0' }}
+      style={{ flex: '1 1 0', minWidth: 0 }}
     >
-      {/* Image placeholder */}
+      {/* Image */}
       <div
-        aria-label={`${room.name}の客室イメージ`}
+        className="relative overflow-hidden"
         style={{
-          height: 320,
+          height: 'var(--r-rooms-card-img-h)',
           width: '100%',
           backgroundColor: 'var(--ryokan-darkest, #1A150E)',
         }}
-      />
+      >
+        {room.image && (
+          <Image
+            src={room.image}
+            alt={`${room.name}の客室イメージ`}
+            fill
+            className="object-cover"
+            sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 50vw"
+          />
+        )}
+        {!room.image && (
+          <span className="sr-only">{room.name}の客室イメージ</span>
+        )}
+      </div>
 
       {/* Room info */}
       <div
@@ -97,7 +116,7 @@ function RoomCard({ room }: { room: RoomData }) {
         style={{
           backgroundColor: 'var(--ryokan-light-bg, #EEEBE3)',
           gap: 12,
-          padding: '28px 24px',
+          padding: 'var(--r-rooms-card-py) var(--r-rooms-card-px)',
         }}
       >
         {/* English label */}
@@ -117,7 +136,7 @@ function RoomCard({ room }: { room: RoomData }) {
         <h3
           style={{
             fontFamily: 'var(--font-heading)',
-            fontSize: 22,
+            fontSize: 'var(--r-rooms-card-name)',
             fontWeight: 600,
             color: 'var(--ryokan-dark, #2C2418)',
             letterSpacing: 3,
@@ -185,41 +204,53 @@ export function RoomGridSection() {
   }
 
   return (
-    <section
-      className="flex w-full flex-col items-center"
-      style={{ padding: '40px 80px 100px 80px', gap: 32 }}
-    >
-      {/* Section heading */}
-      <h2
-        className="text-center"
+    <>
+      <section
+        className="flex w-full flex-col items-center"
         style={{
-          fontFamily: 'var(--font-heading)',
-          fontSize: 28,
-          fontWeight: 600,
-          color: 'var(--ryokan-dark, #2C2418)',
-          letterSpacing: 4,
+          padding:
+            'var(--r-rooms-grid-py-top) var(--r-section-px) var(--r-rooms-grid-py-bottom)',
+          gap: 'var(--r-rooms-grid-gap)',
+          backgroundImage: 'url(/images/rooms-grid-bg.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
         }}
       >
-        客室のご案内
-      </h2>
-
-      {/* Room grid rows */}
-      {rows.map((row, rowIndex) => (
-        <div
-          key={rowIndex}
-          className="flex w-full"
-          style={{ gap: 24 }}
+        {/* Section heading */}
+        <h2
+          className="text-center"
+          style={{
+            fontFamily: 'var(--font-heading)',
+            fontSize: 'var(--r-title-sm)',
+            fontWeight: 600,
+            color: 'var(--ryokan-dark, #2C2418)',
+            letterSpacing: 4,
+          }}
         >
-          {row.map((room) => (
-            <RoomCard key={room.labelEn} room={room} />
-          ))}
-        </div>
-      ))}
+          客室のご案内
+        </h2>
+
+        {/* Room grid rows */}
+        {rows.map((row, rowIndex) => (
+          <div
+            key={rowIndex}
+            className="r-rooms-grid-row"
+            style={{ gap: 'var(--r-rooms-card-gap)' }}
+          >
+            {row.map((room) => (
+              <RoomCard key={room.labelEn} room={room} />
+            ))}
+          </div>
+        ))}
+      </section>
 
       {/* Vacancy link */}
       <div
         className="flex w-full items-center justify-center"
-        style={{ padding: '24px 0' }}
+        style={{
+          backgroundColor: 'var(--ryokan-bg, #FAF8F3)',
+          padding: 'var(--r-rooms-vacancy-py) var(--r-section-px)',
+        }}
       >
         <Link
           href="/reservation"
@@ -235,6 +266,6 @@ export function RoomGridSection() {
           空室を確認する →
         </Link>
       </div>
-    </section>
+    </>
   )
 }
