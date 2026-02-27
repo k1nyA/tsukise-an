@@ -54,6 +54,7 @@ const rooms: RoomData[] = [
     description:
       '松風が通り抜ける高台の一棟。\n石庭を望む露天風呂で四季を感じて。',
     tags: ['露天風呂付', '松林'],
+    image: '/images/rooms-matsukaze-main.jpg',
   },
   {
     labelEn: 'SETSUGETSU',
@@ -62,6 +63,7 @@ const rooms: RoomData[] = [
     description:
       '雪見障子から望む箱根の山々。\n冬は雪景色が格別の趣を添えます。',
     tags: ['露天風呂付', '山麓'],
+    image: '/images/rooms-setsugetsu-main.jpg',
   },
   {
     labelEn: 'ASAGIRI',
@@ -70,6 +72,7 @@ const rooms: RoomData[] = [
     description:
       '朝霧に包まれる渓谷沿いの離れ。\nせせらぎの音が心を癒します。',
     tags: ['露天風呂付', '渓谷ビュー'],
+    image: '/images/rooms-asagiri-main.jpg',
   },
   {
     labelEn: 'YUNAGI',
@@ -78,6 +81,7 @@ const rooms: RoomData[] = [
     description:
       '夕暮れ時の凪いだ湖面が美しい一棟。\n檜の半露天風呂をお楽しみください。',
     tags: ['半露天風呂付', '芦ノ湖ビュー'],
+    image: '/images/rooms-yunagi-main.jpg',
   },
 ]
 
