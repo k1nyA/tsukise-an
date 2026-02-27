@@ -44,21 +44,6 @@ const menuItems: MenuItem[] = [
     image: '/images/cuisine-kaiseki-mizugashi.png',
     imageLabel: '水菓子の写真',
   },
-  {
-    name: '八寸',
-    description: '季節の前菜を少しずつ\n盛り合わせた一皿',
-    imageLabel: '八寸の写真',
-  },
-  {
-    name: '揚物',
-    description: '旬の素材を軽やかに揚げた\n天ぷら',
-    imageLabel: '揚物の写真',
-  },
-  {
-    name: '食事',
-    description: '土鍋で炊き上げる\n箱根の湧水米',
-    imageLabel: '食事の写真',
-  },
 ]
 
 function MenuCard({ item }: { item: MenuItem }) {
