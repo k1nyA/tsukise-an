@@ -27,8 +27,8 @@ export function ActivitiesSection() {
         backgroundImage: 'var(--experience-activities-bg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        padding: '80px 120px',
-        gap: 48,
+        padding: 'var(--r-exp-act-py) var(--r-exp-act-px)',
+        gap: 'var(--r-exp-act-gap)',
       }}
     >
       {/* Label */}
@@ -38,10 +38,10 @@ export function ActivitiesSection() {
       <h2
         style={{
           fontFamily: 'var(--font-heading)',
-          fontSize: 28,
+          fontSize: 'var(--r-exp-act-title)',
           fontWeight: 600,
           color: 'var(--ryokan-bg, #FAF8F3)',
-          letterSpacing: 4,
+          letterSpacing: 'var(--r-exp-act-title-ls)',
           margin: 0,
         }}
       >
@@ -49,12 +49,12 @@ export function ActivitiesSection() {
       </h2>
 
       {/* Activity cards grid */}
-      <div className="flex w-full" style={{ gap: 40 }}>
+      <div className="r-exp-act-grid">
         {activities.map((activity) => (
           <div
             key={activity.title}
             data-testid="activity-card"
-            className="flex flex-1 flex-col items-center"
+            className="flex flex-col items-center"
             style={{ gap: 12 }}
           >
             <h3

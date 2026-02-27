@@ -3,11 +3,9 @@
 @import "../lib/css/index.css";
 @import "../lib/css/ryokan-theme.css";
 @import "../lib/css/ryokan-responsive.css";
-<<<<<<< HEAD
 @import "../components/cuisine/cuisine-responsive.css";
-=======
 @import "../components/onsen/onsen-responsive.css";
->>>>>>> e17e9bb (feat(#233): implement onsen page responsive layout)
+@import "../components/experience/experience-responsive.css";
 
 /* ============================================================
    Tailwind v4 @theme — Design Token Registration
