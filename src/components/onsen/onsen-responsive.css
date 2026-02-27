@@ -1,0 +1,281 @@
+/* ===========================================
+   Onsen Page Responsive CSS Variables
+   Breakpoints: Mobile(<768) / Tablet(768-1023) / PC(>=1024)
+   =========================================== */
+
+/* --- PC (default, >= 1024px) --- */
+:root {
+  /* Onsen Concept */
+  --r-onsen-concept-py: 100px;
+  --r-onsen-concept-px: 200px;
+  --r-onsen-concept-gap: 48px;
+  --r-onsen-concept-title-size: 32px;
+  --r-onsen-concept-title-ls: 6px;
+  --r-onsen-concept-body-size: 16px;
+  --r-onsen-concept-body-ls: 1.5px;
+  --r-onsen-concept-body-lh: 2.4;
+  --r-onsen-concept-body-w: 640px;
+
+  /* Bath Sections (Daiyokujo / Rotenburo) */
+  --r-onsen-bath-h: 520px;
+  --r-onsen-bath-img-w: 720px;
+  --r-onsen-bath-padding: 60px;
+  --r-onsen-bath-gap: 24px;
+  --r-onsen-bath-title-size: 24px;
+  --r-onsen-bath-title-ls: 3px;
+  --r-onsen-bath-sub-size: 13px;
+  --r-onsen-bath-body-size: 15px;
+  --r-onsen-bath-body-lh: 2.0;
+
+  /* Water Quality */
+  --r-onsen-wq-py: 80px;
+  --r-onsen-wq-px: 120px;
+  --r-onsen-wq-gap: 48px;
+  --r-onsen-wq-title-size: 28px;
+  --r-onsen-wq-title-ls: 4px;
+  --r-onsen-wq-info-val-size: 20px;
+  --r-onsen-wq-info-label-size: 12px;
+  --r-onsen-wq-efficacy-size: 15px;
+
+  /* Onsen Guide */
+  --r-onsen-guide-py: 80px;
+  --r-onsen-guide-px: 120px;
+  --r-onsen-guide-gap: 60px;
+  --r-onsen-guide-title-w: 300px;
+  --r-onsen-guide-content-gap: 24px;
+
+  /* Bathing Etiquette */
+  --r-onsen-eti-py: 80px;
+  --r-onsen-eti-px: 120px;
+  --r-onsen-eti-gap: 48px;
+  --r-onsen-eti-grid-gap: 32px;
+  --r-onsen-eti-card-p: 32px;
+  --r-onsen-eti-title-size: 24px;
+  --r-onsen-eti-title-ls: 4px;
+  --r-onsen-eti-item-title-size: 18px;
+  --r-onsen-eti-item-body-size: 14px;
+
+  /* Onsen Links */
+  --r-onsen-links-py: 40px;
+  --r-onsen-links-px: 80px;
+  --r-onsen-links-gap: 60px;
+  --r-onsen-links-size: 14px;
+}
+
+/* --- Tablet (768px - 1023px) --- */
+@media (max-width: 1023px) {
+  :root {
+    /* Onsen Concept */
+    --r-onsen-concept-py: 80px;
+    --r-onsen-concept-px: 100px;
+    --r-onsen-concept-gap: 40px;
+    --r-onsen-concept-title-size: 28px;
+    --r-onsen-concept-title-ls: 4px;
+    --r-onsen-concept-body-size: 14px;
+    --r-onsen-concept-body-ls: 1px;
+    --r-onsen-concept-body-lh: 2.2;
+    --r-onsen-concept-body-w: 500px;
+
+    /* Bath Sections */
+    --r-onsen-bath-h: 420px;
+    --r-onsen-bath-img-w: 380px;
+    --r-onsen-bath-padding: 40px;
+    --r-onsen-bath-gap: 20px;
+    --r-onsen-bath-title-size: 22px;
+    --r-onsen-bath-body-size: 14px;
+
+    /* Water Quality */
+    --r-onsen-wq-py: 60px;
+    --r-onsen-wq-px: 60px;
+    --r-onsen-wq-gap: 40px;
+    --r-onsen-wq-title-size: 24px;
+    --r-onsen-wq-info-val-size: 18px;
+    --r-onsen-wq-efficacy-size: 14px;
+
+    /* Onsen Guide */
+    --r-onsen-guide-py: 60px;
+    --r-onsen-guide-px: 60px;
+    --r-onsen-guide-gap: 40px;
+    --r-onsen-guide-title-w: 240px;
+
+    /* Bathing Etiquette */
+    --r-onsen-eti-py: 60px;
+    --r-onsen-eti-px: 60px;
+    --r-onsen-eti-gap: 40px;
+    --r-onsen-eti-grid-gap: 24px;
+    --r-onsen-eti-card-p: 24px;
+    --r-onsen-eti-title-size: 22px;
+    --r-onsen-eti-item-title-size: 16px;
+    --r-onsen-eti-item-body-size: 13px;
+
+    /* Onsen Links */
+    --r-onsen-links-py: 32px;
+    --r-onsen-links-px: 40px;
+    --r-onsen-links-gap: 40px;
+  }
+}
+
+/* --- Mobile (< 768px) --- */
+@media (max-width: 767px) {
+  :root {
+    /* Onsen Concept */
+    --r-onsen-concept-py: 60px;
+    --r-onsen-concept-px: 24px;
+    --r-onsen-concept-gap: 32px;
+    --r-onsen-concept-title-size: 24px;
+    --r-onsen-concept-title-ls: 3px;
+    --r-onsen-concept-body-size: 14px;
+    --r-onsen-concept-body-ls: 1px;
+    --r-onsen-concept-body-lh: 2.2;
+    --r-onsen-concept-body-w: 100%;
+
+    /* Bath Sections */
+    --r-onsen-bath-h: auto;
+    --r-onsen-bath-img-w: 100%;
+    --r-onsen-bath-padding: 32px;
+    --r-onsen-bath-gap: 20px;
+    --r-onsen-bath-title-size: 22px;
+    --r-onsen-bath-body-size: 14px;
+
+    /* Water Quality */
+    --r-onsen-wq-py: 48px;
+    --r-onsen-wq-px: 24px;
+    --r-onsen-wq-gap: 32px;
+    --r-onsen-wq-title-size: 22px;
+    --r-onsen-wq-title-ls: 3px;
+    --r-onsen-wq-info-val-size: 16px;
+    --r-onsen-wq-efficacy-size: 14px;
+
+    /* Onsen Guide */
+    --r-onsen-guide-py: 48px;
+    --r-onsen-guide-px: 24px;
+    --r-onsen-guide-gap: 32px;
+    --r-onsen-guide-title-w: 100%;
+    --r-onsen-guide-content-gap: 20px;
+
+    /* Bathing Etiquette */
+    --r-onsen-eti-py: 48px;
+    --r-onsen-eti-px: 24px;
+    --r-onsen-eti-gap: 32px;
+    --r-onsen-eti-grid-gap: 16px;
+    --r-onsen-eti-card-p: 20px;
+    --r-onsen-eti-title-size: 22px;
+    --r-onsen-eti-title-ls: 3px;
+    --r-onsen-eti-item-title-size: 16px;
+    --r-onsen-eti-item-body-size: 13px;
+
+    /* Onsen Links */
+    --r-onsen-links-py: 24px;
+    --r-onsen-links-px: 24px;
+    --r-onsen-links-gap: 24px;
+    --r-onsen-links-size: 13px;
+  }
+}
+
+/* ===========================================
+   Onsen Bath Layout Classes
+   PC/Tablet: row | Mobile: column (ImgText) / column-reverse (TextImg)
+   =========================================== */
+
+.r-onsen-bath-imgtext {
+  display: flex;
+  flex-direction: row;
+}
+
+.r-onsen-bath-textimg {
+  display: flex;
+  flex-direction: row;
+}
+
+.r-onsen-bath-img {
+  width: var(--r-onsen-bath-img-w);
+  height: var(--r-onsen-bath-h);
+  flex-shrink: 0;
+  min-height: 280px;
+}
+
+@media (max-width: 767px) {
+  .r-onsen-bath-imgtext {
+    flex-direction: column;
+  }
+  .r-onsen-bath-textimg {
+    flex-direction: column-reverse;
+  }
+  .r-onsen-bath-img {
+    width: 100%;
+    height: 280px;
+    flex-shrink: 0;
+  }
+}
+
+/* ===========================================
+   Onsen Guide Layout
+   PC/Tablet: row | Mobile: column
+   =========================================== */
+
+.r-onsen-guide-layout {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 767px) {
+  .r-onsen-guide-layout {
+    flex-direction: column;
+  }
+}
+
+/* ===========================================
+   Onsen Etiquette Grid
+   PC/Tablet: 2-col | Mobile: 1-col
+   =========================================== */
+
+.r-onsen-eti-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--r-onsen-eti-grid-gap);
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .r-onsen-eti-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===========================================
+   Water Quality Info Grid
+   PC: row | Tablet: row | Mobile: column
+   =========================================== */
+
+.r-onsen-wq-info-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 64px;
+}
+
+@media (max-width: 767px) {
+  .r-onsen-wq-info-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+}
+
+/* ===========================================
+   Onsen Links Layout
+   PC/Tablet: row | Mobile: column
+   =========================================== */
+
+.r-onsen-links-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .r-onsen-links-layout {
+    flex-direction: column;
+  }
+}

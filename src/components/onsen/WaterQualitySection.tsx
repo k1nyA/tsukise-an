@@ -16,14 +16,20 @@ const qualityInfo = [
 export function WaterQualitySection() {
   return (
     <section
-      data-theme="dark"
-      className="relative w-full overflow-hidden"
+      className="relative w-full overflow-hidden bg-cover bg-center"
       style={{
-        backgroundColor: 'var(--ryokan-dark, #2C2418)',
-        padding: '80px 120px',
+        backgroundImage: 'url(/images/onsen-water-quality-bg.png)',
       }}
     >
-      <div className="mx-auto flex flex-col items-center gap-12" style={{ maxWidth: 'var(--content-max-width, 1000px)' }}>
+      {/* Dark overlay for readability */}
+      <div
+        className="flex flex-col items-center"
+        style={{
+          padding: 'var(--r-onsen-wq-py) var(--r-onsen-wq-px)',
+          gap: 'var(--r-onsen-wq-gap)',
+          backgroundColor: 'rgba(44, 36, 24, 0.75)',
+        }}
+      >
         {/* English label */}
         <SectionLabel english="WATER QUALITY" variant="gold" />
 
@@ -32,23 +38,24 @@ export function WaterQualitySection() {
           className="text-center"
           style={{
             fontFamily: 'var(--font-heading)',
-            fontSize: 28,
+            fontSize: 'var(--r-onsen-wq-title-size)',
             fontWeight: 600,
             color: 'var(--ryokan-text-on-dark, #FAF8F3)',
-            letterSpacing: 4,
+            letterSpacing: 'var(--r-onsen-wq-title-ls)',
+            margin: 0,
           }}
         >
           泉質と効能
         </h2>
 
         {/* Quality info grid */}
-        <div className="flex w-full justify-center gap-16">
+        <div className="r-onsen-wq-info-grid w-full">
           {qualityInfo.map((item) => (
             <div key={item.label} className="flex flex-col items-center gap-3">
               <span
                 style={{
                   fontFamily: 'var(--font-body)',
-                  fontSize: 12,
+                  fontSize: 'var(--r-onsen-wq-info-label-size)',
                   fontWeight: 300,
                   color: 'var(--ryokan-text-subtle, #C4B89A)',
                   letterSpacing: 2,
@@ -59,7 +66,7 @@ export function WaterQualitySection() {
               <span
                 style={{
                   fontFamily: 'var(--font-heading)',
-                  fontSize: 20,
+                  fontSize: 'var(--r-onsen-wq-info-val-size)',
                   fontWeight: 600,
                   color: 'var(--ryokan-text-on-dark, #FAF8F3)',
                   letterSpacing: 2,
@@ -86,7 +93,7 @@ export function WaterQualitySection() {
           <span
             style={{
               fontFamily: 'var(--font-body)',
-              fontSize: 12,
+              fontSize: 'var(--r-onsen-wq-info-label-size)',
               fontWeight: 300,
               color: 'var(--ryokan-text-subtle, #C4B89A)',
               letterSpacing: 2,
@@ -100,7 +107,7 @@ export function WaterQualitySection() {
                 key={item}
                 style={{
                   fontFamily: 'var(--font-body)',
-                  fontSize: 15,
+                  fontSize: 'var(--r-onsen-wq-efficacy-size)',
                   fontWeight: 300,
                   color: 'var(--ryokan-text-on-dark, #FAF8F3)',
                   letterSpacing: 1.5,

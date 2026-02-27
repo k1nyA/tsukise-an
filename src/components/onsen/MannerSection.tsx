@@ -22,71 +22,194 @@ const guideItems: GuideItem[] = [
   },
 ]
 
+const etiquetteItems = [
+  {
+    title: 'かけ湯',
+    description: '入浴前に必ずかけ湯をお願いいたします。',
+  },
+  {
+    title: 'タオル',
+    description: '浴槽内にタオルを入れないようお願いいたします。',
+  },
+  {
+    title: '飲食',
+    description: '浴室内での飲食はご遠慮ください。水分補給は脱衣所にてお願いいたします。',
+  },
+  {
+    title: '静粛',
+    description: '他のお客様のご迷惑にならないよう、大きな声での会話はお控えください。',
+  },
+]
+
 export function MannerSection() {
   return (
-    <section
-      className="w-full"
-      style={{
-        backgroundColor: 'var(--ryokan-light-bg-alt, #F0EBE0)',
-        padding: '80px 120px',
-      }}
-    >
-      <div className="mx-auto flex flex-col items-center gap-12" style={{ maxWidth: 'var(--content-max-width, 1000px)' }}>
-        {/* Title */}
-        <h2
-          className="text-center"
+    <>
+      {/* Onsen Guide Section */}
+      <section
+        className="w-full"
+        style={{
+          backgroundColor: 'var(--ryokan-bg, #FAF8F3)',
+        }}
+      >
+        <div
+          className="r-onsen-guide-layout"
           style={{
-            fontFamily: 'var(--font-heading)',
-            fontSize: 24,
-            fontWeight: 600,
-            color: 'var(--ryokan-dark, #2C2418)',
-            letterSpacing: 4,
+            padding: 'var(--r-onsen-guide-py) var(--r-onsen-guide-px)',
+            gap: 'var(--r-onsen-guide-gap)',
           }}
         >
-          入浴のご案内
-        </h2>
-
-        {/* Guide items grid */}
-        <div className="grid w-full grid-cols-2 gap-8">
-          {guideItems.map((item) => (
-            <div
-              key={item.title}
-              className="flex flex-col gap-3"
+          {/* Left: Title area */}
+          <div
+            className="flex flex-col gap-4"
+            style={{
+              width: 'var(--r-onsen-guide-title-w)',
+              flexShrink: 0,
+            }}
+          >
+            <h2
               style={{
-                padding: 32,
-                backgroundColor: 'var(--ryokan-bg, #FAF8F3)',
+                fontFamily: 'var(--font-heading)',
+                fontSize: 'var(--r-onsen-eti-title-size)',
+                fontWeight: 600,
+                color: 'var(--ryokan-dark, #2C2418)',
+                letterSpacing: 'var(--r-onsen-eti-title-ls)',
+                margin: 0,
               }}
             >
-              {/* Item title */}
-              <h3
-                style={{
-                  fontFamily: 'var(--font-heading)',
-                  fontSize: 18,
-                  fontWeight: 600,
-                  color: 'var(--ryokan-dark, #2C2418)',
-                  letterSpacing: 2,
-                }}
-              >
-                {item.title}
-              </h3>
+              ご利用案内
+            </h2>
+            <span
+              style={{
+                fontFamily: 'var(--font-accent)',
+                fontSize: 12,
+                fontWeight: 400,
+                color: 'var(--ryokan-subtle, #8B7D6B)',
+                letterSpacing: 3,
+                textTransform: 'uppercase' as const,
+              }}
+            >
+              ONSEN GUIDE
+            </span>
+          </div>
 
-              {/* Item description */}
-              <p
+          {/* Right: Guide items */}
+          <div
+            className="flex flex-col"
+            style={{
+              flex: 1,
+              gap: 'var(--r-onsen-guide-content-gap)',
+            }}
+          >
+            {guideItems.map((item) => (
+              <div
+                key={item.title}
+                className="flex flex-col gap-2"
                 style={{
-                  fontFamily: 'var(--font-body)',
-                  fontSize: 14,
-                  fontWeight: 300,
-                  color: 'var(--ryokan-secondary, #6B5D4F)',
-                  letterSpacing: 1,
-                  lineHeight: 2.0,
+                  borderBottom: '1px solid var(--ryokan-soft-line, #D4C5A055)',
+                  paddingBottom: 'var(--r-onsen-guide-content-gap)',
                 }}
               >
-                {item.description}
-              </p>
-            </div>
-          ))}
+                <h3
+                  style={{
+                    fontFamily: 'var(--font-heading)',
+                    fontSize: 16,
+                    fontWeight: 600,
+                    color: 'var(--ryokan-dark, #2C2418)',
+                    letterSpacing: 2,
+                    margin: 0,
+                  }}
+                >
+                  {item.title}
+                </h3>
+                <p
+                  style={{
+                    fontFamily: 'var(--font-body)',
+                    fontSize: 'var(--r-onsen-eti-item-body-size)',
+                    fontWeight: 300,
+                    color: 'var(--ryokan-secondary, #6B5D4F)',
+                    letterSpacing: 1,
+                    lineHeight: 2.0,
+                    margin: 0,
+                  }}
+                >
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* Bathing Etiquette Section */}
+      <section
+        className="w-full"
+        style={{
+          backgroundColor: 'var(--ryokan-light-bg-alt, #F0EBE0)',
+        }}
+      >
+        <div
+          className="flex flex-col items-center"
+          style={{
+            padding: 'var(--r-onsen-eti-py) var(--r-onsen-eti-px)',
+            gap: 'var(--r-onsen-eti-gap)',
+          }}
+        >
+          {/* Title */}
+          <h2
+            className="text-center"
+            style={{
+              fontFamily: 'var(--font-heading)',
+              fontSize: 'var(--r-onsen-eti-title-size)',
+              fontWeight: 600,
+              color: 'var(--ryokan-dark, #2C2418)',
+              letterSpacing: 'var(--r-onsen-eti-title-ls)',
+              margin: 0,
+            }}
+          >
+            入浴のご案内
+          </h2>
+
+          {/* Etiquette items grid */}
+          <div className="r-onsen-eti-grid">
+            {etiquetteItems.map((item) => (
+              <div
+                key={item.title}
+                className="flex flex-col gap-3"
+                style={{
+                  padding: 'var(--r-onsen-eti-card-p)',
+                  backgroundColor: 'var(--ryokan-bg, #FAF8F3)',
+                }}
+              >
+                <h3
+                  style={{
+                    fontFamily: 'var(--font-heading)',
+                    fontSize: 'var(--r-onsen-eti-item-title-size)',
+                    fontWeight: 600,
+                    color: 'var(--ryokan-dark, #2C2418)',
+                    letterSpacing: 2,
+                    margin: 0,
+                  }}
+                >
+                  {item.title}
+                </h3>
+                <p
+                  style={{
+                    fontFamily: 'var(--font-body)',
+                    fontSize: 'var(--r-onsen-eti-item-body-size)',
+                    fontWeight: 300,
+                    color: 'var(--ryokan-secondary, #6B5D4F)',
+                    letterSpacing: 1,
+                    lineHeight: 2.0,
+                    margin: 0,
+                  }}
+                >
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   )
 }

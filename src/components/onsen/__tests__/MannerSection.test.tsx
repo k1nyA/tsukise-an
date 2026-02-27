@@ -3,7 +3,12 @@ import { render, screen } from '@/test/utils'
 import { MannerSection } from '../MannerSection'
 
 describe('MannerSection', () => {
-  it('renders the section title "入浴のご案内"', () => {
+  it('renders the guide section title "ご利用案内"', () => {
+    render(<MannerSection />)
+    expect(screen.getByText('ご利用案内')).toBeInTheDocument()
+  })
+
+  it('renders the etiquette section title "入浴のご案内"', () => {
     render(<MannerSection />)
     expect(screen.getByText('入浴のご案内')).toBeInTheDocument()
   })
@@ -12,7 +17,6 @@ describe('MannerSection', () => {
     render(<MannerSection />)
     expect(screen.getByText('利用時間')).toBeInTheDocument()
     expect(screen.getByText('貸切予約')).toBeInTheDocument()
-    expect(screen.getByText('タオル')).toBeInTheDocument()
     expect(screen.getByText('お子様')).toBeInTheDocument()
   })
 
@@ -24,9 +28,16 @@ describe('MannerSection', () => {
     expect(screen.getByText(/保護者の方/)).toBeInTheDocument()
   })
 
-  it('renders within a section element', () => {
+  it('renders etiquette items', () => {
+    render(<MannerSection />)
+    expect(screen.getByText('かけ湯')).toBeInTheDocument()
+    expect(screen.getByText('飲食')).toBeInTheDocument()
+    expect(screen.getByText('静粛')).toBeInTheDocument()
+  })
+
+  it('renders section elements', () => {
     const { container } = render(<MannerSection />)
-    const section = container.querySelector('section')
-    expect(section).toBeInTheDocument()
+    const sections = container.querySelectorAll('section')
+    expect(sections.length).toBeGreaterThanOrEqual(2)
   })
 })

@@ -3,17 +3,16 @@ import { SectionLabel } from '@/components/shared/SectionLabel'
 export function ConceptSection() {
   return (
     <section
-      className="w-full"
+      className="w-full bg-cover bg-center"
       style={{
-        backgroundColor: 'var(--ryokan-bg, #FAF8F3)',
+        backgroundImage: 'url(/images/onsen-concept-bg.png)',
       }}
     >
       <div
         className="mx-auto flex flex-col items-center"
         style={{
-          maxWidth: 'var(--content-max-width, 1000px)',
-          padding: '100px 200px',
-          gap: 48,
+          padding: 'var(--r-onsen-concept-py) var(--r-onsen-concept-px)',
+          gap: 'var(--r-onsen-concept-gap)',
         }}
       >
         {/* English label */}
@@ -21,13 +20,14 @@ export function ConceptSection() {
 
         {/* Title */}
         <h2
-          className="text-center"
+          className="r-concept-body"
           style={{
             fontFamily: 'var(--font-heading)',
-            fontSize: 32,
+            fontSize: 'var(--r-onsen-concept-title-size)',
             fontWeight: 600,
             color: 'var(--ryokan-dark, #2C2418)',
-            letterSpacing: 6,
+            letterSpacing: 'var(--r-onsen-concept-title-ls)',
+            margin: 0,
           }}
         >
           湯に浸り、景に溶ける。
@@ -35,15 +35,17 @@ export function ConceptSection() {
 
         {/* Body text */}
         <p
-          className="text-center"
+          className="r-concept-body"
           style={{
             fontFamily: 'var(--font-body)',
-            fontSize: 16,
+            fontSize: 'var(--r-onsen-concept-body-size)',
             fontWeight: 300,
             color: 'var(--ryokan-secondary, #6B5D4F)',
-            letterSpacing: 1.5,
-            lineHeight: 2.4,
-            maxWidth: 640,
+            letterSpacing: 'var(--r-onsen-concept-body-ls)',
+            lineHeight: 'var(--r-onsen-concept-body-lh)',
+            maxWidth: 'var(--r-onsen-concept-body-w)',
+            width: '100%',
+            margin: 0,
           }}
         >
           月瀬庵の湯は、古くから「美肌の湯」として知られる姥子温泉。
