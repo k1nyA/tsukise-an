@@ -20,9 +20,9 @@ describe('IngredientsSection', () => {
     ).toBeInTheDocument()
   })
 
-  it('renders an image placeholder with aria-label', () => {
+  it('renders an image with descriptive alt text', () => {
     render(<IngredientsSection />)
-    expect(screen.getByLabelText('食材のイメージ')).toBeInTheDocument()
+    expect(screen.getByAltText('食材のイメージ')).toBeInTheDocument()
   })
 
   it('renders the section as a semantic section element', () => {
