@@ -6,8 +6,8 @@ export function ContactIntroSection() {
       className="flex w-full flex-col items-center"
       style={{
         backgroundColor: 'var(--ryokan-bg, #FAF8F3)',
-        padding: '80px 200px',
-        gap: 40,
+        padding: 'var(--r-contact-intro-py) var(--r-contact-intro-px)',
+        gap: 'var(--r-contact-intro-gap)',
       }}
     >
       {/* Section label */}
@@ -18,10 +18,10 @@ export function ContactIntroSection() {
         className="text-center"
         style={{
           fontFamily: 'var(--font-heading)',
-          fontSize: 28,
+          fontSize: 'var(--r-contact-intro-title)',
           fontWeight: 600,
           color: 'var(--ryokan-dark, #2C2418)',
-          letterSpacing: 4,
+          letterSpacing: 'var(--r-contact-intro-title-ls)',
         }}
       >
         お気軽にご相談ください
@@ -32,12 +32,12 @@ export function ContactIntroSection() {
         className="text-center"
         style={{
           fontFamily: 'var(--font-body)',
-          fontSize: 16,
+          fontSize: 'var(--r-contact-intro-body)',
           fontWeight: 300,
           color: 'var(--ryokan-secondary, #6B5D4F)',
           letterSpacing: 1.5,
           lineHeight: 2.2,
-          maxWidth: 600,
+          maxWidth: 'var(--r-contact-intro-body-max-w)',
         }}
       >
         ご宿泊のご相談、お部屋の空き状況、

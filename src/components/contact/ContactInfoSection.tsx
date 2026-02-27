@@ -18,19 +18,19 @@ const infoValueStyle = {
 export function ContactInfoSection() {
   return (
     <section
-      className="flex w-full items-center justify-center"
+      className="r-contact-info-layout w-full"
       style={{
         backgroundColor: 'var(--ryokan-bg, #FAF8F3)',
-        padding: '80px 120px',
-        gap: 40,
+        padding: 'var(--r-contact-info-py) var(--r-contact-info-px)',
+        gap: 'var(--r-contact-info-gap)',
       }}
     >
       {/* Phone column */}
       <div
         className="flex flex-col items-center"
-        style={{ width: 400, gap: 20 }}
+        style={{ width: 'var(--r-contact-phone-width)', gap: 20 }}
       >
-        {/* Phone icon placeholder */}
+        {/* Phone icon */}
         <svg
           aria-hidden="true"
           width="32"
@@ -84,10 +84,10 @@ export function ContactInfoSection() {
         </p>
       </div>
 
-      {/* Divider */}
+      {/* Divider - hidden on Tablet/Mobile */}
       <span
         data-testid="contact-info-divider"
-        className="block"
+        className="r-contact-info-divider"
         style={{
           width: 1,
           height: 80,
@@ -97,8 +97,8 @@ export function ContactInfoSection() {
 
       {/* Info row: FAX, Mail, LINE */}
       <div
-        className="flex justify-center"
-        style={{ gap: 60 }}
+        className="r-contact-info-items"
+        style={{ gap: 'var(--r-contact-info-items-gap)' }}
       >
         {/* FAX column */}
         <div

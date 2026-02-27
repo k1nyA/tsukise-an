@@ -1,8 +1,8 @@
 .form {
-  padding: 30px;
-  border: 1px solid rgba(139, 105, 20, 0.22);
-  border-radius: 14px;
-  background: #fff;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
 }
 
 .row {
@@ -97,11 +97,7 @@
   cursor: not-allowed;
 }
 
-@media (max-width: 880px) {
-  .form {
-    padding: 20px;
-  }
-
+@media (max-width: 767px) {
   .row {
     grid-template-columns: 1fr;
     gap: 14px;

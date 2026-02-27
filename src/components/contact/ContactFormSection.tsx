@@ -12,15 +12,15 @@ export function ContactFormSection({ accessKey = '' }: ContactFormSectionProps) 
       className="flex w-full flex-col items-center"
       style={{
         backgroundColor: 'var(--ryokan-form-bg, #F0EBE0)',
-        padding: '80px 120px',
-        gap: 40,
+        padding: 'var(--r-contact-form-py) var(--r-contact-form-px)',
+        gap: 'var(--r-contact-form-gap)',
       }}
     >
       <div
         className="flex w-full flex-col"
         style={{
           backgroundColor: 'var(--ryokan-bg, #FAF8F3)',
-          padding: '60px 80px',
+          padding: 'var(--r-contact-form-inner-py) var(--r-contact-form-inner-px)',
           gap: 24,
           borderRadius: 4,
           border: '1px solid #D4C5A033',

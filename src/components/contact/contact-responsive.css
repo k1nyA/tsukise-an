@@ -1,0 +1,113 @@
+/* ===========================================
+   Contact Page Responsive CSS Variables
+   Breakpoints: Mobile(<768) / Tablet(768-1023) / PC(>=1024)
+   =========================================== */
+
+/* --- PC (default, >= 1024px) --- */
+:root {
+  /* Contact Intro Section */
+  --r-contact-intro-py: 80px;
+  --r-contact-intro-px: 200px;
+  --r-contact-intro-gap: 40px;
+  --r-contact-intro-title: 28px;
+  --r-contact-intro-title-ls: 4px;
+  --r-contact-intro-body: 16px;
+  --r-contact-intro-body-max-w: 600px;
+
+  /* Contact Form Section */
+  --r-contact-form-py: 80px;
+  --r-contact-form-px: 120px;
+  --r-contact-form-gap: 40px;
+  --r-contact-form-inner-py: 60px;
+  --r-contact-form-inner-px: 80px;
+
+  /* Contact Info Section */
+  --r-contact-info-py: 80px;
+  --r-contact-info-px: 120px;
+  --r-contact-info-gap: 40px;
+  --r-contact-info-items-gap: 60px;
+  --r-contact-phone-width: 400px;
+}
+
+/* --- Tablet (768px - 1023px) --- */
+@media (max-width: 1023px) {
+  :root {
+    --r-contact-intro-py: 60px;
+    --r-contact-intro-px: 100px;
+
+    --r-contact-form-py: 60px;
+    --r-contact-form-px: 80px;
+    --r-contact-form-inner-px: 60px;
+
+    --r-contact-info-py: 40px;
+    --r-contact-info-px: 60px;
+    --r-contact-info-gap: 32px;
+    --r-contact-info-items-gap: 32px;
+  }
+}
+
+/* --- Mobile (< 768px) --- */
+@media (max-width: 767px) {
+  :root {
+    --r-contact-intro-py: 60px;
+    --r-contact-intro-px: 24px;
+    --r-contact-intro-title: 22px;
+    --r-contact-intro-title-ls: 2px;
+    --r-contact-intro-body: 14px;
+    --r-contact-intro-body-max-w: 100%;
+
+    --r-contact-form-py: 60px;
+    --r-contact-form-px: 24px;
+    --r-contact-form-inner-py: 40px;
+    --r-contact-form-inner-px: 24px;
+
+    --r-contact-info-py: 60px;
+    --r-contact-info-px: 24px;
+    --r-contact-info-gap: 32px;
+    --r-contact-info-items-gap: 24px;
+    --r-contact-phone-width: 100%;
+  }
+}
+
+/* ===========================================
+   Contact Page Responsive Utility Classes
+   =========================================== */
+
+/* Contact Info layout: row on PC, column on Tablet/Mobile */
+.r-contact-info-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1023px) {
+  .r-contact-info-layout {
+    flex-direction: column;
+  }
+}
+
+/* Contact Info divider: visible on PC, hidden on Tablet/Mobile */
+.r-contact-info-divider {
+  display: block;
+}
+
+@media (max-width: 1023px) {
+  .r-contact-info-divider {
+    display: none;
+  }
+}
+
+/* Contact Info items row: row on PC, column on Tablet/Mobile */
+.r-contact-info-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media (max-width: 1023px) {
+  .r-contact-info-items {
+    flex-direction: column;
+    align-items: center;
+  }
+}
