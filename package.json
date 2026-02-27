@@ -18,6 +18,7 @@
     "verify": "npm run lint && npm run typecheck && npm run build",
     "add": "liftkit add",
     "check:links": "node scripts/check-internal-links.mjs",
+    "check:design-contract": "node scripts/check-design-contract.mjs",
     "gh:issue:safe": "node skills/gh-safe-authoring/scripts/gh_issue_safe.mjs",
     "gh:pr:safe": "node skills/gh-safe-authoring/scripts/gh_pr_safe.mjs",
     "prepare": "husky"

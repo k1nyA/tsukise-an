@@ -1,0 +1,185 @@
+{
+  "version": 1,
+  "designDataDir": "docs/design-data",
+  "pages": {
+    "rooms": {
+      "file": "rooms.json",
+      "requiredSections": [
+        { "id": "header", "matchAny": ["type:header", "header"] },
+        { "id": "breadcrumb", "matchAny": ["type:breadcrumb", "breadcrumb"] },
+        { "id": "hero", "matchAny": ["type:hero", "hero"] },
+        { "id": "concept", "matchAny": ["type:concept", "concept"] },
+        { "id": "rooms_grid", "matchAny": ["type:rooms_grid", "room cards grid"] },
+        { "id": "vacancy_cta", "matchAny": ["type:vacancy_cta", "vacancy"] },
+        { "id": "amenities", "matchAny": ["type:amenities", "amenities"] },
+        { "id": "facilities", "matchAny": ["type:facilities", "facilities"] },
+        { "id": "related_links", "matchAny": ["type:related_links", "related pages"] },
+        { "id": "cta", "matchAny": ["type:cta_banner", "cta banner"] },
+        { "id": "footer", "matchAny": ["type:footer", "footer"] }
+      ],
+      "hero": {
+        "sectionMatchAny": ["type:hero", "hero"],
+        "title": null,
+        "subtitle": null
+      },
+      "relatedLinks": {
+        "required": true,
+        "sectionMatchAny": ["type:related_links", "related pages"],
+        "routes": []
+      }
+    },
+    "onsen": {
+      "file": "onsen.json",
+      "requiredSections": [
+        { "id": "header", "matchAny": ["header with logo and navigation", "name:h3"] },
+        { "id": "breadcrumb", "matchAny": ["breadcrumb navigation", "name:bc2"] },
+        { "id": "hero", "matchAny": ["name:hero2", "hero section"] },
+        { "id": "concept", "matchAny": ["name:onsen concept", "concept section"] },
+        { "id": "daiyokujo", "matchAny": ["name:pcdaiyokujoref", "daiyokujo"] },
+        { "id": "rotenburo", "matchAny": ["name:pcrotenburoref", "rotenburo"] },
+        { "id": "water_quality", "matchAny": ["name:pcwaterqualityref", "water quality"] },
+        { "id": "onsen_guide", "matchAny": ["name:pconsenguideref", "onsen guide"] },
+        { "id": "bath_etiquette", "matchAny": ["name:pcbathetiref", "bath etiquette"] },
+        { "id": "navigation_links", "matchAny": ["name:pconsenlinksref", "navigation links section"] },
+        { "id": "cta", "matchAny": ["name:c3", "cta section"] },
+        { "id": "footer", "matchAny": ["name:f3", "footer"] }
+      ],
+      "hero": {
+        "sectionMatchAny": ["name:hero2", "hero section"],
+        "title": null,
+        "subtitle": null
+      },
+      "relatedLinks": {
+        "required": true,
+        "sectionMatchAny": ["name:pconsenlinksref", "navigation links section"],
+        "routes": ["/reservation", "/rooms"]
+      }
+    },
+    "cuisine": {
+      "file": "cuisine.json",
+      "requiredSections": [
+        { "id": "header", "matchAny": ["header navigation", "name:h4"] },
+        { "id": "breadcrumb", "matchAny": ["breadcrumb navigation", "name:bc3"] },
+        { "id": "hero", "matchAny": ["name:hero3", "hero section"] },
+        { "id": "concept", "matchAny": ["name:cuisine concept", "concept section"] },
+        { "id": "kaiseki", "matchAny": ["name:pckref", "kaiseki menu"] },
+        { "id": "ingredients", "matchAny": ["name:newingred", "ingredients section"] },
+        { "id": "breakfast", "matchAny": ["name:breaksec4", "breakfast section"] },
+        { "id": "dining_room", "matchAny": ["name:diningsec4", "dining room section"] },
+        { "id": "allergy_info", "matchAny": ["name:pcaref", "allergy"] },
+        { "id": "cuisine_links", "matchAny": ["name:pclref", "cuisine links section"] },
+        { "id": "cta", "matchAny": ["name:c4", "cta section"] },
+        { "id": "footer", "matchAny": ["name:f4", "footer"] }
+      ],
+      "hero": {
+        "sectionMatchAny": ["name:hero3", "hero section"],
+        "title": null,
+        "subtitle": null
+      },
+      "relatedLinks": {
+        "required": true,
+        "sectionMatchAny": ["name:pclref", "cuisine links section"],
+        "routes": []
+      }
+    },
+    "experience": {
+      "file": "experience.json",
+      "requiredSections": [
+        { "id": "header", "matchAny": ["label:header", "name:h5"] },
+        { "id": "breadcrumb", "matchAny": ["label:breadcrumb", "name:bc5"] },
+        { "id": "hero", "matchAny": ["label:hero section", "name:hero4"] },
+        { "id": "concept", "matchAny": ["label:concept section", "name:experience concept"] },
+        { "id": "timeline", "matchAny": ["label:timeline section", "name:timelinesec"] },
+        { "id": "seasons", "matchAny": ["label:seasons section", "name:seasonssec"] },
+        { "id": "facilities", "matchAny": ["name:pcfacref", "facilities"] },
+        { "id": "activities", "matchAny": ["name:pcactref", "activities"] },
+        { "id": "experience_links", "matchAny": ["label:experience links", "name:experiencelinkswrap"] },
+        { "id": "cta", "matchAny": ["label:cta section", "name:c5"] },
+        { "id": "footer", "matchAny": ["label:footer", "name:f5"] }
+      ],
+      "hero": {
+        "sectionMatchAny": ["label:hero section", "name:hero4"],
+        "title": null,
+        "subtitle": null
+      },
+      "relatedLinks": {
+        "required": true,
+        "sectionMatchAny": ["label:experience links", "name:experiencelinkswrap"],
+        "routes": ["/rooms", "/onsen"]
+      }
+    },
+    "access": {
+      "file": "access.json",
+      "requiredSections": [
+        { "id": "header", "matchAny": ["name:h6 (header)", "header"] },
+        { "id": "breadcrumb", "matchAny": ["name:bc6 (breadcrumb)", "breadcrumb"] },
+        { "id": "hero", "matchAny": ["name:hero5 (hero section)", "hero section"] },
+        { "id": "address", "matchAny": ["name:pcaddrref", "address section"] },
+        { "id": "map", "matchAny": ["name:pcmapref", "map section"] },
+        { "id": "access_methods", "matchAny": ["name:pcaccessref", "access methods"] },
+        { "id": "contact_cta", "matchAny": ["name:pccontactref", "contact cta"] },
+        { "id": "cta", "matchAny": ["name:c6 (cta section)", "cta section"] },
+        { "id": "footer", "matchAny": ["name:f6 (footer)", "footer"] }
+      ],
+      "hero": {
+        "sectionMatchAny": ["name:hero5 (hero section)", "hero section"],
+        "title": "アクセス",
+        "subtitle": "箱根・芦ノ湖畔の隠れ宿へ"
+      },
+      "relatedLinks": {
+        "required": true,
+        "sectionMatchAny": ["name:pccontactref", "contact cta"],
+        "routes": []
+      }
+    },
+    "reservation": {
+      "file": "reservation.json",
+      "requiredSections": [
+        { "id": "header", "matchAny": ["name:h7 (header)", "header"] },
+        { "id": "breadcrumb", "matchAny": ["name:bc7 (breadcrumb)", "breadcrumb"] },
+        { "id": "hero", "matchAny": ["name:hero6 (hero section)", "hero section"] },
+        { "id": "booking_flow", "matchAny": ["name:pcref1", "booking flow introduction"] },
+        { "id": "booking_methods", "matchAny": ["name:pcref2", "booking methods"] },
+        { "id": "room_selection", "matchAny": ["name:pcref3", "room type selection"] },
+        { "id": "stay_plans", "matchAny": ["name:pcref4", "stay plans"] },
+        { "id": "calendar", "matchAny": ["name:pcref5", "calendar widget"] },
+        { "id": "reservation_policy", "matchAny": ["name:pcref6", "reservation policy"] },
+        { "id": "cta", "matchAny": ["name:c7 (cta section)", "cta section"] },
+        { "id": "footer", "matchAny": ["name:f7 (footer)", "footer"] }
+      ],
+      "hero": {
+        "sectionMatchAny": ["name:hero6 (hero section)", "hero section"],
+        "title": "ご予約",
+        "subtitle": "月瀬庵でのご滞在を、お待ちしております"
+      },
+      "relatedLinks": {
+        "required": false,
+        "sectionMatchAny": ["related", "links"],
+        "routes": []
+      }
+    },
+    "contact": {
+      "file": "contact.json",
+      "requiredSections": [
+        { "id": "header", "matchAny": ["name:h8 (header)", "header"] },
+        { "id": "breadcrumb", "matchAny": ["name:bc8 (breadcrumb)", "breadcrumb"] },
+        { "id": "hero", "matchAny": ["name:hero7 (hero section)", "hero section"] },
+        { "id": "introduction", "matchAny": ["name:pcintroref", "introduction section"] },
+        { "id": "contact_form", "matchAny": ["name:pcformref", "contact form"] },
+        { "id": "phone_info", "matchAny": ["name:pcotherref", "phone & info section"] },
+        { "id": "cta", "matchAny": ["name:c8 (cta section)", "cta section"] },
+        { "id": "footer", "matchAny": ["name:f8 (footer)", "footer"] }
+      ],
+      "hero": {
+        "sectionMatchAny": ["name:hero7 (hero section)", "hero section"],
+        "title": null,
+        "subtitle": null
+      },
+      "relatedLinks": {
+        "required": false,
+        "sectionMatchAny": ["related", "links"],
+        "routes": []
+      }
+    }
+  }
+}

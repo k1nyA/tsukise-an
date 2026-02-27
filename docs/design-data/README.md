@@ -7,6 +7,7 @@
 ```
 docs/design-data/
 ├── README.md                  # このファイル
+├── project-profile.json       # デザイン契約（必須セクション/hero/related links）
 ├── design-tokens.json         # カラー・タイポグラフィ・スペーシング
 ├── top.json                   # トップページ (/)
 ├── rooms.json                 # 客室ページ (/rooms)
@@ -84,3 +85,8 @@ docs/design-data/
 - `hasImageFill: true` のノードは画像背景を持つ。実際の画像は Pencil エディタで確認
 - スタイル値は `.pen` ファイルのピクセル値。レスポンシブ実装時は比率変換が必要
 - `design-tokens.json` の CSS変数名は SPECIFICATION.md Section 8.1 と対応
+
+## Contract Check
+
+- 実行コマンド: `npm run check:design-contract`
+- チェック対象: `project-profile.json` を基準に、ページごとの必須セクション・hero title/subtitle・related links
