@@ -1,548 +1,529 @@
 {
-  "page": {
-    "name": "客室ページ",
-    "nameEn": "Rooms",
-    "route": "/rooms",
-    "penFrameId": "HN9dn"
-  },
-  "layout": {
-    "width": 1440,
-    "direction": "vertical",
-    "fill": "#FAF8F3",
-    "clip": true
-  },
-  "sections": [
-    {
-      "name": "h2",
-      "penId": "TzTVp",
-      "type": "frame",
-      "styles": {
-        "fill": "#FAF8F3",
-        "height": 80,
-        "width": "fill_container",
-        "justifyContent": "space_between",
-        "alignItems": "center",
-        "padding": [0, 60]
-      },
-      "children": [
+  "page": "rooms",
+  "pageTitle": "客室ページ",
+  "description": "月瀬庵の客室ページデザイン - 8つの独立した離れ形式の客室を紹介",
+  "viewports": {
+    "pc": {
+      "id": "HN9dn",
+      "name": "客室ページ",
+      "width": 1440,
+      "layout": "vertical",
+      "fill": "#FAF8F3",
+      "sections": [
         {
-          "name": "logoArea",
-          "penId": "Ff3AA",
-          "type": "frame",
-          "styles": {
-            "alignItems": "center",
-            "gap": 12
+          "id": "LXJXj",
+          "name": "pcH",
+          "type": "header",
+          "description": "Page header with logo and navigation",
+          "width": "fill_container",
+          "height": 80,
+          "fill": "#FAF8F3",
+          "padding": [0, 60],
+          "gap": 32,
+          "justifyContent": "space_between",
+          "alignItems": "center"
+        },
+        {
+          "id": "oTKQ8",
+          "name": "bcRef",
+          "type": "breadcrumb",
+          "description": "Breadcrumb navigation",
+          "width": "fill_container",
+          "fill": "#EEEBE3",
+          "padding": [16, 80],
+          "gap": 8
+        },
+        {
+          "id": "CkYKk",
+          "name": "heroRef",
+          "type": "hero",
+          "description": "Hero image section with overlay and content",
+          "width": "fill_container",
+          "height": 480,
+          "clip": true,
+          "layout": "none"
+        },
+        {
+          "id": "iYl8Z",
+          "name": "conceptRef",
+          "type": "concept",
+          "description": "Concept section with background image",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [100, 200],
+          "gap": 48,
+          "fill": "#FAF8F3"
+        },
+        {
+          "id": "vRrrt",
+          "name": "pcRoomsRef",
+          "type": "rooms_grid",
+          "description": "Room cards grid - 8 rooms in 4 rows of 2",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [40, 80, 100, 80],
+          "gap": 32,
+          "fill": "#FAF8F3",
+          "cardsStructure": {
+            "rows": 4,
+            "cardsPerRow": 2,
+            "totalCards": 8,
+            "cardHeight": 320,
+            "gap": 24
           }
         },
         {
-          "name": "navArea",
-          "penId": "i3Dcf",
-          "type": "frame",
-          "styles": {
-            "alignItems": "center",
-            "gap": 32
-          }
+          "id": "JnL4f",
+          "name": "vacancyPCRef",
+          "type": "vacancy_cta",
+          "description": "Vacancy check call-to-action",
+          "width": "fill_container",
+          "fill": "#FAF8F3",
+          "padding": [24, 80]
+        },
+        {
+          "id": "VhJmY",
+          "name": "amenPCRef",
+          "type": "amenities",
+          "description": "Room amenities and features section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": 80,
+          "gap": 48,
+          "fill": "#FAF8F3",
+          "amenitiesCount": 3
+        },
+        {
+          "id": "boPQR",
+          "name": "pcRef",
+          "type": "facilities",
+          "description": "Full-width facilities section with image and content",
+          "width": "fill_container",
+          "height": 480,
+          "clip": true,
+          "layout": "horizontal",
+          "imageWidth": 640,
+          "contentWidth": "fill_container"
+        },
+        {
+          "id": "H2lQ4",
+          "name": "relPCRef",
+          "type": "related_links",
+          "description": "Links to related pages (onsen, cuisine)",
+          "width": "fill_container",
+          "fill": "#FAF8F3",
+          "padding": [40, 80],
+          "layout": "horizontal",
+          "gap": 60
+        },
+        {
+          "id": "8m4sP",
+          "name": "pcC",
+          "type": "cta_banner",
+          "description": "Full-width CTA banner with background image and overlay",
+          "width": "fill_container",
+          "height": 480,
+          "clip": true,
+          "layout": "none"
+        },
+        {
+          "id": "ukWuc",
+          "name": "pcF",
+          "type": "footer",
+          "description": "Page footer",
+          "width": "fill_container",
+          "fill": "#1A150E",
+          "padding": [60, 80, 32, 80],
+          "layout": "vertical",
+          "gap": 48
         }
       ]
     },
-    {
-      "name": "bc1",
-      "penId": "Io2BW",
-      "type": "frame",
-      "styles": {
-        "fill": "#EEEBE3",
-        "width": "fill_container",
-        "alignItems": "center",
-        "gap": 8,
-        "padding": [16, 80]
-      },
-      "children": [
+    "tablet": {
+      "id": "LfeF7",
+      "name": "客室ページ Tablet",
+      "width": 768,
+      "layout": "vertical",
+      "fill": "#FAF8F3",
+      "sections": [
         {
+          "id": "vNAv1",
+          "name": "h2",
+          "type": "header",
+          "description": "Tablet header - adjusted padding",
+          "width": "fill_container",
+          "height": 80,
+          "fill": "#FAF8F3",
+          "padding": [0, 40]
+        },
+        {
+          "id": "2Qoby",
           "name": "bc1",
-          "penId": "OeXud",
-          "type": "text",
-          "content": "ホーム",
-          "context": "href: /",
-          "styles": {
-            "fill": "#8B7D6B",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 12,
-            "fontWeight": "300",
-            "letterSpacing": 1
+          "type": "breadcrumb",
+          "description": "Tablet breadcrumb",
+          "width": "fill_container",
+          "fill": "#EEEBE3",
+          "padding": [16, 40]
+        },
+        {
+          "id": "eAkKW",
+          "name": "hero1",
+          "type": "hero",
+          "description": "Tablet hero - height 400px",
+          "width": "fill_container",
+          "height": 400,
+          "clip": true
+        },
+        {
+          "id": "ws4H4",
+          "name": "roomTC",
+          "type": "concept",
+          "description": "Tablet concept section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [80, 100],
+          "gap": 48
+        },
+        {
+          "id": "jAYvJ",
+          "name": "tabRoomsRef",
+          "type": "rooms_grid",
+          "description": "Tablet room cards - 2x2 grid",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [40, 60, 80, 60],
+          "gap": 32,
+          "cardsStructure": {
+            "rows": 4,
+            "cardsPerRow": 2
           }
         },
         {
-          "name": "bcSep",
-          "penId": "2LyHB",
-          "type": "text",
-          "content": ">",
-          "styles": {
-            "fill": "#D4C5A0",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 12,
-            "fontWeight": "300"
-          }
+          "id": "Z1SWz",
+          "name": "vacancyTabRef",
+          "type": "vacancy_cta",
+          "width": "fill_container",
+          "fill": "#FAF8F3",
+          "padding": [24, 60]
         },
         {
-          "name": "bc2",
-          "penId": "bFaqp",
-          "type": "text",
-          "content": "客室",
-          "styles": {
-            "fill": "#2C2418",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 12,
-            "fontWeight": "500",
-            "letterSpacing": 1
-          }
+          "id": "J5Yxe",
+          "name": "amenTabRef",
+          "type": "amenities",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": 60,
+          "gap": 48
+        },
+        {
+          "id": "DDmCa",
+          "name": "tabRef",
+          "type": "facilities",
+          "description": "Tablet facilities - stacked (image on top)",
+          "width": "fill_container",
+          "layout": "vertical",
+          "imageHeight": 300
+        },
+        {
+          "id": "RM1w4",
+          "name": "relTabRef",
+          "type": "related_links",
+          "width": "fill_container",
+          "fill": "#FAF8F3",
+          "padding": [40, 60],
+          "gap": 60
+        },
+        {
+          "id": "tqgMW",
+          "name": "c2",
+          "type": "cta_banner",
+          "description": "Tablet CTA banner - height 440px",
+          "width": "fill_container",
+          "height": 440
+        },
+        {
+          "id": "4CRFi",
+          "name": "f2",
+          "type": "footer",
+          "width": "fill_container",
+          "fill": "#1A150E",
+          "padding": [48, 48, 24, 48]
         }
       ]
     },
-    {
-      "name": "hero1",
-      "penId": "zRySn",
-      "type": "frame",
-      "styles": {
-        "height": 480,
-        "width": "fill_container",
-        "layout": "none",
-        "clip": true
-      },
-      "children": [
+    "mobile": {
+      "id": "YzblU",
+      "name": "客室ページ Mobile",
+      "width": 375,
+      "layout": "vertical",
+      "fill": "#FAF8F3",
+      "sections": [
         {
-          "name": "heroBg",
-          "penId": "TDuaP",
-          "type": "frame",
-          "hasImageFill": true,
-          "styles": {
-            "width": 1440,
-            "height": 480,
-            "x": 0,
-            "y": 0
+          "id": "7MS8R",
+          "name": "h2",
+          "type": "header",
+          "description": "Mobile header - compact",
+          "width": "fill_container",
+          "height": 60,
+          "fill": "#FAF8F3",
+          "padding": [0, 20]
+        },
+        {
+          "id": "GJsVp",
+          "name": "bc1",
+          "type": "breadcrumb",
+          "description": "Mobile breadcrumb",
+          "width": "fill_container",
+          "fill": "#EEEBE3",
+          "padding": [12, 20]
+        },
+        {
+          "id": "MHEAD",
+          "name": "hr1",
+          "type": "hero",
+          "description": "Mobile hero - height 320px",
+          "width": "fill_container",
+          "height": 320
+        },
+        {
+          "id": "29ARS",
+          "name": "roomCS",
+          "type": "concept",
+          "description": "Mobile concept - reduced padding",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [60, 24],
+          "gap": 40
+        },
+        {
+          "id": "3I8BT",
+          "name": "mobRoomsRef",
+          "type": "rooms_grid",
+          "description": "Mobile room cards - single column",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [40, 24, 60, 24],
+          "gap": 32,
+          "cardsStructure": {
+            "rows": 8,
+            "cardsPerRow": 1
           }
         },
         {
-          "name": "heroOverlay",
-          "penId": "sLW2P",
-          "type": "frame",
-          "styles": {
-            "fill": "#1A150E55",
-            "width": 1440,
-            "height": 480,
-            "x": 0,
-            "y": 0
-          }
+          "id": "BOG8U",
+          "name": "vacancyMobRef",
+          "type": "vacancy_cta",
+          "width": "fill_container",
+          "fill": "#FAF8F3",
+          "padding": 24
         },
         {
-          "name": "heroContent",
-          "penId": "m9gOk",
-          "type": "frame",
-          "styles": {
-            "layout": "vertical",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "gap": 24,
-            "width": 1440,
-            "height": 480,
-            "x": 0,
-            "y": 0
-          }
-        }
-      ]
-    },
-    {
-      "name": "Rooms Concept",
-      "penId": "hHJsI",
-      "type": "frame",
-      "hasImageFill": true,
-      "styles": {
-        "width": "fill_container",
-        "layout": "vertical",
-        "alignItems": "center",
-        "gap": 48,
-        "padding": [100, 200]
-      },
-      "children": [
-        {
-          "name": "conceptLabel",
-          "penId": "N1gbq",
-          "type": "frame",
-          "styles": {
-            "alignItems": "center",
-            "gap": 20
-          }
+          "id": "F1TDc",
+          "name": "amenMobRef",
+          "type": "amenities",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [60, 24],
+          "gap": 48
         },
         {
-          "name": "conceptTitle",
-          "penId": "sLzBT",
-          "type": "text",
-          "content": "離れの贅、静寂の時。",
-          "styles": {
-            "fill": "#2C2418",
-            "fontFamily": "Noto Serif JP",
-            "fontSize": 32,
-            "fontWeight": "600",
-            "letterSpacing": 6,
-            "textAlign": "center"
-          }
+          "id": "8XYrc",
+          "name": "mobRef",
+          "type": "facilities",
+          "description": "Mobile facilities - stacked layout",
+          "width": "fill_container",
+          "layout": "vertical",
+          "imageHeight": 250
         },
         {
-          "name": "conceptBody",
-          "penId": "gYLBZ",
-          "type": "text",
-          "content": "月瀬庵の客室は、すべて独立した離れ形式。\n芦ノ湖を望む自然の中に点在する八つの棟は、\nそれぞれに異なる趣を持ちながら、\n共通して「静寂」と「眺望」を大切にしています。\n\n全室に源泉掛け流しの専用露天風呂を備え、\n時を忘れてお寛ぎいただける空間をご用意しました。",
-          "styles": {
-            "fill": "#6B5D4F",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 16,
-            "fontWeight": "300",
-            "letterSpacing": 1.5,
-            "lineHeight": 2.4,
-            "textAlign": "center",
-            "width": 600
-          }
+          "id": "yZSVQ",
+          "name": "relMobRef",
+          "type": "related_links",
+          "width": "fill_container",
+          "fill": "#FAF8F3",
+          "padding": [40, 24],
+          "layout": "vertical",
+          "gap": 60
         },
         {
-          "name": "conceptDeco",
-          "penId": "bYJUs",
-          "type": "rectangle",
-          "styles": {
-            "fill": "#D4C5A0",
-            "width": 1,
-            "height": 40
-          }
-        }
-      ]
-    },
-    {
-      "name": "Rooms Grid Section",
-      "penId": "un6Kn",
-      "type": "frame",
-      "hasImageFill": true,
-      "styles": {
-        "width": "fill_container",
-        "layout": "vertical",
-        "alignItems": "center",
-        "gap": 32,
-        "padding": [40, 80, 100, 80]
-      },
-      "children": [
-        {
-          "name": "roomsLabel",
-          "penId": "Qqh98",
-          "type": "text",
-          "content": "客室のご案内",
-          "styles": {
-            "fill": "#2C2418",
-            "fontFamily": "Noto Serif JP",
-            "fontSize": 28,
-            "fontWeight": "600",
-            "letterSpacing": 4,
-            "textAlign": "center"
-          }
+          "id": "n3eqb",
+          "name": "c2",
+          "type": "cta_banner",
+          "description": "Mobile CTA banner - height 420px",
+          "width": "fill_container",
+          "height": 420
         },
         {
-          "name": "row1",
-          "penId": "cchZD",
-          "type": "frame",
-          "styles": {
-            "gap": 24,
-            "width": "fill_container"
-          }
-        },
-        {
-          "name": "row2",
-          "penId": "9tg94",
-          "type": "frame",
-          "styles": {
-            "gap": 24,
-            "width": "fill_container"
-          }
-        },
-        {
-          "name": "row3",
-          "penId": "cE6cD",
-          "type": "frame",
-          "styles": {
-            "gap": 24,
-            "width": "fill_container"
-          }
-        },
-        {
-          "name": "row4",
-          "penId": "rXFKg",
-          "type": "frame",
-          "styles": {
-            "gap": 24,
-            "width": "fill_container"
-          }
-        }
-      ]
-    },
-    {
-      "name": "vacancyWrap",
-      "penId": "v32vJ",
-      "type": "frame",
-      "styles": {
-        "fill": "#FAF8F3",
-        "width": "fill_container",
-        "layout": "vertical",
-        "alignItems": "center",
-        "padding": [24, 80]
-      },
-      "children": [
-        {
-          "name": "vacancyLink",
-          "penId": "LocEd",
-          "type": "text",
-          "content": "空室を確認する \u2192",
-          "context": "href: /reservation",
-          "styles": {
-            "fill": "#8B6914",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 14,
-            "fontWeight": "500",
-            "letterSpacing": 1
-          }
-        }
-      ]
-    },
-    {
-      "name": "Amenities Section",
-      "penId": "CUkrW",
-      "type": "frame",
-      "hasImageFill": true,
-      "styles": {
-        "width": "fill_container",
-        "layout": "vertical",
-        "alignItems": "center",
-        "gap": 48,
-        "padding": 80
-      },
-      "children": [
-        {
-          "name": "amenTitle",
-          "penId": "tPaOw",
-          "type": "text",
-          "content": "客室の設えとおもてなし",
-          "styles": {
-            "fill": "#2C2418",
-            "fontFamily": "Noto Serif JP",
-            "fontSize": 28,
-            "fontWeight": "600",
-            "letterSpacing": 4
-          }
-        },
-        {
-          "name": "amenGrid",
-          "penId": "Sdn9O",
-          "type": "frame",
-          "styles": {
-            "gap": 40,
-            "width": "fill_container"
-          }
-        }
-      ]
-    },
-    {
-      "name": "Facilities Section",
-      "penId": "cPtH0",
-      "type": "frame",
-      "styles": {
-        "height": 480,
-        "width": "fill_container",
-        "clip": true
-      },
-      "children": [
-        {
-          "name": "facImg",
-          "penId": "cyW1r",
-          "type": "frame",
-          "hasImageFill": true,
-          "styles": {
-            "width": 640,
-            "height": 480,
-            "clip": true
-          }
-        },
-        {
-          "name": "facContent",
-          "penId": "zR6pz",
-          "type": "frame",
-          "styles": {
-            "fill": "#2C2418",
-            "layout": "vertical",
-            "justifyContent": "center",
-            "gap": 32,
-            "padding": 60,
-            "width": "fill_container",
-            "height": "fill_container"
-          }
-        }
-      ]
-    },
-    {
-      "name": "relatedWrap",
-      "penId": "p3mqK",
-      "type": "frame",
-      "styles": {
-        "fill": "#FAF8F3",
-        "width": "fill_container",
-        "alignItems": "center",
-        "justifyContent": "center",
-        "gap": 60,
-        "padding": [40, 80]
-      },
-      "children": [
-        {
-          "name": "relLink1",
-          "penId": "quLat",
-          "type": "text",
-          "content": "温泉を見る \u2192",
-          "context": "href: /onsen",
-          "styles": {
-            "fill": "#8B6914",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 14,
-            "fontWeight": "500",
-            "letterSpacing": 1
-          }
-        },
-        {
-          "name": "relLink2",
-          "penId": "anbe7",
-          "type": "text",
-          "content": "お料理を見る \u2192",
-          "context": "href: /cuisine",
-          "styles": {
-            "fill": "#8B6914",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 14,
-            "fontWeight": "500",
-            "letterSpacing": 1
-          }
-        }
-      ]
-    },
-    {
-      "name": "c2",
-      "penId": "dGmpH",
-      "type": "frame",
-      "styles": {
-        "height": 480,
-        "width": "fill_container",
-        "layout": "none",
-        "clip": true
-      },
-      "children": [
-        {
-          "name": "ctaBg",
-          "penId": "B8Z2f",
-          "type": "frame",
-          "hasImageFill": true,
-          "styles": {
-            "width": 1440,
-            "height": 480,
-            "x": 0,
-            "y": 0
-          }
-        },
-        {
-          "name": "ctaOverlay",
-          "penId": "yfC4n",
-          "type": "frame",
-          "styles": {
-            "fill": "#1A150E88",
-            "width": 1440,
-            "height": 480,
-            "x": 0,
-            "y": 0
-          }
-        },
-        {
-          "name": "ctaContent",
-          "penId": "R05OL",
-          "type": "frame",
-          "styles": {
-            "layout": "vertical",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "gap": 40,
-            "width": 1440,
-            "height": 480,
-            "x": 0,
-            "y": 0
-          }
-        }
-      ]
-    },
-    {
-      "name": "f2",
-      "penId": "wBBC5",
-      "type": "frame",
-      "styles": {
-        "fill": "#1A150E",
-        "width": "fill_container",
-        "layout": "vertical",
-        "alignItems": "center",
-        "gap": 48,
-        "padding": [60, 80, 32, 80]
-      },
-      "children": [
-        {
-          "name": "footerTop",
-          "penId": "SnxWd",
-          "type": "frame",
-          "styles": {
-            "justifyContent": "space_between",
-            "width": "fill_container"
-          }
-        },
-        {
-          "name": "footerSecondaryNav",
-          "penId": "USBR2",
-          "type": "frame",
-          "styles": {
-            "alignItems": "center",
-            "justifyContent": "center",
-            "gap": 24,
-            "width": "fill_container"
-          }
-        },
-        {
-          "name": "footerDivider",
-          "penId": "ondVE",
-          "type": "rectangle",
-          "styles": {
-            "fill": "#2C241888",
-            "width": "fill_container",
-            "height": 1
-          }
-        },
-        {
-          "name": "footerMiddle",
-          "penId": "gwV2a",
-          "type": "frame",
-          "styles": {
-            "alignItems": "center",
-            "justifyContent": "space_between",
-            "width": "fill_container"
-          }
-        },
-        {
-          "name": "footerBottom",
-          "penId": "m2H37",
-          "type": "text",
-          "content": "\u00a9 2026 月瀬庵 TSUKISE-AN. All Rights Reserved.",
-          "styles": {
-            "fill": "#6B5D4F55",
-            "fontFamily": "Cormorant Garamond",
-            "fontSize": 11,
-            "fontWeight": "normal",
-            "letterSpacing": 2
-          }
+          "id": "MBdSc",
+          "name": "f2",
+          "type": "footer",
+          "width": "fill_container",
+          "fill": "#1A150E",
+          "padding": [40, 24, 24, 24],
+          "layout": "vertical",
+          "gap": 32
         }
       ]
     }
-  ]
+  },
+  "colorPalette": {
+    "primary": "#2C2418",
+    "secondary": "#8B7D6B",
+    "accent": "#8B6914",
+    "lightBg": "#FAF8F3",
+    "cardBg": "#EEEBE3",
+    "darkBg": "#1A150E",
+    "darkText": "#6B5D4F",
+    "lightText": "#D4C5A0"
+  },
+  "typography": {
+    "serif": {
+      "family": "Noto Serif JP",
+      "weights": ["400", "600"],
+      "sizes": [28, 32, 22, 24, 16]
+    },
+    "sans": {
+      "family": "Noto Sans JP",
+      "weights": ["300", "400", "500"],
+      "sizes": [14, 13, 12, 11, 16]
+    },
+    "display": {
+      "family": "Cormorant Garamond",
+      "weights": ["400", "500"],
+      "sizes": [12, 11]
+    }
+  },
+  "roomCards": {
+    "totalRooms": 8,
+    "rooms": [
+      {
+        "id": 1,
+        "label": "TSUKIMI",
+        "japaneseLabel": "月見の間",
+        "size": "120㎡",
+        "location": "最上階・芦ノ湖ビュー",
+        "description": "芦ノ湖を一望する最上階の特別室。月の出を正面に望む唯一の客室です。"
+      },
+      {
+        "id": 2,
+        "label": "KACHO",
+        "japaneseLabel": "花鳥の間",
+        "size": "100㎡",
+        "location": "庭園ビュー",
+        "description": "四季折々の日本庭園を臨む離れ。檜の内湯で森林の香りに包まれます。"
+      },
+      {
+        "id": 3,
+        "label": "FUGA",
+        "japaneseLabel": "風雅の間",
+        "size": "85㎡",
+        "location": "林間の離れ",
+        "description": "深い森に抱かれた静謐な一棟。岩造りの露天風呂で森林浴を。"
+      },
+      {
+        "id": 4,
+        "label": "MIKAGAMI",
+        "japaneseLabel": "水鏡の間",
+        "size": "75㎡",
+        "location": "湖畔の離れ",
+        "description": "湖面に映る月が名前の由来。石造りの露天風呂から芦ノ湖を眺めて。"
+      },
+      {
+        "id": 5,
+        "label": "MATSUKAZE",
+        "japaneseLabel": "松風の間",
+        "size": "90㎡",
+        "location": "松林の離れ",
+        "description": "松風が通り抜ける高台の一棟。石庭を望む露天風呂で四季を感じて。"
+      },
+      {
+        "id": 6,
+        "label": "SETSUGETSU",
+        "japaneseLabel": "雪月の間",
+        "size": "95㎡",
+        "location": "山麓の離れ",
+        "description": "雪見障子から望む箱根の山々。冬は雪景色が格別の趣を添えます。"
+      },
+      {
+        "id": 7,
+        "label": "ASAGIRI",
+        "japaneseLabel": "朝霧の間",
+        "size": "80㎡",
+        "location": "渓谷ビュー",
+        "description": "朝霧に包まれる渓谷沿いの離れ。せせらぎの音が心を癒します。"
+      },
+      {
+        "id": 8,
+        "label": "YUNAGI",
+        "japaneseLabel": "夕凪の間",
+        "size": "70㎡",
+        "location": "芦ノ湖ビュー",
+        "description": "夕暮れ時の凪いだ湖面が美しい一棟。檜の半露天風呂をお楽しみください。"
+      }
+    ]
+  },
+  "amenities": [
+    {
+      "id": "amen1",
+      "icon": "bath",
+      "title": "源泉掛け流し露天風呂",
+      "description": "全室に専用の露天風呂を完備。姥子温泉の源泉をそのままお愉しみいただけます。",
+      "titleColor": "#2C2418",
+      "descColor": "#6B5D4F",
+      "iconColor": "#8B6914"
+    },
+    {
+      "id": "amen2",
+      "icon": "sparkles",
+      "title": "こだわりの調度品",
+      "description": "地元・箱根寄木細工の家具や有田焼の茶器など、日本の伝統工芸に触れる滞在を。",
+      "titleColor": "#2C2418",
+      "descColor": "#6B5D4F",
+      "iconColor": "#8B6914"
+    },
+    {
+      "id": "amen3",
+      "icon": "moon",
+      "title": "月見テラス",
+      "description": "各離れに設えた専用テラスから芦ノ湖に浮かぶ月を独占。季節の移ろいを五感で感じて。",
+      "titleColor": "#2C2418",
+      "descColor": "#6B5D4F",
+      "iconColor": "#8B6914"
+    }
+  ],
+  "layoutNotes": {
+    "pcWidth": 1440,
+    "tabletWidth": 768,
+    "mobileWidth": 375,
+    "heroHeights": {
+      "pc": 480,
+      "tablet": 400,
+      "mobile": 320
+    },
+    "facilities": {
+      "note": "PC: Side-by-side (image 640px + content) | Tablet & Mobile: Stacked (image on top)",
+      "pcLayout": "horizontal",
+      "tabletLayout": "vertical",
+      "mobileLayout": "vertical"
+    },
+    "amenities": {
+      "note": "3-item vertical layout on PC, stacked on Tablet/Mobile",
+      "pcGap": 16,
+      "tabletGap": 16,
+      "mobileGap": 32
+    },
+    "roomCards": {
+      "note": "2-column grid on PC/Tablet (4 rows), single column on Mobile (8 rows)",
+      "pcPadding": "80px horizontal",
+      "tabletPadding": "60px horizontal",
+      "mobilePadding": "24px horizontal"
+    }
+  },
+  "export": {
+    "exportDate": "2026-02-27",
+    "format": "JSON",
+    "source": "design/月瀬庵デザイン.pen",
+    "resolvedInstances": true,
+    "readDepth": 3
+  }
 }

@@ -1,503 +1,781 @@
 {
-  "page": {
-    "name": "過ごし方ページ",
-    "nameEn": "Experience",
-    "route": "/experience",
-    "penFrameId": "DzrBF"
-  },
-  "layout": {
-    "width": 1440,
-    "direction": "vertical",
-    "fill": "#FAF8F3",
-    "clip": true
-  },
-  "sections": [
-    {
-      "name": "h5",
-      "penId": "7jdjv",
-      "type": "frame",
-      "styles": {
-        "fill": "#FAF8F3",
-        "height": 80,
-        "width": "fill_container",
-        "justifyContent": "space_between",
-        "alignItems": "center",
-        "padding": [0, 60]
-      },
-      "children": [
+  "page": "experience",
+  "pageName": "過ごし方 (Experience)",
+  "description": "The Experience page showcasing activities, seasons, facilities, and attractions available at Tsukise-an",
+  "viewports": {
+    "pc": {
+      "id": "DzrBF",
+      "name": "過ごし方ページ",
+      "width": 1440,
+      "height": "auto",
+      "layout": "vertical",
+      "fill": "#FAF8F3",
+      "sections": [
         {
-          "name": "logoArea",
-          "penId": "QxeQn",
+          "id": "HBAtk",
+          "name": "h5",
           "type": "frame",
-          "styles": {
-            "alignItems": "center",
-            "gap": 12
-          }
+          "label": "Header",
+          "width": "fill_container",
+          "height": 80,
+          "layout": "horizontal",
+          "alignItems": "center",
+          "justifyContent": "space_between",
+          "fill": "#FAF8F3",
+          "padding": [0, 60],
+          "children": [
+            {
+              "id": "HBAtk/1VWx3",
+              "name": "logoArea",
+              "type": "frame",
+              "gap": 12,
+              "alignItems": "center"
+            },
+            {
+              "id": "HBAtk/NM0V6",
+              "name": "navArea",
+              "type": "frame",
+              "gap": 32,
+              "alignItems": "center"
+            }
+          ]
         },
         {
-          "name": "navArea",
-          "penId": "yhBoP",
+          "id": "JQwh1",
+          "name": "bc5",
           "type": "frame",
-          "styles": {
-            "alignItems": "center",
-            "gap": 32
-          }
+          "label": "Breadcrumb",
+          "width": "fill_container",
+          "layout": "horizontal",
+          "alignItems": "center",
+          "fill": "#EEEBE3",
+          "padding": [16, 80],
+          "gap": 8,
+          "children": [
+            {
+              "name": "bc1",
+              "type": "text",
+              "content": "ホーム",
+              "context": "href: /",
+              "fill": "#8B7D6B",
+              "fontFamily": "Noto Sans JP",
+              "fontSize": 12,
+              "fontWeight": "500"
+            },
+            {
+              "name": "bcSep",
+              "type": "text",
+              "content": ">",
+              "fill": "#D4C5A0",
+              "fontSize": 12
+            },
+            {
+              "name": "bc2",
+              "type": "text",
+              "content": "過ごし方",
+              "fill": "#8B7D6B",
+              "fontFamily": "Noto Sans JP",
+              "fontSize": 12,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "id": "jN3Un",
+          "name": "hero4",
+          "type": "frame",
+          "label": "Hero Section",
+          "width": "fill_container",
+          "height": 480,
+          "layout": "none",
+          "clip": true,
+          "children": [
+            {
+              "id": "jN3Un/TDuaP",
+              "name": "heroBg",
+              "type": "frame",
+              "width": 1440,
+              "height": 480,
+              "fill": {
+                "type": "image",
+                "url": "./images/generated-1771721199853.png"
+              }
+            },
+            {
+              "id": "jN3Un/sLW2P",
+              "name": "heroOverlay",
+              "type": "frame",
+              "width": 1440,
+              "height": 480,
+              "fill": "#1A150E55"
+            },
+            {
+              "id": "jN3Un/m9gOk",
+              "name": "heroContent",
+              "type": "frame",
+              "width": 1440,
+              "height": 480,
+              "layout": "vertical",
+              "alignItems": "center",
+              "justifyContent": "center",
+              "gap": 24
+            }
+          ]
+        },
+        {
+          "id": "QxIpb",
+          "name": "Experience Concept",
+          "type": "frame",
+          "label": "Concept Section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "alignItems": "center",
+          "gap": 48,
+          "padding": [100, 200],
+          "fill": {
+            "type": "image",
+            "url": "./images/generated-1771732318064.png"
+          },
+          "children": [
+            {
+              "id": "QxIpb/2bmT0",
+              "name": "conceptLabel",
+              "type": "frame"
+            },
+            {
+              "id": "QxIpb/oQKLJ",
+              "name": "conceptTitle",
+              "type": "text",
+              "content": "時の流れに身を委ねて。",
+              "fill": "#2C2418",
+              "fontFamily": "Noto Serif JP",
+              "fontSize": 32,
+              "fontWeight": "600",
+              "letterSpacing": 6,
+              "textAlign": "center"
+            },
+            {
+              "id": "QxIpb/MDhQW",
+              "name": "conceptBody",
+              "type": "text",
+              "content": "月瀬庵での滞在は、時計を忘れることから始まります...",
+              "fill": "#4A4035",
+              "fontFamily": "Noto Sans JP",
+              "fontSize": 16,
+              "fontWeight": "300",
+              "lineHeight": 2.4,
+              "width": 600
+            },
+            {
+              "id": "QxIpb/ze9To",
+              "name": "conceptDeco",
+              "type": "rectangle",
+              "width": 1,
+              "height": 40,
+              "fill": "#D4C5A0"
+            }
+          ]
+        },
+        {
+          "id": "hWCto",
+          "name": "timelineSec",
+          "type": "frame",
+          "label": "Timeline Section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "fill": {
+            "type": "image",
+            "url": "./images/generated-1771739151678.png"
+          },
+          "children": [
+            {
+              "id": "hWCto/6p9dS",
+              "name": "timelineContent",
+              "type": "frame",
+              "width": 1440,
+              "layout": "vertical",
+              "padding": [80, 200],
+              "fill": "#1A150E88"
+            }
+          ]
+        },
+        {
+          "id": "FyBe0",
+          "name": "seasonsSec",
+          "type": "frame",
+          "label": "Seasons Section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "alignItems": "center",
+          "gap": 40,
+          "padding": [60, 80, 80, 80],
+          "fill": {
+            "type": "image",
+            "url": "./images/generated-1771732338033.png"
+          },
+          "children": [
+            {
+              "id": "FyBe0/PsPQH",
+              "name": "seasonsTitle",
+              "type": "text",
+              "content": "四季の楽しみ方",
+              "fill": "#2C2418",
+              "fontFamily": "Noto Serif JP",
+              "fontSize": 28,
+              "fontWeight": "600",
+              "letterSpacing": 4
+            },
+            {
+              "id": "FyBe0/jAe08",
+              "name": "seasonsRow",
+              "type": "frame",
+              "width": "fill_container",
+              "gap": 20
+            }
+          ]
+        },
+        {
+          "id": "jm0Xt",
+          "name": "pcFacRef",
+          "type": "frame",
+          "label": "Facilities Section",
+          "width": "fill_container",
+          "height": 420,
+          "layout": "horizontal",
+          "clip": true,
+          "children": [
+            {
+              "id": "jm0Xt/bIfZc",
+              "name": "facilityImg",
+              "type": "frame",
+              "width": 640,
+              "height": 420,
+              "fill": {
+                "type": "image",
+                "url": "./images/generated-1771721430541.png"
+              }
+            },
+            {
+              "id": "jm0Xt/0RD5w",
+              "name": "facilityContent",
+              "type": "frame",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "fill": "#F0EBE0",
+              "padding": 48,
+              "gap": 20,
+              "justifyContent": "center"
+            }
+          ]
+        },
+        {
+          "id": "vCT5U",
+          "name": "pcActRef",
+          "type": "frame",
+          "label": "Activities Section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "alignItems": "center",
+          "gap": 48,
+          "padding": [80, 120],
+          "fill": {
+            "type": "image",
+            "url": "./images/generated-1771732434776.png"
+          },
+          "children": [
+            {
+              "id": "vCT5U/e7LHV",
+              "name": "actLabel",
+              "type": "frame",
+              "gap": 16,
+              "alignItems": "center"
+            },
+            {
+              "id": "vCT5U/GLCIc",
+              "name": "actTitle",
+              "type": "text",
+              "content": "周辺のお愉しみ",
+              "fill": "#FAF8F3",
+              "fontFamily": "Noto Serif JP",
+              "fontSize": 28,
+              "fontWeight": "600",
+              "letterSpacing": 4
+            },
+            {
+              "id": "vCT5U/ju9DJ",
+              "name": "actGrid",
+              "type": "frame",
+              "width": "fill_container",
+              "gap": 40
+            }
+          ]
+        },
+        {
+          "id": "OXjHH",
+          "name": "experienceLinksWrap",
+          "type": "frame",
+          "label": "Experience Links",
+          "width": "fill_container",
+          "layout": "horizontal",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "fill": "#FAF8F3",
+          "gap": 60,
+          "padding": [40, 80],
+          "children": [
+            {
+              "id": "OXjHH/Kofjx",
+              "name": "expLink1",
+              "type": "text",
+              "content": "客室を見る →",
+              "context": "href: /rooms",
+              "fill": "#8B6914",
+              "fontFamily": "Noto Sans JP",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "id": "OXjHH/QjsOP",
+              "name": "expLink2",
+              "type": "text",
+              "content": "温泉を見る →",
+              "context": "href: /onsen",
+              "fill": "#8B6914",
+              "fontFamily": "Noto Sans JP",
+              "fontSize": 14,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "id": "ckGYt",
+          "name": "c5",
+          "type": "frame",
+          "label": "CTA Section",
+          "width": "fill_container",
+          "height": 480,
+          "layout": "none",
+          "clip": true,
+          "children": [
+            {
+              "id": "ckGYt/8DdzC",
+              "name": "ctaBg",
+              "type": "frame",
+              "width": 1440,
+              "height": 480,
+              "fill": {
+                "type": "image",
+                "url": "./images/generated-1771696586893.png"
+              }
+            },
+            {
+              "id": "ckGYt/QIjLx",
+              "name": "ctaOverlay",
+              "type": "frame",
+              "width": 1440,
+              "height": 480,
+              "fill": "#1A150E88"
+            },
+            {
+              "id": "ckGYt/GqtoP",
+              "name": "ctaContent",
+              "type": "frame",
+              "width": 1440,
+              "height": 480,
+              "layout": "vertical",
+              "alignItems": "center",
+              "justifyContent": "center",
+              "gap": 40,
+              "padding": [100, 80]
+            }
+          ]
+        },
+        {
+          "id": "6ExNW",
+          "name": "f5",
+          "type": "frame",
+          "label": "Footer",
+          "width": "fill_container",
+          "layout": "vertical",
+          "alignItems": "center",
+          "fill": "#1A150E",
+          "gap": 48,
+          "padding": [60, 80, 32, 80],
+          "children": [
+            {
+              "id": "6ExNW/pYMes",
+              "name": "footerTop",
+              "type": "frame",
+              "width": "fill_container"
+            },
+            {
+              "id": "6ExNW/iq3hA",
+              "name": "footerSecondaryNav",
+              "type": "frame"
+            },
+            {
+              "id": "6ExNW/g1LFh",
+              "name": "footerDivider",
+              "type": "rectangle",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "#2C241888"
+            },
+            {
+              "id": "6ExNW/lvXYD",
+              "name": "footerMiddle",
+              "type": "frame",
+              "width": "fill_container"
+            },
+            {
+              "id": "6ExNW/7U74r",
+              "name": "footerBottom",
+              "type": "text",
+              "content": "© 2026 月瀬庵 TSUKISE-AN. All Rights Reserved.",
+              "fill": "#6B5D4F55",
+              "fontFamily": "Cormorant Garamond",
+              "fontSize": 11
+            }
+          ]
         }
       ]
     },
-    {
-      "name": "bc1",
-      "penId": "M9JNh",
-      "type": "frame",
-      "styles": {
-        "fill": "#EEEBE3",
-        "width": "fill_container",
-        "alignItems": "center",
-        "gap": 8,
-        "padding": [16, 80]
-      },
-      "children": [
+    "tablet": {
+      "id": "FJ3gA",
+      "name": "過ごし方ページ Tablet",
+      "width": 768,
+      "height": "auto",
+      "layout": "vertical",
+      "fill": "#FAF8F3",
+      "sections": [
         {
-          "name": "bc1",
-          "penId": "VSamT",
-          "type": "text",
-          "content": "ホーム",
-          "context": "href: /",
-          "styles": {
-            "fill": "#8B7D6B",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 12,
-            "fontWeight": "300",
-            "letterSpacing": 1
+          "id": "gZyQP",
+          "name": "h5",
+          "type": "frame",
+          "label": "Header",
+          "width": "fill_container",
+          "height": 80,
+          "layout": "horizontal",
+          "alignItems": "center",
+          "justifyContent": "space_between",
+          "fill": "#FAF8F3",
+          "padding": [0, 40]
+        },
+        {
+          "id": "SAO6N",
+          "name": "bc4",
+          "type": "frame",
+          "label": "Breadcrumb",
+          "width": "fill_container",
+          "layout": "horizontal",
+          "fill": "#EEEBE3",
+          "padding": [16, 40],
+          "gap": 8
+        },
+        {
+          "id": "ecm6s",
+          "name": "hero4",
+          "type": "frame",
+          "label": "Hero Section",
+          "width": "fill_container",
+          "height": 400,
+          "layout": "none",
+          "clip": true
+        },
+        {
+          "id": "0NPqF",
+          "name": "expTC",
+          "type": "frame",
+          "label": "Concept Section (Tablet)",
+          "width": "fill_container",
+          "layout": "vertical",
+          "alignItems": "center",
+          "gap": 48,
+          "padding": [80, 100],
+          "fill": {
+            "type": "image",
+            "url": "./images/generated-1771732318064.png"
           }
         },
         {
-          "name": "bcSep",
-          "penId": "WQC3v",
-          "type": "text",
-          "content": ">",
-          "styles": {
-            "fill": "#D4C5A0",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 12,
-            "fontWeight": "300"
+          "id": "sR9Oz",
+          "name": "timelineSec",
+          "type": "frame",
+          "label": "Timeline Section (Tablet)",
+          "width": "fill_container",
+          "layout": "vertical",
+          "fill": {
+            "type": "image",
+            "url": "./images/generated-1771739151678.png"
           }
         },
         {
-          "name": "bc2",
-          "penId": "WtKuv",
-          "type": "text",
-          "content": "過ごし方",
-          "styles": {
-            "fill": "#2C2418",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 12,
-            "fontWeight": "500",
-            "letterSpacing": 1
+          "id": "fMPK4",
+          "name": "seasonsSec",
+          "type": "frame",
+          "label": "Seasons Section (Tablet)",
+          "width": "fill_container",
+          "layout": "vertical",
+          "alignItems": "center",
+          "gap": 40,
+          "padding": [60, 60, 80, 60],
+          "fill": {
+            "type": "image",
+            "url": "./images/generated-1771732338033.png"
           }
+        },
+        {
+          "id": "trCGB",
+          "name": "tabFacRef",
+          "type": "frame",
+          "label": "Facilities Section (Tablet)",
+          "width": "fill_container",
+          "layout": "horizontal",
+          "clip": true
+        },
+        {
+          "id": "8W8yP",
+          "name": "tabActRef",
+          "type": "frame",
+          "label": "Activities Section (Tablet)",
+          "width": "fill_container",
+          "layout": "vertical",
+          "alignItems": "center",
+          "gap": 48,
+          "padding": [60, 80],
+          "fill": {
+            "type": "image",
+            "url": "./images/generated-1771732434776.png"
+          }
+        },
+        {
+          "id": "x7vcO",
+          "name": "experienceLinksWrap",
+          "type": "frame",
+          "label": "Experience Links (Tablet)",
+          "width": "fill_container",
+          "layout": "horizontal",
+          "justifyContent": "center",
+          "fill": "#FAF8F3",
+          "padding": [40, 80],
+          "gap": 60
+        },
+        {
+          "id": "45D6j",
+          "name": "c5",
+          "type": "frame",
+          "label": "CTA Section (Tablet)",
+          "width": "fill_container",
+          "height": 440,
+          "layout": "none",
+          "clip": true
+        },
+        {
+          "id": "JmgsK",
+          "name": "f5",
+          "type": "frame",
+          "label": "Footer (Tablet)",
+          "width": "fill_container",
+          "layout": "vertical",
+          "fill": "#1A150E",
+          "gap": 48,
+          "padding": [48, 48, 24, 48]
         }
       ]
     },
-    {
-      "name": "hero4",
-      "penId": "ulJ8r",
-      "type": "frame",
-      "styles": {
-        "height": 480,
-        "width": "fill_container",
-        "layout": "none",
-        "clip": true
-      },
-      "children": [
+    "mobile": {
+      "id": "xgOTY",
+      "name": "過ごし方ページ Mobile",
+      "width": 375,
+      "height": "auto",
+      "layout": "vertical",
+      "fill": "#FAF8F3",
+      "sections": [
         {
-          "name": "heroBg",
-          "penId": "W1R06",
+          "id": "piK0m",
+          "name": "h5",
           "type": "frame",
-          "hasImageFill": true,
-          "styles": {
-            "width": 1440,
-            "height": 480,
-            "x": 0,
-            "y": 0
+          "label": "Header",
+          "width": "fill_container",
+          "height": 60,
+          "layout": "horizontal",
+          "alignItems": "center",
+          "justifyContent": "space_between",
+          "fill": "#FAF8F3",
+          "padding": [0, 20]
+        },
+        {
+          "id": "fnWi8",
+          "name": "bc4",
+          "type": "frame",
+          "label": "Breadcrumb",
+          "width": "fill_container",
+          "layout": "horizontal",
+          "fill": "#EEEBE3",
+          "padding": [12, 20],
+          "gap": 8
+        },
+        {
+          "id": "0Xg1b",
+          "name": "hr4",
+          "type": "frame",
+          "label": "Hero Section",
+          "width": "fill_container",
+          "height": 320,
+          "layout": "none",
+          "clip": true
+        },
+        {
+          "id": "BGq78",
+          "name": "expCS",
+          "type": "frame",
+          "label": "Concept Section (Mobile)",
+          "width": "fill_container",
+          "layout": "vertical",
+          "alignItems": "center",
+          "gap": 40,
+          "padding": [60, 24],
+          "fill": {
+            "type": "image",
+            "url": "./images/generated-1771732318064.png"
           }
         },
         {
-          "name": "heroOverlay",
-          "penId": "NjqPX",
+          "id": "kgeDo",
+          "name": "timelineSec",
           "type": "frame",
-          "styles": {
-            "fill": "#1A150E55",
-            "width": 1440,
-            "height": 480,
-            "x": 0,
-            "y": 0
+          "label": "Timeline Section (Mobile)",
+          "width": "fill_container",
+          "layout": "vertical",
+          "fill": {
+            "type": "image",
+            "url": "./images/generated-1771739151678.png"
           }
         },
         {
-          "name": "heroContent",
-          "penId": "tutff",
+          "id": "68amT",
+          "name": "seasonsSec",
           "type": "frame",
-          "styles": {
-            "layout": "vertical",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "gap": 24,
-            "width": 1440,
-            "height": 480,
-            "x": 0,
-            "y": 0
-          }
-        }
-      ]
-    },
-    {
-      "name": "Experience Concept",
-      "penId": "ZVQWw",
-      "type": "frame",
-      "hasImageFill": true,
-      "styles": {
-        "width": "fill_container",
-        "layout": "vertical",
-        "alignItems": "center",
-        "gap": 48,
-        "padding": [100, 200]
-      },
-      "children": [
-        {
-          "name": "eConceptLabel",
-          "penId": "3n3mY",
-          "type": "frame",
-          "styles": {
-            "alignItems": "center",
-            "gap": 20
+          "label": "Seasons Section (Mobile)",
+          "width": "fill_container",
+          "layout": "vertical",
+          "alignItems": "center",
+          "gap": 40,
+          "padding": [40, 24, 60, 24],
+          "fill": {
+            "type": "image",
+            "url": "./images/generated-1771732338033.png"
           }
         },
         {
-          "name": "eConceptTitle",
-          "penId": "WITmP",
-          "type": "text",
-          "content": "時の流れに身を委ねて。",
-          "styles": {
-            "fill": "#2C2418",
-            "fontFamily": "Noto Serif JP",
-            "fontSize": 32,
-            "fontWeight": "600",
-            "letterSpacing": 6,
-            "textAlign": "center"
-          }
-        },
-        {
-          "name": "eConceptBody",
-          "penId": "QriZ7",
-          "type": "text",
-          "content": "月瀬庵での滞在は、時計を忘れることから始まります。\n湖畔の散歩、森の中の読書、温泉での瞑想。\n何もしない贅沢を、ここで見つけてください。\n\n四季折々の自然が、その日だけの体験を\nご用意してお待ちしています。",
-          "styles": {
-            "fill": "#6B5D4F",
-            "fontFamily": "Noto Sans JP",
-            "fontSize": 16,
-            "fontWeight": "300",
-            "letterSpacing": 1.5,
-            "lineHeight": 2.4,
-            "textAlign": "center",
-            "width": 600
-          }
-        },
-        {
-          "name": "eConceptDeco",
-          "penId": "AAcWq",
-          "type": "rectangle",
-          "styles": {
-            "fill": "#D4C5A0",
-            "width": 1,
-            "height": 40
-          }
-        }
-      ]
-    },
-    {
-      "name": "Timeline Section",
-      "penId": "l1lFi",
-      "type": "frame",
-      "hasImageFill": true,
-      "styles": {
-        "width": "fill_container",
-        "layout": "vertical"
-      },
-      "children": [
-        {
-          "name": "timelineContent",
-          "penId": "6p9dS",
+          "id": "Ysm9z",
+          "name": "mobFacRef",
           "type": "frame",
-          "styles": {
-            "fill": "#1A150E88",
-            "layout": "vertical",
-            "alignItems": "center",
-            "width": 1440,
-            "padding": [80, 200]
-          }
-        }
-      ]
-    },
-    {
-      "name": "Seasons Section",
-      "penId": "rBhSi",
-      "type": "frame",
-      "hasImageFill": true,
-      "styles": {
-        "width": "fill_container",
-        "layout": "vertical",
-        "alignItems": "center",
-        "gap": 40,
-        "padding": [60, 80, 80, 80]
-      },
-      "children": [
+          "label": "Facilities Section (Mobile)",
+          "width": "fill_container",
+          "layout": "vertical",
+          "clip": true
+        },
         {
-          "name": "seasonsTitle",
-          "penId": "PsPQH",
-          "type": "text",
-          "content": "四季の楽しみ方",
-          "styles": {
-            "fill": "#2C2418",
-            "fontFamily": "Noto Serif JP",
-            "fontSize": 28,
-            "fontWeight": "600",
-            "letterSpacing": 4
+          "id": "8XfEq",
+          "name": "mobActRef",
+          "type": "frame",
+          "label": "Activities Section (Mobile)",
+          "width": "fill_container",
+          "layout": "vertical",
+          "alignItems": "center",
+          "gap": 48,
+          "padding": [60, 24],
+          "fill": {
+            "type": "image",
+            "url": "./images/generated-1771732434776.png"
           }
         },
         {
-          "name": "seasonsRow",
-          "penId": "jAe08",
+          "id": "7RY9e",
+          "name": "experienceLinksWrap",
           "type": "frame",
-          "styles": {
-            "gap": 20,
-            "width": "fill_container"
-          }
-        }
-      ]
-    },
-    {
-      "name": "Facilities Intro",
-      "penId": "tag5a",
-      "type": "frame",
-      "styles": {
-        "height": 420,
-        "width": "fill_container",
-        "clip": true
-      },
-      "children": [
-        {
-          "name": "facilityImg",
-          "penId": "bIfZc",
-          "type": "frame",
-          "hasImageFill": true,
-          "styles": {
-            "width": 640,
-            "height": 420,
-            "clip": true
-          }
+          "label": "Experience Links (Mobile)",
+          "width": "fill_container",
+          "layout": "horizontal",
+          "justifyContent": "center",
+          "fill": "#FAF8F3",
+          "padding": [40, 80],
+          "gap": 60
         },
         {
-          "name": "facilityContent",
-          "penId": "0RD5w",
+          "id": "DwBpu",
+          "name": "c5",
           "type": "frame",
-          "styles": {
-            "fill": "#F0EBE0",
-            "layout": "vertical",
-            "justifyContent": "center",
-            "gap": 20,
-            "padding": 48,
-            "width": "fill_container",
-            "height": "fill_container"
-          }
-        }
-      ]
-    },
-    {
-      "name": "Activities Section",
-      "penId": "X4anj",
-      "type": "frame",
-      "hasImageFill": true,
-      "styles": {
-        "width": "fill_container",
-        "layout": "vertical",
-        "alignItems": "center",
-        "gap": 48,
-        "padding": [80, 120]
-      },
-      "children": [
-        {
-          "name": "actLabel",
-          "penId": "e7LHV",
-          "type": "frame",
-          "styles": {
-            "alignItems": "center",
-            "gap": 16
-          }
+          "label": "CTA Section (Mobile)",
+          "width": "fill_container",
+          "height": 420,
+          "layout": "none",
+          "clip": true
         },
         {
-          "name": "actTitle",
-          "penId": "GLCIc",
-          "type": "text",
-          "content": "周辺のお愉しみ",
-          "styles": {
-            "fill": "#FAF8F3",
-            "fontFamily": "Noto Serif JP",
-            "fontSize": 28,
-            "fontWeight": "600",
-            "letterSpacing": 4
-          }
-        },
-        {
-          "name": "actGrid",
-          "penId": "ju9DJ",
+          "id": "q83po",
+          "name": "f5",
           "type": "frame",
-          "styles": {
-            "gap": 40,
-            "width": "fill_container"
-          }
-        }
-      ]
-    },
-    {
-      "name": "experienceLinksWrap",
-      "penId": "OXjHH",
-      "type": "ref",
-      "ref": "jdW4K",
-      "styles": {
-        "width": "fill_container"
-      },
-      "descendants": {
-        "expLink1": {
-          "penId": "Kofjx",
-          "content": "客室を見る \u2192",
-          "context": "href: /rooms"
-        },
-        "expLink2": {
-          "penId": "QjsOP",
-          "content": "温泉を見る \u2192",
-          "context": "href: /onsen"
-        }
-      }
-    },
-    {
-      "name": "c5",
-      "penId": "Wcr6v",
-      "type": "frame",
-      "styles": {
-        "height": 480,
-        "width": "fill_container",
-        "layout": "none",
-        "clip": true
-      },
-      "children": [
-        {
-          "name": "ctaBg",
-          "penId": "VImtk",
-          "type": "frame",
-          "hasImageFill": true,
-          "styles": {
-            "width": 1440,
-            "height": 480,
-            "x": 0,
-            "y": 0
-          }
-        },
-        {
-          "name": "ctaOverlay",
-          "penId": "hOQ7g",
-          "type": "frame",
-          "styles": {
-            "fill": "#1A150E88",
-            "width": 1440,
-            "height": 480,
-            "x": 0,
-            "y": 0
-          }
-        },
-        {
-          "name": "ctaContent",
-          "penId": "kIxV0",
-          "type": "frame",
-          "styles": {
-            "layout": "vertical",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "gap": 40,
-            "width": 1440,
-            "height": 480,
-            "x": 0,
-            "y": 0
-          }
-        }
-      ]
-    },
-    {
-      "name": "f5",
-      "penId": "dWzSA",
-      "type": "frame",
-      "styles": {
-        "fill": "#1A150E",
-        "width": "fill_container",
-        "layout": "vertical",
-        "alignItems": "center",
-        "gap": 48,
-        "padding": [60, 80, 32, 80]
-      },
-      "children": [
-        {
-          "name": "footerTop",
-          "penId": "9w74T",
-          "type": "frame",
-          "styles": {
-            "justifyContent": "space_between",
-            "width": "fill_container"
-          }
-        },
-        {
-          "name": "footerSecondaryNav",
-          "penId": "eQREz",
-          "type": "frame",
-          "styles": {
-            "alignItems": "center",
-            "justifyContent": "center",
-            "gap": 24,
-            "width": "fill_container"
-          }
-        },
-        {
-          "name": "footerDivider",
-          "penId": "wL4gm",
-          "type": "rectangle",
-          "styles": {
-            "fill": "#2C241888",
-            "width": "fill_container",
-            "height": 1
-          }
-        },
-        {
-          "name": "footerMiddle",
-          "penId": "UNqEQ",
-          "type": "frame",
-          "styles": {
-            "alignItems": "center",
-            "justifyContent": "space_between",
-            "width": "fill_container"
-          }
-        },
-        {
-          "name": "footerBottom",
-          "penId": "32zZj",
-          "type": "text",
-          "content": "\u00a9 2026 月瀬庵 TSUKISE-AN. All Rights Reserved.",
-          "styles": {
-            "fill": "#6B5D4F55",
-            "fontFamily": "Cormorant Garamond",
-            "fontSize": 11,
-            "fontWeight": "normal",
-            "letterSpacing": 2
-          }
+          "label": "Footer (Mobile)",
+          "width": "fill_container",
+          "layout": "vertical",
+          "alignItems": "center",
+          "fill": "#1A150E",
+          "gap": 32,
+          "padding": [40, 24, 24, 24]
         }
       ]
     }
-  ]
+  },
+  "sharedResources": {
+    "colors": {
+      "background": "#FAF8F3",
+      "dark": "#1A150E",
+      "text_primary": "#2C2418",
+      "text_secondary": "#4A4035",
+      "text_light": "#6B5D4F",
+      "accent": "#8B6914",
+      "muted": "#D4C5A0",
+      "overlay": "#1A150E88",
+      "breadcrumb_bg": "#EEEBE3"
+    },
+    "fonts": {
+      "serif": "Noto Serif JP",
+      "sans": "Noto Sans JP",
+      "accent": "Cormorant Garamond"
+    },
+    "images": {
+      "hero": "./images/generated-1771721199853.png",
+      "concept_bg": "./images/generated-1771732318064.png",
+      "timeline_bg": "./images/generated-1771739151678.png",
+      "seasons_bg": "./images/generated-1771732338033.png",
+      "facilities": "./images/generated-1771721430541.png",
+      "activities_bg": "./images/generated-1771732434776.png",
+      "cta_bg": "./images/generated-1771696586893.png"
+    }
+  },
+  "metadata": {
+    "exported_date": "2026-02-27",
+    "design_file": "design/月瀬庵デザイン.pen",
+    "frame_ids": {
+      "pc": "DzrBF",
+      "tablet": "FJ3gA",
+      "mobile": "xgOTY"
+    },
+    "major_sections": [
+      "Header",
+      "Breadcrumb",
+      "Hero",
+      "Concept",
+      "Timeline",
+      "Seasons",
+      "Facilities",
+      "Activities",
+      "Experience Links",
+      "CTA",
+      "Footer"
+    ]
+  }
 }
