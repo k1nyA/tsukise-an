@@ -5,7 +5,7 @@ export function ConceptSection() {
     <section
       className="w-full"
       style={{
-        backgroundImage: 'var(--experience-concept-bg)',
+        backgroundImage: 'url(/images/experience-concept-bg.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}

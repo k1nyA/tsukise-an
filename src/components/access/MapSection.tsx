@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export function MapSection() {
   return (
     <section
@@ -15,29 +17,15 @@ export function MapSection() {
         style={{
           height: 'var(--r-access-map-frame-h)',
           borderRadius: 4,
-          backgroundColor: 'var(--ryokan-light-bg, #EEEBE3)',
         }}
       >
-        {/* Overlay text placeholder */}
-        <div
-          className="flex h-full w-full items-center justify-center"
-          style={{
-            backgroundColor: '#2C241833',
-          }}
-        >
-          <span
-            style={{
-              fontFamily: 'var(--font-body)',
-              fontSize: 16,
-              fontWeight: 'normal',
-              color: 'var(--ryokan-text-on-dark, #FAF8F3)',
-              letterSpacing: 2,
-              textAlign: 'center',
-            }}
-          >
-            Google Maps 埋め込みエリア
-          </span>
-        </div>
+        <Image
+          src="/images/access-map.png"
+          alt="月瀬庵へのアクセスマップ"
+          fill
+          className="object-cover"
+          sizes="(max-width: 767px) 100vw, (max-width: 1023px) 100vw, 100vw"
+        />
       </div>
 
       {/* Google Map link */}

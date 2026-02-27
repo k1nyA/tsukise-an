@@ -32,7 +32,7 @@ export function SeasonsSection() {
     <section
       className="flex w-full flex-col items-center"
       style={{
-        backgroundImage: 'var(--experience-seasons-bg)',
+        backgroundImage: 'url(/images/experience-seasons-bg.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         padding: 'var(--r-exp-seasons-pt) var(--r-exp-seasons-px) var(--r-exp-seasons-pb)',
