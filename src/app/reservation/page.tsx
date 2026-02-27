@@ -15,7 +15,12 @@ export default function ReservationPage() {
     <div className="ryokan-page">
       <Header />
       <main>
-        <PageHero title="ご予約" labelEn="RESERVATION" backgroundImage="/images/reservation-hero.png" />
+        <PageHero
+          title="ご予約"
+          labelEn="RESERVATION"
+          subtitle="月瀬庵でのご滞在を、お待ちしております"
+          backgroundImage="/images/reservation-hero.png"
+        />
         <Breadcrumb
           items={[
             { label: 'ホーム', href: '/' },

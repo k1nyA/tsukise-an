@@ -18,7 +18,12 @@ export default function CuisinePage() {
     <div className="ryokan-page">
       <Header />
       <main>
-        <PageHero title="お料理" labelEn="CUISINE" backgroundImage="/images/cuisine-hero.png" />
+        <PageHero
+          title="旬を紡ぐ、月替わり懐石"
+          labelEn="CUISINE"
+          subtitle="ミシュラン二つ星  月瀬庵の料理"
+          backgroundImage="/images/cuisine-hero.png"
+        />
         <Breadcrumb
           items={[
             { label: 'ホーム', href: '/' },
