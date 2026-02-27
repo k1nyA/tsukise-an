@@ -1,0 +1,376 @@
+/* ===========================================
+   Experience Page Responsive CSS Variables
+   Breakpoints: Mobile(<768) / Tablet(768-1023) / PC(>=1024)
+   =========================================== */
+
+/* --- PC (default, >= 1024px) --- */
+:root {
+  /* Concept Section */
+  --r-exp-concept-py: 100px;
+  --r-exp-concept-px: 200px;
+  --r-exp-concept-gap: 48px;
+  --r-exp-concept-title: 32px;
+  --r-exp-concept-title-ls: 6px;
+  --r-exp-concept-body: 16px;
+  --r-exp-concept-body-ls: 1.5px;
+  --r-exp-concept-body-lh: 2.4;
+  --r-exp-concept-body-w: 600px;
+
+  /* Timeline Section */
+  --r-exp-timeline-py: 80px;
+  --r-exp-timeline-px: 200px;
+  --r-exp-timeline-title: 28px;
+  --r-exp-timeline-title-ls: 4px;
+  --r-exp-timeline-sub-size: 14px;
+  --r-exp-timeline-item-title: 18px;
+  --r-exp-timeline-item-body: 14px;
+  --r-exp-timeline-time: 20px;
+  --r-exp-timeline-side-w: 478px;
+  --r-exp-timeline-item-py: 24px;
+  --r-exp-timeline-item-gap: 32px;
+  --r-exp-timeline-line-h: 60px;
+
+  /* Seasons Section */
+  --r-exp-seasons-pt: 60px;
+  --r-exp-seasons-px: 80px;
+  --r-exp-seasons-pb: 80px;
+  --r-exp-seasons-gap: 40px;
+  --r-exp-seasons-title: 28px;
+  --r-exp-seasons-title-ls: 4px;
+  --r-exp-seasons-card-img-h: 280px;
+  --r-exp-seasons-card-gap: 20px;
+
+  /* Facilities Section */
+  --r-exp-facility-h: 420px;
+  --r-exp-facility-img-w: 640px;
+  --r-exp-facility-padding: 48px;
+  --r-exp-facility-gap: 20px;
+  --r-exp-facility-title: 28px;
+  --r-exp-facility-title-ls: 4px;
+  --r-exp-facility-card-gap: 24px;
+
+  /* Activities Section */
+  --r-exp-act-py: 80px;
+  --r-exp-act-px: 120px;
+  --r-exp-act-gap: 48px;
+  --r-exp-act-title: 28px;
+  --r-exp-act-title-ls: 4px;
+  --r-exp-act-grid-gap: 40px;
+
+  /* Links Section */
+  --r-exp-links-py: 40px;
+  --r-exp-links-px: 80px;
+  --r-exp-links-gap: 60px;
+}
+
+/* --- Tablet (768px - 1023px) --- */
+@media (max-width: 1023px) {
+  :root {
+    /* Concept Section */
+    --r-exp-concept-py: 80px;
+    --r-exp-concept-px: 100px;
+    --r-exp-concept-title: 28px;
+    --r-exp-concept-title-ls: 5px;
+    --r-exp-concept-body: 14px;
+    --r-exp-concept-body-ls: 1px;
+    --r-exp-concept-body-lh: 2.2;
+
+    /* Timeline Section */
+    --r-exp-timeline-py: 60px;
+    --r-exp-timeline-px: 60px;
+    --r-exp-timeline-title: 24px;
+    --r-exp-timeline-title-ls: 3px;
+    --r-exp-timeline-item-title: 16px;
+    --r-exp-timeline-item-body: 13px;
+    --r-exp-timeline-time: 18px;
+    --r-exp-timeline-side-w: auto;
+    --r-exp-timeline-item-gap: 24px;
+    --r-exp-timeline-line-h: 48px;
+
+    /* Seasons Section */
+    --r-exp-seasons-pt: 48px;
+    --r-exp-seasons-px: 40px;
+    --r-exp-seasons-pb: 60px;
+    --r-exp-seasons-gap: 32px;
+    --r-exp-seasons-title: 24px;
+    --r-exp-seasons-title-ls: 3px;
+    --r-exp-seasons-card-img-h: 200px;
+    --r-exp-seasons-card-gap: 16px;
+
+    /* Facilities Section */
+    --r-exp-facility-h: 380px;
+    --r-exp-facility-img-w: 380px;
+    --r-exp-facility-padding: 36px;
+    --r-exp-facility-gap: 16px;
+    --r-exp-facility-title: 24px;
+    --r-exp-facility-title-ls: 3px;
+    --r-exp-facility-card-gap: 16px;
+
+    /* Activities Section */
+    --r-exp-act-py: 60px;
+    --r-exp-act-px: 60px;
+    --r-exp-act-gap: 40px;
+    --r-exp-act-title: 24px;
+    --r-exp-act-title-ls: 3px;
+    --r-exp-act-grid-gap: 24px;
+
+    /* Links Section */
+    --r-exp-links-py: 32px;
+    --r-exp-links-px: 40px;
+    --r-exp-links-gap: 40px;
+  }
+}
+
+/* --- Mobile (< 768px) --- */
+@media (max-width: 767px) {
+  :root {
+    /* Concept Section */
+    --r-exp-concept-py: 60px;
+    --r-exp-concept-px: 24px;
+    --r-exp-concept-gap: 40px;
+    --r-exp-concept-title: 24px;
+    --r-exp-concept-title-ls: 3px;
+    --r-exp-concept-body: 14px;
+    --r-exp-concept-body-ls: 1px;
+    --r-exp-concept-body-lh: 2.2;
+    --r-exp-concept-body-w: 100%;
+
+    /* Timeline Section */
+    --r-exp-timeline-py: 48px;
+    --r-exp-timeline-px: 24px;
+    --r-exp-timeline-title: 22px;
+    --r-exp-timeline-title-ls: 2px;
+    --r-exp-timeline-sub-size: 13px;
+    --r-exp-timeline-item-title: 16px;
+    --r-exp-timeline-item-body: 13px;
+    --r-exp-timeline-time: 16px;
+    --r-exp-timeline-side-w: auto;
+    --r-exp-timeline-item-py: 16px;
+    --r-exp-timeline-item-gap: 16px;
+    --r-exp-timeline-line-h: 40px;
+
+    /* Seasons Section */
+    --r-exp-seasons-pt: 40px;
+    --r-exp-seasons-px: 24px;
+    --r-exp-seasons-pb: 48px;
+    --r-exp-seasons-gap: 24px;
+    --r-exp-seasons-title: 22px;
+    --r-exp-seasons-title-ls: 2px;
+    --r-exp-seasons-card-img-h: 200px;
+    --r-exp-seasons-card-gap: 16px;
+
+    /* Facilities Section */
+    --r-exp-facility-h: auto;
+    --r-exp-facility-img-w: 100%;
+    --r-exp-facility-padding: 32px;
+    --r-exp-facility-gap: 16px;
+    --r-exp-facility-title: 22px;
+    --r-exp-facility-title-ls: 2px;
+    --r-exp-facility-card-gap: 12px;
+
+    /* Activities Section */
+    --r-exp-act-py: 48px;
+    --r-exp-act-px: 24px;
+    --r-exp-act-gap: 32px;
+    --r-exp-act-title: 22px;
+    --r-exp-act-title-ls: 2px;
+    --r-exp-act-grid-gap: 20px;
+
+    /* Links Section */
+    --r-exp-links-py: 24px;
+    --r-exp-links-px: 24px;
+    --r-exp-links-gap: 24px;
+  }
+}
+
+/* ===========================================
+   Experience Page Responsive Utility Classes
+   =========================================== */
+
+/* Concept body: center on PC/Tablet, left on Mobile */
+.r-exp-concept-body {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .r-exp-concept-body {
+    text-align: left;
+  }
+}
+
+/* ===========================================
+   Seasons Grid: 4-col (PC) / 2-col (Tablet) / 1-col (Mobile)
+   =========================================== */
+
+.r-exp-seasons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--r-exp-seasons-card-gap);
+  width: 100%;
+}
+
+@media (max-width: 1023px) {
+  .r-exp-seasons-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .r-exp-seasons-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===========================================
+   Facilities Layout: ImgText row -> column on Mobile
+   =========================================== */
+
+.r-exp-facility-layout {
+  display: flex;
+  flex-direction: row;
+}
+
+.r-exp-facility-img {
+  width: var(--r-exp-facility-img-w);
+  height: var(--r-exp-facility-h);
+  flex-shrink: 0;
+  min-height: 280px;
+}
+
+@media (max-width: 767px) {
+  .r-exp-facility-layout {
+    flex-direction: column;
+  }
+  .r-exp-facility-img {
+    width: 100%;
+    height: 280px;
+    flex-shrink: 0;
+  }
+}
+
+/* Facility cards: row on PC/Tablet, column on Mobile */
+.r-exp-facility-cards {
+  display: flex;
+  flex-direction: row;
+  gap: var(--r-exp-facility-card-gap);
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .r-exp-facility-cards {
+    flex-direction: column;
+  }
+}
+
+/* ===========================================
+   Activities Grid: 4-col (PC) / 2-col (Tablet) / 1-col (Mobile)
+   =========================================== */
+
+.r-exp-act-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--r-exp-act-grid-gap);
+  width: 100%;
+}
+
+@media (max-width: 1023px) {
+  .r-exp-act-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .r-exp-act-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===========================================
+   Experience Links: row -> column on Mobile
+   =========================================== */
+
+.r-exp-links-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--r-exp-links-gap);
+}
+
+@media (max-width: 767px) {
+  .r-exp-links-layout {
+    flex-direction: column;
+  }
+}
+
+/* ===========================================
+   Timeline Layout
+   PC: zigzag 3-col | Tablet: narrower zigzag | Mobile: linear
+   =========================================== */
+
+/* Timeline side columns (time / info) */
+.r-exp-timeline-side {
+  width: var(--r-exp-timeline-side-w);
+}
+
+/* Tablet: side columns become flex:1 */
+@media (max-width: 1023px) {
+  .r-exp-timeline-side {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+/* Mobile: timeline becomes linear single-column */
+@media (max-width: 767px) {
+  .r-exp-timeline-row {
+    flex-direction: column !important;
+    align-items: flex-start;
+    gap: 8px !important;
+    padding: var(--r-exp-timeline-item-py) 0;
+  }
+
+  .r-exp-timeline-side {
+    width: 100%;
+  }
+
+  /* Hide the center dot column on mobile */
+  .r-exp-timeline-center {
+    display: none;
+  }
+
+  /* Force left alignment for all text in timeline items */
+  .r-exp-timeline-side span,
+  .r-exp-timeline-side h3,
+  .r-exp-timeline-side p {
+    text-align: left !important;
+  }
+
+  .r-exp-timeline-side .flex {
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+  }
+
+  /* Add a left border for timeline feel on mobile */
+  .r-exp-timeline-row {
+    border-left: 2px solid var(--ryokan-light-gold, #D4C5A0);
+    padding-left: 20px;
+    margin-left: 6px;
+  }
+
+  /* Add a dot marker via pseudo-element */
+  .r-exp-timeline-row::before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: var(--r-exp-timeline-item-py);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--ryokan-light-gold, #D4C5A0);
+  }
+
+  .r-exp-timeline-row {
+    position: relative;
+  }
+}

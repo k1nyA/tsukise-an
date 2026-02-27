@@ -8,11 +8,10 @@ const links = [
 export function ExperienceLinksSection() {
   return (
     <nav
-      className="flex w-full items-center justify-center"
+      className="r-exp-links-layout w-full"
       style={{
         backgroundColor: 'var(--ryokan-bg, #FAF8F3)',
-        padding: '40px 80px',
-        gap: 60,
+        padding: 'var(--r-exp-links-py) var(--r-exp-links-px)',
       }}
     >
       {links.map((link) => (

@@ -16,18 +16,15 @@ const facilities = [
 export function FacilitiesSection() {
   return (
     <section
-      className="flex w-full overflow-hidden"
-      style={{ height: 420 }}
+      className="r-exp-facility-layout w-full overflow-hidden"
+      style={{ height: 'var(--r-exp-facility-h)' }}
     >
       {/* Left: Image */}
       <div
         data-testid="facility-image"
-        className="overflow-hidden"
+        className="r-exp-facility-img overflow-hidden"
         style={{
-          width: 640,
-          height: 420,
           backgroundColor: 'var(--ryokan-light-bg, #EEEBE3)',
-          flexShrink: 0,
         }}
       />
 
@@ -36,8 +33,8 @@ export function FacilitiesSection() {
         className="flex flex-1 flex-col justify-center"
         style={{
           backgroundColor: 'var(--ryokan-warm-bg, #F0EBE0)',
-          padding: 48,
-          gap: 20,
+          padding: 'var(--r-exp-facility-padding)',
+          gap: 'var(--r-exp-facility-gap)',
           height: '100%',
         }}
       >
@@ -68,10 +65,10 @@ export function FacilitiesSection() {
         <h2
           style={{
             fontFamily: 'var(--font-heading)',
-            fontSize: 28,
+            fontSize: 'var(--r-exp-facility-title)',
             fontWeight: 600,
             color: 'var(--ryokan-dark, #2C2418)',
-            letterSpacing: 4,
+            letterSpacing: 'var(--r-exp-facility-title-ls)',
             margin: 0,
           }}
         >
@@ -79,7 +76,7 @@ export function FacilitiesSection() {
         </h2>
 
         {/* Facility cards */}
-        <div className="flex w-full" style={{ gap: 24 }}>
+        <div className="r-exp-facility-cards">
           {facilities.map((facility) => (
             <div
               key={facility.title}

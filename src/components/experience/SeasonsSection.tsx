@@ -29,38 +29,38 @@ export function SeasonsSection() {
         backgroundImage: 'var(--experience-seasons-bg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        padding: '60px 80px 80px 80px',
-        gap: 40,
+        padding: 'var(--r-exp-seasons-pt) var(--r-exp-seasons-px) var(--r-exp-seasons-pb)',
+        gap: 'var(--r-exp-seasons-gap)',
       }}
     >
       {/* Section title */}
       <h2
         style={{
           fontFamily: 'var(--font-heading)',
-          fontSize: 28,
+          fontSize: 'var(--r-exp-seasons-title)',
           fontWeight: 600,
           color: 'var(--ryokan-dark, #2C2418)',
-          letterSpacing: 4,
+          letterSpacing: 'var(--r-exp-seasons-title-ls)',
           margin: 0,
         }}
       >
         四季の楽しみ方
       </h2>
 
-      {/* Season cards row */}
-      <div className="flex w-full" style={{ gap: 20 }}>
+      {/* Season cards grid */}
+      <div className="r-exp-seasons-grid">
         {seasons.map((season) => (
           <div
             key={season.label}
             data-testid="season-card"
-            className="flex flex-1 flex-col overflow-hidden"
+            className="flex flex-col overflow-hidden"
           >
             {/* Image placeholder */}
             <div
               data-testid="season-image"
               className="w-full overflow-hidden"
               style={{
-                height: 280,
+                height: 'var(--r-exp-seasons-card-img-h)',
                 backgroundColor: 'var(--ryokan-light-bg, #EEEBE3)',
               }}
             />

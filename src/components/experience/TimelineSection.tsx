@@ -76,16 +76,15 @@ type TimelineItemProps = {
 function TimelineItem({ time, title, description, align, isLast }: TimelineItemProps) {
   const timeContent = (
     <div
-      className="flex"
+      className="r-exp-timeline-side flex"
       style={{
-        width: 478,
         justifyContent: align === 'left' ? 'flex-end' : 'flex-start',
       }}
     >
       <span
         style={{
           fontFamily: 'var(--font-accent)',
-          fontSize: 20,
+          fontSize: 'var(--r-exp-timeline-time)',
           fontWeight: 700,
           color: 'var(--ryokan-light-gold, #D4C5A0)',
           textAlign: align === 'left' ? 'right' : 'left',
@@ -98,9 +97,8 @@ function TimelineItem({ time, title, description, align, isLast }: TimelineItemP
 
   const infoContent = (
     <div
-      className="flex flex-col"
+      className="r-exp-timeline-side flex flex-col"
       style={{
-        width: 478,
         gap: 8,
         alignItems: align === 'right' ? 'flex-end' : 'flex-start',
       }}
@@ -108,7 +106,7 @@ function TimelineItem({ time, title, description, align, isLast }: TimelineItemP
       <h3
         style={{
           fontFamily: 'var(--font-heading)',
-          fontSize: 18,
+          fontSize: 'var(--r-exp-timeline-item-title)',
           fontWeight: 600,
           color: 'var(--ryokan-cream, #F5F0E8)',
           textAlign: align === 'right' ? 'right' : 'left',
@@ -120,7 +118,7 @@ function TimelineItem({ time, title, description, align, isLast }: TimelineItemP
       <p
         style={{
           fontFamily: 'var(--font-body)',
-          fontSize: 14,
+          fontSize: 'var(--r-exp-timeline-item-body)',
           fontWeight: 300,
           color: 'var(--ryokan-muted-gold, #C4B89A)',
           lineHeight: 1.8,
@@ -134,7 +132,7 @@ function TimelineItem({ time, title, description, align, isLast }: TimelineItemP
   )
 
   const centerColumn = (
-    <div className="flex flex-col items-center" style={{ width: 20 }}>
+    <div className="r-exp-timeline-center flex flex-col items-center" style={{ width: 20 }}>
       <span
         data-testid="timeline-dot"
         className="block rounded-full"
@@ -149,7 +147,7 @@ function TimelineItem({ time, title, description, align, isLast }: TimelineItemP
           className="block"
           style={{
             width: 2,
-            height: 60,
+            height: 'var(--r-exp-timeline-line-h)',
             backgroundColor: 'var(--ryokan-timeline-line, #5A4A30)',
           }}
         />
@@ -159,8 +157,11 @@ function TimelineItem({ time, title, description, align, isLast }: TimelineItemP
 
   return (
     <div
-      className="flex w-full"
-      style={{ gap: 32, padding: '24px 0' }}
+      className="r-exp-timeline-row flex w-full"
+      style={{
+        gap: 'var(--r-exp-timeline-item-gap)',
+        padding: 'var(--r-exp-timeline-item-py) 0',
+      }}
     >
       {align === 'left' ? (
         <>
@@ -193,7 +194,7 @@ export function TimelineSection() {
         className="flex flex-col items-center w-full"
         style={{
           backgroundColor: 'var(--ryokan-overlay-dark, rgba(26, 21, 14, 0.53))',
-          padding: '80px 200px',
+          padding: 'var(--r-exp-timeline-py) var(--r-exp-timeline-px)',
         }}
       >
         {/* Title */}
@@ -201,10 +202,10 @@ export function TimelineSection() {
           className="text-center"
           style={{
             fontFamily: 'var(--font-heading)',
-            fontSize: 28,
+            fontSize: 'var(--r-exp-timeline-title)',
             fontWeight: 600,
             color: 'var(--ryokan-cream, #F5F0E8)',
-            letterSpacing: 4,
+            letterSpacing: 'var(--r-exp-timeline-title-ls)',
             margin: 0,
           }}
         >
@@ -216,7 +217,7 @@ export function TimelineSection() {
           className="text-center"
           style={{
             fontFamily: 'var(--font-accent)',
-            fontSize: 14,
+            fontSize: 'var(--r-exp-timeline-sub-size)',
             fontWeight: 500,
             color: 'var(--ryokan-light-gold, #D4C5A0)',
             letterSpacing: 4,

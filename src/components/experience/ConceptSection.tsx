@@ -5,15 +5,16 @@ export function ConceptSection() {
     <section
       className="w-full"
       style={{
-        backgroundColor: 'var(--ryokan-bg, #FAF8F3)',
+        backgroundImage: 'var(--experience-concept-bg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
       }}
     >
       <div
         className="mx-auto flex flex-col items-center"
         style={{
-          maxWidth: 'var(--content-max-width, 1040px)',
-          padding: '100px 200px',
-          gap: 48,
+          padding: 'var(--r-exp-concept-py) var(--r-exp-concept-px)',
+          gap: 'var(--r-exp-concept-gap)',
         }}
       >
         {/* English label */}
@@ -24,10 +25,10 @@ export function ConceptSection() {
           className="text-center"
           style={{
             fontFamily: 'var(--font-heading)',
-            fontSize: 32,
+            fontSize: 'var(--r-exp-concept-title)',
             fontWeight: 600,
             color: 'var(--ryokan-dark, #2C2418)',
-            letterSpacing: 6,
+            letterSpacing: 'var(--r-exp-concept-title-ls)',
           }}
         >
           時の流れに身を委ねて。
@@ -35,15 +36,15 @@ export function ConceptSection() {
 
         {/* Body text */}
         <div
-          className="flex flex-col items-center text-center"
+          className="r-exp-concept-body flex flex-col items-center"
           style={{
             fontFamily: 'var(--font-body)',
-            fontSize: 16,
+            fontSize: 'var(--r-exp-concept-body)',
             fontWeight: 300,
             color: 'var(--ryokan-secondary, #6B5D4F)',
-            letterSpacing: 1.5,
-            lineHeight: 2.4,
-            maxWidth: 600,
+            letterSpacing: 'var(--r-exp-concept-body-ls)',
+            lineHeight: 'var(--r-exp-concept-body-lh)',
+            maxWidth: 'var(--r-exp-concept-body-w)',
             gap: 24,
           }}
         >
