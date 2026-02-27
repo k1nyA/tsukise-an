@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const facilities = [
   {
     title: 'ラウンジ「月影」',
@@ -22,11 +24,16 @@ export function FacilitiesSection() {
       {/* Left: Image */}
       <div
         data-testid="facility-image"
-        className="r-exp-facility-img overflow-hidden"
-        style={{
-          backgroundColor: 'var(--ryokan-light-bg, #EEEBE3)',
-        }}
-      />
+        className="r-exp-facility-img relative overflow-hidden"
+      >
+        <Image
+          src="/images/experience-facilities-main.png"
+          alt="館内施設"
+          fill
+          className="object-cover"
+          sizes="(max-width: 767px) 100vw, 640px"
+        />
+      </div>
 
       {/* Right: Content */}
       <div

@@ -185,7 +185,7 @@ export function TimelineSection() {
     <section
       className="w-full flex flex-col"
       style={{
-        backgroundImage: 'var(--experience-timeline-bg)',
+        backgroundImage: 'url(/images/experience-timeline-bg.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}

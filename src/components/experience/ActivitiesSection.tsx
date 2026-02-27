@@ -24,7 +24,7 @@ export function ActivitiesSection() {
     <section
       className="flex w-full flex-col items-center"
       style={{
-        backgroundImage: 'var(--experience-activities-bg)',
+        backgroundImage: 'url(/images/experience-activities-bg.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         padding: 'var(--r-exp-act-py) var(--r-exp-act-px)',
