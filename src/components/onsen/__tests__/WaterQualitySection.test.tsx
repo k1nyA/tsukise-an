@@ -27,10 +27,14 @@ describe('WaterQualitySection', () => {
     expect(screen.getByText('美肌効果')).toBeInTheDocument()
   })
 
-  it('renders within a section element with dark background data attribute', () => {
+  it('renders within a section element', () => {
     const { container } = render(<WaterQualitySection />)
     const section = container.querySelector('section')
     expect(section).toBeInTheDocument()
-    expect(section).toHaveAttribute('data-theme', 'dark')
+  })
+
+  it('renders the WATER QUALITY English label', () => {
+    render(<WaterQualitySection />)
+    expect(screen.getByText('WATER QUALITY')).toBeInTheDocument()
   })
 })

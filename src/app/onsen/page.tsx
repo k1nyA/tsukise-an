@@ -8,6 +8,7 @@ import {
   WaterQualitySection,
   BathTypesSection,
   MannerSection,
+  OnsenLinksSection,
 } from '@/components/onsen'
 
 export default function OnsenPage() {
@@ -26,6 +27,7 @@ export default function OnsenPage() {
         <BathTypesSection />
         <WaterQualitySection />
         <MannerSection />
+        <OnsenLinksSection />
         <CTASection />
       </main>
       <Footer />
