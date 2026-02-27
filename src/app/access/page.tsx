@@ -17,6 +17,7 @@ export default function AccessPage() {
           title="アクセス"
           labelEn="ACCESS"
           subtitle="箱根・芦ノ湖畔の隠れ宿へ"
+          backgroundImage="/images/access-hero.png"
         />
         <Breadcrumb
           items={[

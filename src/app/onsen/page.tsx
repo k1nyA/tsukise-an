@@ -16,7 +16,7 @@ export default function OnsenPage() {
     <div className="ryokan-page">
       <Header />
       <main>
-        <PageHero title="温泉" labelEn="ONSEN" />
+        <PageHero title="温泉" labelEn="ONSEN" backgroundImage="/images/onsen-hero.png" />
         <Breadcrumb
           items={[
             { label: 'ホーム', href: '/' },

@@ -3,6 +3,7 @@
 @import "../lib/css/index.css";
 @import "../lib/css/ryokan-theme.css";
 @import "../lib/css/ryokan-responsive.css";
+@import "../components/rooms/rooms-responsive.css";
 @import "../components/cuisine/cuisine-responsive.css";
 @import "../components/onsen/onsen-responsive.css";
 @import "../components/experience/experience-responsive.css";

@@ -5,25 +5,25 @@ const rooms = [
     labelEn: 'TSUKIMI',
     name: '月見の間',
     price: '¥85,000〜 / 1泊2食付',
-    image: '/images/rooms/tsukimi.jpg',
+    image: '/images/rooms-tsukimi-main.png',
   },
   {
     labelEn: 'KACHO',
     name: '花鳥の間',
     price: '¥65,000〜 / 1泊2食付',
-    image: '/images/rooms/kacho.jpg',
+    image: '/images/rooms-kacho-main.png',
   },
   {
     labelEn: 'FUGA',
     name: '風雅の間',
     price: '¥55,000〜 / 1泊2食付',
-    image: '/images/rooms/fuga.jpg',
+    image: '/images/rooms-fuga-main.png',
   },
   {
     labelEn: 'MIKAGAMI',
     name: '水鏡の間',
     price: '¥45,000〜 / 1泊2食付',
-    image: '/images/rooms/mikagami.jpg',
+    image: '/images/rooms-mikagami-main.png',
   },
 ]
 

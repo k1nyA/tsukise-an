@@ -18,7 +18,7 @@ export default function CuisinePage() {
     <div className="ryokan-page">
       <Header />
       <main>
-        <PageHero title="お料理" labelEn="CUISINE" />
+        <PageHero title="お料理" labelEn="CUISINE" backgroundImage="/images/cuisine-hero.png" />
         <Breadcrumb
           items={[
             { label: 'ホーム', href: '/' },
