@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 type AmenityItem = {
   title: string
   description: string
@@ -45,13 +47,19 @@ export function AmenitiesSection() {
       {/* Amenities grid section */}
       <section
         className="flex w-full flex-col items-center"
-        style={{ padding: 80, gap: 48 }}
+        style={{
+          padding: 'var(--r-rooms-amen-padding)',
+          gap: 'var(--r-rooms-amen-gap)',
+          backgroundImage: 'url(/images/rooms-amenities-bg.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
       >
         {/* Section heading */}
         <h2
           style={{
             fontFamily: 'var(--font-heading)',
-            fontSize: 28,
+            fontSize: 'var(--r-rooms-amen-title)',
             fontWeight: 600,
             color: 'var(--ryokan-dark, #2C2418)',
             letterSpacing: 4,
@@ -61,12 +69,15 @@ export function AmenitiesSection() {
         </h2>
 
         {/* Amenity cards grid */}
-        <div className="flex w-full" style={{ gap: 40 }}>
+        <div
+          className="r-rooms-amenity-grid"
+          style={{ gap: 'var(--r-rooms-amen-grid-gap)' }}
+        >
           {amenities.map((amenity) => (
             <div
               key={amenity.title}
               className="flex flex-col items-center"
-              style={{ flex: '1 1 0', gap: 16 }}
+              style={{ flex: '1 1 0', gap: 16, minWidth: 0 }}
             >
               {/* Icon placeholder */}
               <div
@@ -112,25 +123,31 @@ export function AmenitiesSection() {
       </section>
 
       {/* Facilities section - dark background with image */}
-      <section className="flex w-full overflow-hidden" style={{ height: 480 }}>
-        {/* Image placeholder */}
+      <section className="r-rooms-facilities-layout">
+        {/* Image */}
         <div
-          aria-label="客室設備のイメージ"
+          className="r-rooms-fac-img relative overflow-hidden"
           style={{
-            width: 640,
             height: 480,
             backgroundColor: 'var(--ryokan-darkest, #1A150E)',
-            flexShrink: 0,
           }}
-        />
+        >
+          <Image
+            src="/images/rooms-facilities-main.png"
+            alt="客室設備のイメージ"
+            fill
+            className="object-cover"
+            sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 640px"
+          />
+        </div>
 
         {/* Facilities content */}
         <div
           className="flex flex-1 flex-col justify-center"
           style={{
             backgroundColor: 'var(--ryokan-dark, #2C2418)',
-            padding: 60,
-            gap: 32,
+            padding: 'var(--r-rooms-fac-padding)',
+            gap: 'var(--r-rooms-fac-gap)',
           }}
         >
           {/* Label */}
@@ -160,7 +177,7 @@ export function AmenitiesSection() {
           <h3
             style={{
               fontFamily: 'var(--font-heading)',
-              fontSize: 28,
+              fontSize: 'var(--r-rooms-fac-title)',
               fontWeight: 600,
               color: 'var(--ryokan-text-on-dark, #FAF8F3)',
               letterSpacing: 4,
@@ -170,7 +187,7 @@ export function AmenitiesSection() {
           </h3>
 
           {/* Facility columns */}
-          <div className="flex w-full" style={{ gap: 40 }}>
+          <div className="flex w-full" style={{ gap: 'var(--r-rooms-fac-col-gap)' }}>
             {facilities.map((col) => (
               <div
                 key={col.title}

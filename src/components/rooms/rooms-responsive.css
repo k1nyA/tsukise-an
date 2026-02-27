@@ -1,0 +1,222 @@
+/* ===========================================
+   Rooms Page Responsive CSS Variables & Classes
+   Breakpoints: Mobile(<768) / Tablet(768-1023) / PC(>=1024)
+   =========================================== */
+
+/* --- PC (default, >= 1024px) --- */
+:root {
+  /* Concept Section */
+  --r-rooms-concept-py: 100px;
+  --r-rooms-concept-px: 200px;
+  --r-rooms-concept-gap: 48px;
+  --r-rooms-concept-title: 32px;
+  --r-rooms-concept-title-ls: 6px;
+  --r-rooms-concept-body: 16px;
+  --r-rooms-concept-body-lh: 2.4;
+  --r-rooms-concept-body-width: 600px;
+
+  /* Room Grid Section */
+  --r-rooms-grid-py-top: 40px;
+  --r-rooms-grid-py-bottom: 100px;
+  --r-rooms-grid-gap: 32px;
+  --r-rooms-card-img-h: 320px;
+  --r-rooms-card-gap: 24px;
+  --r-rooms-card-name: 22px;
+  --r-rooms-card-py: 28px;
+  --r-rooms-card-px: 24px;
+
+  /* Amenities Section */
+  --r-rooms-amen-padding: 80px;
+  --r-rooms-amen-gap: 48px;
+  --r-rooms-amen-grid-gap: 40px;
+  --r-rooms-amen-title: 28px;
+
+  /* Facilities Section */
+  --r-rooms-fac-padding: 60px;
+  --r-rooms-fac-gap: 32px;
+  --r-rooms-fac-title: 28px;
+  --r-rooms-fac-col-gap: 40px;
+
+  /* Vacancy Link */
+  --r-rooms-vacancy-py: 24px;
+
+  /* Related Links */
+  --r-rooms-related-gap: 60px;
+  --r-rooms-related-py: 40px;
+}
+
+/* --- Tablet (768px - 1023px) --- */
+@media (max-width: 1023px) {
+  :root {
+    /* Concept Section */
+    --r-rooms-concept-py: 80px;
+    --r-rooms-concept-px: 100px;
+    --r-rooms-concept-gap: 40px;
+    --r-rooms-concept-title: 28px;
+    --r-rooms-concept-title-ls: 4px;
+    --r-rooms-concept-body: 15px;
+    --r-rooms-concept-body-lh: 2.2;
+    --r-rooms-concept-body-width: 500px;
+
+    /* Room Grid Section */
+    --r-rooms-grid-py-top: 32px;
+    --r-rooms-grid-py-bottom: 80px;
+    --r-rooms-grid-gap: 24px;
+    --r-rooms-card-img-h: 240px;
+    --r-rooms-card-gap: 16px;
+    --r-rooms-card-name: 20px;
+    --r-rooms-card-py: 24px;
+    --r-rooms-card-px: 20px;
+
+    /* Amenities Section */
+    --r-rooms-amen-padding: 60px;
+    --r-rooms-amen-gap: 40px;
+    --r-rooms-amen-grid-gap: 24px;
+    --r-rooms-amen-title: 24px;
+
+    /* Facilities Section */
+    --r-rooms-fac-padding: 40px;
+    --r-rooms-fac-gap: 24px;
+    --r-rooms-fac-title: 24px;
+    --r-rooms-fac-col-gap: 24px;
+
+    /* Vacancy Link */
+    --r-rooms-vacancy-py: 20px;
+
+    /* Related Links */
+    --r-rooms-related-gap: 40px;
+    --r-rooms-related-py: 32px;
+  }
+}
+
+/* --- Mobile (< 768px) --- */
+@media (max-width: 767px) {
+  :root {
+    /* Concept Section */
+    --r-rooms-concept-py: 60px;
+    --r-rooms-concept-px: 24px;
+    --r-rooms-concept-gap: 32px;
+    --r-rooms-concept-title: 24px;
+    --r-rooms-concept-title-ls: 3px;
+    --r-rooms-concept-body: 14px;
+    --r-rooms-concept-body-lh: 2.2;
+    --r-rooms-concept-body-width: 100%;
+
+    /* Room Grid Section */
+    --r-rooms-grid-py-top: 24px;
+    --r-rooms-grid-py-bottom: 60px;
+    --r-rooms-grid-gap: 20px;
+    --r-rooms-card-img-h: 200px;
+    --r-rooms-card-gap: 16px;
+    --r-rooms-card-name: 18px;
+    --r-rooms-card-py: 20px;
+    --r-rooms-card-px: 16px;
+
+    /* Amenities Section */
+    --r-rooms-amen-padding: 40px 24px;
+    --r-rooms-amen-gap: 32px;
+    --r-rooms-amen-grid-gap: 24px;
+    --r-rooms-amen-title: 22px;
+
+    /* Facilities Section */
+    --r-rooms-fac-padding: 32px 24px;
+    --r-rooms-fac-gap: 20px;
+    --r-rooms-fac-title: 22px;
+    --r-rooms-fac-col-gap: 24px;
+
+    /* Vacancy Link */
+    --r-rooms-vacancy-py: 16px;
+
+    /* Related Links */
+    --r-rooms-related-gap: 20px;
+    --r-rooms-related-py: 24px;
+  }
+}
+
+/* ===========================================
+   Rooms Page Responsive Layout Classes
+   =========================================== */
+
+/* Room Grid: 2-col (PC/Tablet) → 1-col (Mobile) */
+.r-rooms-grid-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .r-rooms-grid-row {
+    flex-direction: column;
+  }
+}
+
+/* Amenity Grid: 3-col row (PC/Tablet) → 1-col (Mobile) */
+.r-rooms-amenity-grid {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .r-rooms-amenity-grid {
+    flex-direction: column;
+  }
+}
+
+/* Facilities Layout: row (PC/Tablet) → column (Mobile) */
+.r-rooms-facilities-layout {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .r-rooms-facilities-layout {
+    flex-direction: column;
+  }
+}
+
+/* Facilities image: fixed width on PC/Tablet, full width on Mobile */
+.r-rooms-fac-img {
+  width: 640px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1023px) {
+  .r-rooms-fac-img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .r-rooms-fac-img {
+    width: 100%;
+    height: 280px;
+  }
+}
+
+/* Related Links: row (PC/Tablet) → column (Mobile) */
+.r-rooms-related-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .r-rooms-related-layout {
+    flex-direction: column;
+  }
+}
+
+/* Concept body: center on PC/Tablet, left on Mobile */
+.r-rooms-concept-body {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .r-rooms-concept-body {
+    text-align: left;
+  }
+}
