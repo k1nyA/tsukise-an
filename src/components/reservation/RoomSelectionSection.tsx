@@ -33,7 +33,7 @@ export function RoomSelectionSection() {
       className="flex w-full flex-col items-center"
       style={{
         backgroundColor: 'var(--ryokan-bg, #FAF8F3)',
-        padding: '60px 80px 80px 80px',
+        padding: 'var(--r-resv-rooms-pt) var(--r-resv-rooms-px) var(--r-resv-rooms-pb)',
         gap: 32,
       }}
     >
@@ -49,12 +49,12 @@ export function RoomSelectionSection() {
         客室タイプを選択してください
       </h2>
 
-      <div className="flex w-full" style={{ gap: 20 }}>
+      <div className="r-resv-rooms-grid">
         {rooms.map((room) => (
           <div
             key={room.labelEn}
             data-testid="room-card"
-            className="flex flex-1 flex-col overflow-hidden"
+            className="flex flex-col overflow-hidden"
             style={{
               borderRadius: 4,
               border: '1px solid rgba(212, 197, 160, 0.13)',
@@ -69,6 +69,7 @@ export function RoomSelectionSection() {
                 src={room.image}
                 alt={room.name}
                 fill
+                sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 25vw"
                 style={{ objectFit: 'cover' }}
               />
             </div>

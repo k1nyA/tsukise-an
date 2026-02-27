@@ -22,7 +22,7 @@ export function BookingMethodsSection() {
       className="flex w-full flex-col items-center"
       style={{
         backgroundColor: 'var(--ryokan-bg, #FAF8F3)',
-        padding: '60px 120px',
+        padding: 'var(--r-resv-booking-py) var(--r-resv-booking-px)',
         gap: 32,
       }}
     >
@@ -38,12 +38,12 @@ export function BookingMethodsSection() {
         ご予約方法
       </h2>
 
-      <div className="flex w-full" style={{ gap: 24 }}>
+      <div className="r-resv-booking-grid">
         {methods.map((method) => (
           <div
             key={method.name}
             data-testid="booking-method-card"
-            className="flex flex-1 flex-col items-center"
+            className="flex flex-col items-center"
             style={{
               backgroundColor: 'var(--ryokan-light-bg, #F0EBE0)',
               borderRadius: 4,

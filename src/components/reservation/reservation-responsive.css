@@ -1,0 +1,192 @@
+/* ===========================================
+   Reservation Page Responsive CSS Variables
+   Breakpoints: Mobile(<768) / Tablet(768-1023) / PC(>=1024)
+   =========================================== */
+
+/* --- PC (default, >= 1024px) --- */
+:root {
+  /* Booking Flow Introduction */
+  --r-resv-intro-py: 80px;
+  --r-resv-intro-px: 200px;
+
+  /* Booking Methods */
+  --r-resv-booking-py: 60px;
+  --r-resv-booking-px: 120px;
+
+  /* Room Selection */
+  --r-resv-rooms-pt: 60px;
+  --r-resv-rooms-px: 80px;
+  --r-resv-rooms-pb: 80px;
+
+  /* Stay Plans */
+  --r-resv-plans-py: 80px;
+  --r-resv-plans-px: 120px;
+
+  /* Calendar Widget */
+  --r-resv-calendar-py: 60px;
+  --r-resv-calendar-px: 120px;
+
+  /* Policy */
+  --r-resv-policy-py: 60px;
+  --r-resv-policy-px: 120px;
+}
+
+/* --- Tablet (768px - 1023px) --- */
+@media (max-width: 1023px) {
+  :root {
+    --r-resv-intro-py: 60px;
+    --r-resv-intro-px: 100px;
+
+    --r-resv-booking-py: 60px;
+    --r-resv-booking-px: 80px;
+
+    --r-resv-rooms-pt: 60px;
+    --r-resv-rooms-px: 60px;
+    --r-resv-rooms-pb: 80px;
+
+    --r-resv-plans-py: 60px;
+    --r-resv-plans-px: 80px;
+
+    --r-resv-calendar-py: 60px;
+    --r-resv-calendar-px: 80px;
+
+    --r-resv-policy-py: 60px;
+    --r-resv-policy-px: 80px;
+  }
+}
+
+/* --- Mobile (< 768px) --- */
+@media (max-width: 767px) {
+  :root {
+    --r-resv-intro-py: 40px;
+    --r-resv-intro-px: 24px;
+
+    --r-resv-booking-py: 40px;
+    --r-resv-booking-px: 24px;
+
+    --r-resv-rooms-pt: 40px;
+    --r-resv-rooms-px: 24px;
+    --r-resv-rooms-pb: 60px;
+
+    --r-resv-plans-py: 60px;
+    --r-resv-plans-px: 24px;
+
+    --r-resv-calendar-py: 60px;
+    --r-resv-calendar-px: 24px;
+
+    --r-resv-policy-py: 40px;
+    --r-resv-policy-px: 24px;
+  }
+}
+
+/* ===========================================
+   Reservation Step Flow
+   PC: horizontal row | Tablet/Mobile: vertical column
+   =========================================== */
+
+.r-resv-steps {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 40px;
+}
+
+.r-resv-step-arrow {
+  display: block;
+}
+
+@media (max-width: 1023px) {
+  .r-resv-steps {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .r-resv-step-arrow {
+    display: none;
+  }
+}
+
+/* ===========================================
+   Booking Methods Grid
+   PC/Tablet: 3 columns | Mobile: 1 column
+   =========================================== */
+
+.r-resv-booking-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .r-resv-booking-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===========================================
+   Room Selection Grid
+   PC: 4 columns | Tablet: 2 columns | Mobile: 1 column
+   =========================================== */
+
+.r-resv-rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+@media (max-width: 1023px) {
+  .r-resv-rooms-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .r-resv-rooms-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===========================================
+   Plans Grid
+   PC: 3 columns | Tablet: 3 columns | Mobile: 1 column
+   =========================================== */
+
+.r-resv-plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .r-resv-plans-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===========================================
+   Policy Columns
+   PC/Tablet: 3 columns row | Mobile: 1 column stack
+   =========================================== */
+
+.r-resv-policy-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  width: 100%;
+}
+
+.r-resv-policy-grid > * {
+  flex: 1;
+}
+
+@media (max-width: 767px) {
+  .r-resv-policy-grid {
+    flex-direction: column;
+    gap: 32px;
+  }
+}

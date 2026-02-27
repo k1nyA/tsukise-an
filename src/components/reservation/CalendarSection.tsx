@@ -16,7 +16,7 @@ export function CalendarSection() {
       className="flex w-full flex-col items-center"
       style={{
         backgroundColor: 'var(--ryokan-light-bg, #F0EBE0)',
-        padding: '60px 120px',
+        padding: 'var(--r-resv-calendar-py) var(--r-resv-calendar-px)',
         gap: 32,
       }}
     >

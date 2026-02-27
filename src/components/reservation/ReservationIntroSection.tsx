@@ -12,7 +12,7 @@ export function ReservationIntroSection() {
       className="flex w-full flex-col items-center"
       style={{
         backgroundColor: 'var(--ryokan-bg, #FAF8F3)',
-        padding: '80px 200px',
+        padding: 'var(--r-resv-intro-py) var(--r-resv-intro-px)',
         gap: 32,
       }}
     >
@@ -31,15 +31,13 @@ export function ReservationIntroSection() {
         ご予約の流れ
       </h2>
 
-      <div
-        className="flex w-full items-center justify-center"
-        style={{ gap: 40 }}
-      >
+      <div className="r-resv-steps">
         {steps.map((step, index) => (
           <div key={step.number} className="flex items-center" style={{ gap: 40 }}>
             {/* Arrow before step (except first) */}
             {index > 0 && (
               <span
+                className="r-resv-step-arrow"
                 data-testid="step-arrow"
                 style={{
                   fontFamily: 'var(--font-accent)',
