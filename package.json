@@ -13,6 +13,8 @@
     "test": "vitest",
     "test:run": "vitest run",
     "test:ci": "vitest run --reporter=verbose",
+    "test:jest": "npx jest --config jest.config.cjs --runInBand --passWithNoTests",
+    "test:jest:ci": "npx jest --config jest.config.cjs --ci --runInBand --passWithNoTests",
     "test:backend:smoke": "node scripts/backend-e2e-smoke.mjs",
     "preflight:claude": "bash scripts/claude-preflight.sh",
     "verify": "npm run lint && npm run typecheck && npm run build",

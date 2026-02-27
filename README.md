@@ -39,6 +39,13 @@ To get started visit this url [here](https://liftkit.pages.dev/) and copy any co
 
 To learn more about how to use liftkit please visit our docs [here](https://locrian-challenge-f8e.notion.site/)
 
+## Testing Policy
+
+- Default runner: `Vitest` (`npm test`, `npm run test:run`)
+- Optional Jest lane: `npm run test:jest`
+  - Jest targets only `*.jest.test.*` files.
+  - Existing `*.test.*` and `*.spec.*` files are Vitest suites and should be run with Vitest.
+
 <!-- MARKDOWN LINKS & IMAGES -->
 
 [nextjs-shield]: https://img.shields.io/badge/Next.js-000000.svg?style=for-the-badge&logo=next.js&logoColor=white
