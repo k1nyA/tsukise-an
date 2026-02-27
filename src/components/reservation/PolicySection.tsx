@@ -22,7 +22,7 @@ export function PolicySection() {
       className="flex w-full flex-col"
       style={{
         backgroundColor: 'var(--ryokan-bg, #FAF8F3)',
-        padding: '60px 120px',
+        padding: 'var(--r-resv-policy-py) var(--r-resv-policy-px)',
         gap: 32,
       }}
     >
@@ -38,12 +38,12 @@ export function PolicySection() {
         ご予約に関するご注意
       </h2>
 
-      <div className="flex w-full" style={{ gap: 40 }}>
+      <div className="r-resv-policy-grid">
         {policies.map((policy) => (
           <div
             key={policy.title}
             data-testid="policy-column"
-            className="flex flex-1 flex-col"
+            className="flex flex-col"
             style={{ gap: 16 }}
           >
             <h3

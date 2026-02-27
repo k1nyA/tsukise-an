@@ -27,7 +27,7 @@ export function PlanSection() {
       className="flex w-full flex-col items-center"
       style={{
         backgroundColor: 'var(--ryokan-light-bg, #F0EBE0)',
-        padding: '80px 120px',
+        padding: 'var(--r-resv-plans-py) var(--r-resv-plans-px)',
         gap: 40,
       }}
     >
@@ -43,12 +43,12 @@ export function PlanSection() {
         宿泊プラン
       </h2>
 
-      <div className="flex w-full" style={{ gap: 24 }}>
+      <div className="r-resv-plans-grid">
         {plans.map((plan) => (
           <div
             key={plan.name}
             data-testid="plan-card"
-            className="flex flex-1 flex-col overflow-hidden"
+            className="flex flex-col overflow-hidden"
             style={{
               backgroundColor: 'var(--ryokan-bg, #FAF8F3)',
               borderRadius: 4,
@@ -68,6 +68,7 @@ export function PlanSection() {
                 src={plan.image}
                 alt={plan.name}
                 fill
+                sizes="(max-width: 767px) 100vw, (max-width: 1023px) 33vw, 33vw"
                 style={{ objectFit: 'cover' }}
               />
             </div>
