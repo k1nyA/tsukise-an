@@ -169,7 +169,7 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
         </h2>
 
         {/* Address & Transport Info */}
-        <div className="flex flex-col w-full" style={{ gap: 24 }}>
+        <div className="r-info-access-row flex w-full" style={{ gap: 'var(--r-info-access-row-gap)' }}>
           <p
             style={{
               fontFamily: 'var(--font-body)',
@@ -192,7 +192,7 @@ export function InfoSection({ newsItems }: InfoSectionProps) {
           </p>
 
           {/* Access Methods */}
-          <div className="flex flex-col" style={{ gap: 12 }}>
+          <div className="flex flex-1 flex-col" style={{ gap: 12 }}>
             <div className="flex items-center" style={{ gap: 12 }}>
               <Car size={16} color="var(--ryokan-gold)" aria-hidden="true" />
               <span

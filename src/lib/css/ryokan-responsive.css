@@ -129,6 +129,7 @@
   /* Info */
   --r-info-padding: 80px;
   --r-info-gap: 60px;
+  --r-info-access-row-gap: 24px;
   --r-map-h: 200px;
 
   /* Header nav */
@@ -246,6 +247,7 @@
 
     --r-info-padding: 48px;
     --r-info-gap: 40px;
+    --r-info-access-row-gap: 32px;
 
     --r-nav-gap: 24px;
     --r-nav-size: 12px;
@@ -378,6 +380,7 @@
 
     --r-info-padding: 32px;
     --r-info-gap: 32px;
+    --r-info-access-row-gap: 24px;
     --r-map-h: 180px;
 
     /* Access page — Address Section */
@@ -447,6 +450,12 @@
   flex-shrink: 0;
 }
 
+/* Info access row: address + transport side by side (PC/Tablet), column on mobile */
+.r-info-access-row {
+  flex-direction: row;
+  align-items: flex-end;
+}
+
 /* CTA buttons: row → column on mobile */
 .r-cta-btns {
   display: flex;
@@ -482,6 +491,10 @@
   }
   .r-grid-row {
     flex-direction: column;
+  }
+  .r-info-access-row {
+    flex-direction: column;
+    align-items: stretch;
   }
 }
 
