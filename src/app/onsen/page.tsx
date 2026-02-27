@@ -7,6 +7,7 @@ import {
   ConceptSection,
   WaterQualitySection,
   BathTypesSection,
+  OnsenGuideSection,
   MannerSection,
   OnsenLinksSection,
 } from '@/components/onsen'
@@ -16,7 +17,12 @@ export default function OnsenPage() {
     <div className="ryokan-page">
       <Header />
       <main>
-        <PageHero title="温泉" labelEn="ONSEN" backgroundImage="/images/onsen-hero.png" />
+        <PageHero
+          title="湖を望む湯処"
+          labelEn="ONSEN"
+          subtitle="姥子温泉の恵み、芦ノ湖の絶景とともに"
+          backgroundImage="/images/onsen-hero.png"
+        />
         <Breadcrumb
           items={[
             { label: 'ホーム', href: '/' },
@@ -26,6 +32,7 @@ export default function OnsenPage() {
         <ConceptSection />
         <BathTypesSection />
         <WaterQualitySection />
+        <OnsenGuideSection />
         <MannerSection />
         <OnsenLinksSection />
         <CTASection />

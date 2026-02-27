@@ -1,5 +1,6 @@
 export { ConceptSection } from './ConceptSection'
 export { WaterQualitySection } from './WaterQualitySection'
 export { BathTypesSection } from './BathTypesSection'
+export { OnsenGuideSection } from './OnsenGuideSection'
 export { MannerSection } from './MannerSection'
 export { OnsenLinksSection } from './OnsenLinksSection'
