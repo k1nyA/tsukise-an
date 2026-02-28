@@ -1050,3 +1050,66 @@ Lesson #39 のチェックリストに追加:
 4. C() で新 reusable フレームをコピー → `type: "ref"` のインスタンスが正しく作成される
 
 **注意**: R()（Replace）や I() で `type: "ref"` を指定しても、参照先が reusable でない場合は `type: "frame"` に展開される。
+
+### 45. CSS変数で背景画像を参照してはいけない
+
+**問題**: `backgroundImage: 'var(--experience-concept-bg)'` のように CSS 変数で背景画像パスを参照するコードが、変数未定義のため画像が表示されない。
+
+**根本原因**: 背景画像パスの CSS 変数がどの CSS ファイルにも定義されていなかった。他のページでは直接 `url(/images/...)` を使っている。
+
+**ルール**: 背景画像は必ず直接 `url(/images/filename.png)` で指定する。CSS 変数化しない。
+
+### 46. design/images/ がマスター画像ストア
+
+**事実**: .pen ファイル作成時に G() オペレーションで生成された画像は `design/images/generated-*.png` として保存される。コード実装時はここから `public/images/` にリネームコピーする。
+
+**ルール**: 画像が見つからない場合、まず `design/images/` を確認する。
+
+### 47. .pen に存在しないデータをコードに追加してはいけない（SSOT違反）
+
+**問題**: KaisekiMenuSection に9品あったが .pen には6品しかなく、3品は AI が勝手に追加したデータだった。
+
+**ルール**: .pen が SSOT。コンテンツデータ（メニュー項目、客室リスト等）は .pen の内容のみ使用する。
+
+### 48. Unsplash stock 画像はダウンロードが必要
+
+**問題**: .pen の G() で `"stock"` タイプで取得した画像は外部 Unsplash URL として保存される（ローカルファイルではない）。
+
+**ルール**: `batch_get` で画像 URL が `https://images.unsplash.com/...` の場合、curl でダウンロードして `public/images/` に保存する。
+
+### 49. 並列サブエージェントは globals.css でマージコンフリクトを起こす
+
+**問題**: 全サブエージェントが同じ `globals.css` に CSS import を追加するため、マージ時にコンフリクトが発生する。
+
+**対策**: globals.css への import 追加は最後にオーケストレーターがまとめて行う。または各ページの CSS を page.tsx 側で import する。
+
+### 50. サブエージェントがセクションを丸ごと実装し忘れることがある
+
+**問題**: rooms ページで vacancyWrap と Facilities セクション、onsen ページで OnsenGuide セクションが未実装だったが、CSS 変数とレイアウトクラスは作成済みだった。
+
+**根本原因**: サブエージェントが CSS 変数を先に定義したが、対応するコンポーネントの作成を忘れた。page.tsx への import も漏れた。
+
+**ルール**: 実装後に .pen の全セクション ID を page.tsx の全コンポーネントと突合する構造監査を必ず行う。
+
+### 51. Hero の title/subtitle は .pen SSOT に合わせる
+
+**問題**: 全7サブページの Hero タイトルが簡潔なページ名（「客室」「温泉」等）で実装されたが、.pen では詩的なタイトル（「全八室の離れ」「湖を望む湯処」等）+ subtitle が定義されていた。
+
+**ルール**: PageHero の title と subtitle は必ず .pen の heroTitle/heroSub テキストから取得する。Breadcrumb の label は簡潔な名前でよい（ナビゲーション用途のため）。
+
+### 52. サブエージェントのハルシネーション検証
+
+**問題**: 並列サブエージェントが実装した WaterQualitySection のデータが .pen SSOT と完全に異なっていた（泉質名、pH値、温度、効能の項目数・内容すべて間違い）。構造も3項目flex + 別立て効能セクションという設計と異なる形だった。
+
+**教訓**:
+- サブエージェントが生成したデータは必ず .pen SSOT と突き合わせて検証する
+- 特に固有名詞（温泉名、泉質名）や数値（温度、pH）はハルシネーションリスクが高い
+- 構造（カード数、レイアウト方向、分離セクションの有無）も検証が必要
+
+### 53. .pen の alignItems/textAlign を見落とさない
+
+**問題**: WaterQualitySection を .pen に合わせて書き直した際、カード内テキストの中央揃え（alignItems: "center", justifyContent: "center", textAlign: "center"）を見落とし、左揃えで実装してしまった。
+
+**教訓**:
+- .pen のレイアウトプロパティ確認時、alignItems/justifyContent/textAlign も必ずチェックする
+- 特にカードコンポーネントは content alignment が重要
