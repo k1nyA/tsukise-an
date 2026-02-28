@@ -1,22 +1,27 @@
 import Image from 'next/image'
+import { Bath, Sparkles, Moon, type LucideIcon } from 'lucide-react'
 
 type AmenityItem = {
+  icon: LucideIcon
   title: string
   description: string
 }
 
 const amenities: AmenityItem[] = [
   {
+    icon: Bath,
     title: '源泉掛け流し露天風呂',
     description:
       '全室に専用の露天風呂を完備。\n姥子温泉の源泉を\nそのままお愉しみいただけます。',
   },
   {
+    icon: Sparkles,
     title: 'こだわりの調度品',
     description:
       '地元・箱根寄木細工の家具や\n有田焼の茶器など、\n日本の伝統工芸に触れる滞在を。',
   },
   {
+    icon: Moon,
     title: '月見テラス',
     description:
       '各離れに設えた専用テラスから\n芦ノ湖に浮かぶ月を独占。\n季節の移ろいを五感で感じて。',
@@ -79,14 +84,11 @@ export function AmenitiesSection() {
               className="flex flex-col items-center"
               style={{ flex: '1 1 0', gap: 16, minWidth: 0 }}
             >
-              {/* Icon placeholder */}
-              <div
-                aria-label={amenity.title}
-                style={{
-                  width: 32,
-                  height: 32,
-                  color: 'var(--ryokan-gold, #8B6914)',
-                }}
+              {/* Icon */}
+              <amenity.icon
+                size={32}
+                color="var(--ryokan-gold, #8B6914)"
+                aria-hidden="true"
               />
 
               {/* Amenity title */}
