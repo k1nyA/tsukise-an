@@ -47,12 +47,12 @@ export function WaterQualitySection() {
           {qualityCards.map((card) => (
             <div
               key={card.label}
-              className="flex flex-col"
+              className="flex flex-col items-center justify-center text-center"
               style={{
                 backgroundColor: '#3A3020',
                 minHeight: 168,
                 padding: '24px 32px',
-                gap: 12,
+                gap: 20,
               }}
             >
               <span
