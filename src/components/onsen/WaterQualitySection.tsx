@@ -1,16 +1,10 @@
 import { SectionLabel } from '@/components/shared/SectionLabel'
 
-const efficacyItems = [
-  '神経痛・筋肉痛',
-  '疲労回復',
-  '冷え性改善',
-  '美肌効果',
-] as const
-
-const qualityInfo = [
-  { label: '泉質', value: 'アルカリ性単純温泉' },
-  { label: 'pH値', value: 'pH 8.5' },
-  { label: '源泉温度', value: '62℃' },
+const qualityCards = [
+  { label: '源泉名', value: '姥子温泉\n（うばこおんせん）' },
+  { label: '泉質', value: '単純硫黄泉' },
+  { label: '泉温', value: '源泉 62.3℃\n浴槽 41〜43℃' },
+  { label: '効能', value: '神経痛・筋肉痛\n関節痛・冷え性\n美肌効果' },
 ] as const
 
 export function WaterQualitySection() {
@@ -48,75 +42,44 @@ export function WaterQualitySection() {
           泉質と効能
         </h2>
 
-        {/* Quality info grid */}
+        {/* Quality info card grid */}
         <div className="r-onsen-wq-info-grid w-full">
-          {qualityInfo.map((item) => (
-            <div key={item.label} className="flex flex-col items-center gap-3">
+          {qualityCards.map((card) => (
+            <div
+              key={card.label}
+              className="flex flex-col"
+              style={{
+                backgroundColor: '#3A3020',
+                minHeight: 168,
+                padding: '24px 32px',
+                gap: 12,
+              }}
+            >
               <span
                 style={{
                   fontFamily: 'var(--font-body)',
-                  fontSize: 'var(--r-onsen-wq-info-label-size)',
-                  fontWeight: 300,
-                  color: 'var(--ryokan-text-subtle, #C4B89A)',
+                  fontSize: 12,
+                  fontWeight: 600,
+                  color: 'var(--ryokan-gold, #8B6914)',
                   letterSpacing: 2,
                 }}
               >
-                {item.label}
+                {card.label}
               </span>
               <span
                 style={{
-                  fontFamily: 'var(--font-heading)',
-                  fontSize: 'var(--r-onsen-wq-info-val-size)',
-                  fontWeight: 600,
-                  color: 'var(--ryokan-text-on-dark, #FAF8F3)',
-                  letterSpacing: 2,
+                  fontFamily: 'var(--font-body)',
+                  fontSize: 14,
+                  fontWeight: 300,
+                  color: 'var(--ryokan-text-subtle, #D4C5A0)',
+                  lineHeight: 1.8,
+                  whiteSpace: 'pre-line',
                 }}
               >
-                {item.value}
+                {card.value}
               </span>
             </div>
           ))}
-        </div>
-
-        {/* Divider */}
-        <span
-          className="block"
-          style={{
-            width: '100%',
-            height: 1,
-            backgroundColor: 'var(--ryokan-soft-line, #D4C5A055)',
-          }}
-        />
-
-        {/* Efficacy */}
-        <div className="flex flex-col items-center gap-4">
-          <span
-            style={{
-              fontFamily: 'var(--font-body)',
-              fontSize: 'var(--r-onsen-wq-info-label-size)',
-              fontWeight: 300,
-              color: 'var(--ryokan-text-subtle, #C4B89A)',
-              letterSpacing: 2,
-            }}
-          >
-            効能
-          </span>
-          <div className="flex flex-wrap justify-center gap-8">
-            {efficacyItems.map((item) => (
-              <span
-                key={item}
-                style={{
-                  fontFamily: 'var(--font-body)',
-                  fontSize: 'var(--r-onsen-wq-efficacy-size)',
-                  fontWeight: 300,
-                  color: 'var(--ryokan-text-on-dark, #FAF8F3)',
-                  letterSpacing: 1.5,
-                }}
-              >
-                {item}
-              </span>
-            ))}
-          </div>
         </div>
       </div>
     </section>
