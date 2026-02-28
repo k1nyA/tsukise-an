@@ -27,30 +27,6 @@ export default function RoomsPage() {
         />
         <ConceptSection />
         <RoomGridSection />
-
-        {/* Vacancy link */}
-        <div
-          className="flex w-full items-center justify-center"
-          style={{
-            backgroundColor: 'var(--ryokan-bg, #FAF8F3)',
-            padding: 'var(--r-rooms-vacancy-py) var(--r-section-px)',
-          }}
-        >
-          <Link
-            href="/reservation"
-            style={{
-              fontFamily: 'var(--font-body)',
-              fontSize: 14,
-              fontWeight: 500,
-              color: 'var(--ryokan-gold, #8B6914)',
-              letterSpacing: 1,
-              textDecoration: 'none',
-            }}
-          >
-            空室を確認する →
-          </Link>
-        </div>
-
         <AmenitiesSection />
 
         {/* Related page links */}
