@@ -8,23 +8,20 @@ describe('WaterQualitySection', () => {
     expect(screen.getByText('泉質と効能')).toBeInTheDocument()
   })
 
-  it('renders the water quality type "アルカリ性単純温泉"', () => {
+  it('renders all four quality card labels per .pen SSOT', () => {
     render(<WaterQualitySection />)
-    expect(screen.getByText('アルカリ性単純温泉')).toBeInTheDocument()
+    expect(screen.getByText('源泉名')).toBeInTheDocument()
+    expect(screen.getByText('泉質')).toBeInTheDocument()
+    expect(screen.getByText('泉温')).toBeInTheDocument()
+    expect(screen.getByText('効能')).toBeInTheDocument()
   })
 
-  it('renders pH value and source temperature', () => {
+  it('renders correct values per .pen SSOT', () => {
     render(<WaterQualitySection />)
-    expect(screen.getByText(/pH 8.5/)).toBeInTheDocument()
-    expect(screen.getByText(/62℃/)).toBeInTheDocument()
-  })
-
-  it('renders efficacy items', () => {
-    render(<WaterQualitySection />)
-    expect(screen.getByText('神経痛・筋肉痛')).toBeInTheDocument()
-    expect(screen.getByText('疲労回復')).toBeInTheDocument()
-    expect(screen.getByText('冷え性改善')).toBeInTheDocument()
-    expect(screen.getByText('美肌効果')).toBeInTheDocument()
+    expect(screen.getByText(/姥子温泉/)).toBeInTheDocument()
+    expect(screen.getByText('単純硫黄泉')).toBeInTheDocument()
+    expect(screen.getByText(/源泉 62\.3℃/)).toBeInTheDocument()
+    expect(screen.getByText(/神経痛・筋肉痛/)).toBeInTheDocument()
   })
 
   it('renders within a section element', () => {

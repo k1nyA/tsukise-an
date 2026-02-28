@@ -33,9 +33,6 @@
   --r-onsen-wq-gap: 48px;
   --r-onsen-wq-title-size: 28px;
   --r-onsen-wq-title-ls: 4px;
-  --r-onsen-wq-info-val-size: 20px;
-  --r-onsen-wq-info-label-size: 12px;
-  --r-onsen-wq-efficacy-size: 15px;
 
   /* Onsen Guide */
   --r-onsen-guide-py: 80px;
@@ -89,8 +86,6 @@
     --r-onsen-wq-px: 60px;
     --r-onsen-wq-gap: 40px;
     --r-onsen-wq-title-size: 24px;
-    --r-onsen-wq-info-val-size: 18px;
-    --r-onsen-wq-efficacy-size: 14px;
 
     /* Onsen Guide */
     --r-onsen-guide-py: 60px;
@@ -143,8 +138,6 @@
     --r-onsen-wq-gap: 32px;
     --r-onsen-wq-title-size: 22px;
     --r-onsen-wq-title-ls: 3px;
-    --r-onsen-wq-info-val-size: 16px;
-    --r-onsen-wq-efficacy-size: 14px;
 
     /* Onsen Guide */
     --r-onsen-guide-py: 48px;
@@ -243,22 +236,25 @@
 }
 
 /* ===========================================
-   Water Quality Info Grid
-   PC: row | Tablet: row | Mobile: column
+   Water Quality Card Grid
+   PC: 4-col | Tablet: 2-col | Mobile: 1-col
    =========================================== */
 
 .r-onsen-wq-info-grid {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 64px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 1023px) {
+  .r-onsen-wq-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 767px) {
   .r-onsen-wq-info-grid {
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
+    grid-template-columns: 1fr;
   }
 }
 
