@@ -14,7 +14,7 @@ export function DiningRoomSection() {
         }}
       >
         <Image
-          src="/images/cuisine-ingredients-main.png"
+          src="/images/cuisine-dining-main.png"
           alt="食事処のイメージ"
           fill
           className="object-cover"
