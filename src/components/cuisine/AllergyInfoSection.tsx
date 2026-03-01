@@ -1,24 +1,26 @@
+import { Utensils, Leaf, Baby, type LucideIcon } from 'lucide-react'
+
 type AllergyItem = {
+  icon: LucideIcon
   title: string
   description: string
-  iconLabel: string
 }
 
 const allergyItems: AllergyItem[] = [
   {
+    icon: Utensils,
     title: 'アレルギー対応',
     description: '事前にお知らせいただければ\n代替食材でご用意いたします',
-    iconLabel: 'アレルギー対応のアイコン',
   },
   {
+    icon: Leaf,
     title: 'ベジタリアン対応',
     description: '精進料理をベースとした\n特別懐石をご用意いたします',
-    iconLabel: 'ベジタリアン対応のアイコン',
   },
   {
+    icon: Baby,
     title: 'お子様メニュー',
     description: 'お子様向けの特別メニューを\nご用意しております',
-    iconLabel: 'お子様メニューのアイコン',
   },
 ]
 
@@ -55,14 +57,11 @@ export function AllergyInfoSection() {
             className="flex flex-col items-center"
             style={{ flex: '1 1 0', gap: 12 }}
           >
-            {/* Icon placeholder */}
-            <div
-              aria-label={item.iconLabel}
-              style={{
-                width: 28,
-                height: 28,
-                color: 'var(--ryokan-gold, #8B6914)',
-              }}
+            {/* Icon */}
+            <item.icon
+              size={28}
+              color="var(--ryokan-gold, #8B6914)"
+              aria-hidden="true"
             />
 
             {/* Title */}
