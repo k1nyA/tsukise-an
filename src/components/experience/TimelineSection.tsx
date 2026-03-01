@@ -76,7 +76,7 @@ type TimelineItemProps = {
 function TimelineItem({ time, title, description, align, isLast }: TimelineItemProps) {
   const timeContent = (
     <div
-      className="r-exp-timeline-side flex"
+      className="r-exp-timeline-time flex"
       style={{
         justifyContent: align === 'left' ? 'flex-end' : 'flex-start',
       }}
@@ -97,7 +97,7 @@ function TimelineItem({ time, title, description, align, isLast }: TimelineItemP
 
   const infoContent = (
     <div
-      className="r-exp-timeline-side flex flex-col"
+      className="r-exp-timeline-info flex flex-col"
       style={{
         gap: 8,
         alignItems: align === 'right' ? 'flex-end' : 'flex-start',

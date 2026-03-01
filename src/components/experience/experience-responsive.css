@@ -136,18 +136,18 @@
     --r-exp-concept-body-w: 100%;
 
     /* Timeline Section */
-    --r-exp-timeline-py: 48px;
-    --r-exp-timeline-px: 24px;
-    --r-exp-timeline-title: 22px;
-    --r-exp-timeline-title-ls: 2px;
-    --r-exp-timeline-sub-size: 13px;
-    --r-exp-timeline-item-title: 16px;
-    --r-exp-timeline-item-body: 13px;
-    --r-exp-timeline-time: 16px;
-    --r-exp-timeline-side-w: auto;
-    --r-exp-timeline-item-py: 16px;
-    --r-exp-timeline-item-gap: 16px;
-    --r-exp-timeline-line-h: 40px;
+    --r-exp-timeline-py: 40px;
+    --r-exp-timeline-px: 20px;
+    --r-exp-timeline-title: 24px;
+    --r-exp-timeline-title-ls: 4px;
+    --r-exp-timeline-sub-size: 14px;
+    --r-exp-timeline-item-title: 18px;
+    --r-exp-timeline-item-body: 14px;
+    --r-exp-timeline-time: 20px;
+    --r-exp-timeline-side-w: 56px;
+    --r-exp-timeline-item-py: 24px;
+    --r-exp-timeline-item-gap: 32px;
+    --r-exp-timeline-line-h: 60px;
 
     /* Seasons Section */
     --r-exp-seasons-pt: 40px;
@@ -308,69 +308,61 @@
    PC: zigzag 3-col | Tablet: narrower zigzag | Mobile: linear
    =========================================== */
 
-/* Timeline side columns (time / info) */
-.r-exp-timeline-side {
+/* Timeline columns */
+.r-exp-timeline-time {
+  width: var(--r-exp-timeline-side-w);
+  flex-shrink: 0;
+}
+
+.r-exp-timeline-info {
   width: var(--r-exp-timeline-side-w);
 }
 
-/* Tablet: side columns become flex:1 */
+/* Tablet: columns become flex:1 */
 @media (max-width: 1023px) {
-  .r-exp-timeline-side {
+  .r-exp-timeline-time,
+  .r-exp-timeline-info {
     flex: 1;
     min-width: 0;
+    width: auto;
   }
 }
 
-/* Mobile: timeline becomes linear single-column */
+/* Mobile: keep horizontal 3-col layout, remove alternating pattern */
 @media (max-width: 767px) {
-  .r-exp-timeline-row {
-    flex-direction: column !important;
-    align-items: flex-start;
-    gap: 8px !important;
-    padding: var(--r-exp-timeline-item-py) 0;
+  .r-exp-timeline-time {
+    width: 56px;
+    flex: none;
+    order: 1;
   }
 
-  .r-exp-timeline-side {
-    width: 100%;
-  }
-
-  /* Hide the center dot column on mobile */
   .r-exp-timeline-center {
-    display: none;
+    order: 2;
   }
 
-  /* Force left alignment for all text in timeline items */
-  .r-exp-timeline-side span,
-  .r-exp-timeline-side h3,
-  .r-exp-timeline-side p {
-    text-align: left !important;
+  .r-exp-timeline-info {
+    flex: 1;
+    width: auto;
+    order: 3;
+    min-width: 0;
   }
 
-  .r-exp-timeline-side .flex {
-    justify-content: flex-start !important;
+  /* Force left alignment for all items (no alternating) */
+  .r-exp-timeline-time span {
+    text-align: right !important;
+  }
+
+  .r-exp-timeline-time .flex,
+  .r-exp-timeline-time {
+    justify-content: flex-end !important;
+  }
+
+  .r-exp-timeline-info {
     align-items: flex-start !important;
   }
 
-  /* Add a left border for timeline feel on mobile */
-  .r-exp-timeline-row {
-    border-left: 2px solid var(--ryokan-light-gold, #D4C5A0);
-    padding-left: 20px;
-    margin-left: 6px;
-  }
-
-  /* Add a dot marker via pseudo-element */
-  .r-exp-timeline-row::before {
-    content: "";
-    position: absolute;
-    left: -7px;
-    top: var(--r-exp-timeline-item-py);
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: var(--ryokan-light-gold, #D4C5A0);
-  }
-
-  .r-exp-timeline-row {
-    position: relative;
+  .r-exp-timeline-info h3,
+  .r-exp-timeline-info p {
+    text-align: left !important;
   }
 }
