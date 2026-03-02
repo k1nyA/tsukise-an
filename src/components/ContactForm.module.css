@@ -28,9 +28,9 @@
 .form select,
 .form textarea {
   width: 100%;
-  border: 1px solid rgba(139, 105, 20, 0.25);
-  border-radius: 8px;
-  padding: 10px 12px;
+  border: 1px solid #D4C5A0;
+  border-radius: 2px;
+  padding: 12px 16px;
   font-size: 14px;
   color: var(--ryokan-dark);
   background: #fff;
@@ -83,12 +83,13 @@
 .submit {
   margin-top: 18px;
   border: none;
-  border-radius: 999px;
-  padding: 11px 22px;
+  border-radius: 2px;
+  padding: 18px 80px;
   background: var(--ryokan-gold);
   color: #fff;
-  font-size: 14px;
-  letter-spacing: 0.08em;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 4px;
   cursor: pointer;
 }
 
