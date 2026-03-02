@@ -1113,3 +1113,35 @@ Lesson #39 のチェックリストに追加:
 **教訓**:
 - .pen のレイアウトプロパティ確認時、alignItems/justifyContent/textAlign も必ずチェックする
 - 特にカードコンポーネントは content alignment が重要
+
+### 54. 画像重複チェックの重要性
+
+**問題**: DiningRoomSection が IngredientsSection と同じ `cuisine-ingredients-main.png` を使用していた。サブエージェントが実装時に正しい画像をダウンロード・マッピングしなかった。.pen SSOT ではそれぞれ異なる画像（IngredientsSection=generated画像、DiningRoomSection=Unsplash stock画像）を使用するはずだった。
+
+**教訓**:
+- 各セクションの画像が異なるものを使っているか、実装後に Grep 等で重複チェックする
+- `grep -r "cuisine-.*\.png" src/components/cuisine/` のように画像参照を一覧確認
+- Unsplash外部URL画像は自動で public/images に保存されないため、手動DLが必要（Lesson 49 の再発パターン）
+- サブエージェント実装時は画像DL漏れを検出するため、公開後に画像URL一覧をスクリーンショット・grep で確認する
+
+### 55. icon_font ノードのプレースホルダー問題は全ページ共通
+
+**問題**: サブエージェントが .pen の `icon_font` ノードを空divプレースホルダーとして実装するパターンが、客室ページ（PR #263）とお料理ページ（PR #272）で繰り返し発生。AllergyInfoSection では lucide-react アイコン（Utensils, Leaf, Baby）が未実装で空divのままだった。
+
+**教訓**:
+- 全ページの `icon_font` ノードを一括チェックする（`grep -r "aria-label.*アイコン" src/` で空divを検出）
+- サブエージェント実装後、アイコン実装漏れを grep で確認するステップを追加
+- lucide-react のアイコン名は .pen の `icon` プロパティから取得可能
+- icon_font ノードは必ずコンポーネント化対象として明示的に指示し、単なる空divプレースホルダーにしないこと
+
+**一般化**: コンポーネント間で似た命名の画像がある場合、実装後に全画像参照を一覧化し、各セクションが正しい画像を参照していることを必ず確認する。
+
+### Lesson 56: モバイルタイムラインのCSS order パターン
+
+**問題**: タイムラインのモバイル表示がflex-direction:column + border-left hackで実装されていたが、.penは水平3カラム（time|dot|content）を維持していた
+
+**原因**: サブエージェントが.penモバイル仕様を確認せず「モバイル=縦積み」と推測した
+
+**解決**: CSS order プロパティで DOM順序に関係なく視覚的な列順序を統一。even items のDOM順（info→center→time）を order:1,2,3 で time→center→info に修正
+
+**教訓**: モバイルでも.penを確認すること。「モバイル=単純な縦積み」は危険な前提
