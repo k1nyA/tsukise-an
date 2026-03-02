@@ -74,7 +74,7 @@ export function PrivacyContentSection() {
       className="flex w-full flex-col"
       style={{
         backgroundColor: 'var(--ryokan-bg, #FAF8F3)',
-        padding: '80px 200px',
+        padding: 'var(--r-privacy-content-py) var(--r-privacy-content-px)',
         gap: 48,
       }}
     >

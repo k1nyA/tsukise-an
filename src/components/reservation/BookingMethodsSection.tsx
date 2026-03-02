@@ -1,16 +1,18 @@
+import { Monitor, Phone, Globe } from 'lucide-react'
+
 const methods = [
   {
-    icon: 'monitor',
+    icon: Monitor,
     name: 'オンライン予約',
     description: 'Cal.comより24時間\nいつでもご予約いただけます',
   },
   {
-    icon: 'phone',
+    icon: Phone,
     name: 'お電話',
     description: '0460-83-XXXX\n受付時間 9:00〜20:00',
   },
   {
-    icon: 'globe',
+    icon: Globe,
     name: '旅行サイト',
     description: '一休.com等の\n旅行予約サイトからもご予約可能',
   },
@@ -51,23 +53,12 @@ export function BookingMethodsSection() {
               gap: 12,
             }}
           >
-            {/* Icon placeholder */}
-            <span
+            <method.icon
               aria-hidden="true"
-              style={{
-                width: 28,
-                height: 28,
-                color: 'var(--ryokan-gold, #8B6914)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: 28,
-              }}
-            >
-              {method.icon === 'monitor' && '🖥'}
-              {method.icon === 'phone' && '📞'}
-              {method.icon === 'globe' && '🌐'}
-            </span>
+              size={28}
+              color="var(--ryokan-gold, #8B6914)"
+              strokeWidth={1.5}
+            />
 
             <h3
               style={{

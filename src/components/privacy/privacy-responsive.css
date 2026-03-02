@@ -1,0 +1,27 @@
+/* ===========================================
+   Privacy Page Responsive CSS Variables
+   Breakpoints: Mobile(<768) / Tablet(768-1023) / PC(>=1024)
+   =========================================== */
+
+/* --- PC (default, >= 1024px) --- */
+:root {
+  --r-privacy-content-py: 80px;
+  --r-privacy-content-px: 200px;
+  --r-privacy-updated-pt: 40px;
+}
+
+/* --- Tablet (768px - 1023px) --- */
+@media (max-width: 1023px) {
+  :root {
+    --r-privacy-content-py: 60px;
+    --r-privacy-content-px: 80px;
+  }
+}
+
+/* --- Mobile (< 768px) --- */
+@media (max-width: 767px) {
+  :root {
+    --r-privacy-content-py: 40px;
+    --r-privacy-content-px: 24px;
+  }
+}

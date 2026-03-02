@@ -21,7 +21,7 @@ export function ContactFormSection({ accessKey = '' }: ContactFormSectionProps) 
         style={{
           backgroundColor: 'var(--ryokan-bg, #FAF8F3)',
           padding: 'var(--r-contact-form-inner-py) var(--r-contact-form-inner-px)',
-          gap: 24,
+          gap: 32,
           borderRadius: 4,
           border: '1px solid #D4C5A033',
         }}
