@@ -1157,3 +1157,23 @@ Lesson #39 のチェックリストに追加:
 **問題**: Sitemap ページには .pen デザインが存在しなかった。独自のスタイリングでハードコードされていた。
 
 **教訓**: SSOT がないページは、構造が似たページ（この場合 Legal/Privacy）の CSS 変数を再利用して一貫性を保つ。新しいデザインを発明しない。
+
+### Lesson 59: CSS Module の未使用クラスは実装ズレの警告信号
+
+**問題**: ContactForm.module.css に `.fieldGroup` と `.fieldGroupFull` が定義されていたが、ContactForm.tsx では使用されていなかった。結果、`.row` 内の `<label>` に `flex: 1` が適用されず、フォームフィールドが狭く表示された。
+
+**教訓**: CSS Module にクラスが定義されているのに JSX で使用されていない場合、そのクラスが担っていたはずのスタイリング（特に `flex: 1` のようなレイアウト制御）が適用されていない可能性がある。PR レビュー時に CSS と JSX のクラス参照を突き合わせること。
+
+### Lesson 60: dev サーバー再起動で HMR キャッシュ問題を解決する
+
+**問題**: PR マージ後も Playwright で古いフォーム構造が表示され続けた。ページリロードしても改善しなかった。
+
+**原因**: Next.js dev サーバーの HMR が CSS Module の大幅な変更を正しく反映しなかった。
+
+**教訓**: 大規模な CSS Module 変更やコンポーネント構造変更の後、ブラウザリロードで反映されない場合は dev サーバー再起動 (`kill PID && npx next dev`) を行う。特にサブエージェントが worktree から直接 main にプッシュした変更は HMR に反映されにくい。
+
+### Lesson 61: ヒーロー画像は PageHero の backgroundImage prop で設定する
+
+**問題**: FAQ, News, Privacy, Legal, Sitemap の5ページでヒーロー画像が未設定だった。PageHero コンポーネントに `backgroundImage` prop があるにも関わらず、文字だけのフォールバック表示になっていた。
+
+**教訓**: 新ページ作成時のチェックリストに「PageHero に backgroundImage を設定しているか」を含める。画像は `public/images/{page}-hero.png` に配置し、Unsplash からダウンロードする場合は `design/images/` にも保存する。
