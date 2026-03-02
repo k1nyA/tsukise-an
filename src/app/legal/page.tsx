@@ -2,6 +2,7 @@ import { Header } from '@/components/shared/Header/Header'
 import { PageHero } from '@/components/shared/PageHero/PageHero'
 import { Breadcrumb } from '@/components/shared/Breadcrumb/Breadcrumb'
 import { LegalContentSection } from '@/components/legal/LegalContentSection'
+import { CTASection } from '@/components/shared/CTASection/CTASection'
 import { Footer } from '@/components/shared/Footer/Footer'
 
 export default function LegalPage() {
@@ -20,6 +21,7 @@ export default function LegalPage() {
           ]}
         />
         <LegalContentSection />
+        <CTASection />
       </main>
       <Footer />
     </div>
