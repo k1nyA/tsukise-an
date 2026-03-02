@@ -13,6 +13,7 @@ export default function LegalPage() {
         <PageHero
           title="特定商取引法に基づく表記"
           labelEn="COMMERCIAL TRANSACTIONS ACT"
+          backgroundImage="/images/legal-hero.png"
         />
         <Breadcrumb
           items={[

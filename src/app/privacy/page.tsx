@@ -9,7 +9,7 @@ export default function PrivacyPage() {
     <div className="ryokan-page">
       <Header />
       <main>
-        <PageHero title="プライバシーポリシー" labelEn="PRIVACY POLICY" />
+        <PageHero title="プライバシーポリシー" labelEn="PRIVACY POLICY" backgroundImage="/images/privacy-hero.png" />
         <Breadcrumb
           items={[
             { label: 'ホーム', href: '/' },

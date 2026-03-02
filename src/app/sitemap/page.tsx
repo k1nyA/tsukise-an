@@ -25,7 +25,7 @@ export default function SitemapPage() {
     <div className="ryokan-page">
       <Header />
       <main>
-        <PageHero title="サイトマップ" labelEn="SITEMAP" />
+        <PageHero title="サイトマップ" labelEn="SITEMAP" backgroundImage="/images/access-hero.png" />
         <Breadcrumb
           items={[
             { label: 'ホーム', href: '/' },

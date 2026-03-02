@@ -25,7 +25,7 @@ export default async function FAQPage() {
     <div className="ryokan-page">
       <Header />
       <main>
-        <PageHero title="よくあるご質問" labelEn="FAQ" />
+        <PageHero title="よくあるご質問" labelEn="FAQ" subtitle="お客様からよくいただくご質問をまとめました" backgroundImage="/images/faq-hero.png" />
         <Breadcrumb
           items={[
             { label: 'ホーム', href: '/' },
