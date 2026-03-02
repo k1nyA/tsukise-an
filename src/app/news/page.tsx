@@ -69,7 +69,7 @@ export default async function NewsPage({ searchParams }: PageProps) {
     <div className="ryokan-page">
       <Header />
       <main>
-        <PageHero title="お知らせ" labelEn="NEWS" />
+        <PageHero title="お知らせ" labelEn="NEWS" backgroundImage="/images/news-hero.png" />
         <Breadcrumb
           items={[
             { label: 'ホーム', href: '/' },
