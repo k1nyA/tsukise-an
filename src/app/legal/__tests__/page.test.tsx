@@ -29,6 +29,10 @@ vi.mock('@/components/shared/Breadcrumb/Breadcrumb', () => ({
   ),
 }))
 
+vi.mock('@/components/shared/CTASection/CTASection', () => ({
+  CTASection: () => <div data-testid="cta-section">CTA</div>,
+}))
+
 describe('LegalPage', () => {
   it('renders the page with ryokan-page class', () => {
     const { container } = render(<LegalPage />)
@@ -77,10 +81,9 @@ describe('LegalPage', () => {
     ).toBeInTheDocument()
   })
 
-  it('does not render a CTASection (legal pages skip CTA)', () => {
-    const { container } = render(<LegalPage />)
-    // CTA section would have a background image wrapper -- we ensure no CTA exists
-    expect(container.querySelector('[data-testid="cta-section"]')).not.toBeInTheDocument()
+  it('renders CTASection per .pen SSOT (between content and footer)', () => {
+    render(<LegalPage />)
+    expect(screen.getByTestId('cta-section')).toBeInTheDocument()
   })
 
   it('renders page elements in correct order: Header, main content, Footer', () => {

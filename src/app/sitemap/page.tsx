@@ -36,28 +36,33 @@ export default function SitemapPage() {
         <section
           aria-label="サイト内ページ一覧"
           style={{
-            maxWidth: 960,
-            margin: '0 auto',
-            padding: '56px 24px 80px',
+            backgroundColor: 'var(--ryokan-bg, #FAF8F3)',
+            padding: 'var(--r-legal-py, 80px) var(--r-legal-px, 200px)',
           }}
         >
           <ul
+            className="sitemap-link-list"
             style={{
               listStyle: 'none',
               margin: 0,
               padding: 0,
               display: 'grid',
-              gap: 12,
+              gap: 16,
             }}
           >
             {SITEMAP_LINKS.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
+                  className="sitemap-link"
                   style={{
-                    color: 'var(--ryokan-darkest)',
+                    color: 'var(--ryokan-dark, #2C2418)',
                     textDecoration: 'none',
                     fontFamily: 'var(--font-body)',
+                    fontSize: 14,
+                    fontWeight: 300,
+                    lineHeight: 2,
+                    letterSpacing: 1,
                   }}
                 >
                   {item.label}

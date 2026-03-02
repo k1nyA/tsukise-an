@@ -605,7 +605,7 @@
 @media (max-width: 767px) {
   .r-legal-info-row {
     flex-direction: column;
-    gap: 4px;
+    gap: 8px;
   }
 }
 
