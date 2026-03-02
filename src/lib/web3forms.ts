@@ -1,5 +1,6 @@
 export type ContactFormInput = {
-  name: string;
+  lastName: string;
+  firstName: string;
   email: string;
   phone?: string;
   subject: string;
@@ -29,8 +30,12 @@ const trim = (value: string | undefined): string => (value ?? "").trim();
 export const validateContactInput = (input: ContactFormInput): string[] => {
   const errors: string[] = [];
 
-  if (!trim(input.name)) {
-    errors.push("お名前を入力してください。");
+  if (!trim(input.lastName)) {
+    errors.push("お名前（姓）を入力してください。");
+  }
+
+  if (!trim(input.firstName)) {
+    errors.push("お名前（名）を入力してください。");
   }
 
   const email = trim(input.email);
@@ -65,7 +70,7 @@ export const buildWeb3FormsPayload = (
   return {
     access_key: key,
     from_name: "月瀬庵ウェブサイト",
-    name: trim(input.name),
+    name: `${trim(input.lastName)} ${trim(input.firstName)}`,
     email: trim(input.email),
     phone: trim(input.phone) || undefined,
     subject: `【月瀬庵】${trim(input.subject)}`,

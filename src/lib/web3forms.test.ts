@@ -9,7 +9,8 @@ import {
 } from "./web3forms";
 
 const validInput: ContactFormInput = {
-  name: "山田 太郎",
+  lastName: "山田",
+  firstName: "太郎",
   email: "guest@example.com",
   phone: "090-0000-0000",
   subject: "ご予約について",
@@ -25,7 +26,8 @@ test("validateContactInput returns no errors for valid input", () => {
 test("validateContactInput returns errors for missing required fields", () => {
   const errors = validateContactInput({
     ...validInput,
-    name: "",
+    lastName: "",
+    firstName: "",
     email: "bad-address",
     message: "",
     agreeToPrivacy: false,

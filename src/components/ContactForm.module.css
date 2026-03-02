@@ -1,64 +1,125 @@
+/* Contact Form — aligned to .pen SSOT */
+
 .form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   padding: 0;
   border: none;
   border-radius: 0;
   background: transparent;
 }
 
+/* 2-column row (name, email+phone) */
 .row {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px;
-  margin-bottom: 18px;
-}
-
-.form label {
-  display: grid;
-  gap: 8px;
-  color: var(--ryokan-muted);
-  font-size: 13px;
-  letter-spacing: 0.03em;
-}
-
-.form label span {
-  color: var(--ryokan-gold);
-}
-
-.form input,
-.form select,
-.form textarea {
+  display: flex;
+  gap: 24px;
   width: 100%;
+}
+
+/* Each field group (label + input) */
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+
+/* Full-width standalone field */
+.fieldGroupFull {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+/* Labels — .pen: Noto Sans JP, 13px, 500, #2C2418, letterSpacing 1px */
+.form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  color: #2C2418;
+  letter-spacing: 1px;
+}
+
+/* Asterisk — same color as label per .pen */
+.form label span {
+  color: #2C2418;
+}
+
+/* Input fields — .pen: h48, bg #FAF8F3, radius 2, border 1px #D4C5A0, padding 0 16px */
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"],
+.form select {
+  width: 100%;
+  height: 48px;
   border: 1px solid #D4C5A0;
   border-radius: 2px;
-  padding: 12px 16px;
+  padding: 0 16px;
+  font-family: var(--font-body);
   font-size: 14px;
+  font-weight: 300;
   color: var(--ryokan-dark);
-  background: #fff;
+  background: #FAF8F3;
+  box-sizing: border-box;
 }
 
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #BBBBBB;
+  font-weight: 300;
+}
+
+/* Textarea — .pen: h200, radius 2, border 1px #D4C5A0, padding 16px uniform */
 .form textarea {
+  width: 100%;
+  min-height: 200px;
+  border: 1px solid #D4C5A0;
+  border-radius: 2px;
+  padding: 16px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--ryokan-dark);
+  background: #FAF8F3;
   resize: vertical;
+  box-sizing: border-box;
 }
 
-.textAreaLabel {
-  margin-top: 8px;
-}
-
+/* Privacy checkbox row — .pen: gap 12, alignItems center */
 .checkbox {
-  margin-top: 14px;
-  display: inline-flex !important;
-  gap: 10px !important;
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 12px !important;
   align-items: center;
 }
 
-.checkbox input {
-  width: 16px;
-  height: 16px;
+/* Checkbox input — .pen: 20x20, radius 2, border 1px #D4C5A0 */
+.checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
   margin: 0;
+  accent-color: var(--ryokan-gold);
 }
 
+/* Privacy text — .pen: #4A4035, 13px, 300, letterSpacing 1px */
+.checkbox span {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 300;
+  color: #4A4035;
+  letter-spacing: 1px;
+}
+
+/* Error list */
 .errorList {
-  margin: 14px 0 0;
+  margin: 0;
   padding: 0 0 0 18px;
   color: #9e2a2b;
   font-size: 13px;
@@ -68,7 +129,7 @@
 
 .errorMessage,
 .success {
-  margin: 14px 0 0;
+  margin: 0;
   font-size: 14px;
 }
 
@@ -80,13 +141,22 @@
   color: #1f7a4d;
 }
 
+/* Submit button wrapper — .pen: full width, centered */
+.submitWrap {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Submit button — .pen: bg #8B6914, border 1px solid #8B6914, radius 2, padding 18px 80px */
 .submit {
-  margin-top: 18px;
-  border: none;
+  border: 1px solid var(--ryokan-gold);
   border-radius: 2px;
   padding: 18px 80px;
   background: var(--ryokan-gold);
-  color: #fff;
+  color: #FAF8F3;
+  font-family: var(--font-body);
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 4px;
@@ -98,9 +168,10 @@
   cursor: not-allowed;
 }
 
+/* Mobile: rows go vertical, gap 16 */
 @media (max-width: 767px) {
   .row {
-    grid-template-columns: 1fr;
-    gap: 14px;
+    flex-direction: column;
+    gap: 16px;
   }
 }

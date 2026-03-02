@@ -21,7 +21,8 @@ const SUBJECT_OPTIONS = [
 ];
 
 const INITIAL_FORM: ContactFormInput = {
-  name: "",
+  lastName: "",
+  firstName: "",
   email: "",
   phone: "",
   subject: SUBJECT_OPTIONS[0],
@@ -79,62 +80,94 @@ export default function ContactForm({ accessKey = "" }: ContactFormProps) {
 
   return (
     <form className={styles.form} onSubmit={onSubmit} noValidate>
+      {/* Row 1: お名前（姓）+ お名前（名）*/}
       <div className={styles.row}>
         <label>
-          お名前<span>*</span>
+          お名前（姓）<span>*</span>
           <input
             type="text"
-            value={form.name}
-            onChange={(event) => setForm((prev) => ({ ...prev, name: event.target.value }))}
+            placeholder="月瀬"
+            value={form.lastName}
+            onChange={(event) =>
+              setForm((prev) => ({ ...prev, lastName: event.target.value }))
+            }
             required
           />
         </label>
         <label>
-          メールアドレス<span>*</span>
+          お名前（名）<span>*</span>
           <input
-            type="email"
-            value={form.email}
-            onChange={(event) => setForm((prev) => ({ ...prev, email: event.target.value }))}
+            type="text"
+            placeholder="太郎"
+            value={form.firstName}
+            onChange={(event) =>
+              setForm((prev) => ({ ...prev, firstName: event.target.value }))
+            }
             required
           />
         </label>
       </div>
 
+      {/* Row 2: メールアドレス + お電話番号 */}
       <div className={styles.row}>
+        <label>
+          メールアドレス <span>*</span>
+          <input
+            type="email"
+            placeholder="example@email.com"
+            value={form.email}
+            onChange={(event) =>
+              setForm((prev) => ({ ...prev, email: event.target.value }))
+            }
+            required
+          />
+        </label>
         <label>
           お電話番号
           <input
             type="tel"
+            placeholder="090-1234-5678"
             value={form.phone}
-            onChange={(event) => setForm((prev) => ({ ...prev, phone: event.target.value }))}
+            onChange={(event) =>
+              setForm((prev) => ({ ...prev, phone: event.target.value }))
+            }
           />
-        </label>
-        <label>
-          お問い合わせ種別<span>*</span>
-          <select
-            value={form.subject}
-            onChange={(event) => setForm((prev) => ({ ...prev, subject: event.target.value }))}
-            required
-          >
-            {SUBJECT_OPTIONS.map((option) => (
-              <option key={option} value={option}>
-                {option}
-              </option>
-            ))}
-          </select>
         </label>
       </div>
 
-      <label className={styles.textAreaLabel}>
-        お問い合わせ内容<span>*</span>
+      {/* Row 3: お問い合わせ種別 (full width) */}
+      <label>
+        お問い合わせ種別 <span>*</span>
+        <select
+          value={form.subject}
+          onChange={(event) =>
+            setForm((prev) => ({ ...prev, subject: event.target.value }))
+          }
+          required
+        >
+          {SUBJECT_OPTIONS.map((option) => (
+            <option key={option} value={option}>
+              {option}
+            </option>
+          ))}
+        </select>
+      </label>
+
+      {/* Row 4: お問い合わせ内容 (full width) */}
+      <label>
+        お問い合わせ内容 <span>*</span>
         <textarea
+          placeholder="ご質問やご要望をご記入ください"
           value={form.message}
-          onChange={(event) => setForm((prev) => ({ ...prev, message: event.target.value }))}
+          onChange={(event) =>
+            setForm((prev) => ({ ...prev, message: event.target.value }))
+          }
           rows={7}
           required
         />
       </label>
 
+      {/* Privacy checkbox */}
       <label className={styles.checkbox}>
         <input
           type="checkbox"
@@ -143,7 +176,7 @@ export default function ContactForm({ accessKey = "" }: ContactFormProps) {
             setForm((prev) => ({ ...prev, agreeToPrivacy: event.target.checked }))
           }
         />
-        <span>プライバシーポリシーに同意する</span>
+        <span>プライバシーポリシーに同意する *</span>
       </label>
 
       {errors.length > 0 && (
@@ -160,13 +193,16 @@ export default function ContactForm({ accessKey = "" }: ContactFormProps) {
         </p>
       )}
 
-      <button
-        className={styles.submit}
-        type="submit"
-        disabled={status === "sending" || keyMissing}
-      >
-        {status === "sending" ? "送信中..." : "送信する"}
-      </button>
+      {/* Submit button — centered per .pen */}
+      <div className={styles.submitWrap}>
+        <button
+          className={styles.submit}
+          type="submit"
+          disabled={status === "sending" || keyMissing}
+        >
+          {status === "sending" ? "送信中..." : "送信する"}
+        </button>
+      </div>
     </form>
   );
 }
