@@ -10,6 +10,8 @@
 @import "../components/access/access-responsive.css";
 @import "../components/contact/contact-responsive.css";
 @import "../components/reservation/reservation-responsive.css";
+@import "../components/privacy/privacy-responsive.css";
+@import "../components/faq/faq-responsive.css";
 
 /* ============================================================
    Tailwind v4 @theme — Design Token Registration

@@ -6,8 +6,8 @@ export function FAQContactSection() {
       className="flex w-full flex-col items-center"
       style={{
         backgroundColor: 'var(--ryokan-bg, #FAF8F3)',
-        padding: '60px 200px',
-        gap: 24,
+        padding: 'var(--r-faq-contact-py) var(--r-faq-contact-px)',
+        gap: 'var(--r-faq-contact-gap)',
       }}
     >
       <div

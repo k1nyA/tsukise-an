@@ -7,7 +7,7 @@ export function MapSection() {
       style={{
         backgroundColor: 'var(--ryokan-info-bg, #F0EBE0)',
         padding: 'var(--r-access-map-py) var(--r-access-map-px)',
-        minHeight: 'var(--r-access-map-min-h)',
+        gap: 16,
       }}
     >
       {/* Map placeholder frame — to be replaced with Google Maps iframe */}
@@ -33,7 +33,7 @@ export function MapSection() {
         href="https://maps.google.com/?q=箱根町元箱根138"
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-4 text-center"
+        className="text-center"
         style={{
           fontFamily: 'var(--font-body)',
           fontSize: 14,

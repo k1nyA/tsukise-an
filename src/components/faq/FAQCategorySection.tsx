@@ -62,8 +62,8 @@ export function FAQCategorySection({
       className="flex w-full flex-col"
       style={{
         backgroundColor: bgColor,
-        padding: '60px 200px',
-        gap: 32,
+        padding: 'var(--r-faq-cat-py) var(--r-faq-cat-px)',
+        gap: 'var(--r-faq-cat-gap)',
       }}
     >
       {/* Category title with icon */}

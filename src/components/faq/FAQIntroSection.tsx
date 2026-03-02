@@ -6,8 +6,8 @@ export function FAQIntroSection() {
       className="flex w-full flex-col items-center"
       style={{
         backgroundColor: 'var(--ryokan-bg, #FAF8F3)',
-        padding: '60px 200px 32px 200px',
-        gap: 32,
+        padding: 'var(--r-faq-intro-pt) var(--r-faq-intro-px) var(--r-faq-intro-pb) var(--r-faq-intro-px)',
+        gap: 'var(--r-faq-intro-gap)',
       }}
     >
       <SectionLabel english="Q & A" />

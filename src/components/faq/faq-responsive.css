@@ -1,0 +1,66 @@
+/* ===========================================
+   FAQ Page Responsive CSS Variables
+   Breakpoints: Mobile(<768) / Tablet(768-1023) / PC(>=1024)
+   Source: design/月瀬庵デザイン.pen (faq.json)
+   =========================================== */
+
+/* --- PC (default, >= 1024px) --- */
+:root {
+  /* FAQ Intro Section — PC: [60, 200, 32, 200] */
+  --r-faq-intro-pt: 60px;
+  --r-faq-intro-pb: 32px;
+  --r-faq-intro-px: 200px;
+  --r-faq-intro-gap: 32px;
+
+  /* FAQ Category Sections — PC: [60, 200] */
+  --r-faq-cat-py: 60px;
+  --r-faq-cat-px: 200px;
+  --r-faq-cat-gap: 32px;
+
+  /* FAQ Contact Section — PC: [60, 200] */
+  --r-faq-contact-py: 60px;
+  --r-faq-contact-px: 200px;
+  --r-faq-contact-gap: 24px;
+}
+
+/* --- Tablet (768px - 1023px) --- */
+@media (max-width: 1023px) {
+  :root {
+    /* FAQ Intro Section */
+    --r-faq-intro-pt: 48px;
+    --r-faq-intro-pb: 24px;
+    --r-faq-intro-px: 100px;
+    --r-faq-intro-gap: 28px;
+
+    /* FAQ Category Sections */
+    --r-faq-cat-py: 48px;
+    --r-faq-cat-px: 100px;
+    --r-faq-cat-gap: 28px;
+
+    /* FAQ Contact Section */
+    --r-faq-contact-py: 48px;
+    --r-faq-contact-px: 100px;
+    --r-faq-contact-gap: 24px;
+  }
+}
+
+/* --- Mobile (< 768px) --- */
+@media (max-width: 767px) {
+  :root {
+    /* FAQ Intro Section */
+    --r-faq-intro-pt: 40px;
+    --r-faq-intro-pb: 20px;
+    --r-faq-intro-px: 24px;
+    --r-faq-intro-gap: 24px;
+
+    /* FAQ Category Sections */
+    --r-faq-cat-py: 40px;
+    --r-faq-cat-px: 24px;
+    --r-faq-cat-gap: 24px;
+
+    /* FAQ Contact Section */
+    --r-faq-contact-py: 40px;
+    --r-faq-contact-px: 24px;
+    --r-faq-contact-gap: 20px;
+  }
+}
