@@ -88,10 +88,10 @@
     --r-exp-timeline-line-h: 48px;
 
     /* Seasons Section */
-    --r-exp-seasons-pt: 48px;
-    --r-exp-seasons-px: 40px;
-    --r-exp-seasons-pb: 60px;
-    --r-exp-seasons-gap: 32px;
+    --r-exp-seasons-pt: 60px;
+    --r-exp-seasons-px: 60px;
+    --r-exp-seasons-pb: 80px;
+    --r-exp-seasons-gap: 40px;
     --r-exp-seasons-title: 24px;
     --r-exp-seasons-title-ls: 3px;
     --r-exp-seasons-card-img-h: 200px;
@@ -108,16 +108,16 @@
 
     /* Activities Section */
     --r-exp-act-py: 60px;
-    --r-exp-act-px: 60px;
-    --r-exp-act-gap: 40px;
+    --r-exp-act-px: 80px;
+    --r-exp-act-gap: 48px;
     --r-exp-act-title: 24px;
     --r-exp-act-title-ls: 3px;
     --r-exp-act-grid-gap: 24px;
 
     /* Links Section */
-    --r-exp-links-py: 32px;
-    --r-exp-links-px: 40px;
-    --r-exp-links-gap: 40px;
+    --r-exp-links-py: 40px;
+    --r-exp-links-px: 80px;
+    --r-exp-links-gap: 60px;
   }
 }
 
@@ -152,8 +152,8 @@
     /* Seasons Section */
     --r-exp-seasons-pt: 40px;
     --r-exp-seasons-px: 24px;
-    --r-exp-seasons-pb: 48px;
-    --r-exp-seasons-gap: 24px;
+    --r-exp-seasons-pb: 60px;
+    --r-exp-seasons-gap: 40px;
     --r-exp-seasons-title: 22px;
     --r-exp-seasons-title-ls: 2px;
     --r-exp-seasons-card-img-h: 200px;
@@ -169,17 +169,17 @@
     --r-exp-facility-card-gap: 12px;
 
     /* Activities Section */
-    --r-exp-act-py: 48px;
+    --r-exp-act-py: 60px;
     --r-exp-act-px: 24px;
-    --r-exp-act-gap: 32px;
+    --r-exp-act-gap: 48px;
     --r-exp-act-title: 22px;
     --r-exp-act-title-ls: 2px;
     --r-exp-act-grid-gap: 20px;
 
     /* Links Section */
-    --r-exp-links-py: 24px;
-    --r-exp-links-px: 24px;
-    --r-exp-links-gap: 24px;
+    --r-exp-links-py: 40px;
+    --r-exp-links-px: 80px;
+    --r-exp-links-gap: 60px;
   }
 }
 
@@ -297,11 +297,7 @@
   gap: var(--r-exp-links-gap);
 }
 
-@media (max-width: 767px) {
-  .r-exp-links-layout {
-    flex-direction: column;
-  }
-}
+/* .pen SSOT: links stay horizontal on all viewports */
 
 /* ===========================================
    Timeline Layout

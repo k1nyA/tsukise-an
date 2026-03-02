@@ -41,7 +41,7 @@ export function ConceptSection() {
             fontFamily: 'var(--font-body)',
             fontSize: 'var(--r-exp-concept-body)',
             fontWeight: 300,
-            color: 'var(--ryokan-secondary, #6B5D4F)',
+            color: 'var(--ryokan-muted, #4A4035)',
             letterSpacing: 'var(--r-exp-concept-body-ls)',
             lineHeight: 'var(--r-exp-concept-body-lh)',
             maxWidth: 'var(--r-exp-concept-body-w)',

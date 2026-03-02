@@ -119,7 +119,7 @@ export default async function NewsPage({ searchParams }: PageProps) {
             <section
               aria-label="お知らせページネーション"
               className="flex w-full items-center justify-center"
-              style={{ gap: 8, padding: '0 80px 72px 80px' }}
+              style={{ gap: 8, padding: '0 80px 60px 80px' }}
             >
               {Array.from({ length: totalPages }, (_, index) => {
                 const page = index + 1
@@ -134,12 +134,14 @@ export default async function NewsPage({ searchParams }: PageProps) {
                     href={href}
                     aria-current={isActive ? 'page' : undefined}
                     style={{
-                      minWidth: 32,
-                      textAlign: 'center',
+                      width: 40,
+                      height: 40,
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
                       textDecoration: 'none',
-                      padding: '6px 10px',
                       borderRadius: 2,
-                      border: '1px solid var(--ryokan-light-gold)',
+                      border: isActive ? 'none' : '1px solid var(--ryokan-light-gold)',
                       backgroundColor: isActive ? 'var(--ryokan-dark)' : 'transparent',
                       color: isActive ? 'var(--ryokan-text-on-dark)' : 'var(--ryokan-dark)',
                       fontFamily: 'var(--font-body)',
